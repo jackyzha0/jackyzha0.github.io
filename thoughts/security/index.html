@@ -156,13 +156,13 @@ Integrity of information is critical to relationships of trust as we saw in the 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -553,6 +553,49 @@ Oct 14, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -596,7 +639,7 @@ Oct 14, 2021
 <ul>
 <li>New network-layer protocol</li>
 <li>New transport-layer protocol</li>
-<li>New &lsquo;pseudo-layer&rsquo; between transport and application (SSL, TLS)</li>
+<li>New &lsquo;pseudo-layer&rsquo; between transport and application (<a href="/thoughts/TLS" rel="noopener" class="internal-link" data-src="/thoughts/TLS">TLS</a>, TLS)</li>
 <li>Responsibility of the application (SSH)</li>
 </ul>
 <a href="#terminology"><h3 id="terminology"><span class="hanchor" ariaLabel="Anchor"># </span>Terminology</h3></a>

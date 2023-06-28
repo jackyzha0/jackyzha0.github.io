@@ -7,6 +7,56 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>jazz.tools</title>
+      <link>https://jzhao.xyz/thoughts/jazz.tools/</link>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/jazz.tools/</guid>
+      <description>Jazz is an open-source multiplayer data toolkit. Build live, collaborative, multi-device apps with frontend code only.
+Embodies the principles of [[thoughts/local-first software|local-first software]]</description>
+    </item>
+    
+    <item>
+      <title>Lossiness as Mutation</title>
+      <link>https://jzhao.xyz/thoughts/lossiness-as-mutation/</link>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/lossiness-as-mutation/</guid>
+      <description>Source: Self-Organizing Ideas by Gordon Brander
+Maybe chaos is necessary for emergent behaviour. Thus, lossy communication in low bandwidth communication helps seed for selection/mutation of new ideas.</description>
+    </item>
+    
+    <item>
+      <title>Colonial Debt</title>
+      <link>https://jzhao.xyz/thoughts/colonial-debt/</link>
+      <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/colonial-debt/</guid>
+      <description>Debt that is not just exclusive to British and Spanish colonialism but also encapsulates extractive practices of other forms:
+ Chinese, French, and American imperialism neocolonialist internet companies  See also: [[thoughts/Technosolutionism|Technosolutionism]], [[thoughts/Data Capitalism|Data Capitalism]]</description>
+    </item>
+    
+    <item>
+      <title>SSL</title>
+      <link>https://jzhao.xyz/thoughts/SSL/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/SSL/</guid>
+      <description>Protocol for encrypting, securing, and authenticating communications that take place on the [[thoughts/Internet|Internet]].
+Replaced by [[thoughts/TLS|TLS]]</description>
+    </item>
+    
+    <item>
+      <title>TLS</title>
+      <link>https://jzhao.xyz/thoughts/TLS/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/TLS/</guid>
+      <description>TLS evolved from the previous encryption protocol [[thoughts/SSL|SSL]]
+Certificate The certificate contains important information about who owns the domain, along with the server&amp;rsquo;s [[thoughts/Asymmetric Key Cryptography|public key]], both of which are important for validating the server&amp;rsquo;s identity.</description>
+    </item>
+    
+    <item>
       <title>Data Structures</title>
       <link>https://jzhao.xyz/thoughts/data-structure/</link>
       <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>

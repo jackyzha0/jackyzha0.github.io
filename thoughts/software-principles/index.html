@@ -9,13 +9,11 @@
   <meta
     name="description"
     content="[[thoughts/A Pattern Language|A Pattern Language]] for developing software
- Inspired by Urbit Precepts
- [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second."
+ Inspired by Urbit Precepts and the Design Principles Behind Smalltalk"
   />
   <meta property="og:title" content="Software Principles">
   <meta property="og:description" content="[[thoughts/A Pattern Language|A Pattern Language]] for developing software
- Inspired by Urbit Precepts
- [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second.">
+ Inspired by Urbit Precepts and the Design Principles Behind Smalltalk">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/software-principles/">
   <meta property="og:width" content="200">
@@ -23,8 +21,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Software Principles" />
   <meta name="twitter:description" content="[[thoughts/A Pattern Language|A Pattern Language]] for developing software
- Inspired by Urbit Precepts
- [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second." />
+ Inspired by Urbit Precepts and the Design Principles Behind Smalltalk" />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -159,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -735,10 +732,10 @@ Feb 20, 2022
 <p><a href="/thoughts/A-Pattern-Language" rel="noopener" class="internal-link" data-src="/thoughts/A-Pattern-Language">A Pattern Language</a> for developing software</p>
 </blockquote>
 <p>Inspired by 
-<a href="https://urbit.org/docs/development/precepts" rel="noopener">Urbit Precepts</a></p>
+<a href="https://urbit.org/docs/development/precepts" rel="noopener">Urbit Precepts</a> and the 
+<a href="https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html" rel="noopener">Design Principles Behind Smalltalk</a></p>
 <ol>
 <li><a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">Local first</a>. Decentralized/<a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a> second. Make self-hosting easy</li>
-<li>Apps should be treated like queries &ndash; stateless. Local state should be avoided as much as possible, database is the source of truth.</li>
 <li>There is a latent cost to new features: 
 
 
@@ -749,11 +746,11 @@ Feb 20, 2022
   href="/thoughts/maintenance/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/maintenance/">maintenance</a></li>
-<li>Design with the goal of making atomic and reusable libraries (allow for <a href="/thoughts/emergent-behaviour" rel="noopener" class="internal-link" data-src="/thoughts/emergent-behaviour">emergent behaviour</a>)</li>
 <li>Heuristics should only be used where determinism is infeasible</li>
-<li>Code courageously. &ldquo;It&rsquo;s natural to feel fear of code; however, you must act as though you are able to master and change any part of it. To code courageously is to walk into any abyss, bring light, and make it right.&rdquo;</li>
 <li>Apps should embrace gradual enrichment, <a href="/thoughts/composable" rel="noopener" class="internal-link" data-src="/thoughts/composable">composing</a> smaller features to form more complex ones when necessary</li>
-<li>Dump the parts bucket onto the floor. As a first act before starting to build, a child will often spread out all of the parts on the floor. Make it obvious what tools the user has at their disposal to make the most out of the software (<a href="/thoughts/constructionist" rel="noopener" class="internal-link" data-src="/thoughts/constructionist">constructionist</a> learning)</li>
+<li>Dump the parts bucket onto the floor. Make it obvious what tools the user has at their disposal to make the most out of the software (<a href="/thoughts/constructionist" rel="noopener" class="internal-link" data-src="/thoughts/constructionist">constructionist</a> learning)</li>
+<li>If a system is to serve the creative spirit, it must be entirely comprehensible to a single individual</li>
+<li>Any system should provide a uniform means for referring to the things in its universe. In fact, an even stronger statement is that systems should be designed around a powerful metaphor that can be uniformly applied in all areas. Only from this can complex systems <a href="/thoughts/emergent-behaviour" rel="noopener" class="internal-link" data-src="/thoughts/emergent-behaviour">emerge</a></li>
 </ol>
 <p>See also: <a href="/thoughts/programming-models" rel="noopener" class="internal-link" data-src="/thoughts/programming-models">programming models</a></p>
 <a href="#on-programming-advice"><h2 id="on-programming-advice"><span class="hanchor" ariaLabel="Anchor"># </span>On programming advice</h2></a>

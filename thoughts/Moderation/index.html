@@ -156,13 +156,13 @@ I think a key part of answering this is trying to define what role a community o
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -507,6 +507,7 @@ Mar 15, 2022
 <p>Under such a system, both Type I (“false positive”) and Type II (“false negative”) errors are not only common; they are inevitable. Content that a large body of people believe should be taken down is left up, while content that many people believe should remain up is taken down.</p>
 <p><strong>Rather than relying on a single centralized platform, with all of the internal biases and incentives that that entails, anyone would be able to create their own set of rules—including which content do they not want to see and which content would they like to see promoted.</strong></p>
 <p>In such a world, we can let a million content moderation systems approach the same general corpus of content—each taking an entirely different approach—and see which ones work best. <a href="/thoughts/r-K-Selection-theory" rel="noopener" class="internal-link" data-src="/thoughts/r-K-Selection-theory">r-selected</a> moderation.</p>
+<a href="#community-driven-moderation"><h2 id="community-driven-moderation"><span class="hanchor" ariaLabel="Anchor"># </span>Community-driven moderation</h2></a>
 
 
     </article>

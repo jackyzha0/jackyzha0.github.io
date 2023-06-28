@@ -156,13 +156,13 @@ Writing as crystallized thought, a way of expressing the labyrinth of interconne
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1224,12 +1224,6 @@ Apr 7, 2022
       
       
       <li>
-        <a href="/thoughts/bandwidth/" data-ctx="writing" data-src="/thoughts/bandwidth" class="internal-link">Bandwidth</a>
-      </li>
-      
-      
-      
-      <li>
         <a href="/thoughts/creative-writing/" data-ctx="writing" data-src="/thoughts/creative-writing" class="internal-link">Creative writing</a>
       </li>
       
@@ -1261,6 +1255,12 @@ Apr 7, 2022
       
       <li>
         <a href="/thoughts/interaction-design/" data-ctx="Writing" data-src="/thoughts/interaction-design" class="internal-link">Interaction Design</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/lossiness-as-mutation/" data-ctx="writing" data-src="/thoughts/lossiness-as-mutation" class="internal-link">Lossiness as Mutation</a>
       </li>
       
       

@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -791,6 +791,10 @@ Aug 16, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/digital-identity/" data-ctx="access control" data-src="/posts/digital-identity" class="internal-link">On Digital Identity</a>
       </li>
@@ -835,6 +839,12 @@ Aug 16, 2022
       
       <li>
         <a href="/thoughts/internet-computing/" data-ctx="access control" data-src="/thoughts/internet-computing" class="internal-link">Internet Computing</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/jazz.tools/" data-ctx="access control" data-src="/thoughts/jazz.tools" class="internal-link">jazz.tools</a>
       </li>
       
       

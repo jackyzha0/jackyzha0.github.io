@@ -212,8 +212,7 @@ Community Care Lighthouses are beacons for ships at night, identifying the shore
       
       <guid>https://jzhao.xyz/thoughts/software-principles/</guid>
       <description>[[thoughts/A Pattern Language|A Pattern Language]] for developing software
- Inspired by Urbit Precepts
- [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second.</description>
+ Inspired by Urbit Precepts and the Design Principles Behind Smalltalk</description>
     </item>
     
     <item>
@@ -1222,8 +1221,7 @@ Thinking about accumulated societal knowledge as a mountain and understanding kn
       <pubDate>Wed, 16 Jun 2021 23:32:09 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/exploit-explore/</guid>
-      <description>Saying yes requires saying no
- Machine Learning  Source: Intro to Reinforcement Learning: The Explore-Exploit Dilemma
+      <description>Machine Learning  Source: Intro to Reinforcement Learning: The Explore-Exploit Dilemma
 Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/optimization problem (see: [[thoughts/gradient descent]]).</description>
     </item>
     
