@@ -18,10 +18,3 @@ See also: [[thoughts/hypertext]], [[thoughts/the garden and the stream]]
 Does moving closer to real-time communication mean less interpretation is required? Less expressive mediums like text mean that a lot of the emotion and meaning is left up to the reader to interpret and guess at. As we move to higher bandwidth mediums (e.g. calls and video), is there less room to interpret?
 
 What does this mean for art which inherently requires interpretation? Will we ever get to a communication medium so direct (e.g. mind-to-mind) that it doesn't require interpretation? What about [qualia](thoughts/qualia.md) and the subjective human experience?
-
-### Lossiness as Mutation
-[Source: Self-Organizing Ideas by *Gordon Brander*](https://subconscious.substack.com/p/self-organizing-ideas)
-
-Maybe chaos is necessary for [emergent behaviour](thoughts/emergent%20behaviour.md). Thus, lossy communication in low [bandwidth](thoughts/bandwidth.md) communication helps seed for selection/mutation of new ideas. Examples of this include [[thoughts/writing|writing]].
-
-When we write, we flatten the cloud of associated ideas in our head into a linearized subset (lossy). The reader then unflattens this linearized subset into their own cloud of associated ideas (lossy). Each lossy step is an opportunity for **mutations** in understanding to emerge.

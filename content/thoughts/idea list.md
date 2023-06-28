@@ -16,6 +16,7 @@ tags:
 	- what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
 - [[thoughts/WebAssembly|WASM]]-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
 	- [[thoughts/IPFS]] as a versioned package manager for all software
+	- good example: https://github.com/dylibso/wasmstore
 - https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - rotmg but actually good lol
 	- dodge mechanic

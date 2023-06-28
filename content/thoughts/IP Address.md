@@ -8,6 +8,8 @@ tags:
 
 IP addresses are 32 bits (4 bytes) split into 4 chunks. Obviously $2^{32}$ is an incredibly large address space so we compress the table using IP prefixes.
 
+> It is generally recognized that the current approach of using the IP address as a locator and as an identifier was a poor design choice. (Clark, 2018, “Designing an Internet”)
+
 ### IPv4
 Special Addresses
 1. First address (generally all 0s): network itself, or not assigned

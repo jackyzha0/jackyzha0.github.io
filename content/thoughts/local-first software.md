@@ -16,6 +16,9 @@ Why local first?
 -   50yr time scale: change in how we view computing (interop, intersubjective, etc)
 -   5000yr time scale: enable interplanetary collaboration
 
+![[thoughts/images/localfirst-jazz.png|600]]
+*from Anselm Eickhoff's presentation of [[thoughts/jazz.tools|jazz.tools]] [at Local-first Meetup Berlin](https://www.youtube.com/watch?v=pBvGeU7bL5A)*
+
 ## Ink and Switch
 [You own your data, in spite of the cloud](https://www.inkandswitch.com/local-first/)
 

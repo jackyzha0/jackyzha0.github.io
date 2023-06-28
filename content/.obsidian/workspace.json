@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e07fb724f59ec6f2",
+            "id": "e0301e0c89094cbd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/linear regression.md",
+                "file": "thoughts/jazz.tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "730ab2540f3e2da1",
+            "id": "16cd2fc9c2452be9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/A Certain Tendency Of The Database Community.md",
+                "file": "thoughts/lossiness as mutation.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,18 +37,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/DNS.md",
+                "file": "thoughts/software principles.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "e8c56c98da345b19",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -57,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/colonial debt.md",
+                "file": "thoughts/Seeing like a State.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/housing.md",
+                "file": "thoughts/ontology.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285
+    "width": 285,
+    "collapsed": true
   },
   "right": {
     "id": "14556c70f668b936",
@@ -143,7 +136,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "thoughts/colonial debt.md",
+                "file": "thoughts/software principles.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -225,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "thoughts/colonial debt.md",
+                "file": "thoughts/software principles.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -242,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "thoughts/colonial debt.md",
+                "file": "thoughts/software principles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -254,7 +247,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "thoughts/colonial debt.md"
+                "file": "thoughts/software principles.md"
               }
             }
           }
@@ -262,7 +255,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 300.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -275,44 +269,44 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "50c2f4d203704a07",
+  "active": "1ba8ed2d7d3f3e30",
   "lastOpenFiles": [
+    "thoughts/DNS.md",
+    "thoughts/ontology.md",
+    "thoughts/Seeing like a State.md",
+    "thoughts/lossiness as mutation.md",
+    "thoughts/jazz.tools.md",
+    "thoughts/IP Address.md",
+    "thoughts/exploit explore.md",
+    "thoughts/images/dynamic exploit explore.png",
+    "thoughts/Moderation.md",
+    "thoughts/local-first software.md",
+    "thoughts/collaborative software.md",
+    "thoughts/learning.md",
+    "thoughts/bandwidth.md",
+    "thoughts/In Over Our Heads.md",
+    "thoughts/images/knowledge structures.png",
+    "thoughts/knowledge distillation.md",
+    "thoughts/A Certain Tendency Of The Database Community.md",
+    "thoughts/linear regression.md",
+    "thoughts/quantization.md",
     "thoughts/housing.md",
+    "thoughts/Design Justice.md",
+    "thoughts/idea list.md",
+    "thoughts/WebAssembly.md",
+    "thoughts/images/localfirst-jazz.png",
+    "books/index.md",
     "thoughts/colonial debt.md",
     "thoughts/Data Capitalism.md",
-    "thoughts/Design Justice.md",
-    "thoughts/A Certain Tendency Of The Database Community.md",
     "thoughts/website inspiration.md",
-    "thoughts/DNS.md",
     "thoughts/digital mindfulness.md",
-    "thoughts/SSL.md",
-    "thoughts/TLS.md",
-    "thoughts/linear regression.md",
     "thoughts/images/strangler fig.png",
     "thoughts/images/pid1.png",
-    "thoughts/data structure.md",
-    "thoughts/Unix.md",
-    "thoughts/Strangler Fig Pattern.md",
-    "thoughts/Network Block Device.md",
-    "thoughts/LSP Server.md",
-    "thoughts/CodeMirror.md",
-    "thoughts/Algorithms of Oppression.md",
-    "thoughts/A Tale for the Time Being.md",
-    "thoughts/33 percent Impossibility Result.md",
-    "thoughts/time.md",
-    "thoughts/git.md",
-    "thoughts/The Grasshopper, Games, Life and Utopia.md",
-    "thoughts/the garden and the stream.md",
-    "thoughts/system model.md",
     "thoughts/images/roc-curve.png",
     "thoughts/images/yokocho-alley.png",
     "thoughts/images/wilson.png",
     "thoughts/images/verifiable credential.png",
     "thoughts/images/vNM.png",
-    "thoughts/images/vector clock example.png",
-    "thoughts/images/upwell-merge.png",
-    "thoughts/images/tty-example.png",
-    "thoughts/virtue ethics.md",
     "thoughts/images",
     "thoughts",
     "templates",

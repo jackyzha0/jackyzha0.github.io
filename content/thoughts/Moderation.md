@@ -35,3 +35,5 @@ Under such a system, both Type I (“false positive”) and Type II (“false ne
 **Rather than relying on a single centralized platform, with all of the internal biases and incentives that that entails, anyone would be able to create their own set of rules—including which content do they not want to see and which content would they like to see promoted.** 
 
 In such a world, we can let a million content moderation systems approach the same general corpus of content—each taking an entirely different approach—and see which ones work best. [[thoughts/r-K Selection theory|r-selected]] moderation.
+
+## Community-driven moderation

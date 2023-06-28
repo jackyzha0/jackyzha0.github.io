@@ -7,16 +7,15 @@ tags:
 
 > [[thoughts/A Pattern Language|A Pattern Language]] for developing software
 
-Inspired by [Urbit Precepts](https://urbit.org/docs/development/precepts)
+Inspired by [Urbit Precepts](https://urbit.org/docs/development/precepts) and the [Design Principles Behind Smalltalk](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html)
 
 1. [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second. Make self-hosting easy
-2. Apps should be treated like queries -- stateless. Local state should be avoided as much as possible, database is the source of truth.
-3. There is a latent cost to new features: [maintenance](thoughts/maintenance.md)
-4. Design with the goal of making atomic and reusable libraries (allow for [[thoughts/emergent behaviour]])
-5. Heuristics should only be used where determinism is infeasible
-6. Code courageously. "It's natural to feel fear of code; however, you must act as though you are able to master and change any part of it. To code courageously is to walk into any abyss, bring light, and make it right."
-7. Apps should embrace gradual enrichment, [[thoughts/composable|composing]] smaller features to form more complex ones when necessary
-8. Dump the parts bucket onto the floor. As a first act before starting to build, a child will often spread out all of the parts on the floor. Make it obvious what tools the user has at their disposal to make the most out of the software ([[thoughts/constructionist]] learning)
+2. There is a latent cost to new features: [maintenance](thoughts/maintenance.md)
+4. Heuristics should only be used where determinism is infeasible
+5. Apps should embrace gradual enrichment, [[thoughts/composable|composing]] smaller features to form more complex ones when necessary
+6. Dump the parts bucket onto the floor. Make it obvious what tools the user has at their disposal to make the most out of the software ([[thoughts/constructionist]] learning)
+7. If a system is to serve the creative spirit, it must be entirely comprehensible to a single individual
+8. Any system should provide a uniform means for referring to the things in its universe. In fact, an even stronger statement is that systems should be designed around a powerful metaphor that can be uniformly applied in all areas. Only from this can complex systems [[thoughts/emergent behaviour|emerge]]
 
 See also: [[thoughts/programming models]]
 
