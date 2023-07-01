@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.259693dd12aa7f9ec07a520d45ccb523.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -346,6 +346,24 @@ May 5, 2022
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/causality/" class="internal-link" data-src="/thoughts/causality/">Causality</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+May 5, 2022
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/clocks/" class="internal-link" data-src="/thoughts/clocks/">Clocks</a></h3>
             </div>
             <div class="spacer"></div>
@@ -493,24 +511,6 @@ May 5, 2022
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/RPC/" class="internal-link" data-src="/thoughts/RPC/">RPC</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-May 5, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/system-model/" class="internal-link" data-src="/thoughts/system-model/">System model</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

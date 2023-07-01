@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.259693dd12aa7f9ec07a520d45ccb523.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -739,6 +739,10 @@ The fact that many philosophers find it odd to speak of being betrayed by their 
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/bias-bug/" data-ctx="trust" data-src="/posts/bias-bug" class="internal-link">On AI&#39;s &#39;Bias Bug&#39;</a>
       </li>
@@ -783,6 +787,12 @@ The fact that many philosophers find it odd to speak of being betrayed by their 
       
       <li>
         <a href="/thoughts/Kernel-Curriculum/" data-ctx="Trust" data-src="/thoughts/Kernel-Curriculum" class="internal-link">Kernel Curriculum</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Moderation/" data-ctx="trust" data-src="/thoughts/Moderation" class="internal-link">Moderation</a>
       </li>
       
       

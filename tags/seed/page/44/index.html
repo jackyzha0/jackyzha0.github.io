@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.259693dd12aa7f9ec07a520d45ccb523.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -349,6 +349,24 @@ Dec 12, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/page-layout/" class="internal-link" data-src="/thoughts/page-layout/">Page Layout</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 12, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/prototyping/" class="internal-link" data-src="/thoughts/prototyping/">Prototyping</a></h3>
             </div>
             <div class="spacer"></div>
@@ -509,26 +527,6 @@ Oct 30, 2021
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 27, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Lindy-effect/" class="internal-link" data-src="/thoughts/Lindy-effect/">Lindy Effect</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/pattern/">Pattern</a></li>
                 
             </ul>
         </div>

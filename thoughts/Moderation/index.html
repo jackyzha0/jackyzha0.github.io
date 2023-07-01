@@ -156,13 +156,13 @@ I think a key part of answering this is trying to define what role a community o
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.259693dd12aa7f9ec07a520d45ccb523.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -459,6 +459,92 @@ Mar 15, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -507,7 +593,14 @@ Mar 15, 2022
 <p>Under such a system, both Type I (“false positive”) and Type II (“false negative”) errors are not only common; they are inevitable. Content that a large body of people believe should be taken down is left up, while content that many people believe should remain up is taken down.</p>
 <p><strong>Rather than relying on a single centralized platform, with all of the internal biases and incentives that that entails, anyone would be able to create their own set of rules—including which content do they not want to see and which content would they like to see promoted.</strong></p>
 <p>In such a world, we can let a million content moderation systems approach the same general corpus of content—each taking an entirely different approach—and see which ones work best. <a href="/thoughts/r-K-Selection-theory" rel="noopener" class="internal-link" data-src="/thoughts/r-K-Selection-theory">r-selected</a> moderation.</p>
-<a href="#community-driven-moderation"><h2 id="community-driven-moderation"><span class="hanchor" ariaLabel="Anchor"># </span>Community-driven moderation</h2></a>
+<a href="#trust-based-moderation-systems"><h2 id="trust-based-moderation-systems"><span class="hanchor" ariaLabel="Anchor"># </span>Trust-based Moderation Systems</h2></a>
+<p>
+<a href="https://cblgh.org/trustnet/" rel="noopener">Source</a></p>
+<p>See also: <a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a></p>
+<p>In the centralized context, removing a malicious participant is the action of a moderator. Usually it is one or two clicks, and the malicious participant has been removed for all other participants.</p>
+<p>In a distributed context, there are many possible answers to this problem. The first and naive solution is to delegate the responsibility of removing the malicious participant to each individual participant. Thus everyone participating has to individually hide offenders.</p>
+<p><strong>A subjective system, where parti`cipants can themselves decide who moderates on their behalf, sidesteps the mentioned problems. Additionally, the mechanism of freely allowing multiple people to moderate also spreads out the invisible care-giving labour required to keep a community free from abuse.</strong></p>
+<p>The proposed system is <a href="/thoughts/transitive-closure" rel="noopener" class="internal-link" data-src="/thoughts/transitive-closure">transitive</a>, meaning that there will be indirect trust relations by way of those whom you trust directly.</p>
 
 
     </article>

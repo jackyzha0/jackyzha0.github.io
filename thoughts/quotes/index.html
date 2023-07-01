@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.259693dd12aa7f9ec07a520d45ccb523.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,6 +434,7 @@ Dec 15, 2021
 <li>&ldquo;We cannot sow seeds with clenched fists. to sow, we must open our hands&rdquo; (Adolfo Perez Esquivel)</li>
 <li>&ldquo;The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently&rdquo; &ndash; David Graeber</li>
 <li>&ldquo;Life can only be understood backwards but it must be lived forwards&rdquo; (Soren Kierkegaard)</li>
+<li>&ldquo;The invention of the ship was also the invention of the shipwreck.&rdquo; (Paul Virilio)</li>
 </ol>
 
 

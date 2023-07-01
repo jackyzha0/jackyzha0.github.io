@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.259693dd12aa7f9ec07a520d45ccb523.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -545,6 +545,49 @@ Jun 7, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -567,7 +610,13 @@ Jun 7, 2022
 </ol>
 <p>Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with similar IDs.</p>
 <p>Joining a DHT requires knowledge about at least one member of the DHT (the bootstrap node)</p>
-<p>Common implementations include <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia DHT</a> and Chord DHT. Also see <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></p>
+<p>Implementations include</p>
+<ul>
+<li><a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia DHT</a></li>
+<li>Chord DHT</li>
+<li><a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>
+<li><a href="/thoughts/Theseus-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Theseus-DHT">Theseus DHT</a></li>
+</ul>
 <a href="#applications-to-torrent-software"><h3 id="applications-to-torrent-software"><span class="hanchor" ariaLabel="Anchor"># </span>Applications to Torrent Software</h3></a>
 <p>Old way was to use a tracker, you announce which file you are going to download to the tracker and the trackers sends back a list of peers. However, these trackers tend to go down easily (get sued)</p>
 <p>DHT proves to be a more reliable way of replicating this behaviour.</p>

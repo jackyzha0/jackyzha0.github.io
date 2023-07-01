@@ -156,13 +156,13 @@ When a host requires assurance that the remote end has actually received the dat
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.95bb332eecac3119b9c07d31e14c88da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d33ea1daab0d5ee6d6e20c6d0048ea1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.259693dd12aa7f9ec07a520d45ccb523.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -587,6 +587,10 @@ Mar 11, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/BitTorrent/" data-ctx="TCP" data-src="/thoughts/BitTorrent" class="internal-link">BitTorrent</a>
       </li>
@@ -607,6 +611,12 @@ Mar 11, 2022
       
       <li>
         <a href="/thoughts/Postels-Law/" data-ctx="thoughts/TCP" data-src="/thoughts/Postels-Law" class="internal-link">Postel&#39;s Law</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Theseus-DHT/" data-ctx="TCP" data-src="/thoughts/Theseus-DHT" class="internal-link">Theseus DHT</a>
       </li>
       
       
