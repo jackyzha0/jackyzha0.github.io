@@ -11,6 +11,8 @@ aliases:
 
 Technosolutionism in governing from just a quantized dashboard where the *people responsible for making the decisions are so abstracted away from the actual problems that they need to solve*
 
+> …the tendency of jobs to be adapted to tools, rather than adapting tools to jobs. If one has a hammer one tends to look for nails, and if one has a computer with a storage capacity, but no feelings, one is more likely to concern oneself with remembering and with problem solving than with loving and hating. (Silvan Tomkins, founder of affect theory)
+
 See also: [[thoughts/Seeing like a State]], [[thoughts/quantization]]
 
 ## Design Justice

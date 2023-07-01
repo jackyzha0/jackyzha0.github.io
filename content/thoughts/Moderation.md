@@ -36,4 +36,15 @@ Under such a system, both Type I (“false positive”) and Type II (“false ne
 
 In such a world, we can let a million content moderation systems approach the same general corpus of content—each taking an entirely different approach—and see which ones work best. [[thoughts/r-K Selection theory|r-selected]] moderation.
 
-## Community-driven moderation
+## Trust-based Moderation Systems
+[Source](https://cblgh.org/trustnet/)
+
+See also: [[thoughts/trust|trust]]
+
+In the centralized context, removing a malicious participant is the action of a moderator. Usually it is one or two clicks, and the malicious participant has been removed for all other participants.
+
+In a distributed context, there are many possible answers to this problem. The first and naive solution is to delegate the responsibility of removing the malicious participant to each individual participant. Thus everyone participating has to individually hide offenders.
+
+**A subjective system, where parti`cipants can themselves decide who moderates on their behalf, sidesteps the mentioned problems. Additionally, the mechanism of freely allowing multiple people to moderate also spreads out the invisible care-giving labour required to keep a community free from abuse.**
+
+The proposed system is [[thoughts/transitive closure|transitive]], meaning that there will be indirect trust relations by way of those whom you trust directly.

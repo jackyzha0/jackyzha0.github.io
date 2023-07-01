@@ -28,3 +28,4 @@ Some quotes to live by.
 25. "We cannot sow seeds with clenched fists. to sow, we must open our hands" (Adolfo Perez Esquivel)
 26. "The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently" -- David Graeber
 27. "Life can only be understood backwards but it must be lived forwards" (Soren Kierkegaard)
+28. "The invention of the ship was also the invention of the shipwreck." (Paul Virilio)

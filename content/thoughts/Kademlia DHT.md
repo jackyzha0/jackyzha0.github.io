@@ -23,3 +23,7 @@ Core ideas
 	- If the structure of the network is correctly chosen, then global properties apply to the whole network
 	- Nested routing similar to [[thoughts/IP Address|IP]] routing
 	- Each machine has a lot of info about machines closest to it, less about machines far away from it
+
+## Security
+- It is very vulnerable to Sybil attacks, which can result in the modification or erasure of any data in the network. 
+- It also uses no message encryption whatsoever
