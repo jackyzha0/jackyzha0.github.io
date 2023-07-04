@@ -6634,22 +6634,21 @@ Since I’ve started at Hootsuite, I have
     </item>
     
     <item>
-      <title></title>
-      <link>https://jzhao.xyz/books/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/books/</guid>
-      <description>&amp;mdash; title: &amp;ldquo;Booklist&amp;rdquo; aliases:
- Reading list   A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading.</description>
-    </item>
-    
-    <item>
       <title>2022: A year lived earnestly</title>
       <link>https://jzhao.xyz/posts/2022/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/posts/2022/</guid>
       <description>tw: abuse. This reflection serves as a sort of public journal entry. It talks about a lot of sensitive topics. If you choose to read, please do so with care and tenderness and treat it as if I shared it in confidence with you</description>
+    </item>
+    
+    <item>
+      <title>Booklist</title>
+      <link>https://jzhao.xyz/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/books/</guid>
+      <description>A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading. Links are to pages/blog posts/ideas that were inspired by the book that&amp;rsquo;s linked!</description>
     </item>
     
   </channel>
