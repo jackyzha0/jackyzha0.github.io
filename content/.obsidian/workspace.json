@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/quotes.md",
+                "file": "books/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "thoughts/quotes.md",
+                "file": "books/index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -205,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "thoughts/quotes.md",
+                "file": "books/index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -222,7 +222,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "thoughts/quotes.md",
+                "file": "books/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "thoughts/quotes.md"
+                "file": "books/index.md"
               }
             }
           }
@@ -258,6 +258,8 @@
   },
   "active": "e0301e0c89094cbd",
   "lastOpenFiles": [
+    "thoughts/website inspiration.md",
+    "thoughts/quotes.md",
     "posts/agentic-computing.md",
     "thoughts/quotte.md",
     "thoughts/jazz.tools.md",
@@ -284,8 +286,6 @@
     "thoughts/knowledge distillation.md",
     "thoughts/A Certain Tendency Of The Database Community.md",
     "thoughts/linear regression.md",
-    "thoughts/quantization.md",
-    "thoughts/housing.md",
     "thoughts/images/localfirst-jazz.png",
     "thoughts/images/strangler fig.png",
     "thoughts/images/pid1.png",

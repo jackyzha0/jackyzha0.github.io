@@ -70,3 +70,4 @@ tags:
 ## Resources
 - https://www.logo-archive.org/
 - https://icons8.com/
+- https://fontsource.org/
