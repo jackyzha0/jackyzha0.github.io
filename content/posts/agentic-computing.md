@@ -146,7 +146,7 @@ We could have:
 
 This *is* a design pattern we have seen work well in the past with email and Matrix. These platforms often function as networks of networks, allowing communities within them to have control over their own smaller networks but still allowing users on different providers to interact with each other seamlessly.
 
-With this infrastructure in place, we can also think about what *community owned applications* may look like. Perhaps this is infrastructure that will allow us to not necessarily decentralize but decenter servers, moving them from the source of truth to a supporting role.
+With this infrastructure in place, we can also think about what *community owned applications* may look like. Perhaps this is infrastructure that will allow us to not necessarily decentralize but rather **decenter** servers, moving them from the source of truth to a supporting role.
 
 Perhaps this looks like people having [[posts/towards-data-neutrality|ownership of their own data]]. They could use servers to help make it available to their peers when they are offline but they are never essential to people accessing their own data.
 

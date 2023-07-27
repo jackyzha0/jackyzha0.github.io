@@ -6,6 +6,8 @@ tags:
 - book
 ---
 
+> conviviality means 'alive with'
+
 Ivan Illich on the proper use of technology to reclaim [[thoughts/agency]] and practical knowledge for the average citizen.
 
 ---

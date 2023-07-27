@@ -11,7 +11,7 @@ New web technologies and communities seeking to reduce or eliminate central poin
 
 The promise of the Distributed Web (DWeb) is that it gives everyone the ability to control their digital networks and platforms. In distributed networks, the underlying code, data, and network infrastructure are managed by many.
 
-See also: [[thoughts/Rhizome Proposal]]
+See also: [[thoughts/Rhizome Proposal]], [[thoughts/distributed systems|distributed systems]]
 
 ## Distributed Press
 [Source](https://github.com/hyphacoop/distributed-press-organizing/wiki/Publishing-to-the-Distributed-Web)

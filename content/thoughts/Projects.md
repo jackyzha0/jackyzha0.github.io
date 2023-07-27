@@ -20,9 +20,7 @@ A beautiful new tab replacement that gives you your very own scratch space to he
 [GitHub](https://github.com/jackyzha0/tabspace), [Chrome Webstore](https://chrome.google.com/webstore/detail/tabspace/kcinhoikngobhiikicnpahoanenlnlha)
 
 ## miniraft - <1kloc Raft consensus algorithm implementation
-A minimal implementation of the [[thoughts/Raft Consensus Algorithm|raft Consensus Algorithm]] with a focus on readability/understandability.
-
-This project was created as an exercise in implementing and learning about distributed systems. Do NOT use this in production.
+A minimal implementation of the [[thoughts/Raft Consensus Algorithm|raft Consensus Algorithm]] with a focus on readability/understandability. This project was created as an exercise in implementing and learning about distributed systems.
 
 [GitHub](https://github.com/jackyzha0/miniraft), [Documentation](https://jzhao.xyz/miniraft/miniraft/)
 

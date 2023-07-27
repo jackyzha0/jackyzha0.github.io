@@ -81,5 +81,3 @@ Curious about how this relates to [ephemereal content](thoughts/ephemereal%20con
 > Internet videos for restoring the power of the embodied voice speaking around the campfire. We “burn” discs on our computers. Memes and themes tear through the Internet like prairie fires, or are retarded by censorship “firewalls” such as those of the Chinese government. The server farms that are key to the material infrastructure of the Internet generate vast amounts of heat, requiring air conditioning in addition to the electricity their processing takes up. (Data centers are often built in cold climates to save on cooling costs.) Touchscreen technologies fulfill a certain fantasy of touching flame. As Paul Frosh notes, “Television and computer screens (including iPads etc.) have some of the qualities of fire, especially self-illumination; unlike cinema and print, they are lit from within.” Information is irreducibly connected with heat and burning.
 > 
 > *(The Marvelous Clouds: Toward a Philosophy of Elemental Media)*
-
-

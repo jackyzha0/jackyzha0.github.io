@@ -29,3 +29,4 @@ Some quotes to live by.
 26. "The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently" -- David Graeber
 27. "Life can only be understood backwards but it must be lived forwards" (Soren Kierkegaard)
 28. "The invention of the ship was also the invention of the shipwreck." (Paul Virilio)
+29. "History is made by those who show up"

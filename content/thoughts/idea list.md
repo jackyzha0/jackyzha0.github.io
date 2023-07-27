@@ -6,6 +6,7 @@ tags:
 ---
 
 ## Technical
+- optimizing network topology for crdts
 - [[thoughts/CodeMirror|codemirror]] but CRDT + TreeSitter
 	- smart [[thoughts/git|git]] merges
 	- https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
@@ -34,10 +35,10 @@ tags:
 	- update notes in place
 	- https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features
 - calvin and hobbes semantic image search
+	- yet another vector search database lol
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
 	- "A [reader-generated essay](https://escapingflatland.substack.com/p/reader-generated-essays) is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
 	- turning a graph traversal into a beautiful essay
-- a text experience where latency increases as more texts are sent
 - what does entropy + erosion of data look like?
 	- is they ways to make [[thoughts/cryptography|cryptography]] that are valid in time windows?
 - big touchscreen desk

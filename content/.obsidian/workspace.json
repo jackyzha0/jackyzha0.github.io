@@ -1,75 +1,88 @@
 {
   "main": {
-    "id": "690044a7e2df5f4b",
+    "id": "69d3febca1b7ffd9",
     "type": "split",
     "children": [
       {
-        "id": "1ed1234d87d8bdf8",
+        "id": "25bf5ca89dc88d7b",
         "type": "tabs",
         "children": [
           {
-            "id": "e0301e0c89094cbd",
+            "id": "e5d55124c64ed031",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "books/index.md",
+                "file": "thoughts/A Pattern Language.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "16cd2fc9c2452be9",
+            "id": "88a35a97b317a633",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/lossiness as mutation.md",
+                "file": "posts/DWeb Camp 2023.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1ba8ed2d7d3f3e30",
+            "id": "0a7474b94fd9958e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/software principles.md",
+                "file": "posts/agentic-computing.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "126ea1f1b758fa4d",
+            "id": "e28394834bd0a977",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/Technosolutionism.md",
+                "file": "thoughts/decentralization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "130c1c75ff95d7c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/distributed web.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "6ad6985779a919fe",
+    "id": "14cc105a21e0d455",
     "type": "split",
     "children": [
       {
-        "id": "f256953e07bac89c",
+        "id": "a0ce86cd058bc490",
         "type": "tabs",
         "children": [
           {
-            "id": "e9cc127d67e11e5d",
+            "id": "cb555704b855f4b0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -79,12 +92,12 @@
             }
           },
           {
-            "id": "cc16a801e5c2da25",
+            "id": "4fe4a99a816fd9d1",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "Mill's",
+                "query": "[[",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +107,7 @@
             }
           },
           {
-            "id": "7004d6ce5c2bad67",
+            "id": "015efb264e29ef97",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -105,136 +118,64 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285,
+    "width": 220.5,
     "collapsed": true
   },
   "right": {
-    "id": "14556c70f668b936",
+    "id": "b8db17c8422483a7",
     "type": "split",
     "children": [
       {
-        "id": "b926d12bde0c2d98",
+        "id": "59c7d035da90a48e",
         "type": "tabs",
-        "dimension": 37.3904576436222,
         "children": [
           {
-            "id": "c0f5601234a200f2",
+            "id": "468754ea0a8aeac8",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "backlink",
               "state": {
-                "file": "books/index.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": true,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": false,
-                  "colorGroups": [
-                    {
-                      "query": "tag:#evergreen",
-                      "color": {
-                        "a": 1,
-                        "rgb": 3849885
-                      }
-                    },
-                    {
-                      "query": "tag:#Seed",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14864239
-                      }
-                    },
-                    {
-                      "query": "tag:#Sapling",
-                      "color": {
-                        "a": 1,
-                        "rgb": 9362808
-                      }
-                    },
-                    {
-                      "query": "tag:#Fruit",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14766674
-                      }
-                    }
-                  ],
-                  "collapse-display": false,
-                  "showArrow": false,
-                  "textFadeMultiplier": -0.5,
-                  "nodeSizeMultiplier": 1.92021169354839,
-                  "lineSizeMultiplier": 2.14845412234043,
-                  "collapse-forces": false,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.7565294349318715,
-                  "close": true
-                }
+                "file": "posts/DWeb Camp 2023.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "fd003520183afbbb",
+            "id": "3432665db753667a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/DWeb Camp 2023.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5c0e27705b3e8b63",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "522f8ae0929bb5af",
-        "type": "tabs",
-        "dimension": 62.60954235637781,
-        "children": [
-          {
-            "id": "ba6c1077b4b291fd",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "books/index.md",
-                "collapseAll": true,
-                "extraContext": true,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "useHierarchy": true
               }
             }
           },
           {
-            "id": "1d5b9c0161eaa2a0",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "books/index.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "5e77b92678dd5254",
+            "id": "3bcead5e14802fa7",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "books/index.md"
+                "file": "posts/DWeb Camp 2023.md"
               }
             }
           }
@@ -242,67 +183,59 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "omnisearch:Omnisearch": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "omnisearch:Omnisearch": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "e0301e0c89094cbd",
+  "active": "88a35a97b317a633",
   "lastOpenFiles": [
-    "thoughts/website inspiration.md",
-    "thoughts/quotes.md",
+    "_index.md",
     "posts/agentic-computing.md",
-    "thoughts/quotte.md",
-    "thoughts/jazz.tools.md",
-    "thoughts/lossiness as mutation.md",
-    "thoughts/software principles.md",
-    "thoughts/Technosolutionism.md",
-    "thoughts/Moderation.md",
-    "thoughts/trust.md",
-    "thoughts/Theseus DHT.md",
-    "thoughts/Kademlia DHT.md",
-    "thoughts/DHT.md",
-    "thoughts/ontology.md",
-    "thoughts/DNS.md",
-    "thoughts/Seeing like a State.md",
-    "thoughts/IP Address.md",
-    "thoughts/exploit explore.md",
-    "thoughts/images/dynamic exploit explore.png",
-    "thoughts/local-first software.md",
+    "posts/DWeb Camp 2023.md",
+    "thoughts/agency.md",
+    "thoughts/peer-to-peer.md",
+    "thoughts/fiction.md",
+    "thoughts/decentralization.md",
+    "thoughts/distributed web.md",
+    "thoughts/idea list.md",
+    "thoughts/spencerchang.me.md",
+    "thoughts/inevitability of centralization.md",
+    "thoughts/Internet.md",
+    "thoughts/quotes.md",
+    "thoughts/Tools for Conviviality.md",
+    "thoughts/images/dweb-call-for-freelancers.png",
+    "thoughts/images/Pasted image 20230726193645.png.sb-44d79c53-ropYfs",
+    "thoughts/Projects.md",
+    "thoughts/images/dweb-collage.png",
+    "thoughts/images/Pasted image 20230726183817.png",
+    "thoughts/images/Pasted image 20230726184026.png",
+    "thoughts/images/Pasted image 20230726183649.png",
+    "thoughts/images/dweb2023-workshop.png",
+    "thoughts/retro.md",
+    "thoughts/website inspiration.md",
     "thoughts/collaborative software.md",
-    "thoughts/learning.md",
-    "thoughts/bandwidth.md",
-    "thoughts/In Over Our Heads.md",
-    "thoughts/images/knowledge structures.png",
-    "thoughts/knowledge distillation.md",
-    "thoughts/A Certain Tendency Of The Database Community.md",
-    "thoughts/linear regression.md",
-    "thoughts/images/localfirst-jazz.png",
-    "thoughts/images/strangler fig.png",
-    "thoughts/images/pid1.png",
-    "thoughts/images/roc-curve.png",
-    "thoughts/images/yokocho-alley.png",
-    "thoughts/images/wilson.png",
-    "thoughts/images/verifiable credential.png",
-    "thoughts/images/vNM.png",
-    "thoughts/images",
-    "thoughts",
-    "templates",
-    "tags/writing",
-    "tags/technical",
-    "tags/seed",
-    "tags/rhizome",
-    "tags/sapling",
-    "tags/pattern",
-    "tags/personal"
+    "thoughts/Games Agency as Art.md",
+    "thoughts/software and politics.md",
+    "thoughts/pace layers.md",
+    "thoughts/attention.md",
+    "thoughts/The Anthropocene Reviewed.md",
+    "thoughts/A Pattern Language.md",
+    "thoughts/liveness.md",
+    "index.md",
+    "features/plugins",
+    "setup",
+    "notes/images/obsidian-settings.png",
+    "notes/images/github-actions.png",
+    "notes/images/fork.png"
   ]
 }
