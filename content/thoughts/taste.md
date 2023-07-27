@@ -23,6 +23,10 @@ It is this taste that is so important in [[thoughts/independent research]]. With
 > 
 > (Spencer, *[creative seeing](https://spencerchang.substack.com/p/creative-seeing)*)
 
+Taste is the ability to know *what* the good questions to ask are. 
+
+> When [Grothendieck] writes that his peers were more brilliant than him, he is referring to their ability to _answer_ questions. It was just that their questions were unoriginal. (Henrik Karlsson, [Good Ideas](https://www.henrikkarlsson.xyz/p/good-ideas))
+
 ## Failure
 [Source](https://mindmine.substack.com/p/on-self-trust)
 

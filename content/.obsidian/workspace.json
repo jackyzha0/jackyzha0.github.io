@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "74336ff831bf9935",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/independent research.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "c4c354f63533bdff",
             "type": "leaf",
             "state": {
@@ -211,8 +223,10 @@
   },
   "active": "88a35a97b317a633",
   "lastOpenFiles": [
-    "posts/agentic-computing.md",
+    "thoughts/independent research.md",
+    "thoughts/taste.md",
     "posts/DWeb Camp 2023.md",
+    "posts/agentic-computing.md",
     "_index.md",
     "thoughts/agency.md",
     "thoughts/peer-to-peer.md",
@@ -242,8 +256,6 @@
     "thoughts/attention.md",
     "thoughts/The Anthropocene Reviewed.md",
     "thoughts/A Pattern Language.md",
-    "thoughts/liveness.md",
-    "index.md",
     "features/plugins",
     "setup",
     "notes/images/obsidian-settings.png",
