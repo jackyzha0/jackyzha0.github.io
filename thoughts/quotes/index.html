@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.52f23c52b200854a54b4b0cd5b974891.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.63fe7b79b95a656943166e4356e8eb6b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -435,6 +435,7 @@ Dec 15, 2021
 <li>&ldquo;The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently&rdquo; &ndash; David Graeber</li>
 <li>&ldquo;Life can only be understood backwards but it must be lived forwards&rdquo; (Soren Kierkegaard)</li>
 <li>&ldquo;The invention of the ship was also the invention of the shipwreck.&rdquo; (Paul Virilio)</li>
+<li>&ldquo;History is made by those who show up&rdquo;</li>
 </ol>
 
 

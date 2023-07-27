@@ -8,17 +8,17 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Technical  [[thoughts/CodeMirror|codemirror]] but CRDT &#43; TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis."
+    content="Technical  optimizing network topology for crdts [[thoughts/CodeMirror|codemirror]] but CRDT &#43; TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis."
   />
   <meta property="og:title" content="Idea List">
-  <meta property="og:description" content="Technical  [[thoughts/CodeMirror|codemirror]] but CRDT &#43; TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis.">
+  <meta property="og:description" content="Technical  optimizing network topology for crdts [[thoughts/CodeMirror|codemirror]] but CRDT &#43; TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/idea-list/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Idea List" />
-  <meta name="twitter:description" content="Technical  [[thoughts/CodeMirror|codemirror]] but CRDT &#43; TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis." />
+  <meta name="twitter:description" content="Technical  optimizing network topology for crdts [[thoughts/CodeMirror|codemirror]] but CRDT &#43; TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.52f23c52b200854a54b4b0cd5b974891.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.63fe7b79b95a656943166e4356e8eb6b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1328,6 +1328,7 @@ Jun 17, 2021
 
 <a href="#technical"><h2 id="technical"><span class="hanchor" ariaLabel="Anchor"># </span>Technical</h2></a>
 <ul>
+<li>optimizing network topology for crdts</li>
 <li><a href="/thoughts/CodeMirror" rel="noopener" class="internal-link" data-src="/thoughts/CodeMirror">codemirror</a> but CRDT + TreeSitter
 <ul>
 <li>smart <a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">git</a> merges</li>
@@ -1382,7 +1383,11 @@ Jun 17, 2021
 <a href="https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features" rel="noopener">https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features</a></li>
 </ul>
 </li>
-<li>calvin and hobbes semantic image search</li>
+<li>calvin and hobbes semantic image search
+<ul>
+<li>yet another vector search database lol</li>
+</ul>
+</li>
 <li>
 <a href="https://openai.com/blog/webgpt/" rel="noopener">webgpt</a> but its for tools for thought
 <ul>
@@ -1391,7 +1396,6 @@ Jun 17, 2021
 <li>turning a graph traversal into a beautiful essay</li>
 </ul>
 </li>
-<li>a text experience where latency increases as more texts are sent</li>
 <li>what does entropy + erosion of data look like?
 <ul>
 <li>is they ways to make <a href="/thoughts/cryptography" rel="noopener" class="internal-link" data-src="/thoughts/cryptography">cryptography</a> that are valid in time windows?</li>

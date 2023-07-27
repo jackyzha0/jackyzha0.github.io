@@ -154,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.52f23c52b200854a54b4b0cd5b974891.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.63fe7b79b95a656943166e4356e8eb6b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -348,7 +348,7 @@
                                 <h3><a href="https://jzhao.xyz/posts/agentic-computing/">Agentic Computing</a></h3>
                             </div>
                             <p class="meta">
-                            2946 words on 
+                            2947 words on 
 Nov 29, 2022
 
  
@@ -411,7 +411,7 @@ Aug 21, 2022
                     </li>
                     
                 </ul>
-                <a href="/posts">See 26 more →</a>
+                <a href="/posts">See 27 more →</a>
             </div>
             <div class="delay t-3">
                 <h2>Recent Notes</h2>

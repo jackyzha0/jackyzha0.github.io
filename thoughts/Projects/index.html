@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.52f23c52b200854a54b4b0cd5b974891.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.63fe7b79b95a656943166e4356e8eb6b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -719,8 +719,7 @@ Dec 27, 2021
 <a href="https://github.com/jackyzha0/tabspace" rel="noopener">GitHub</a>, 
 <a href="https://chrome.google.com/webstore/detail/tabspace/kcinhoikngobhiikicnpahoanenlnlha" rel="noopener">Chrome Webstore</a></p>
 <a href="#miniraft---1kloc-raft-consensus-algorithm-implementation"><h2 id="miniraft---1kloc-raft-consensus-algorithm-implementation"><span class="hanchor" ariaLabel="Anchor"># </span>miniraft - &lt;1kloc Raft consensus algorithm implementation</h2></a>
-<p>A minimal implementation of the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">raft Consensus Algorithm</a> with a focus on readability/understandability.</p>
-<p>This project was created as an exercise in implementing and learning about distributed systems. Do NOT use this in production.</p>
+<p>A minimal implementation of the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">raft Consensus Algorithm</a> with a focus on readability/understandability. This project was created as an exercise in implementing and learning about distributed systems.</p>
 <p>
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">GitHub</a>, 
 <a href="https://jzhao.xyz/miniraft/miniraft/" rel="noopener">Documentation</a></p>

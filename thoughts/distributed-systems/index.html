@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52847688f19bc74c5bd89734c0c1063c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.52f23c52b200854a54b4b0cd5b974891.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.63fe7b79b95a656943166e4356e8eb6b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1062,6 +1062,10 @@ May 3, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/bft-json-crdt/" data-ctx="distributed systems" data-src="/posts/bft-json-crdt" class="internal-link">Building a BFT JSON CRDT</a>
       </li>
@@ -1088,6 +1092,12 @@ May 3, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Martin Kleppmann&#39;s Course on Distributed Systems" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/distributed-web/" data-ctx="distributed systems" data-src="/thoughts/distributed-web" class="internal-link">Distributed Web</a>
       </li>
       
       
