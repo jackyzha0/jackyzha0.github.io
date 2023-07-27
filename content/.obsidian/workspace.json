@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "c4c354f63533bdff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/agentic-computing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0a7474b94fd9958e",
             "type": "leaf",
             "state": {
@@ -199,9 +211,9 @@
   },
   "active": "88a35a97b317a633",
   "lastOpenFiles": [
-    "_index.md",
     "posts/agentic-computing.md",
     "posts/DWeb Camp 2023.md",
+    "_index.md",
     "thoughts/agency.md",
     "thoughts/peer-to-peer.md",
     "thoughts/fiction.md",

@@ -1,5 +1,6 @@
 ---
-title: "DWeb Camp: Gathering by the campfire"
+title: "DWeb Camp: Gather by the Campfire"
+date: 2023-07-27
 tags:
 - fruit
 ---
@@ -42,7 +43,7 @@ And, perhaps most importantly, they know how to do it all while being kind, empa
 
 ---
 
-This year at DWeb Camp, me and [Spencer Chang](spencerchang.me) hosted a session asking campers to gather their collective imaginations and dreams for what a communally-owned internet could look like.
+This year at DWeb Camp, [Spencer Chang](https://spencerchang.me) and I hosted a session asking campers to gather their collective imaginations and dreams for what a communally-owned internet could look like.
 
 ![[thoughts/images/dweb2023-workshop.png|500]]*We live on rented land, play according to immutable rules, & create in limited spaces. How do we create an internet of communal agency & what does it look like now?*
 
