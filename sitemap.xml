@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/posts/DWeb-Camp-2023/</loc>
+    <lastmod>2023-07-27T11:24:35-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/posts/</loc>
+    <lastmod>2023-07-27T11:24:35-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2023-07-27T11:24:35-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/jazz.tools/</loc>
     <lastmod>2023-06-27T23:43:40-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/lossiness-as-mutation/</loc>
     <lastmod>2023-06-27T23:43:40-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2023-07-27T11:14:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Theseus-DHT/</loc>
     <lastmod>2023-06-30T21:14:27-07:00</lastmod>
@@ -436,9 +442,6 @@
   </url><url>
     <loc>https://jzhao.xyz/thoughts/memex/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/posts/</loc>
-    <lastmod>2023-07-27T11:14:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/the-garden-and-the-stream/</loc>
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
@@ -2070,9 +2073,6 @@
     <lastmod>2023-07-03T22:12:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/categories/</loc>
-  </url><url>
-    <loc>https://jzhao.xyz/posts/DWeb-Camp-2023/</loc>
-    <lastmod>2023-07-27T11:14:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/evergreen/</loc>
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>

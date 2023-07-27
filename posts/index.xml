@@ -6,7 +6,17 @@
     <description>Recent content in Posts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DWeb Camp: Gather by the Campfire</title>
+      <link>https://jzhao.xyz/posts/DWeb-Camp-2023/</link>
+      <pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/DWeb-Camp-2023/</guid>
+      <description>![[thoughts/images/dweb-collage.png]]
+ Fire is a chief metaphor for the Internet: it is metaorganic; it extends the range of (informational) food; it empowers people to explore new time zones (the night) and territories of knowledge; it increases some kinds of sociability, demands ongoing maintenance, and produces dangers and externalities that did not exist before.</description>
+    </item>
+    
     <item>
       <title>Agentic Computing</title>
       <link>https://jzhao.xyz/posts/agentic-computing/</link>
@@ -286,16 +296,6 @@ Since I’ve started at Hootsuite, I have
       
       <guid>https://jzhao.xyz/posts/2022/</guid>
       <description>tw: abuse. This reflection serves as a sort of public journal entry. It talks about a lot of sensitive topics. If you choose to read, please do so with care and tenderness and treat it as if I shared it in confidence with you</description>
-    </item>
-    
-    <item>
-      <title>DWeb Camp: Gathering by the campfire</title>
-      <link>https://jzhao.xyz/posts/DWeb-Camp-2023/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/posts/DWeb-Camp-2023/</guid>
-      <description>![[thoughts/images/dweb-collage.png]]
- Fire is a chief metaphor for the Internet: it is metaorganic; it extends the range of (informational) food; it empowers people to explore new time zones (the night) and territories of knowledge; it increases some kinds of sociability, demands ongoing maintenance, and produces dangers and externalities that did not exist before.</description>
     </item>
     
   </channel>
