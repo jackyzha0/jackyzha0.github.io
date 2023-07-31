@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.359faa8fa05b7b134e832e68f89bf014.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eef9af2c48a66495780c4ce4719fa426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.de822e88586ba598bdc03f6c2671b158.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -349,6 +349,26 @@ Dec 7, 2022
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/generative-models/" class="internal-link" data-src="/thoughts/generative-models/">Generative Models</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 7, 2022
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/LSTM/" class="internal-link" data-src="/thoughts/LSTM/">LSTM</a></h3>
             </div>
             <div class="spacer"></div>
@@ -509,24 +529,6 @@ Nov 29, 2022
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/pattern/">Pattern</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Nov 29, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/memex/" class="internal-link" data-src="/thoughts/memex/">Memex</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
             </ul>
         </div>

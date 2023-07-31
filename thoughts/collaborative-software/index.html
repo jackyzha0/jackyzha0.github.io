@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.359faa8fa05b7b134e832e68f89bf014.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eef9af2c48a66495780c4ce4719fa426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.de822e88586ba598bdc03f6c2671b158.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -375,48 +375,7 @@ May 5, 2022
   
   
   
-
-  
-
     
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
   
 
   
@@ -460,6 +419,98 @@ May 5, 2022
 
   
   
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
   
 
   
@@ -573,6 +624,13 @@ May 5, 2022
 </ul>
 </li>
 </ol>
+<a href="#crdt-unlocks"><h2 id="crdt-unlocks"><span class="hanchor" ariaLabel="Anchor"># </span>CRDT Unlocks</h2></a>
+<a href="#concurrent-editing-plugins"><h3 id="concurrent-editing-plugins"><span class="hanchor" ariaLabel="Anchor"># </span>Concurrent Editing plugins</h3></a>
+<p>We can treat all plugins/external things (e.g. <code>git</code>, filesystem) as actors. <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a> allow these changes to happen asynchronously</p>
+<ul>
+<li>An actor makes an editing request, which is an insertion of a sequence at a point relative to its snapshot of the buffer</li>
+<li>When the result eventually returns, the editor commits that request which might require a coordinate transform based on other edits that have arrived in the meantime</li>
+</ul>
 
 
     </article>

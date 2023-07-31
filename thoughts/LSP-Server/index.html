@@ -156,13 +156,13 @@ The idea behind the Language Server Protocol (LSP) is to standardize the proto
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.359faa8fa05b7b134e832e68f89bf014.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eef9af2c48a66495780c4ce4719fa426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.de822e88586ba598bdc03f6c2671b158.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -373,6 +373,61 @@ Jun 13, 2023
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -400,6 +455,10 @@ Jun 13, 2023
 </ol>
 </li>
 <li><code>textDocument/didClose</code>:  notification is sent from the tool informing the language server that the document is now no longer in memory. The current contents are now up to date on the file system.</li>
+</ul>
+<p>Gotchas</p>
+<ul>
+<li>Column number/length should be calculated using <code>utf16</code> offsets instead of <a href="/thoughts/Unicode" rel="noopener" class="internal-link" data-src="/thoughts/Unicode">Unicode</a> codepoints</li>
 </ul>
 
 

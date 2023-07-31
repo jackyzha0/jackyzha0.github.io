@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.359faa8fa05b7b134e832e68f89bf014.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eef9af2c48a66495780c4ce4719fa426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.de822e88586ba598bdc03f6c2671b158.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1225,96 +1225,6 @@ Jun 17, 2021
 
   
 
-  
-  
-  
-    
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
 
 
 
@@ -1381,11 +1291,6 @@ Jun 17, 2021
 <li>update notes in place</li>
 <li>
 <a href="https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features" rel="noopener">https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features</a></li>
-</ul>
-</li>
-<li>calvin and hobbes semantic image search
-<ul>
-<li>yet another vector search database lol</li>
 </ul>
 </li>
 <li>
@@ -1464,55 +1369,10 @@ Jun 17, 2021
 </li>
 </ul>
 </li>
-<li>baba is you but for browser interactions
-<ul>
-<li>data plane is main source of truth
-<ul>
-<li>optionally replicated using <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizome</a></li>
-</ul>
-</li>
-<li>data inputs like webcam, keyboard, mouse, window size, etc.</li>
-<li>relations are from data plane → data plane (no functions!)
-<ul>
-<li>e.g. x bounces off of y</li>
-</ul>
-</li>
-<li>rendering using canvas (higher performance games/interactions) or plain html elements (UI)</li>
-</ul>
-</li>
 <li>data provenance
 <ul>
 <li>
 <a href="https://www.cs.cmu.edu/~NatProg/whyline.html" rel="noopener">https://www.cs.cmu.edu/~NatProg/whyline.html</a></li>
-</ul>
-</li>
-<li>data lensing for databases
-<ul>
-<li>using 
-<a href="https://www.inkandswitch.com/cambria/" rel="noopener">https://www.inkandswitch.com/cambria/</a> maybe?</li>
-<li>some cool 
-
-
-
-
-
-<a
-  href="/thoughts/interoperability/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/interoperability/">interoperability</a> things</li>
-<li>CRDTs for databases? 
-<a href="https://archive.jlongster.com/using-crdts-in-the-wild" rel="noopener">https://archive.jlongster.com/using-crdts-in-the-wild</a>
-<ul>
-<li>
-<a href="https://cse.buffalo.edu/tech-reports/2014-04.pdf" rel="noopener">https://cse.buffalo.edu/tech-reports/2014-04.pdf</a></li>
-</ul>
-</li>
-<li>distributed state</li>
-</ul>
-</li>
-<li>tools for thought applied to IDEs?
-<ul>
-<li>IDEs as graph editors?</li>
 </ul>
 </li>
 <li>LayoutLM + screenshots → auto-categorization of knowledge
@@ -1534,17 +1394,7 @@ Jun 17, 2021
 </li>
 </ul>
 </li>
-<li>location-based ephemeral social groups with zero-knowledge proofs on location
-<ul>
-<li>each location/city has a chat group which has a compound hash of all people in that location, derive only a boolean of whether a person is in a city or not without revealing exact location</li>
-<li>when a person leaves/arrives at a city, city hash is updated</li>
-</ul>
-</li>
-<li>Conversational GPS
-<ul>
-<li>why do we even look at a screen when we can just ask for directions as if it was a normal person lol</li>
-</ul>
-</li>
+<li>Conversational GPS: why do we even look at a screen when we can just ask for directions as if it was a normal person lol</li>
 <li>google photos + olo radio (see 
 
 
@@ -1557,26 +1407,6 @@ Jun 17, 2021
   data-src="/thoughts/attention-economy/">attention economy</a>)</li>
 </ul>
 <ul>
-<li><a href="/thoughts/web3" rel="noopener" class="internal-link" data-src="/thoughts/web3">web3</a> action-space exploration
-<ul>
-<li>chain crawlers indexing smart contracts → creating logical relations</li>
-<li>prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?</li>
-<li>suggesting what you can do with existing resources in your wallet
-<ul>
-<li>over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this 
-
-
-
-
-
-<a
-  href="/thoughts/NFT/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/NFT/">NFT</a> enable me to do?)</li>
-</ul>
-</li>
-</ul>
-</li>
 <li>DreamCoder boolsat
 <ul>
 <li>Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)</li>

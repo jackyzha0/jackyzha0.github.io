@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.359faa8fa05b7b134e832e68f89bf014.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eef9af2c48a66495780c4ce4719fa426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.de822e88586ba598bdc03f6c2671b158.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -447,8 +447,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -489,10 +487,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -542,10 +538,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -595,10 +589,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -648,10 +640,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -701,10 +691,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -754,10 +742,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -807,10 +793,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -862,8 +846,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -924,8 +906,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -968,8 +948,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -1030,8 +1008,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -1074,8 +1050,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -1136,8 +1110,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -1180,8 +1152,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -1265,13 +1235,6 @@ May 5, 2022
 </ol>
 <p>See example implementations here: <a href="/thoughts/CRDT-Implementations" rel="noopener" class="internal-link" data-src="/thoughts/CRDT-Implementations">CRDT Implementations</a></p>
 <p>I prefer CRDTs over OT whenever possible because it is just so much easier to grok for the average engineer. The framework tells you clearly what you’d need to do to make async editing actually work (make the update operation commutative), why that’s so difficult (delete operations lose state) and how to make your life much easier (retain delete state and do some form of GC after the fact).</p>
-<a href="#unlocks"><h2 id="unlocks"><span class="hanchor" ariaLabel="Anchor"># </span>Unlocks</h2></a>
-<a href="#concurrent-editing-plugins"><h3 id="concurrent-editing-plugins"><span class="hanchor" ariaLabel="Anchor"># </span>Concurrent Editing plugins</h3></a>
-<p>We can treat all plugins/external things (e.g. <code>git</code>, filesystem) as actors. CRDTs allow these changes to happen asynchronously</p>
-<ul>
-<li>An actor makes an editing request, which is an insertion of a sequence at a point relative to its snapshot of the buffer</li>
-<li>When the result eventually returns, the editor commits that request which might require a coordinate transform based on other edits that have arrived in the meantime</li>
-</ul>
 <a href="#operation-based"><h2 id="operation-based"><span class="hanchor" ariaLabel="Anchor"># </span>Operation-based</h2></a>
 <blockquote>
 <p>Sometimes also called commutative replicated data types (CmRDT)</p>
@@ -1389,6 +1352,10 @@ as tombstones accumulate and internal data structures become unbalanced. The com
     
     
     
+    
+      
+      
+      
     
       
       

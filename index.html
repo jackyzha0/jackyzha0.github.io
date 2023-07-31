@@ -154,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.848297d0fa01e9b8a41ae93f81757a78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.359faa8fa05b7b134e832e68f89bf014.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eef9af2c48a66495780c4ce4719fa426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.de822e88586ba598bdc03f6c2671b158.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -419,6 +419,23 @@ Nov 16, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/Unicode/">Unicode</a></h3>
+                            </div>
+                            <p class="meta">
+                                592 words on Jul 31, 2023
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/thoughts/jazz.tools/">jazz.tools</a></h3>
                             </div>
                             <p class="meta">
@@ -433,27 +450,8 @@ Nov 16, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/lossiness-as-mutation/">Lossiness as Mutation</a></h3>
-                            </div>
-                            <p class="meta">
-                                77 words on Jun 27, 2023
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/pattern/">Pattern</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 648 more →</a>
+                <a href="/thoughts">See 649 more →</a>
             </div>
         </div>
         <article>
