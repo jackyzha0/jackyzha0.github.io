@@ -22,6 +22,7 @@ tags:
 - http://pressanykey.today/: draws a stroke between what keys you press on your keyboard
 - https://tatianabilbao.com/: drawing/illustration as map/navbar
 - http://luckysoap.com/andbyislands/: just a big map
+- http://universalthirst.com/: fun spinny reveal animation
 
 ## Aesthetics
 - https://shapefarm.net/: clean integration of animation and 3D and reactive cursor
@@ -45,7 +46,8 @@ tags:
 - https://www.clemzer.dev/: lovely pixelated header font
 - https://newdesigncongress.org/en/: bold zine-like personality
 - http://www.scrnprnt.ca/: silly diagrams
-- https://garden.bradwoods.io/
+- https://garden.bradwoods.io/: grunge
+- https://surrealdb.com/: 3d illustrations and use of transparency/blur are clean
 
 ## Poetic/Conceptual
 - https://thecreativeindependent.com/welcome/: love the use of reader messages (both audio and textual)
@@ -66,6 +68,7 @@ tags:
 - https://henryheffernan.com/: full 3D desk setup???
 - https://pouria.dev/unknown-pleasures: song visualizer but its a whole cinematic experience
 - https://hyper.leuys.com/point-of-entry/1#10758717: 3D web browsing
+
 
 ## Resources
 - https://www.logo-archive.org/

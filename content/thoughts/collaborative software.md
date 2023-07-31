@@ -54,3 +54,10 @@ Just like how a knob affords finer control over one’s preferences, similarly, 
 5. Collaborative experiences
 	- In addition to supporting _collaborative_ _projects_ where creators can contribute different parts to a single project, CoCo spaces also afford building new types of _collaborative_ _experiences_ as a group.
 	- For instance, creators can collectively imagine and program a new kind of multiplayer pacman game where the pacman passes through each of their projects turn by turn and they can use shared variables to have a common score!
+
+## CRDT Unlocks
+### Concurrent Editing plugins
+We can treat all plugins/external things (e.g. `git`, filesystem) as actors. [[thoughts/CRDT|CRDTs]] allow these changes to happen asynchronously
+
+- An actor makes an editing request, which is an insertion of a sequence at a point relative to its snapshot of the buffer
+- When the result eventually returns, the editor commits that request which might require a coordinate transform based on other edits that have arrived in the meantime
