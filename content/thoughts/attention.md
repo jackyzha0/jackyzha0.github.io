@@ -10,6 +10,8 @@ tags:
 > 
 > (Spencer, *[secret places](https://spencerchang.substack.com/p/secret-places)*)
 
+> "Attention, taken to its highest degree, is the same thing as prayer. It presupposes love and faith. Absolutely unmixed attention is prayer." – Simone Weil
+
 A Thoreau quote: “It’s not what you look at that matters, it’s what you see.” William Shaw: "we make things holy by the kind of attention we give them."
 
 See also [[thoughts/attention economy]]

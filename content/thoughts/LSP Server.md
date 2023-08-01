@@ -19,3 +19,6 @@ Common signals:
 	1. the document URI and
 	2. the text position from where the ‘Go to Definition’ request was initiated to the server
 - `textDocument/didClose`:  notification is sent from the tool informing the language server that the document is now no longer in memory. The current contents are now up to date on the file system.
+
+Gotchas
+- Column number/length should be calculated using `utf16` offsets instead of [[thoughts/Unicode|Unicode]] codepoints

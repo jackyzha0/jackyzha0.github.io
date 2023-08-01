@@ -30,13 +30,6 @@ See example implementations here: [[thoughts/CRDT Implementations|CRDT Implement
 
 I prefer CRDTs over OT whenever possible because it is just so much easier to grok for the average engineer. The framework tells you clearly what you’d need to do to make async editing actually work (make the update operation commutative), why that’s so difficult (delete operations lose state) and how to make your life much easier (retain delete state and do some form of GC after the fact).
 
-## Unlocks
-### Concurrent Editing plugins
-We can treat all plugins/external things (e.g. `git`, filesystem) as actors. CRDTs allow these changes to happen asynchronously
-
-- An actor makes an editing request, which is an insertion of a sequence at a point relative to its snapshot of the buffer
-- When the result eventually returns, the editor commits that request which might require a coordinate transform based on other edits that have arrived in the meantime
-
 ## Operation-based
 > Sometimes also called commutative replicated data types (CmRDT)
 

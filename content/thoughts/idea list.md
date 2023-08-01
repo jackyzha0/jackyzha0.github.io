@@ -35,8 +35,6 @@ tags:
 	- automatically identify and converse about outdated notes
 	- update notes in place
 	- https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features
-- calvin and hobbes semantic image search
-	- yet another vector search database lol
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
 	- "A [reader-generated essay](https://escapingflatland.substack.com/p/reader-generated-essays) is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
 	- turning a graph traversal into a beautiful essay
@@ -71,23 +69,8 @@ tags:
 		- https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings
 		- https://github.com/ryankiros/skip-thoughts
 		- https://github.com/pytorch/fairseq/tree/main/examples/data2vec
-- baba is you but for browser interactions
-	-   data plane is main source of truth
-		- optionally replicated using [[thoughts/Rhizome Proposal|Rhizome]]
-	-   data inputs like webcam, keyboard, mouse, window size, etc.
-	-   relations are from data plane → data plane (no functions!)
-		- e.g. x bounces off of y
-	-   rendering using canvas (higher performance games/interactions) or plain html elements (UI)
 - data provenance
 	- https://www.cs.cmu.edu/~NatProg/whyline.html
-- data lensing for databases
-	- using https://www.inkandswitch.com/cambria/ maybe?
-	- some cool [interoperability](thoughts/interoperability.md) things
-	- CRDTs for databases? https://archive.jlongster.com/using-crdts-in-the-wild
-		- https://cse.buffalo.edu/tech-reports/2014-04.pdf
-	- distributed state
-- tools for thought applied to IDEs?
-	- IDEs as graph editors?
 -   LayoutLM + screenshots → auto-categorization of knowledge
 	- https://screenotate.com/ but with atlas recall
     -  maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk
@@ -96,17 +79,8 @@ tags:
     -   what if you could 3 finger swipe up on a browser to see what pages this page is connected to in a graph
     -   and you could write on the margins of pages and share those with friends
         -   a little annotated web
--   location-based ephemeral social groups with zero-knowledge proofs on location
-    -   each location/city has a chat group which has a compound hash of all people in that location, derive only a boolean of whether a person is in a city or not without revealing exact location
-    -   when a person leaves/arrives at a city, city hash is updated
-- Conversational GPS
-  - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
+- Conversational GPS: why do we even look at a screen when we can just ask for directions as if it was a normal person lol
 - google photos + olo radio (see [attention economy](thoughts/attention%20economy.md))
-* [[thoughts/web3]] action-space exploration
-	- chain crawlers indexing smart contracts → creating logical relations
-	- prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
-	- suggesting what you can do with existing resources in your wallet
-		- over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this [NFT](thoughts/NFT.md) enable me to do?)
 * DreamCoder boolsat
 	* Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
 	* kinda iffy on the sat problem solver using dreamcoder, not a lot of exploitable structure in the proofs (otherwise we'd have a more reliable human method)
