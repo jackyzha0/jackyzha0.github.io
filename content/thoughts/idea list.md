@@ -6,6 +6,7 @@ tags:
 ---
 
 ## Technical
+- hoogle for rdf shapes
 - optimizing network topology for crdts
 - [[thoughts/CodeMirror|codemirror]] but CRDT + TreeSitter
 	- smart [[thoughts/git|git]] merges

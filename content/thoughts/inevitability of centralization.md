@@ -46,7 +46,7 @@ Brander proposes a new rule of thumb:
 
 > If you decentralize, the system will recentralize, but one layer up. Something new will be enabled by decentralization. That sounds like evolution through layering, like upward-spiraling complexity. That sounds like [[thoughts/progress|progress]] to me.
 
-We see this with hubs on the internet forming, creating [[thoughts/Network Theory|scale-free networks]]. We see this pattern emerge over and over again: a solid sign that there are evolutionary attractors pulling the system in that direction. We know this is true due to the presence of network effects and preferential attachment (e.g. rich-get-richer, economies of scale, running servers is hard, etc.)
+We see this with hubs on the internet forming, creating [[thoughts/Network Theory|scale-free networks]]. We see this pattern emerge over and over again: a solid sign that there are evolutionary attractors pulling the system in that direction. We know this is true due to the presence of [[thoughts/network effect|network effects]] and preferential attachment (e.g. rich-get-richer, economies of scale, running servers is hard, etc.)
 
 The presence of hubs in scale-free mean that communication can happen efficiently, averaging $\log \log N$ hops as opposed to $\log N$ hops for random networks (see the [[thoughts/Network Theory#Distances in Networks|note on average hop distance in various networks]]). Fitter nodes attract more connections just by virtue of staying alive or being better. This is the Fitness Model of scale-free networks.
 

@@ -20,79 +20,79 @@
             }
           },
           {
-            "id": "88a35a97b317a633",
+            "id": "605c311280f6e98c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/DWeb Camp 2023.md",
+                "file": "thoughts/cozy software.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "74336ff831bf9935",
+            "id": "08f5135940247e6f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/independent research.md",
+                "file": "thoughts/time.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c4c354f63533bdff",
+            "id": "9ccf26a3a225f2ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/agentic-computing.md",
+                "file": "thoughts/calendar as task manager.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0a7474b94fd9958e",
+            "id": "27462144eaa92a04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/agentic-computing.md",
+                "file": "thoughts/network effect.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e28394834bd0a977",
+            "id": "ecb9a7af512d705b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/decentralization.md",
+                "file": "thoughts/forgetting.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "130c1c75ff95d7c0",
+            "id": "697d5450698985bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/distributed web.md",
+                "file": "thoughts/deletion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -159,14 +159,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/DWeb Camp 2023.md",
-                "collapseAll": false,
+                "file": "thoughts/network effect.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/DWeb Camp 2023.md",
+                "file": "thoughts/network effect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/DWeb Camp 2023.md"
+                "file": "thoughts/network effect.md"
               }
             }
           }
@@ -207,8 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,11 +220,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "88a35a97b317a633",
+  "active": "27462144eaa92a04",
   "lastOpenFiles": [
+    "thoughts/images/google-stack.png",
+    "thoughts/network effect.md",
+    "thoughts/images/network-effect-stack.png",
+    "thoughts/calendar as task manager.md",
+    "thoughts/images/calendar layers.png",
+    "thoughts/time.md",
+    "thoughts/digital urban design.md",
+    "thoughts/deletion.md",
+    "thoughts/forgetting.md",
     "thoughts/independent research.md",
-    "thoughts/taste.md",
+    "thoughts/cozy software.md",
+    "thoughts/Dark Forest Theory of the Internet.md",
+    "thoughts/quotes.md",
+    "thoughts/idea list.md",
+    "thoughts/Tools for Conviviality.md",
     "posts/DWeb Camp 2023.md",
+    "thoughts/taste.md",
     "posts/agentic-computing.md",
     "_index.md",
     "thoughts/agency.md",
@@ -233,12 +246,9 @@
     "thoughts/fiction.md",
     "thoughts/decentralization.md",
     "thoughts/distributed web.md",
-    "thoughts/idea list.md",
     "thoughts/spencerchang.me.md",
     "thoughts/inevitability of centralization.md",
     "thoughts/Internet.md",
-    "thoughts/quotes.md",
-    "thoughts/Tools for Conviviality.md",
     "thoughts/images/dweb-call-for-freelancers.png",
     "thoughts/images/Pasted image 20230726193645.png.sb-44d79c53-ropYfs",
     "thoughts/Projects.md",
@@ -247,19 +257,8 @@
     "thoughts/images/Pasted image 20230726184026.png",
     "thoughts/images/Pasted image 20230726183649.png",
     "thoughts/images/dweb2023-workshop.png",
-    "thoughts/retro.md",
-    "thoughts/website inspiration.md",
-    "thoughts/collaborative software.md",
-    "thoughts/Games Agency as Art.md",
-    "thoughts/software and politics.md",
-    "thoughts/pace layers.md",
-    "thoughts/attention.md",
-    "thoughts/The Anthropocene Reviewed.md",
-    "thoughts/A Pattern Language.md",
     "features/plugins",
     "setup",
-    "notes/images/obsidian-settings.png",
-    "notes/images/github-actions.png",
-    "notes/images/fork.png"
+    "notes/images/obsidian-settings.png"
   ]
 }

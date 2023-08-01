@@ -71,4 +71,4 @@ We wondered how data can be used as something to share as a gift between friends
 
 Reclaiming our agency and ability to communally construct our digital spaces starts from people willing to dream and fight for it. 
 
-In many ways, this session (and the greater DWeb Camp as a whole) felt like gathering of people who *haven't* given up on the inherent good of the internet and are fighting for this future where anyone can be an architect of their own digital experience. It's a pretty special splace.
+In many ways, this session (and the greater DWeb Camp as a whole) felt like gathering of people who *haven't* given up on the inherent good of the internet and are fighting for this future where anyone can be an architect of their own digital experience. It's a pretty special place.

@@ -7,7 +7,7 @@ tags:
 
 Once you share something, you can't unshare it, the [internet](thoughts/Internet.md) feels intractable.
 
-**What do we lose when we lose deletion?**
+**What do we lose when we lose [[thoughts/deletion|deletion]]?**
 
 Related: [right to be forgotten](thoughts/right%20to%20be%20forgotten.md), [ephemereal content](thoughts/ephemereal%20content.md)
 

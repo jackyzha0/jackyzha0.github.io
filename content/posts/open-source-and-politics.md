@@ -73,7 +73,7 @@ Regulations are imperfect. But they are a way of codifying constraints or guardr
 
 But there’s a lot of use cases that are very much building decentralized applications for the wrong reasons. I don't think decentralization is objectively a good thing [on its own], but rather something that can return agency to users. A lot of my research work this summer has been figuring out how to apply, for example, the net neutrality debate to data. The net neutrality debate was very much about separating content from providers; similarly, [[posts/towards-data-neutrality|how do we separate data from applications]]? 
 
-A lot of our modern centralized providers are incredibly successful and have such large network effects. It is so hard to migrate from them because they have these huge data moats where it's impossible to just move from Facebook, for example, to some other provider that claims to be better. So a lot of it has been asking questions of how we reclaim agency for people to choose how to use their data, how they want to store their data.
+A lot of our modern centralized providers are incredibly successful and have such large [[thoughts/network effect|network effects]]. It is so hard to migrate from them because they have these huge data moats where it's impossible to just move from Facebook, for example, to some other provider that claims to be better. So a lot of it has been asking questions of how we reclaim agency for people to choose how to use their data, how they want to store their data.
 
 I think the convincing case for decentralization is in terms of enabling agency for people to choose what types of frameworks they want, rather than having to be locked into these providers.
 

@@ -24,7 +24,7 @@ Notes:
 
 Most things follow a predictable life cycle along the S-shaped adoption curve.
 
-At the beginning, will do everything they can to garner usage and appear more valuable as platforms with multi-sided positive network effects. However, when they move up the S-curve, their power grows. Eventually, the relationships turn from [positive sum](thoughts/positive%20sum.md) to [zero sum](thoughts/zero%20sum.md). Thus, to continue growing, they must extract from users (e.g. selling user data, taxing profits, etc.)
+At the beginning, will do everything they can to garner usage and appear more valuable as platforms with multi-sided positive [[thoughts/network effect|network effects]]. However, when they move up the S-curve, their power grows. Eventually, the relationships turn from [positive sum](thoughts/positive%20sum.md) to [zero sum](thoughts/zero%20sum.md). Thus, to continue growing, they must extract from users (e.g. selling user data, taxing profits, etc.)
 
 > Centralized systems often start out fully baked, but only get better at the rate at which employees at the sponsoring company improve them. Decentralized systems start out half-baked but, under the right conditions, grow exponentially as they attract new contributors.
 
