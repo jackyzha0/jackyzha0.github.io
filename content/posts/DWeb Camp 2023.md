@@ -45,7 +45,7 @@ And, perhaps most importantly, they know how to do it all while being kind, empa
 
 This year at DWeb Camp, [Spencer Chang](https://spencerchang.me) and I hosted a session asking campers to gather their collective imaginations and dreams for what a communally-owned internet could look like.
 
-![[thoughts/images/dweb2023-workshop.png|500]]*We live on rented land, play according to immutable rules, & create in limited spaces. How do we create an internet of communal agency & what does it look like now?*
+![[thoughts/images/dweb2023-workshop.png|400]]
 
 We have a lot of dystopian fiction and a lot of reminiscing, but not a lot of forward-looking dreams for the web. Dreaming is an important piece of fiction that rallies people to articulate a vision they want to make a reality. In hosting this session, we recall Ruha Benjamin: "to see things as they really are, you must imagine them for what they might be".
 
@@ -57,7 +57,9 @@ Our session focused around circulating 5 sheets of paper, each with a question o
 - Where have you felt agency online?
 - What is/was your favourite place on the internet?
 
-In discussion, we spent a significant amount of time discussing the feeling that existing on the internet feels like living on rented ground. We recalled architects and urban designers like Christopher Alexander who first noticed that rental areas are always the first to turn to slums and the importance of owning your own home[^3], drawing parallels to our digital spaces.
+![[thoughts/images/our-internet-dreams.png]]
+
+We started by reminising: remembering sacred spaces like Club Penguin, obscure math mailing lists, torrent communities, and hobby forums. We discussed the feeling that existing on the internet feels like living on rented ground. We recalled architects and urban designers like Christopher Alexander who first noticed that rental areas are always the first to turn to slums and the importance of owning your own home[^3], drawing parallels to our digital spaces.
 
 [^3]: “Rental areas are always the first to turn to slums. The mechanism is clear and well known. See, for example, George Sternlieb, The Tenement Landlord (Rutgers University Press, 1966). The landlord tries to keep his maintenance and repair costs as low as possible; the residents have no incentive to maintain and repair the homes – in fact, the opposite – since improvements add to the wealth of the landlord, and even justify higher rent. And so the typical piece of rental property degenerates over the years. The landlords try to build new rental properties which are immune to neglect – gardens are replaced with concrete, carpets are replaced with lineoleum, and wooden surfaces by formica: it is an attempt to make the new units maintenance-free, and to stop the slums by force; but they turn out cold and sterile and again turn into slums because nobody loves them.” (p.394, Your own home, [[thoughts/A Pattern Language|A Pattern Language]])
 

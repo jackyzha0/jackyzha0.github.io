@@ -3,7 +3,7 @@ title: "Deletion"
 date: 2023-07-30
 tags:
 - seed
-aliases
+aliases:
 - delete
 ---
 
