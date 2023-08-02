@@ -7,6 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Calendar as task manager</title>
+      <link>https://jzhao.xyz/thoughts/calendar-as-task-manager/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/calendar-as-task-manager/</guid>
+      <description>Source
+Most task management falls into three categories
+ Task managers: To organize the things we need to get done Email: To communicate with others Calendars: To manage our time  However, these are all just ways of expressing &amp;rsquo;events&amp;rsquo; in some calendar; emails are just tasks and tasks are just calendar events.</description>
+    </item>
+    
+    <item>
+      <title>Deletion</title>
+      <link>https://jzhao.xyz/thoughts/deletion/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/deletion/</guid>
+      <description>What does deletion mean when copying bytes is cheap and can happen without consent anywhere along the line. A conjecture is that deletion can only exist in non-[[thoughts/Byzantine Faults|byzantine]] environments.</description>
+    </item>
+    
+    <item>
+      <title>Digital urban design</title>
+      <link>https://jzhao.xyz/thoughts/digital-urban-design/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/digital-urban-design/</guid>
+      <description>We spend so much time thinking about how to design cities we want to live in. Why don&amp;rsquo;t we spend the same level of care thinking about how to design software we&amp;rsquo;d like to live in too?</description>
+    </item>
+    
+    <item>
+      <title>Network effects</title>
+      <link>https://jzhao.xyz/thoughts/network-effect/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/network-effect/</guid>
+      <description>Source
+Self-reinforcing flywheels.
+Network effects create winner-take-all-dynamics where only one or two firms end up dominating an entire industry and can’t be challenged.</description>
+    </item>
+    
+    <item>
       <title>DWeb Camp: Gather by the Campfire</title>
       <link>https://jzhao.xyz/posts/DWeb-Camp-2023/</link>
       <pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate>
@@ -6356,7 +6396,7 @@ Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/opt
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  optimizing network topology for crdts [[thoughts/CodeMirror|codemirror]] but CRDT + TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler + yjs + tldraw  markupthis.</description>
+      <description>Technical  hoogle for rdf shapes optimizing network topology for crdts [[thoughts/CodeMirror|codemirror]] but CRDT + TreeSitter  smart [[thoughts/git|git]] merges  https://www.</description>
     </item>
     
     <item>
@@ -6491,7 +6531,7 @@ Quotes Digital Communalism See: [[thoughts/tribe flourishing]]
       
       <guid>https://jzhao.xyz/thoughts/digital-permanence/</guid>
       <description>Once you share something, you can&amp;rsquo;t unshare it, the internet feels intractable.
-What do we lose when we lose deletion?</description>
+What do we lose when we lose [[thoughts/deletion|deletion]]?</description>
     </item>
     
     <item>

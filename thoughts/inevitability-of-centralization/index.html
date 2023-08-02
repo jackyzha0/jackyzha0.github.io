@@ -81,7 +81,7 @@ To be efficient is to be fragile, and to be fragile, over the long run, is to go
   
   
   
-  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5e1774000635aee9f863ca2684871247.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -156,13 +156,13 @@ To be efficient is to be fragile, and to be fragile, over the long run, is to go
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.359faa8fa05b7b134e832e68f89bf014.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.de822e88586ba598bdc03f6c2671b158.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -911,6 +911,49 @@ Aug 2, 2022
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -1037,7 +1080,7 @@ Aug 2, 2022
 <blockquote>
 <p>If you decentralize, the system will recentralize, but one layer up. Something new will be enabled by decentralization. That sounds like evolution through layering, like upward-spiraling complexity. That sounds like <a href="/thoughts/progress" rel="noopener" class="internal-link" data-src="/thoughts/progress">progress</a> to me.</p>
 </blockquote>
-<p>We see this with hubs on the internet forming, creating <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">scale-free networks</a>. We see this pattern emerge over and over again: a solid sign that there are evolutionary attractors pulling the system in that direction. We know this is true due to the presence of network effects and preferential attachment (e.g. rich-get-richer, economies of scale, running servers is hard, etc.)</p>
+<p>We see this with hubs on the internet forming, creating <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">scale-free networks</a>. We see this pattern emerge over and over again: a solid sign that there are evolutionary attractors pulling the system in that direction. We know this is true due to the presence of <a href="/thoughts/network-effect" rel="noopener" class="internal-link" data-src="/thoughts/network-effect">network effects</a> and preferential attachment (e.g. rich-get-richer, economies of scale, running servers is hard, etc.)</p>
 <p>The presence of hubs in scale-free mean that communication can happen efficiently, averaging $\log \log N$ hops as opposed to $\log N$ hops for random networks (see the <a href="/thoughts/Network-Theory#distances-in-networks" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">note on average hop distance in various networks</a>). Fitter nodes attract more connections just by virtue of staying alive or being better. This is the Fitness Model of scale-free networks.</p>
 <p>But the problem with scale-free networks is that <strong>they are vulnerable to attack</strong>. Though they are resilient to random failure of the nodes (generally need to remove $\approx N - 1$ nodes to bring down the network), the removal of a small fraction of hubs is sufficient to break a scale-free network into tiny clusters.</p>
 <p><img src="/thoughts/images/scale-free under attack.png" width="auto" /><em>Knocking out even a few hubs quickly breaks down the network. Y-axis is the ratio $\frac{P_\infty(f)}{P_\infty(0)}$ provides the relative size of the largest connected subgraph</em></p>
