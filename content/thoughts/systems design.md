@@ -23,6 +23,7 @@ See also: [[thoughts/system model]]
 ```
 Latency Comparison Numbers
 --------------------------
+Register reference                           0.1 ns
 L1 cache reference                           0.5 ns
 Branch mispredict                            5   ns
 L2 cache reference                           7   ns                      14x L1 cache

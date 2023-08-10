@@ -105,7 +105,7 @@ tags:
 	- Packet switched electricity
 	- saving sun for later (make something we take for granted extremely scarce)
 - Poetry
-	- We like sunset because it's the only time we see the cosmos move
+	- We like sunset because it's the only time we see the cosmos move (or! when we get to share space with other people watching sunset, inspired by a poem by Danusha Lameris titled Small Kindness)
 - Essays
 	- Aesthetics as a heuristic for non obvious optimality 
 	- Arguments against complete dominance of cloud based compute rental akin to anti home rental arguments

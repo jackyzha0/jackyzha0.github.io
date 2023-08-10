@@ -8,7 +8,6 @@ tags:
 ## General Computability
 Source text from The Mechanical Mind by Crane
 
-
 A computer is a device which processes [representations](/thoughts/representation) in a systematic way
 
 An algorithm is a method for calculating the value of a function

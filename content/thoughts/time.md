@@ -156,3 +156,9 @@ From: [Stories that use time to hurt you](https://www.youtube.com/watch?v=e-ZK1A
 	- At some point, Mitsuha goes radio silent. Taki, confused, wants to meet her but his only clues to her location are sketches that he has drawn from his time in her shoes. And so he takes a train to the countryside where he thinks she is. Here, he finds out that the town he is looking for is called Itomori and it was tragically levelled by a comet 3 years ago.
 	- Mitsuha was swapping lives with Taki from another time. But because you assume that because both of their lives are being presented in tandem with each other, that they happen at the same time. When in reality, the events of her life are 3 years behind his.
 	- At some point, Mitsuha actually goes to the city to see Taki but he has no idea who she is. In her timeline, she is 3 years too early and he has not started swapping bodies with her yet.
+
+## Chronological Snobbery
+
+> thinking, art, or science of an earlier time is inherently inferior to that of the present, simply by virtue of its temporal priority or the belief that since civilization has advanced in certain areas, people of earlier periods were less intelligent
+
+The term was coined by C. S. Lewis and Owen Barfield, and first mentioned by Lewis in his 1955 autobiographical work, *Surprised by Joy*.

@@ -31,3 +31,4 @@ Some quotes to live by.
 28. "The invention of the ship was also the invention of the shipwreck." (Paul Virilio)
 29. "History is made by those who show up" (Unknown)
 30. "Imagine you could play a computer" (Doug Engelbart, when inventing the keyboard)
+31. "Map the regions of your own affinity and interest, across all relevant dimensions: intellectual, aesthetic, moral. The rest, you can ignore freely. Ignore strenuously!" ([Robin Sloan](https://www.robinsloan.com/newsletters/summer-wind/))

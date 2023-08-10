@@ -7,6 +7,8 @@ tags:
 
 Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.
 
+See also: [[thoughts/computer architecture|computer architecture]]
+
 ## Processes
 ### PID1 Zombies
 [Source](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/)

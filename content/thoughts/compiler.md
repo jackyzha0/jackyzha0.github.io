@@ -21,7 +21,7 @@ Rules of thumb:
 - Eliminating undefined behaviour by adding static or dynamic checks in the source language improves the ability of programmers to predict behaviour of all programs in your language. However, it is not always practical to achieve. See: [[thoughts/program analysis]]
 
 ## Runtimes
-The run-time system provides all run-time support required by the language but that that is not provided by the underlying machine. Exactly what this run-time support is depends on the language.
+The run-time system provides all run-time support required by the language but that that is not provided by the underlying [[thoughts/computer architecture|machine]]. Exactly what this run-time support is depends on the language.
 
 Typically, the language run-time provides memory allocation and deallocation, initialization of the process environment such as the stack, handles returning values to the user, and provides any built-in procedures that all programs in the language can expect to use
 
