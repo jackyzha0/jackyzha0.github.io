@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c8a634c341de52f9843ac05f7c42aa1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.271405773442d1d0cddf24dc0f422236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -344,6 +344,26 @@
         <div class="section">
             <p class="meta">
                 
+Dec 17, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Risk-Homeostasis/" class="internal-link" data-src="/thoughts/Risk-Homeostasis/">Risk Homeostasis</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/pattern/">Pattern</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
 Dec 10, 2022
 
 
@@ -509,26 +529,6 @@ Dec 3, 2022
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Dec 3, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/neural-networks/" class="internal-link" data-src="/thoughts/neural-networks/">Neural networks</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/CPSC430/">CPSC430</a></li>
                 
             </ul>
         </div>

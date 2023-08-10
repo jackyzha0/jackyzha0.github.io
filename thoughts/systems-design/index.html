@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c8a634c341de52f9843ac05f7c42aa1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.271405773442d1d0cddf24dc0f422236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -561,10 +561,12 @@ Dec 10, 2022
 </span><span class="lnt">21
 </span><span class="lnt">22
 </span><span class="lnt">23
+</span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Latency Comparison Numbers
 </span></span><span class="line"><span class="cl">--------------------------
+</span></span><span class="line"><span class="cl">Register reference                           0.1 ns
 </span></span><span class="line"><span class="cl">L1 cache reference                           0.5 ns
 </span></span><span class="line"><span class="cl">Branch mispredict                            5   ns
 </span></span><span class="line"><span class="cl">L2 cache reference                           7   ns                      14x L1 cache
@@ -663,6 +665,10 @@ Dec 10, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Design-Justice/" data-ctx="design of systems" data-src="/thoughts/Design-Justice" class="internal-link">Design Justice</a>
       </li>
@@ -671,6 +677,12 @@ Dec 10, 2022
       
       <li>
         <a href="/thoughts/compiler/" data-ctx="thoughts/systems design" data-src="/thoughts/compiler" class="internal-link">Compilers</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/computer-architecture/" data-ctx="latency numbers for various levels of memory access" data-src="/thoughts/computer-architecture" class="internal-link">Computer Architecture</a>
       </li>
       
       

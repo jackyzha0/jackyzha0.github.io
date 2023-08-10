@@ -159,13 +159,13 @@ It relies on modular arithmetic which, unfortunately, is really slow :((." />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c8a634c341de52f9843ac05f7c42aa1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.271405773442d1d0cddf24dc0f422236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

@@ -9,11 +9,11 @@
   <meta
     name="description"
     content="Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.
-Processes PID1 Zombies  Source"
+See also: [[thoughts/computer architecture|computer architecture]]"
   />
   <meta property="og:title" content="Unix">
   <meta property="og:description" content="Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.
-Processes PID1 Zombies  Source">
+See also: [[thoughts/computer architecture|computer architecture]]">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/Unix/">
   <meta property="og:width" content="200">
@@ -21,7 +21,7 @@ Processes PID1 Zombies  Source">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Unix" />
   <meta name="twitter:description" content="Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.
-Processes PID1 Zombies  Source" />
+See also: [[thoughts/computer architecture|computer architecture]]" />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -156,13 +156,13 @@ Processes PID1 Zombies  Source" />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c8a634c341de52f9843ac05f7c42aa1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.271405773442d1d0cddf24dc0f422236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -402,6 +402,51 @@ Jun 7, 2023
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -451,6 +496,7 @@ Jun 7, 2023
 
 
 <p>Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.</p>
+<p>See also: <a href="/thoughts/computer-architecture" rel="noopener" class="internal-link" data-src="/thoughts/computer-architecture">computer architecture</a></p>
 <a href="#processes"><h2 id="processes"><span class="hanchor" ariaLabel="Anchor"># </span>Processes</h2></a>
 <a href="#pid1-zombies"><h3 id="pid1-zombies"><span class="hanchor" ariaLabel="Anchor"># </span>PID1 Zombies</h3></a>
 <p>

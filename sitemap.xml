@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/computer-architecture/</loc>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/calendar-as-task-manager/</loc>
     <lastmod>2023-07-31T18:01:01-07:00</lastmod>
   </url><url>
@@ -13,12 +22,6 @@
   </url><url>
     <loc>https://jzhao.xyz/thoughts/network-effect/</loc>
     <lastmod>2023-07-31T18:01:01-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2023-07-31T23:38:12-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2023-07-31T23:38:12-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/DWeb-Camp-2023/</loc>
     <lastmod>2023-07-31T23:38:12-07:00</lastmod>
@@ -63,7 +66,7 @@
     <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Unix/</loc>
-    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Abilene-Paradox/</loc>
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>
@@ -126,7 +129,7 @@
     <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/compiler/</loc>
-    <lastmod>2023-04-18T13:29:39-07:00</lastmod>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/declarative-programming/</loc>
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
@@ -135,7 +138,7 @@
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/time/</loc>
-    <lastmod>2023-06-24T12:11:33-07:00</lastmod>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Operational-Transform/</loc>
     <lastmod>2023-04-10T15:32:26-07:00</lastmod>
@@ -396,7 +399,7 @@
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/systems-design/</loc>
-    <lastmod>2023-02-11T22:17:33-08:00</lastmod>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/LLMs/</loc>
     <lastmod>2023-05-09T11:03:24-04:00</lastmod>
@@ -1569,7 +1572,7 @@
     <lastmod>2023-06-24T12:11:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/quotes/</loc>
-    <lastmod>2023-07-31T18:01:01-07:00</lastmod>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/mental-model/</loc>
     <lastmod>2023-03-18T17:33:30-07:00</lastmod>
@@ -1842,7 +1845,7 @@
     <lastmod>2023-07-31T18:01:01-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/computability/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/funding/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1986,7 +1989,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idea-list/</loc>
-    <lastmod>2023-07-31T18:01:01-07:00</lastmod>
+    <lastmod>2023-08-10T16:30:22-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/attention-economy/</loc>
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>

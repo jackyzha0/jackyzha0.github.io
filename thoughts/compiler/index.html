@@ -156,13 +156,13 @@ We design compilers by starting from a fixed abstraction boundary (the existing 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c8a634c341de52f9843ac05f7c42aa1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.271405773442d1d0cddf24dc0f422236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -658,6 +658,93 @@ Apr 17, 2023
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -714,7 +801,7 @@ Apr 17, 2023
 <li>Eliminating undefined behaviour by adding static or dynamic checks in the source language improves the ability of programmers to predict behaviour of all programs in your language. However, it is not always practical to achieve. See: <a href="/thoughts/program-analysis" rel="noopener" class="internal-link" data-src="/thoughts/program-analysis">program analysis</a></li>
 </ul>
 <a href="#runtimes"><h2 id="runtimes"><span class="hanchor" ariaLabel="Anchor"># </span>Runtimes</h2></a>
-<p>The run-time system provides all run-time support required by the language but that that is not provided by the underlying machine. Exactly what this run-time support is depends on the language.</p>
+<p>The run-time system provides all run-time support required by the language but that that is not provided by the underlying <a href="/thoughts/computer-architecture" rel="noopener" class="internal-link" data-src="/thoughts/computer-architecture">machine</a>. Exactly what this run-time support is depends on the language.</p>
 <p>Typically, the language run-time provides memory allocation and deallocation, initialization of the process environment such as the stack, handles returning values to the user, and provides any built-in procedures that all programs in the language can expect to use</p>
 <a href="#correctness"><h2 id="correctness"><span class="hanchor" ariaLabel="Anchor"># </span>Correctness</h2></a>
 <p>A compiler is correct if:</p>

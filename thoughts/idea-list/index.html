@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c8a634c341de52f9843ac05f7c42aa1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.271405773442d1d0cddf24dc0f422236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1465,7 +1465,7 @@ Jun 17, 2021
 </li>
 <li>Poetry
 <ul>
-<li>We like sunset because it&rsquo;s the only time we see the cosmos move</li>
+<li>We like sunset because it&rsquo;s the only time we see the cosmos move (or! when we get to share space with other people watching sunset, inspired by a poem by Danusha Lameris titled Small Kindness)</li>
 </ul>
 </li>
 <li>Essays

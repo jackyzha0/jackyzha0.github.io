@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Computer Architecture</title>
+      <link>https://jzhao.xyz/thoughts/computer-architecture/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/computer-architecture/</guid>
+      <description>A lot of content courtesy of cpu.land written by the wonderful Kognise!
+CPUs The central processing unit (CPU) of a computer is in charge of all computation.</description>
+    </item>
+    
+    <item>
       <title>Calendar as task manager</title>
       <link>https://jzhao.xyz/thoughts/calendar-as-task-manager/</link>
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
@@ -170,7 +180,7 @@ The idea behind the Language Server Protocol (LSP) is to standardize the proto
       
       <guid>https://jzhao.xyz/thoughts/Unix/</guid>
       <description>Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.
-Processes PID1 Zombies  Source</description>
+See also: [[thoughts/computer architecture|computer architecture]]</description>
     </item>
     
     <item>

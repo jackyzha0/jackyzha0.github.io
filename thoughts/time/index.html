@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e107d2e717d73969b7062262a90cadc0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c8a634c341de52f9843ac05f7c42aa1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5aa9bf835053d46dac2aeaf9b9b59862.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.271405773442d1d0cddf24dc0f422236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1181,6 +1181,11 @@ Apr 15, 2023
 </ul>
 </li>
 </ul>
+<a href="#chronological-snobbery"><h2 id="chronological-snobbery"><span class="hanchor" ariaLabel="Anchor"># </span>Chronological Snobbery</h2></a>
+<blockquote>
+<p>thinking, art, or science of an earlier time is inherently inferior to that of the present, simply by virtue of its temporal priority or the belief that since civilization has advanced in certain areas, people of earlier periods were less intelligent</p>
+</blockquote>
+<p>The term was coined by C. S. Lewis and Owen Barfield, and first mentioned by Lewis in his 1955 autobiographical work, <em>Surprised by Joy</em>.</p>
 
 
     </article>
