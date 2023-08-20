@@ -24,12 +24,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.RecentNotes({
       title: "Recent Writing",
+      limit: 4,
       filter: (f) => f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
       sort: (f1, f2) => (f2.dates?.created.getTime() ?? Number.MAX_SAFE_INTEGER) - (f1.dates?.created.getTime() ?? Number.MAX_SAFE_INTEGER),
       linkToMore: "posts/" as SimpleSlug
     })),
     Component.DesktopOnly(Component.RecentNotes({
       title: "Recent Notes",
+      limit: 4,
       filter: (f) => f.slug!.startsWith("thoughts/"),
       linkToMore: "thoughts/" as SimpleSlug
     })),

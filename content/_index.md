@@ -6,6 +6,11 @@ tags:
 
 ![Welcome to my little hypertext garden](./banner.svg)
 
+
+```poetry
+Welcome!
+```
+
 I'm Jacky. This is my little [[thoughts/hypertext|hypertext]] [[posts/networked-thought|garden]] on the [[thoughts/Internet|Internet]] -- make yourself at home!
 
 Currently, I'm exploring what agentic, [[thoughts/interoperability|interoperable]], and [[posts/agentic-computing|communal]] technology looks like in my [independent research practice](/tags/rhizome). How might we create infrastructures and technologies that empower the residents of the web to have access to the same tools as the architect?
@@ -19,3 +24,8 @@ Here are some places you may want to visit:
 - [The hand-crafted workbench](thoughts/Projects.md): a selection of projects I've worked on;
 - [The crumpled pages in the recycling bin](posts/a-failure-resume.md): my failure resume;
 - [The bookshelf on the far wall](/books): books that are in some state of read, being read, or to be read.
+
+```poetry
+enjoy your time here and let me know if you need anything!
+jacky
+```

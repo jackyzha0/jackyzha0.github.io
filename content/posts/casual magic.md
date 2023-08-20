@@ -58,7 +58,8 @@ a different palette every morning;
 enthralling people by the way the rays filter through the trees
 and bounce off the waves.
 
-Eratosthenes used light to figure out the size of this little ball of earth we stand on.
+Eratosthenes used light to figure out
+the size of this little ball of earth we stand on.
 I think often about how each ray of light 
 travelled 8 minutes and 20 seconds, 
 burned its way through the atmosphere,
