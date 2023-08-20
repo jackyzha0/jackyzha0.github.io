@@ -1,0 +1,62 @@
+// put your custom CSS here!
+@use "./variables.scss" as *;
+
+body[data-slug="index"] img {
+  margin-bottom: 3em;
+  filter: invert(0%);
+  opacity: .85
+}
+
+[saved-theme=dark] body[data-slug="index"] img {
+  filter: invert(100%)
+}
+
+.left {
+  display: grid !important;
+  gap: 1.25rem !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content min-content;
+  align-items: center;
+
+  .page-title {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  
+  .search {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .darkmode {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .desktop-only {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  @media all and (max-width: $fullPageWidth) {
+    display: flex !important;
+  }
+}
+
+hr {
+  overflow: visible;
+  padding: 0;
+  margin: 4em auto;
+  border: none;
+  color: var(--gray);
+  text-align: center;
+  width: 40%;
+  z-index: -999;
+  border-color: var(--gray);
+  &:after {
+    content: "* * *";
+    z-index: -999;
+    display: inline-block;
+    margin: -1em 0 0.5em;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    background: var(--light);
+    transform: translateY(-0.1em);
+  }
+}

@@ -4,6 +4,8 @@ tags:
 - evergreen
 ---
 
+![Welcome to my little hypertext garden](./banner.svg)
+
 I'm Jacky. This is my little [[thoughts/hypertext|hypertext]] [[posts/networked-thought|garden]] on the [[thoughts/Internet|Internet]] -- make yourself at home!
 
 Currently, I'm exploring what agentic, [[thoughts/interoperability|interoperable]], and [[posts/agentic-computing|communal]] technology looks like in my [independent research practice](/tags/rhizome). How might we create infrastructures and technologies that empower the residents of the web to have access to the same tools as the architect?
