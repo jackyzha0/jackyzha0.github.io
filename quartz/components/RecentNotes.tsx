@@ -33,7 +33,7 @@ export default ((userOpts?: Partial<Options>) => {
     const pages = allFiles.filter(opts.filter).sort(opts.sort).slice(0, opts.limit)
     const remaining = Math.max(0, pages.length - opts.limit)
     return (
-      <div class="recent-notes">
+      <div class={`recent-notes ${displayClass}`}>
         <h3>{opts.title}</h3>
         <ul class="recent-ul">
           {pages.map((page) => {

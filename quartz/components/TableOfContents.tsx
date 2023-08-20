@@ -13,7 +13,7 @@ const defaultOptions: Options = {
   layout: "modern",
 }
 
-function TableOfContents({ fileData }: QuartzComponentProps) {
+function TableOfContents({ fileData, displayClass }: QuartzComponentProps) {
   if (!fileData.toc) {
     return null
   }
