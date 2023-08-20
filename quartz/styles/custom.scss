@@ -13,9 +13,9 @@ body[data-slug="index"] img {
 
 .left {
   display: grid !important;
-  gap: 1.25rem !important;
+  gap: 1.5rem !important;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content min-content min-content;
+  grid-template-rows: min-content min-content min-content min-content;
   align-items: center;
 
   .page-title {
@@ -30,8 +30,16 @@ body[data-slug="index"] img {
     grid-area: 2 / 2 / 3 / 3;
   }
 
-  .desktop-only {
-    grid-area: 3 / 1 / 4 / 3;
+  .toc {
+    grid-row: 3;
+  }
+
+  .recent-notes:nth-last-child(2) {
+    grid-row: 3;
+  }
+
+  .recent-notes:nth-last-child(1) {
+    grid-row: 4;
   }
 
   @media all and (max-width: $fullPageWidth) {

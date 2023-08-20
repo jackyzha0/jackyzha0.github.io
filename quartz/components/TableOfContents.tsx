@@ -19,7 +19,7 @@ function TableOfContents({ fileData }: QuartzComponentProps) {
   }
 
   return (
-    <div class="desktop-only">
+    <div class="toc desktop-only">
       <button type="button" id="toc">
         <h3>Table of Contents</h3>
         <svg
