@@ -12,7 +12,7 @@ tags:
 
 **casual magic**
 
-{{< poem >}}
+```poetry
 At 1:00, the sun streamed at just the right angle through the patterned glass,
 splitting the uniform beam of light into a hidden spectrum of fractals,
 bathing the room in a shower of brilliant colours.
@@ -37,13 +37,13 @@ I would spend the 40 minutes bus ride shuffling for new songs,
 singing under my breath,
 feeling and voicing the shape of each word,
 watching the clouds slowly losing their tinges of colour as night fell.
-{{< /poem >}}
+```
 
 ---
 
 **child of the light**
 
-{{< poem >}}
+```poetry
 Photography literally means 'writing with light'.
 Frank Lloyd Wright understood this
 hanging light like pictures on a wall,
@@ -86,13 +86,13 @@ a lightness of the self.
 
 I see the light as beautiful
 maybe the light will see me as beautiful too.
-{{< /poem >}}
+```
 
 ---
 
 **sun(set/rise)**
 
-{{< poem >}}
+```poetry
 The shape of the sun is a contour, carved by its intensity, angle and number of
 people who are awake to see it. In the evening, the sun sets the sky ablaze
 with the vibrant shades of a ripe peach; a final spectacle.
@@ -122,13 +122,13 @@ the orbital sunrise. A promise that the day
 will start anew, a sign that tomorrow exists, that
 things dormant can wake once again. As the rays peek over
 the crests of mountains and waves, there is a warmth that wakes the world again.
-{{< /poem >}}
+```
 
 ---
 
 **stargazing**
 
-{{< poem >}}
+```poetry
     From   far   away,
     it   looks   like   we   are   huddled   close.
     A   community   of   stars,
@@ -155,4 +155,4 @@ I   wish   we   could   pull   the   blankets   closer,   to   keep   us   warm.
 All    we    can    do    is    longingly    gaze,
 watching     us     each     shift     red,
 hoping      that      one      day      our      dust      will      meet.
-{{< /poem >}}
+```
