@@ -2,7 +2,7 @@
 title: "LR Permissionless Result"
 date: 2022-08-10
 tags:
-- seed
+  - seed
 ---
 
 Shown by [Lewis-Pye and Roughgarden in 2022](https://arxiv.org/pdf/2101.07095.pdf)

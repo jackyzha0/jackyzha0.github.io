@@ -2,14 +2,15 @@
 title: "Hackathons"
 date: 2021-02-27T12:01:16-08:00
 tags:
-- sapling
+  - sapling
 ---
 
-As Steven Levy defines it, 'hacks' were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it. A *hackathon* is an event where a bunch of people gather to hack on things together for a short duration (usually a weekend).
+As Steven Levy defines it, 'hacks' were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it. A _hackathon_ is an event where a bunch of people gather to hack on things together for a short duration (usually a weekend).
 
 [More thoughts on why hackathons have gone downhill and what's next.](/posts/hackathons)
 
 ## Discussion
+
 > "I want hackathons to embody a starting point not a set timeframe"
 
 How do we push for hackathons to be the 'start' of the journey rather than saying its the entirety of a short, not super comprehensive event?
@@ -17,11 +18,13 @@ How do we push for hackathons to be the 'start' of the journey rather than sayin
 In other words, how can we make hackathons events for people to dip toes into ideas and concepts without having them need to be 'judged' for polish or ability to fully solve a problem?
 
 Questions to think about:
+
 - how do we continue projects beyond their initial timeframe
 - should hackathons even focus on maintainable projects when they require so much context?
 - what does "hacking racism" mean? what about social good hackathons in general? how realistic is it so try and solve some sort of large societal issue in the span of a few days?
 
 ## Hackathons as co-optation ritual
+
 [Source: Hackathons as Co-optation Ritual: Socializing Workers and Institutionalizing Innovation in the “New” Economy](https://academicworks.cuny.edu/gc_pubs/490/)
 
 [Hackathons] reshape unpaid and precarious work. Writing code and building apps for free becomes an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all.

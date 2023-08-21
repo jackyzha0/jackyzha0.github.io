@@ -2,8 +2,8 @@
 title: "Goodhart's Law"
 date: 2021-12-25
 tags:
-- seed
-- pattern
+  - seed
+  - pattern
 ---
 
 > "When a measure becomes a target, it ceases to be a good measure" -- [Goodhart's Law]

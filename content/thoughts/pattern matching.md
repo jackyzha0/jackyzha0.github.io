@@ -2,10 +2,10 @@
 title: "Pattern Matching"
 date: 2022-04-03
 tags:
-- seed
+  - seed
 ---
 
-[*Science as Seeing* in Aeon](https://aeon.co/essays/seeing-is-not-simple-you-need-to-be-both-knowing-and-naive)
+[_Science as Seeing_ in Aeon](https://aeon.co/essays/seeing-is-not-simple-you-need-to-be-both-knowing-and-naive)
 
 If prior patterns are essential for making sense of things, how can we avoid falling into well-worn channels of perception? And most importantly, how can we learn to see in genuinely new ways?
 

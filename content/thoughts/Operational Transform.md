@@ -2,9 +2,9 @@
 title: "Operational Transform"
 date: 2023-04-10
 tags:
-- seed
+  - seed
 aliases:
-- OT
+  - OT
 ---
 
 [Source](https://marijnhaverbeke.nl/blog/collaborative-editing.html)
@@ -16,7 +16,7 @@ It defines a way to describe changes that has two properties:
 
 An Operational Transformation (OT) based system applies local changes to the local document immediately, and broadcasts them to other users
 
-In its simplest form, a _transformation function_ that takes two changes A and B, which both apply to the same document, and produces a new pair Aᴮ (a version of A that applies to the document produced by B) and Bᴬ (B but applies to the document created by A), such that A + Bᴬ and B + Aᴮ (where + indicates change composition) produce the same document.
+In its simplest form, a *transformation function* that takes two changes A and B, which both apply to the same document, and produces a new pair Aᴮ (a version of A that applies to the document produced by B) and Bᴬ (B but applies to the document created by A), such that A + Bᴬ and B + Aᴮ (where + indicates change composition) produce the same document.
 
 ```
     Docˢ
@@ -27,4 +27,5 @@ Bᴬ ↘   ↙ Aᴮ
 ```
 
 ## Position Mapping
+
 Something that comes up quite a lot in an editor is the need to transform a document position in an original document into a corresponding position in the changed document. If text is inserted somewhere before the selection, the selection should move forward with the surrounding text. Some OT systems call this “cursor transformation”, but it also applies to things like ranges of collapsed code, lint warnings, breakpoint markers, and so on.

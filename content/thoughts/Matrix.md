@@ -2,14 +2,14 @@
 title: "Matrix"
 date: 2022-06-15
 tags:
-- seed
+  - seed
 ---
 
 > An open network for secure, decentralized communication
 
 [Website](https://matrix.org/)
 
-Mainly for messaging + voice + video but theoretically can handle any type of *real-time* data.
+Mainly for messaging + voice + video but theoretically can handle any type of _real-time_ data.
 
 A decentralized conversation store; when you send a message in Matrix, it is replicated over all the servers whose users are participating in a given conversation. (helps to tackle data availability)
 

@@ -2,12 +2,13 @@
 title: "Casper FFG"
 date: 2022-08-09
 tags:
-- seed
+  - seed
 ---
 
 > Partial [[thoughts/consensus|consensus]] mechanism as an overlay on top of proposal mechanisms to finalize blocks (selecting a unique chain that represents the canonical history of the chain)
 
 It enables:
+
 1. an accountability mechanism so that Byzantine validators can be penalized.
 2. support for a dynamic set of validator nodes
 3. additional defences against long range revision attacks

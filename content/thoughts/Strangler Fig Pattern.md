@@ -2,7 +2,7 @@
 title: "Strangler Fig Pattern"
 date: 2023-06-07
 tags:
-- seed
+  - seed
 ---
 
 Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services. As features from the legacy system are replaced, the new system eventually replaces all of the old system's features, strangling the old system and allowing you to decommission it.

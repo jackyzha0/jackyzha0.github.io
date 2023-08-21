@@ -1,39 +1,45 @@
 ---
 title: "Booklist"
 aliases:
-- Reading list
+  - Reading list
 ---
 
 A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading. Links are to pages/blog posts/ideas that were inspired by the book that's linked!
 
 ## To Read
+
 > What is an [antilibrary](https://nesslabs.com/antilibrary)? To put it simply, an antilibrary is a private collection of unread books. Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.
 
 ### Fiction
-* **Accelerando** by Charles Stross
-* **Homo Ludens** by Johan Huizinga
-* **The Ministry for the Future** by Kim Stanley Robinson
+
+- **Accelerando** by Charles Stross
+- **Homo Ludens** by Johan Huizinga
+- **The Ministry for the Future** by Kim Stanley Robinson
 
 ### Non-fiction
-* **Dealers of Lighting** by Michael A. Hiltzik
-* **Creation: Life and How to Make it** by Steve Grand
-* **The Utopia of Rules** by David Graeber
-* **Where Is My Flying Car?** by J. Storrs Hall
-* **The Dream Machine** by M. Mitchell Waldrop
-* **The Limits to Capital** by David Harvey
-* **Inventing the Medium** by Janet J. Murray
-* **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
-* **Designing an Internet** by David D. Clark
-* **Playing Software** by Miguel Sicart
-* **Designs for the Pluriverse** by Arturo Escobar
-* **New Media Art** by Mark Tribe/Reena Jana
-* **are we human? notes on an archaeology of design** by Beatriz Colomina & Mark Wigley
+
+- **Dealers of Lighting** by Michael A. Hiltzik
+- **Creation: Life and How to Make it** by Steve Grand
+- **The Utopia of Rules** by David Graeber
+- **Where Is My Flying Car?** by J. Storrs Hall
+- **The Dream Machine** by M. Mitchell Waldrop
+- **The Limits to Capital** by David Harvey
+- **Inventing the Medium** by Janet J. Murray
+- **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
+- **Designing an Internet** by David D. Clark
+- **Playing Software** by Miguel Sicart
+- **Designs for the Pluriverse** by Arturo Escobar
+- **New Media Art** by Mark Tribe/Reena Jana
+- **are we human? notes on an archaeology of design** by Beatriz Colomina & Mark Wigley
 
 ## Current
+
 - none :)
 
 ## Past
+
 ### 2023
+
 - **[[thoughts/visualization|The Visual Display of Quantitative Information]]** by Edward R. Tufte
 - **[[thoughts/A Pattern Language]]** by Christopher Alexander
 - **Upstream: Selected Essays** by Mary Oliver
@@ -42,6 +48,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Project Hail Mary** by Andy Weir
 
 ### 2022
+
 - **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
 - **[[thoughts/Games Agency as Art]]** by C. Thi Nguyen
 - **Permutation City** by Greg Egan
@@ -58,6 +65,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Unflattening** by Nick Sousanis
 
 ### 2021
+
 - [**How to Do Nothing**](thoughts/How%20to%20do%20Nothing.md) by Jenny Odell
 - [**A Tale for the Time Being**](thoughts/A%20Tale%20for%20the%20Time%20Being.md) by Ruth Ozeki
 - [**Atlas of AI**](thoughts/Atlas%20of%20AI.md) by Kate Crawford
@@ -78,6 +86,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **21 Lessons for the 21st Century** by Yuval Noah Harari
 
 ### 2020
+
 - **Sapiens** by Yuval Noah Harari
 - **Measure What Matters** by John Doerr
 - **A Beautifully Foolish Endeavour** by Hank Green

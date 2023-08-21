@@ -2,7 +2,7 @@
 title: "Intersubjectivity"
 date: 2022-04-04
 tags:
-- seed
+  - seed
 ---
 
 Related: [[thoughts/interdependence|interdependence]], [[thoughts/phenomenology|phenomenology]], [[thoughts/double-consciousness]]

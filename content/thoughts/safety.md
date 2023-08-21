@@ -2,7 +2,7 @@
 title: "Safety"
 date: 2022-07-03
 tags:
-- seed
+  - seed
 ---
 
 > A promise in [[thoughts/distributed systems|distributed systems]] that claims that "something bad" will never happen

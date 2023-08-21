@@ -2,7 +2,7 @@
 title: "Incremental view maintenance"
 date: 2023-04-06
 tags:
-- seed
+  - seed
 ---
 
 Materialized views speed up query evaluation by storing the results of specified queries. One problem of materialized view is its maintenance. Materialized views have to be brought up to date when the underling base relations are updated.
@@ -10,6 +10,7 @@ Materialized views speed up query evaluation by storing the results of specified
 See also: [[thoughts/Datalog]]
 
 ## DRed
+
 Delete/Rederive
 
 1.  Compute difference in facts between two points
@@ -17,6 +18,7 @@ Delete/Rederive
 3.  Rederive all facts with alternative derivations
 
 ## Noria
+
 [Source](https://blog.the-pans.com/caching-partially-materialized-views-consistently/)
 
 A materialized view is a cache.

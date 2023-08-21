@@ -2,7 +2,7 @@
 title: "Accountability"
 date: 2021-08-05T23:27:54-04:00
 tags:
-- sapling
+  - sapling
 ---
 
 How are parties (human and non-human) held accountable for their actions?
@@ -12,4 +12,5 @@ Reparations and reconciliation can only occur after both parties have acknowledg
 How do we keep people accountable in [digital spaces](thoughts/digital%20commons.md) and [virtual worlds](thoughts/virtual%20worlds.md)? Is it better to create better tools to help users manage digital boundaries or to shift the responsibility to the platforms? Do we do [moderation](thoughts/Moderation.md) at the [infrastructure](thoughts/infrastructure.md) level?
 
 ## Scaling emotional labour
+
 Also note that the emotional labour that goes into holding a group accountable goes up in a democratic setting when more people are involved (see also: [group limits](thoughts/group%20limits.md)). Is there a point where it is almost always better to have an authoritarian/impersonal third party? (e.g. the state and the law)

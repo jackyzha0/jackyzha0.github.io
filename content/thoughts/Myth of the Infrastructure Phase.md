@@ -2,17 +2,17 @@
 title: "Myth of the Infrastructure Phase"
 date: 2023-05-10
 tags:
-- seed
-- pattern
+  - seed
+  - pattern
 ---
 
 [Source](https://www.usv.com/writing/2018/10/the-myth-of-the-infrastructure-phase)
 
-****Apps inspire infrastructure. Then that infrastructure enables new apps.****
+\***\*Apps inspire infrastructure. Then that infrastructure enables new apps.\*\***
 
 The history of new technologies shows that apps beget infrastructure, not the other way around. It’s not that first we build all the infrastructure, and once we have the infrastructure we need, we begin to build apps. It’s exactly the opposite.
 
-> "You can’t build railroads before it is railroad time. _(Chuck Thacker)_"
+> "You can’t build railroads before it is railroad time. *(Chuck Thacker)*"
 
 For example, light bulbs (the app) were invented before there was an electric grid (the infrastructure). You don’t need the electric grid to have light bulbs. But to have the broad consumer adoption of light bulbs, you do need the electric grid, so the breakout app that is the light bulb came first in 1879, and then was followed by the electric grid starting 1882.
 

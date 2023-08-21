@@ -2,7 +2,7 @@
 title: "Self-sovereign Identity (SSI)"
 date: 2022-04-28
 tags:
-- seed
+  - seed
 ---
 
 Self-sovereign identity (SSI) is an approach to digital identity that gives individuals [[thoughts/agency]] over their digital identities
@@ -16,11 +16,13 @@ In centralized identity paradigms, this is usually done through authorities (e.g
 In SSI systems, holders have control over unique identifiers (decentralized identifiers). These can be verified using [[thoughts/encryption|encryption]] and anchored on some sort of distributed ledger (e.g. [[thoughts/blockchain|blockchain]])
 
 ## Why SSI matters to the average citizen
+
 - Avoid a million accounts to log into. SSI federates logins to various services and applications
 - Granular access permissions for content
 - Data provenance through signatures, can request takedowns as proving ownership is trivial
 
 ## Critiques of SSI
+
 [Source: Molly White](https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/)
 
 Mostly critiques about certain implementations of [[thoughts/soulbound|SBTs]] or [[thoughts/Verifiable Credential|VCs]] (which she refers to as Verifiable attestations)

@@ -2,8 +2,8 @@
 title: "Integrated Information Theory of Consciousness (IIT)"
 date: 2022-03-04
 tags:
-- seed
-- PHIL451A
+  - seed
+  - PHIL451A
 ---
 
 See also: [[thoughts/Consciousness is not Information|a refutation against IIT]]
@@ -11,7 +11,8 @@ See also: [[thoughts/Consciousness is not Information|a refutation against IIT]]
 First-order sensory theory of [consciousness](thoughts/consciousness.md), a form of [[thoughts/Panpsychism|panpsychism]]
 
 ## IIT
-> Consciousness *is* integrated information
+
+> Consciousness _is_ integrated information
 
 In this context, information refers to information that is specified by a system that is irreducible to that specified by its parts.
 
@@ -20,6 +21,7 @@ The amount of [information](thoughts/information.md) $\phi$ that the entire comp
 Acknowledges that one cannot infer the existence of [consciousness](thoughts/consciousness.md) starting from physical systems. Instead, IIT starts from the experience itself, identities its essential properties (axioms), and then infers what kind of properties physical systems must have to account for its essential properties (postulates), and determines 'how conscious' a system is based off of these postulates.
 
 Axioms of IIT
+
 1. Intrinsic Existence: consciousness exists, each experience is real and actual (my experience exists independent of external observers)
 2. Composition: Each experience is composed of multiple phenomenological distinctions
 3. Information: each experience is the particular way it is (it is different from other possible experiences)

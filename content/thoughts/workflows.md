@@ -2,7 +2,7 @@
 title: "Workflows"
 date: 2021-07-25T17:03:18-04:00
 tags:
-- seed
+  - seed
 ---
 
 Creating modular tools for users to [build their own workflows](https://thesephist.com/posts/tools/) and [interactions](thoughts/interaction%20design.md)
@@ -18,15 +18,15 @@ Tools you build yourself can grow and change as your workflow changes over time:
 Are our tools extensions of who we are? At what point does it just become a part of our mind? Relevant: [the extended mind hypothesis](thoughts/Extended%20Mind%20Hypothesis.md)
 
 ## Cool Approaches
+
 ### [Mercury](https://uxdesign.cc/introducing-mercury-os-f4de45a04289)
 
 Defining everything around workflows rather than applications.
 
-Verb-noun-modifier approach (e.g. *Find mentions of Dogs in my notes*)
+Verb-noun-modifier approach (e.g. _Find mentions of Dogs in my notes_)
 
 Extensive use of the command palette, smart context-based dropdown filling
 
->In conventional App-driven operating systems, functions are segregated within different Apps. The process of moving from App to App generates friction that takes you out of flow, and distracts you from your intentions.
+> In conventional App-driven operating systems, functions are segregated within different Apps. The process of moving from App to App generates friction that takes you out of flow, and distracts you from your intentions.
 
 Notifications are off by default unless you specific your availability in the rules of the space (really valuable esp in an [attention economy](thoughts/attention%20economy.md))
-

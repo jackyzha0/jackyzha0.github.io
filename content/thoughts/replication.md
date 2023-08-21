@@ -2,10 +2,10 @@
 title: "Replication"
 date: 2022-05-05
 tags:
-- seed
+  - seed
 ---
 
-> A node that has a copy of the data is called a *replica*
+> A node that has a copy of the data is called a _replica_
 
 Replication is the act of ensuring [[thoughts/consistency|consistency]] of data across replicas. If one replica is faulty, others are ideally still accessible
 
@@ -18,7 +18,7 @@ An important concept in replication (and [[thoughts/message broadcast|message br
 This can be done by ensuring [[thoughts/idempotence|idempotence]] in our actions.
 
 ## SMR
+
 [[thoughts/State Machine Replication (SMR)|State machine replication]]cCan be done by FIFO-[[thoughts/message broadcast#Total order broadcast|total order broadcasting]] every update to all replicas. Whenever a replica delivers an update message, it applies it to its own state
 
 This is what underlies a lot of [[thoughts/blockchain|blockchains]], distributed ledgers, smart contracts, etc. ([[thoughts/ethereum|Ethereum]] is just one big state machine)
-

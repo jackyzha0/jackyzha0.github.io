@@ -2,13 +2,15 @@
 title: "Philosophy of science"
 date: 2021-12-25
 tags:
-- seed
+  - seed
 ---
 
 ## Karl Popper
-The aim of scientific inquiry is to find the truth. Yet, some of the greatest scientific theories in the history of science are actually false (e.g. early models of the atom, Newtonian physics). 
+
+The aim of scientific inquiry is to find the truth. Yet, some of the greatest scientific theories in the history of science are actually false (e.g. early models of the atom, Newtonian physics).
 
 Closeness to the truth is a function of two factors
+
 1. Truth
 2. Content
 
@@ -19,6 +21,7 @@ Thus, the more truths a theory entails, the closer it is to the truth.
 Similarly, the concept of a [[thoughts/Microworld|lie-to-children]]: creating a simplified world model to explain a system because the real one is too complex to grasp
 
 ## Verificationist View
+
 Rejecting that the idea of certain facts are objective
 
 For example, a verificationist about height would say that how tall you are depends on what evidence there is about how tall you are. The only height you can have is a height that in principle, discoverable or verifiable that you have

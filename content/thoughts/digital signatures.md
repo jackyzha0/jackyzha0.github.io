@@ -2,9 +2,9 @@
 title: "Digital signatures"
 date: 2022-06-15
 tags:
-- seed
+  - seed
 aliases:
-- signed messages
+  - signed messages
 ---
 
 > Signatures are cryptographic functions that attest to the origin of a particular message.
@@ -13,47 +13,51 @@ It is infeasible for Alice to generate a signed message that appears to have bee
 
 - Aggregating signatures: have multiple signatures signed by various people and then you can aggregate it into a single signature, which makes it more efficient in terms of size
 - Thresholding signatures: multiple people split a key into multiple parts, and you require some fixed number of people to agree to sign a message to be able to actually sign it with the full key
-	- In a $(k,n)$-threshold signature scheme, there is a single public key held by all replicas, and each of the $n$ replicas holds a distinct private key.
-	- Jaclyn implemented [Proactive Refresh for BLS Threshold Signatures](https://github.com/lyronctk/proactive-refresh) during TreeHacks which was super cool. "It's a way to renew signature shares every 30 seconds. Think of it as Google Authenticator for threshold signatures."
+  - In a $(k,n)$-threshold signature scheme, there is a single public key held by all replicas, and each of the $n$ replicas holds a distinct private key.
+  - Jaclyn implemented [Proactive Refresh for BLS Threshold Signatures](https://github.com/lyronctk/proactive-refresh) during TreeHacks which was super cool. "It's a way to renew signature shares every 30 seconds. Think of it as Google Authenticator for threshold signatures."
 
 ## Signatures Schemes
+
 Require 3 algorithms
+
 1. Key generation algorithm: `seed -> public_key, private_key`
 2. Signing algorithm: `msg, private_key -> msg, signature`
 3. Verification algorithm: `msg, signature, public_key -> boolean`
 
 ## Signed Blobs
+
 [From Farcaster Docs](https://www.farcaster.xyz/docs/signed-blob)
 
 Blobs are [[thoughts/security#Message Digest|cryptographically signed]] so that it cannot be tampered with
 
 The structure that holds this data is called a Signed Blob, and it contains three properties:
 
--   `body` - the JSON object that the user wants to store
--   `merkleRoot` - the hashed body (should be renamed to hash)
--   `signature` - the signed hash
+- `body` - the JSON object that the user wants to store
+- `merkleRoot` - the hashed body (should be renamed to hash)
+- `signature` - the signed hash
 
 ### Signing
+
 1.  Construct the JSON object with the properties in the exact order as specified.
 2.  Convert the object to a string to make it hashable.
 3.  Hash the string using [keccak256](https://en.wikipedia.org/wiki/SHA-3) and store this value as the merkleRoot
 4.  Sign the merkleRoot with the user’s Ethereum wallet, creating a recoverable ECDSA signature and store this in the signature property.
 
 ### Verifying
+
 1.  Convert the body to a string to make it hashable.
 2.  Hash the string using [keccak256](https://en.wikipedia.org/wiki/SHA-3) and check that it matches the merkle root
 3.  Perform an ecRecover on the signature with the merkle root to retrieve the address.
 4.  Check that the recovered address matches the expected address.
 
 ## Signed Message Digests
+
 - Signature of long messages is computationally expensive
 - We can compute a fixed-length "fingerprint"
-	- Apply [[thoughts/hash function]] $H$ to message $m$, giving a fixed size message digest, $H(m)$
+  - Apply [[thoughts/hash function]] $H$ to message $m$, giving a fixed size message digest, $H(m)$
 - Signed message digest
-	- Bob sends message $m$ and signed digest $K_B^-(H(m))$
-	- Alice receives $m$ and computes $H_{new}(m)$
-	- Alice receives signed digest $K_B^-(H(m))$ and computes $K_B^+(K_B^-(H(m)))$
-	- If $K_B^+(K_B^-(H(m))) = H_{new}(m)$, the message is considered signed (and untampered)
+  - Bob sends message $m$ and signed digest $K_B^-(H(m))$
+  - Alice receives $m$ and computes $H_{new}(m)$
+  - Alice receives signed digest $K_B^-(H(m))$ and computes $K_B^+(K_B^-(H(m)))$
+  - If $K_B^+(K_B^-(H(m))) = H_{new}(m)$, the message is considered signed (and untampered)
 - Alternatively, [[thoughts/MAC|MACs]]
-
-

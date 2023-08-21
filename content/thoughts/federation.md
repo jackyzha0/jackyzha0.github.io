@@ -2,7 +2,7 @@
 title: "Federation"
 date: 2022-05-26
 tags:
-- seed
+  - seed
 ---
 
 > In a federated network, users are still interacting with a server, but anyone can run a server that interoperates with others in the network, giving users more providers to choose from

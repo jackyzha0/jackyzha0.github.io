@@ -2,7 +2,7 @@
 title: "Small Technology"
 date: 2022-12-22
 tags:
-- seed
+  - seed
 ---
 
 [Source](https://small-tech.org/)
@@ -10,6 +10,7 @@ tags:
 > Small Technology is everyday tools for everyday people designed to increase human welfare, not corporate profits.
 
 Principles of small technology:
+
 1. easy to use
 2. personal
 3. [[thoughts/privacy|private]] by default

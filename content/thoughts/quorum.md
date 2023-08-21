@@ -2,14 +2,16 @@
 title: "Quorum"
 date: 2022-05-05
 tags:
-- seed
+  - seed
 ---
 
 ## Read/Write Quorum
+
 In a system with $n$ replicas, we can ensure [[thoughts/consistency|consistent]]
+
 - writes if a write is acknowledged by $w$ replicas (write quorum)
 - reads if we request reads from $r$ replicas (read quorum)
-	- e.g. send 3 requests, only 2 have to come back. Choose most up to date based on timestamp
+  - e.g. send 3 requests, only 2 have to come back. Choose most up to date based on timestamp
 
 Key thing to note is that $r + w > n$, typically, $r = w = \frac{n+1}{2}$. This means that quorum is generally majority. Thus, reads can tolerate $n-r$ unavailable replicas and writes can tolerate $n - w$ unavailable replicas.
 

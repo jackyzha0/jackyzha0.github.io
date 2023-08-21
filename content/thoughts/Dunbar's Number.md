@@ -2,10 +2,10 @@
 title: "Dunbar's Number"
 date: 2021-12-24
 tags:
-- sapling
+  - sapling
 ---
 
-[Source: The Limits of Friendship by *Maria Konnikova*](https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships)
+[Source: The Limits of Friendship by _Maria Konnikova_](https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships)
 
 ![](/thoughts/images/dunbar.png)
 
@@ -16,6 +16,7 @@ Social Brain Hypothesis: primates have large brains because they live in sociall
 Applied to humans, Dunbar computed a theoretical maximum of 150 for human social groups.
 
 A range (by a factor of 3)
+
 1. Casual Friends: 150
 2. 'Dinner' Friends: 50
 3. Close Friends: 15

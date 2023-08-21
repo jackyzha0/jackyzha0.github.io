@@ -2,19 +2,20 @@
 title: "Personal and cozy software"
 date: 2022-02-20
 tags:
-- sapling
-- pattern
+  - sapling
+  - pattern
 aliases:
-- personal software
+  - personal software
 ---
 
->cozy eternal beta test mode
+> cozy eternal beta test mode
 
 Not everything needs to be built at scale -- sometimes it can just be for family and friends :)) Normalize creating playful and non-[instrumental](thoughts/instrumentalism.md) technology
 
 See: [[thoughts/small technology]]
 
 ## An app can be a home-cooked meal
+
 Source: [Robin Sloan](https://www.robinsloan.com/notes/home-cooked-app/)
 
 Clay Shirky: “Situated software, by contrast, doesn’t need to be personalized — it is personal from its inception.”
@@ -24,6 +25,7 @@ I can, at this point, make the things happen on computers that I want to make 
 I am the programming equivalent of a home cook.
 
 ## Spring '83
+
 [Source](https://www.robinsloan.com/lab/specifying-spring-83/)
 
 I love the disclaimer at the top: "It’s okay to share this link, but I want to underscore that I am sending it specifically to you with the hope that you will … really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination."
@@ -32,6 +34,7 @@ I love the disclaimer at the top: "It’s okay to share this link, but I want t
 - When you operate a server, you get a universe for free (see also: [[thoughts/World Building#World Seed|world seed]]).
 
 ## Folk Software
+
 [Source](https://maggieappleton.com/folk-interfaces)
 
 > People reappropriating existing software to solve their own unique problems
@@ -43,6 +46,7 @@ Folk creations fill a gap. They solve problems for individuals and small communi
 Related to [[thoughts/Tools for Conviviality]]
 
 ## Against universal design
+
 In [[thoughts/Design Justice]]
 
 Universal Design (UD) as defined by Center for UD at North Carolina State University: The design of products and environment to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design
@@ -51,9 +55,10 @@ At least in the digital domain, adaptive design that enables [[thoughts/cozy sof
 
 Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adaptive systems too often are deployed in ways that reinforce [surveillance capitalism](thoughts/Data%20Capitalism.md).
 
-We should destabilize the underlying assumption that what is best for the majority of users is best for *all* users.
+We should destabilize the underlying assumption that what is best for the majority of users is best for _all_ users.
 
 ## Bicycles for the mind
+
 - We were promised bicycles but instead we got aircraft carriers
 - Bicycles: personal, light, moddable
 - Aircraft carriers: industrial, heavy, manufactured

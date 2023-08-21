@@ -2,14 +2,15 @@
 title: "jazz.tools"
 date: 2023-06-27
 tags:
-- seed
+  - seed
 ---
 
-[Jazz](https://jazz.tools/) is an _open-source_ multiplayer data toolkit. Build _live_, _collaborative_, _multi-device_ apps _with frontend code only._  
+[Jazz](https://jazz.tools/) is an *open-source* multiplayer data toolkit. Build *live*, *collaborative*, *multi-device* apps *with frontend code only.*
 
 Embodies the principles of [[thoughts/local-first software|local-first software]]
 
 Components
+
 1. `cojson`: A collaborative JSON type
 2. State synchronization and persistence
 3. Cryptographic [[thoughts/access control|access control]]

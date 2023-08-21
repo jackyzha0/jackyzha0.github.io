@@ -2,9 +2,9 @@
 title: "Network Theory"
 date: 2022-08-01
 tags:
-- seed
+  - seed
 aliases:
-- scale-free networks
+  - scale-free networks
 ---
 
 > Whenever nature seeks robustness, it resorts to networks.
@@ -12,6 +12,7 @@ aliases:
 The [[thoughts/Internet|internet]] played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$
 
 ## Power Laws and Scale-Free Networks
+
 From the [Network Science Book](http://networksciencebook.com/chapter/4#hubs)
 
 **A random network** is a network where the degrees of connections of the nodes follow a Poisson distribution.
@@ -26,12 +27,12 @@ Main difference is that power-law distributions (scale-free networks) have long 
 
 Once hubs are present, they change the way we navigate the network. In random networks, we usually need to make many hops. On scale-free networks, however, we can reach most destinations via a single hub. Scale-free networks mean that even as the sizes may differ widely between networks, navigation time across the networks is very slow to grow (ultra-small world network).
 
-
 ![[thoughts/images/random vs scale-free.png|500]]
 
 ![[thoughts/images/hub sizes in networks.png|500]]
 
 An almost universal property of most real-world networks. For example:
+
 1.  Internet at the router level
 2.  Protein-protein interaction network
 3.  Email network
@@ -39,17 +40,20 @@ An almost universal property of most real-world networks. For example:
 
 However, the scale free property is absent in systems that limit the number of links a node can have, effectively restricting the maximum size of the hubs.
 
-See also: *[On the Power of (even a little) Centralization in Distributed Processing](https://storage.googleapis.com/zt-web-large-files/2011__A_Little_Centralization__Tsitsiklis_Xu.pdf)*
+See also: _[On the Power of (even a little) Centralization in Distributed Processing](https://storage.googleapis.com/zt-web-large-files/2011__A_Little_Centralization__Tsitsiklis_Xu.pdf)_
 
 ## Distances in Networks
+
 The dependence of the average distance $\langle d \rangle$ on the system size $N$ and the degree exponent $\gamma$ are captured by the formula
 
-$$\langle d \rangle = \begin{cases}
+$$
+\langle d \rangle = \begin{cases}
 	const & \gamma = 2 \\
 	\ln \ln N & 2 < \gamma < 3 \\
 	\frac{\ln N}{\ln \ln N} & \gamma = 3 \\
 	\ln N & \gamma > 3
-\end{cases}$$
+\end{cases}
+$$
 
 1. $\gamma = 2$: Hub and spoke model. $k_{max} \sim N$ so all nodes connect to a single central hub. The average path length is constant.
 2. $2 < \gamma < 3$: Ultra-small world model. Hubs radically reduce the path length.
@@ -59,9 +63,11 @@ $$\langle d \rangle = \begin{cases}
 ![[thoughts/images/distances in networks.png]]
 
 ## Network Robustness
+
 See also: [[thoughts/cascading failures]]
 
 ### Percolation Theory
+
 How many nodes do we have to delete to fragment a network into isolated components, assuming deletion is random?
 
 We can model network breakdown as inverse percolation.
@@ -75,8 +81,9 @@ However, this breaks down once we consider scale-free networks. Scale-free netwo
 ![[thoughts/images/robustness of scale-free networks.png]]
 
 ### Under Attack
+
 The removal of a small fraction of the hubs is sufficient to break a scale-free network into tiny clusters. See more on [[thoughts/cascading failures|cascading failures]] in networks
 
-![[thoughts/images/scale-free under attack.png]]*The probability that a node belongs to the largest connected component in a scale-free network under attack (purple) and under random failures (green).*
+![[thoughts/images/scale-free under attack.png]]_The probability that a node belongs to the largest connected component in a scale-free network under attack (purple) and under random failures (green)._
 
 Knocking out even a few hubs quickly breaks down the network. Y-axis is the ratio $\frac{P_\infty(f)}{P_\infty(0)}$ provides the relative size of the largest connected subgraph

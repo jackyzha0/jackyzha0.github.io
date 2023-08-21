@@ -2,9 +2,9 @@
 title: "RDF"
 date: 2022-06-09
 tags:
-- seed
+  - seed
 aliases:
-- triple store
+  - triple store
 ---
 
 > RDF is a standard model for data interchange on the Web
@@ -14,23 +14,27 @@ RDF can be understood as a linking structure which forms a directed, labeled gra
 See also: [[thoughts/LDP|LDP]]
 
 ## RDF Triple
+
 RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a “triple”). Much like a relational database, information in a triplestore is stored and retrieved via a query language.
 
 A store of RDF Triples is called a triplestore.
 
 ## Search
+
 From [Intertwingle](https://www.jwz.org/doc/intertwingle.html)
 
 Following a link only gives you one dimension of mobility. A [[thoughts/search|search]] can be seen as following multiple links, and finding the intersection (or union) of the results of those links.
 
 Any link-relationship should be searchable. For example:
--   All messages from _person_ between _date_ and _date_ that have _pattern_ in the body.
--   All messages from _person_ which contain a message from _person_.
--   All messages to _mailing-list_ which refer to _URL_.
--   All messages containing _text_ in the main body, but not in an attachment.
--   All messages with an attachment whose file name contains _string_.
+
+- All messages from *person* between *date* and *date* that have *pattern* in the body.
+- All messages from *person* which contain a message from *person*.
+- All messages to *mailing-list* which refer to *URL*.
+- All messages containing *text* in the main body, but not in an attachment.
+- All messages with an attachment whose file name contains *string*.
 
 ## Turtle
+
 [Source: W3](https://www.w3.org/TR/turtle/)
 
 A textual syntax for RDF called Turtle that allows an RDF graph to be completely written in a compact and natural text form, with shorthands for common usage patterns and datatypes
@@ -54,6 +58,7 @@ A textual syntax for RDF called Turtle that allows an RDF graph to be completely
 ```
 
 ## JSON-LD
+
 A **JSON-LD document is both an RDF document and a JSON document** and correspondingly represents an instance of an RDF data model
 
 ```json

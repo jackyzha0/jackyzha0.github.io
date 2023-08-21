@@ -2,11 +2,11 @@
 title: "reflect: NLP Model Explained"
 date: 2020-05-10T08:51:56-07:00
 tags:
-- technical
-- fruit
+  - technical
+  - fruit
 ---
 
-![An image of the reflect block page](https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png)*How do we tell that this is a “valid” intent?*
+![An image of the reflect block page](https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png)_How do we tell that this is a “valid” intent?_
 
 A (not so) brief exploration of how we tackle classifying intents in reflect. Part 1 will touch on defining the problem we’re trying to solve, the data we have, and how we pre-processed it. Part 2 will focus on the architecture of the model we built, how well it does, and thoughts on improving it for the future.
 
@@ -40,62 +40,60 @@ We used these answers to form the basis of our very first dataset. We ended up g
 
 > We classified any answer to Q1 as invalid and Q2 + Q3 as valid
 
-| intent | valid |
-|-|-|
-| I am watching a 5 minute video to take my mind off not being productive :/ | no |
-| I'm just bored | no |
-| I’m bored/tired and trying to relax | no |
-| ... | ... |
-| work is pretty boring, i need to take a quick break I just can't focus atm | yes |
-| I finished all my work for today so I'm going to take a break now! | yes |
-| getting some advertising done for my club | yes |
-| I need to make a post on Twitter for my job announcing the latest update to our site | yes |
-| I'm trying to network | yes |
-| ... | ... |
-
+| intent                                                                               | valid |
+| ------------------------------------------------------------------------------------ | ----- |
+| I am watching a 5 minute video to take my mind off not being productive :/           | no    |
+| I'm just bored                                                                       | no    |
+| I’m bored/tired and trying to relax                                                  | no    |
+| ...                                                                                  | ...   |
+| work is pretty boring, i need to take a quick break I just can't focus atm           | yes   |
+| I finished all my work for today so I'm going to take a break now!                   | yes   |
+| getting some advertising done for my club                                            | yes   |
+| I need to make a post on Twitter for my job announcing the latest update to our site | yes   |
+| I'm trying to network                                                                | yes   |
+| ...                                                                                  | ...   |
 
 ### Closed Beta (790 entries)
 
 After we made a basic dataset, we were able to make our first (admittedly not great) model. But in doing so, this let us create an MVP to which we could use to actually test with. We then deployed this model for use to our closed beta testers and collected their responses (with consent of course!) along with the website it was input on. This was then converted into a `.csv` file. A few examples are show below:
 
-| intent | url |
-|-|-|
-| to do some marketing | facebook.com/ |
-| i cannot focus on my work | instagram.com/ |
-| fuel my crippling social media addiction | facebook.com/ |
-| ... | ... |
+| intent                                   | url            |
+| ---------------------------------------- | -------------- |
+| to do some marketing                     | facebook.com/  |
+| i cannot focus on my work                | instagram.com/ |
+| fuel my crippling social media addiction | facebook.com/  |
+| ...                                      | ...            |
 
 These were then hand-labelled by our reflect team in a similar format as the survey data we collected earlier.
 
-| intent | valid |
-|-|-|
-| to do some marketing | yes |
-| i cannot focus on my work | no |
-| fuel my crippling social media addiction | no |
-| ... | ... |
+| intent                                   | valid |
+| ---------------------------------------- | ----- |
+| to do some marketing                     | yes   |
+| i cannot focus on my work                | no    |
+| fuel my crippling social media addiction | no    |
+| ...                                      | ...   |
 
 ### Closed Beta Corrections (37 entries)
 
 Finally, we created a Google Forms through which we directly asked beta testers if a decision made by reflect’s intent classifier was faulty. Specifically, we asked what they input, and what they expected. Here are a few examples:
 
-| input | valid |
-|-|-|
-| reply to a friend about a lab | yes |
-| listening to a youtube music playlist | yes |
-| goof off as much as possible | yes |
-|...|...|
-
+| input                                 | valid |
+| ------------------------------------- | ----- |
+| reply to a friend about a lab         | yes   |
+| listening to a youtube music playlist | yes   |
+| goof off as much as possible          | yes   |
+| ...                                   | ...   |
 
 This entire section of the dataset was only 37 observations, but it drastically helped us reduce false positives and false negatives by focusing specifically on misclassifications.
 
 After aggregating and combing all our data into one common format, we ended up with a grand total of 1271 observations. They looked something like this:
 
-| input | expected |
-|-|-|
-| fail school by watching youtube | no |
-| sdlkjasd | no |
-| making a quick product post (should take <10 min) | yes |
-| ... | ... |
+| input                                             | expected |
+| ------------------------------------------------- | -------- |
+| fail school by watching youtube                   | no       |
+| sdlkjasd                                          | no       |
+| making a quick product post (should take <10 min) | yes      |
+| ...                                               | ...      |
 
 ### So?
 
@@ -136,7 +134,7 @@ What about now? Can we throw it into the neural network yet? Well, no. We may ha
 As the name suggests, we remove all punctuation from the input phrase. We found that including the punctuation hurt our performance, most likely due to the fact that they offer very little in terms of semantic meaning and obfuscate the real meaning of the sentence.
 
 ```python
-stripPunctuation("I don't know if I'm being productive! :(") 
+stripPunctuation("I don't know if I'm being productive! :(")
 > "I dont know if Im being productive"
 ```
 
@@ -154,7 +152,7 @@ lower("I dont know if Im being productive")
 The English language does this weird thing where we can just smush two words together (e.g. “I am” to “I’m”). Unfortunately for us, these produce extra complexity in our model that we could reduce by making them all consistent. In our case, we chose to expand all of these contractions.
 
 ```python
-expandContractions("i dont know if im being productive") 
+expandContractions("i dont know if im being productive")
 > "i do not know if i am being productive"
 ```
 
@@ -163,7 +161,7 @@ expandContractions("i dont know if im being productive")
 The English language also has a bunch of these things called **stop words** — words that do not contribute anything major to the sentence in terms of semantic understanding (usually in the context of natural language tasks such as this). A few examples of them are ‘I’, ‘me’, ‘my’, ‘by’, and ‘on’. By removing them, we once again remove unneeded complexity from the model.
 
 ```python
-rmStopwords("i do not know if i am being productive") 
+rmStopwords("i do not know if i am being productive")
 > "not know productive"
 ```
 
@@ -174,7 +172,7 @@ However, these words are not super friendly for machine learning algorithms who 
 Well, one thing we can do is turn words in indices by how often they appear, capped at the most common 1000 words — in essence, creating a vocabulary list mapping common words to numbers. For example, if “the” is the most common word, we convert it to 1. If “work” is the 8th most common word, we convert it to 8. For anything that isn’t in the top 1000, we give it the value of 0.
 
 ```python
-tokenize("not know productive") 
+tokenize("not know productive")
 > [12, 35, 7]
 ```
 
@@ -183,7 +181,7 @@ tokenize("not know productive")
 Finally, we need to ensure that all the inputs are the same length of simplicity sake. If we were to handle dynamic length inputs, it would introduce a whole other level of complexity that we’re really not ready to deal with. As such, we can make sure all the inputs are the same length by adding a bunch of zeros to those who are too short (zero padding) or by slicing those who are too long.
 
 ```python
-pad([12, 35, 7], 10) 
+pad([12, 35, 7], 10)
 > [0, 0, 0, 0, 0, 0, 0, 12, 35, 7]
 ```
 
@@ -204,7 +202,7 @@ Now that we have something ready to feed into our neural network, let’s dive i
 
 The type of neural network that we’ll be using is called Long Short-Term Memory ([[thoughts/LSTM|LSTM]]).
 
-![credit: Christopher Olah, 2015](https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC)*credit: Christopher Olah, 2015*
+![credit: Christopher Olah, 2015](https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC)_credit: Christopher Olah, 2015_
 
 What’s so special about these networks is that they are really good at modelling time-series data, making it an ideal candidate for tasks like forecasting or natural language processing.
 
@@ -240,7 +238,7 @@ layer = Embedding(vocab_size, 64, input_length=max_seq_len)(inputs)
 
 Next up, we have the Embedding layer. We could get into a really technical discussion about what this really does, but you can think of it as a layer that helps the neural network to learn semantic relationships between inputs.
 
-![credit: Rutger Ruizendaal, 2017](https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD)*credit: Rutger Ruizendaal, 2017*
+![credit: Rutger Ruizendaal, 2017](https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD)_credit: Rutger Ruizendaal, 2017_
 
 Essentially, it [[thoughts/latent-factor model|embeds]] tokens in a [[thoughts/latent-factor model|higher dimension vector space]], where distance between tokens represents its similarity.
 
@@ -262,7 +260,7 @@ layer = LSTM(64)(layer)
 
 We have yet another LSTM layer! By having these two chained right after each other, the first layer can pass all the values of all of its hidden states to the second layer, effectively allowing a sort of ‘deeper’ neural network.
 
-![credit: Jianjing Zhang 2018](https://cdn-images-1.medium.com/max/2000/0*0BRdnA5sJBYbaeR9)*credit: Jianjing Zhang 2018*
+![credit: Jianjing Zhang 2018](https://cdn-images-1.medium.com/max/2000/0*0BRdnA5sJBYbaeR9)_credit: Jianjing Zhang 2018_
 
 This deep LSTM allows our network to learn more abstract concepts, making them well suited for natural language tasks.
 
@@ -290,29 +288,29 @@ Phew, finally got through everything! After putting it all together, we end up w
 ```python
 # 75 max_seq_len
 # 1000 tokenizer_vocab_size
-model = net.RNN(75, 1000) 
+model = net.RNN(75, 1000)
 model.summary()
 
 # _________________________________________________________________
-# Layer (type)                 Output Shape              Param #   
+# Layer (type)                 Output Shape              Param #
 # =================================================================
-# inputs (InputLayer)          (None, 75)                0         
+# inputs (InputLayer)          (None, 75)                0
 # _________________________________________________________________
-# embedding_1 (Embedding)      (None, 75, 64)            64000     
+# embedding_1 (Embedding)      (None, 75, 64)            64000
 # _________________________________________________________________
-# lstm_1 (LSTM)                (None, 75, 64)            33024     
+# lstm_1 (LSTM)                (None, 75, 64)            33024
 # _________________________________________________________________
-# dropout_1 (Dropout)          (None, 75, 64)            0         
+# dropout_1 (Dropout)          (None, 75, 64)            0
 # _________________________________________________________________
-# lstm_2 (LSTM)                (None, 64)                33024     
+# lstm_2 (LSTM)                (None, 64)                33024
 # _________________________________________________________________
-# FC1 (Dense)                  (None, 256)               16640     
+# FC1 (Dense)                  (None, 256)               16640
 # _________________________________________________________________
-# dropout_2 (Dropout)          (None, 256)               0         
+# dropout_2 (Dropout)          (None, 256)               0
 # _________________________________________________________________
-# out_layer (Dense)            (None, 1)                 257       
+# out_layer (Dense)            (None, 1)                 257
 # _________________________________________________________________
-# activation_1 (Activation)    (None, 1)                 0         
+# activation_1 (Activation)    (None, 1)                 0
 # =================================================================
 # Total params: 146,945
 # Trainable params: 146,945
@@ -332,15 +330,15 @@ The first component is the **loss function.** This component tells the neural ne
 
 Next, we need to pick an **optimizer**. This component tells the neural network how to change its parameters to improve or ‘optimize’ itself. In this model, we chose to use an optimizer called [RMSProp](https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learning-62e116fcf29a) with a learning rate of 1e-3 . We aren’t going to cover all the technical details of this optimizer in this blog post, but just know that it is a very fast and effective optimizer.
 
-![RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev](https://cdn-images-1.medium.com/max/2000/0*HZM5XJ-quu276w39.gif)*RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev*
+![RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev](https://cdn-images-1.medium.com/max/2000/0*HZM5XJ-quu276w39.gif)_RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev_
 
 One important hyperparameter we choose is the **train-test split.** In data science and machine learning, we typically withhold part of our data and set it aside as a **test set**. The rest of the data will be considered the **training set.** When training the model, we never feed it the test set. As a result, we can use the test set as a metric to see how well it would perform on real-world, unseen data. In our training, we used a train-test split of 20%.
 
-Another important hyperparameter that we can choose is the **mini-batch size**. The mini-batch size determines how many training examples we feed the machine learning model before updating its parameters. A smaller mini-batch means that we get more frequent updates to the parameters, but it also runs the risk of having outliers that may cause a bad gradient update. A large mini-batch means that we get a more accurate gradient update but it also takes longer. A similar concept is *sample size* in statistics. We could pick a larger sample to get a better estimate of the overall population, but it is often more expensive to do so. A smaller sample might contain outliers and thus be less robust of an estimate of the overall population, but it very easy to do. So, there’s this tradeoff between accuracy and speed. We found that a good balance between these was a mini-batch size of 128.
+Another important hyperparameter that we can choose is the **mini-batch size**. The mini-batch size determines how many training examples we feed the machine learning model before updating its parameters. A smaller mini-batch means that we get more frequent updates to the parameters, but it also runs the risk of having outliers that may cause a bad gradient update. A large mini-batch means that we get a more accurate gradient update but it also takes longer. A similar concept is _sample size_ in statistics. We could pick a larger sample to get a better estimate of the overall population, but it is often more expensive to do so. A smaller sample might contain outliers and thus be less robust of an estimate of the overall population, but it very easy to do. So, there’s this tradeoff between accuracy and speed. We found that a good balance between these was a mini-batch size of 128.
 
 We then trained our neural network over 10 epochs. A single epoch is one iteration over the entire dataset. If we train it for too many epochs, you run the risk of overfitting (memorizing the training data), but we don’t train it enough, we run the risk of not discovering a better model. One thing we can do it minimize this problem is through the use of cross-validation, which is a technique that lets us ‘test’ on portions of the training set. Essentially, at each iteration during training, we withhold a portion of the training set and use it as a sort of ‘validation’.
 
-![credit: Raheel Shaikh](https://cdn-images-1.medium.com/max/2000/0*6XoMgZUd3SxXgqBj.png)*credit: Raheel Shaikh*
+![credit: Raheel Shaikh](https://cdn-images-1.medium.com/max/2000/0*6XoMgZUd3SxXgqBj.png)_credit: Raheel Shaikh_
 
 By seeing when this validation accuracy goes down, we can get a pretty good idea of when our model begins to overfit on our data, and stop the training before this happens. In training our model, we will use 5-fold [cross-validation](https://towardsdatascience.com/cross-validation-explained-evaluating-estimator-performance-e51e5430ff85).
 
@@ -360,14 +358,14 @@ We’ll leave all the technical code out (if you’re interested, feel free to p
 
 ```typescript
 // declared somewhere earlier
-const model: nn.IntentClassifier = new nn.IntentClassifier("acc85.95"); // name of converted model
+const model: nn.IntentClassifier = new nn.IntentClassifier("acc85.95") // name of converted model
 
 // send to nlp model for prediction
-const valid: boolean = await model.predict(intent);
+const valid: boolean = await model.predict(intent)
 if (valid) {
-    // let through
+  // let through
 } else {
-    // block page
+  // block page
 }
 ```
 
@@ -377,7 +375,7 @@ if (valid) {
 
 We have thought about using something more established and complex like [BERT](https://arxiv.org/abs/1810.04805) and retraining it on our dataset, however then comes the problem of runtime and memory usage.
 
-BERT is a huge model. If you thought 150 thousand parameters was a lot, wait till you see BERT’s 110 *million* parameters. This bad boy takes a few hundred times longer and many times more memory than our current model. While yes BERT may perform really well, we just don’t think it has a place inside of a Chrome extension.
+BERT is a huge model. If you thought 150 thousand parameters was a lot, wait till you see BERT’s 110 _million_ parameters. This bad boy takes a few hundred times longer and many times more memory than our current model. While yes BERT may perform really well, we just don’t think it has a place inside of a Chrome extension.
 
 Our model is decently robust as it is, especially considering the entire model is <2MB and takes less than 200ms to run in browser. For now, we will stick with lightweight models, but we may switch if we find a better match in the future :)
 

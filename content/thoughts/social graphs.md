@@ -2,7 +2,7 @@
 title: "Social Graphs"
 date: 2021-06-16T09:05:37-04:00
 tags:
-- sapling
+  - sapling
 ---
 
 > Social graph: who's connected to who
@@ -12,6 +12,7 @@ How do social graphs work if users are [pseudonymous](thoughts/pseudonymity.md)?
 Does directness matter in social graphs? i.e. Facebook is undirected (friend means you are friends with each other) whereas Twitter is directed (you can follow someone but doesn't mean they follow you back)
 
 ## Social Graph vs Interest Graphs
+
 Interest graph: online representations of interests
 
 - Some social media construct social graphs from interests (e.g. TikTok)

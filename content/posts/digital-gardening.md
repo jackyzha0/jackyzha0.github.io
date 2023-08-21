@@ -2,7 +2,7 @@
 title: "Digital Gardening"
 date: 2021-01-30T16:53:01-08:00
 tags:
-- fruit
+  - fruit
 ---
 
 > As of 2021, this process is no longer accurate. I've embraced a much more networked form of note taking which I've written about [here](posts/networked-thought.md) and [[thoughts/the garden and the stream|here]].
@@ -14,6 +14,7 @@ A garden is a metaphor for a lot of things: growth, persistence, and the constan
 When I talk about digital gardening, I don't mean digital gardening in the Stardew Valley or FarmVille sense. I mean gardening as in the tending and growth of my own ideas and projects on my own little plot of the world wide web -- namely through my [[thoughts/writing|writing]], notes, and projects. After reading Joel Hook's blog post on his own [digital garden](https://joelhooks.com/digital-garden), I've been thinking and reflecting on my own processes for managing my own digital garden (which you are on right now).
 
 ## The garden plot
+
 According to [GitHub](https://github.com/jackyzha0/blog/commit/74f7460c49a7c56acfadf3f8f1cdd892005ebed4), I first created this blog in late August of [2020](posts/2020.md). At the time, it was more of a novelty thing. I wanted to get off of Medium and onto my own platform where I had more fine-grained control over how I could present my work and how people discover it.
 
 I spent a few hours building out my own Hugo theme, making it as frictionless as possible to write produce new content. I threw up a few of my old Medium blog posts just to see how it would look, and I was happy with it. However, even with the novelty of the blog, I had nothing to write about.
@@ -40,7 +41,7 @@ I keep a bunch of random thoughts and ideas in my new tab page. Whenever I come 
 
 This input of information -- the water -- is what allows the ideas to grow. Just as it's not enough to just water a plant once and forget about it, I've found that in-taking information inconsistently is about as good as not doing it at all. To be an effective watering can, I need to be intentional and consistent with my watering.
 
-My process of collecting random scraps of information first sprung up from coming across interesting blog posts on Reddit. I'd always just read a cool post, follow a few hyperlinks, nod to myself and say "huh", and maybe forward it to a friend or two. While it may have been entertaining to read, I got no real value out of it. Now that I've started cultivating this garden of ideas, I have a reason to be more intentional in how I sift through the information and be more mindful of what I'm actually taking away from each piece. [[thoughts/writing|Writing]], specifically on this blog, has helped me to go back to more mature ideas and condense and refine them into something presentable and legible to others -- quite literally picking the fruit of my labour. 
+My process of collecting random scraps of information first sprung up from coming across interesting blog posts on Reddit. I'd always just read a cool post, follow a few hyperlinks, nod to myself and say "huh", and maybe forward it to a friend or two. While it may have been entertaining to read, I got no real value out of it. Now that I've started cultivating this garden of ideas, I have a reason to be more intentional in how I sift through the information and be more mindful of what I'm actually taking away from each piece. [[thoughts/writing|Writing]], specifically on this blog, has helped me to go back to more mature ideas and condense and refine them into something presentable and legible to others -- quite literally picking the fruit of my labour.
 
 > We are all constantly bombarded with information, a lot of it is really good information too, but the challenge is absorbing it and applying it to the context of our lives and careers. -- Joel Hooks
 

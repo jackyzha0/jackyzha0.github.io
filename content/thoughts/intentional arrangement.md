@@ -2,10 +2,10 @@
 title: "Intentional Arrangement"
 date: 2021-09-21T10:10:48-07:00
 tags:
-- seed
+  - seed
 ---
 
-Source: [The Discipline of Organizing by *Glushko*](https://berkeley.pressbooks.pub/tdo4p/chapter/the-concept-of-intentional-arrangement/)
+Source: [The Discipline of Organizing by _Glushko_](https://berkeley.pressbooks.pub/tdo4p/chapter/the-concept-of-intentional-arrangement/)
 
 > explicit or implicit acts of organization by people, or by computational processes acting as proxies for, or as implementations of, human [intentionality](thoughts/intentionality.md)
 
@@ -24,10 +24,13 @@ Design questions/dimensional perspectives on the design of [organizing systems](
 Maintaining organizing systems with long expected lifetimes mean that incremental changes to description vocabularies and classification schemes need to happen over time -- even when the categories are not always explicit. (related: [digital-gardening](posts/digital-gardening.md))
 
 ### Examples
+
 #### Enumeration
+
 Putting the resources into a set without any specification of any properties they might share. Only property that matters is that the resources are in the same set
 
 #### Collocation
+
 Putting resources in the same location without any additional organization. For a small collection, the proximity-to-use organizing principle is the easiest way to satisfy a requirement to minimize the time to find frequently used resources.
 
 Same concept for [[thoughts/latent-factor model]]

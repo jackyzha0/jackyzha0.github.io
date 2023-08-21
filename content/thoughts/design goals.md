@@ -2,7 +2,7 @@
 title: "Design Goals"
 date: 2021-10-03
 tags:
-- seed
+  - seed
 ---
 
 Goals in the context of HCI are things that can be defined in a given [[thoughts/context]], then evaluated.
@@ -10,6 +10,7 @@ Goals in the context of HCI are things that can be defined in a given [[thoughts
 Human task involves the steps to do something, whereas human needs are general wants of the user, what they want to get accomplished. Usability goals are primarily objective, user experience goals are more subjective.
 
 ### Usability Goals
+
 Usability refers to ensuring that interactive products are easy to learn, effective to use, and enjoyable from the user's perspective. Following 6 goals:
 
 1. Effective to use (effectiveness). Is the product capable of allowing people to learn, carry out their work efficiently, access the information that they need, or buy the goods that they want?
@@ -20,14 +21,17 @@ Usability refers to ensuring that interactive products are easy to learn, effect
 6. Easy to remember how to use (memorability). What types of interface support have been provided to help users remember how to carry out tasks, especially for products and operations they use infrequently?
 
 Examples of commonly used usability criteria
--   time to complete a task (efficiency)
--   time to learn a task (learnability)
--   number of errors made when carrying out a task over time (memorability)
+
+- time to complete a task (efficiency)
+- time to learn a task (learnability)
+- number of errors made when carrying out a task over time (memorability)
 
 ### User Experience Goals
+
 These are concerned with how users experience an interactive product from their perspective, rather than assessing how useful or productive a system is from its own perspective
 
 Desirable aspects of UX
+
 - Satisfying
 - Enjoyable
 - Helpful
@@ -35,6 +39,7 @@ Desirable aspects of UX
 - Provocative
 
 Undesirable aspects of UX
+
 - Making one feel stupid or guilty
 - Cutesy
 - Gimmicky
@@ -43,6 +48,7 @@ Undesirable aspects of UX
 These are combined in a user's multi-faceted experience of a product
 
 ### Design Principles
+
 > Generalizable abstractions intended to orient designers toward thinking about different aspects of their designs
 
 Concerned with what users should see and do when carrying out their tasks using an interactive product: the dos and don'ts of interaction design.

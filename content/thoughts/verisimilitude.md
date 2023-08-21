@@ -2,8 +2,8 @@
 title: "Verisimilitude"
 date: 2023-04-02
 tags:
-- seed
-- pattern
+  - seed
+  - pattern
 ---
 
 Truth is not binary, but rather a spectrum. Some propositions are closer to being true than other propositions.

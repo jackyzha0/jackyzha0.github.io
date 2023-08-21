@@ -2,7 +2,7 @@
 title: "Antifragility"
 date: 2023-04-30
 tags:
-- seed
+  - seed
 ---
 
 > The resilient resists shocks and stays the same; the antifragile gets better.

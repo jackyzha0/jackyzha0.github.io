@@ -2,7 +2,7 @@
 title: "Digital urban design"
 date: 2023-07-30
 tags:
-- seed
+  - seed
 ---
 
 We spend so much time thinking about how to design cities we want to live in. Why don't we spend the same level of care thinking about how to design software we'd like to live in too?

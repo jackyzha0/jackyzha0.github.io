@@ -2,7 +2,7 @@
 title: "Community of Fate"
 date: 2022-03-23
 tags:
-- seed
+  - seed
 ---
 
 [Margaret Levi in Noema Magazine](https://www.noemamag.com/an-expanded-community-of-fate/)

@@ -2,8 +2,8 @@
 title: "Change of basis"
 date: 2022-11-03
 tags:
-- seed
-- CPSC340
+  - seed
+  - CPSC340
 ---
 
 Effectively by constructing new features that take the variable to certain powers. To get a y-intercept (bias), we just raise $x$ to the 0th power to get 1. We can fit polynomials of degree $p$ by raising other powers:
@@ -23,6 +23,7 @@ As the polynomial degree increases, the training error goes down but the approxi
 Choosing a basis is hard! We can do something like [[thoughts/Gaussian RBF|Gaussian radial basis functions]] (RBFs) or polynomial basis as these are both universal approximators given enough data.
 
 ## Kernel Trick
+
 Let $Z$ be the basis. With multi-dimensional polynomial bases, actually forming $Z$ which is $k = O(d^p)$ is intractable.
 
 Represent each column of $Z$ as a unique term. For example, with an $X$ of $d=2$, we can use $p=2$ to get
@@ -49,10 +50,12 @@ We call $K = ZZ^T$ the Gram Matrix.
 Finally, we call the general degree-p polynomial kernel function $K_{ij} = k(x_i, x_j) = (1 + x_i^Tx_j)^p$. Computing $k$ is only $O(d)$ time instead of $O(d^p)$.
 
 Thus, computing $K$ is $O(n^2d + n^3)$:
+
 1. Forming $K$ takes $O(n^2d)$ time
 2. Inverting $K+\lambda I$ which is a $(n,n)$ takes $O(n^3)$
 
 All of our distance-based methods have kernel versions
 
 ## Learned Basis
+
 We can also learn basis from data as well. See [[thoughts/latent-factor model]]

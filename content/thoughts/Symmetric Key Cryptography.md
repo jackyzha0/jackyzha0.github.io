@@ -2,7 +2,7 @@
 title: "Symmetric Key Cryptography"
 date: 2022-10-25
 tags:
-- seed
+  - seed
 ---
 
 - Bob and Alice share same key $K_S$

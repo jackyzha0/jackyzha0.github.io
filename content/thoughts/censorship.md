@@ -2,7 +2,7 @@
 title: "Censorship"
 date: 2021-12-25
 tags:
-- sapling
+  - sapling
 ---
 
 [Source: Moderation in Infrastructure](https://stratechery.com/2021/moderation-in-infrastructure/)
@@ -14,14 +14,17 @@ The benefit of retroactive correction in some instances—imagine fixing a typog
 Is there a difference between censorship at the broadcast level and receiving level? People should choose what they want to see but have no overarching rules over what is 'illegal' content to create/broadcast. States can still mandate for example, required filters for receiving content.
 
 ## 3 Types of censorship
+
 1. Government monopolization (e.g. former Soviet union owned all the media outlets)
 2. Prepublication Review (e.g. government prevents information from being revealed, like nuclear weapons program details)
 3. Licensing and registration (e.g. media with limited bandwidth like radio means a centralized authority divides up the space)
 
 ## Self-censorship of press
+
 Publishers know that if they offend the government, their reporters may not be given access to as much information as reporters for rival publications, putting them at a competitive disadvantage. This knowledge can lead a “free” press to censor itself.
 
 ## Liberalism
+
 John Stuart Mill's argument for [[thoughts/freedom#Free Speech|free speech]] and that censorship should never be justified (arguing for liberalism)
 
 1. All of us are capable of error. If we prevent someone from voicing their opinion, we may actually be silencing the voice of truth.
@@ -32,6 +35,7 @@ John Stuart Mill's argument for [[thoughts/freedom#Free Speech|free speech]] and
 When should intervention happen? Mill's Principle of Harm states that the only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is to prevent harm to others.
 
 ## Self-censorship
+
 Librex and the [[thoughts/freedom|free]] exchange of ideas on college campuses
 
 People go to colleges not to just read textbooks but to talk to professors who've studied it deeply and get their opinions on it.

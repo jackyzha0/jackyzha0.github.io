@@ -2,9 +2,9 @@
 title: "PMOG"
 date: 2022-06-29
 tags:
-- seed
+  - seed
 aliases:
-- Nethernet
+  - Nethernet
 ---
 
 > Geocaching meets Pokemon Go for the Web

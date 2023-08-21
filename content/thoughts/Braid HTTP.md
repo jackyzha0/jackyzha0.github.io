@@ -2,7 +2,7 @@
 title: "Braid HTTP"
 date: 2022-08-11
 tags:
-- seed
+  - seed
 ---
 
 Braid's goal is to extend [[thoughts/HTTP|HTTP]] from a state transfer protocol to a state sync protocol, in order to do away with custom sync protocols and make state across the web more [[thoughts/interoperability|interoperable]].

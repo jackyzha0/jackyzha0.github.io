@@ -2,7 +2,7 @@
 title: "Collections"
 date: 2021-09-21T09:48:35-07:00
 tags:
-- seed
+  - seed
 ---
 
 > A _collection_ is a group of resources that have been selected for some purpose.

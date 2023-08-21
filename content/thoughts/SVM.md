@@ -2,8 +2,8 @@
 title: "Support Vector Machine"
 date: 2022-10-28
 tags:
-- seed
-- CPSC340
+  - seed
+  - CPSC340
 ---
 
 An SVM is just Hinge loss with L2-regularization

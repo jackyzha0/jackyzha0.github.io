@@ -2,8 +2,8 @@
 title: "Rhizome Specification"
 date: 2022-04-28
 tags:
-- sapling
-- rhizome
+  - sapling
+  - rhizome
 ---
 
 > See also: [[thoughts/Rhizome Research Log|Research Log]]

@@ -2,8 +2,8 @@
 title: "Sequential Games"
 date: 2022-11-21
 tags:
-- seed
-- PHIL321A
+  - seed
+  - PHIL321A
 ---
 
 Represented with a game tree consisting of nodes (representing choices by players) and branches

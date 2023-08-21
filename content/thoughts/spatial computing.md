@@ -2,7 +2,7 @@
 title: "Spatial Computing"
 date: 2023-04-03
 tags:
-- seed
+  - seed
 ---
 
 An infinite canvas perhaps?
@@ -11,9 +11,10 @@ An infinite canvas perhaps?
 
 > fuck responsive layouts, all my homies hate responsive layouts
 
- There’s unexpected energy in the space of “being able to lay out elements visually on a 2d plane and know that the browser isn’t going to wrap them somewhere you didn’t mean”.
+There’s unexpected energy in the space of “being able to lay out elements visually on a 2d plane and know that the browser isn’t going to wrap them somewhere you didn’t mean”.
 
 [Spatial web experiments](https://maggieappleton.com/spatial-web?curius=1573)
+
 - https://nette.io/
 - https://www.kosmik.app/
 - https://sprout.place/

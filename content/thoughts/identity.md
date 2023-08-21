@@ -2,12 +2,13 @@
 title: "Identity"
 date: 2022-07-16
 tags:
-- seed
+  - seed
 ---
 
-See also: [[thoughts/self-knowledge|self-knowledge]], [[thoughts/the Self|the self]] 
+See also: [[thoughts/self-knowledge|self-knowledge]], [[thoughts/the Self|the self]]
 
 ## Digital Legibility
+
 Extensions on [[posts/digital-identity|relational identity]]
 
 See also: [[posts/digital-identity|digital identity]]

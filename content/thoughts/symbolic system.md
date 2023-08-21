@@ -2,22 +2,25 @@
 title: "Symbolic Systems"
 date: 2021-07-02T15:05:25-04:00
 tags:
-- seed
+  - seed
 ---
 
 ## Convergence of CS and Philosophy
+
 Newell and Simon claimed that both digital computers and the human mind could be understood as physical symbol systems. They both use strings of bits or streams of neuron pulses as symbols representing the external world (formal symbol manipulation)
 
 [[thoughts/intelligence|Intelligence]] (as claimed by Newell and Simon) requires making the appropriate inference from these internal representations
 
 Turning rationalist philosophy into a research program
--   Hobbes → reasoning was calculating
--   Descartes → mental representations
--   Leibniz → "universal characteristic" — a set of primitives in which all knowledge could be expressed
--   Kant → concepts are rules
--   Russell → logical atoms as the building blocks of reality
+
+- Hobbes → reasoning was calculating
+- Descartes → mental representations
+- Leibniz → "universal characteristic" — a set of primitives in which all knowledge could be expressed
+- Kant → concepts are rules
+- Russell → logical atoms as the building blocks of reality
 
 ## Symbolic AI as a degenerating research program
+
 Problem of representing significance and relevance → how do you transfer the learnings to the real world
 
 Commonsense knowledge problem: how do we represent 'common sense' in a way that is accessible to AI systems that use natural language

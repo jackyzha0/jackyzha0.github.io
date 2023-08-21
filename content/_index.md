@@ -1,11 +1,10 @@
 ---
 title: "jzhao.xyz"
 tags:
-- evergreen
+  - evergreen
 ---
 
 ![Welcome to my little hypertext garden](./banner.svg)
-
 
 ```poetry
 Welcome!
@@ -20,6 +19,7 @@ On a broader level, I care deeply about creating spaces that enable others to ha
 As far as 'about' pages go, most try to reduce the vast complexity of a person into a couple of sentences. Here, I hope it acts as an open invitation into the many winding paths throughout this garden.
 
 Here are some places you may want to visit:
+
 - [The oak letter desk](/posts/): a collection of my favourite [[thoughts/writing|writing]];
 - [The hand-crafted workbench](thoughts/Projects.md): a selection of projects I've worked on;
 - [The crumpled pages in the recycling bin](posts/a-failure-resume.md): my failure resume;

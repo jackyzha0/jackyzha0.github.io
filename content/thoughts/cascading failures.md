@@ -2,10 +2,10 @@
 title: "Cascading failures"
 date: 2022-08-02
 tags:
-- seed
+  - seed
 aliases:
-- Domino Effect
-- Butterfly Effect
+  - Domino Effect
+  - Butterfly Effect
 ---
 
 Effect can be approximated using a power law distribution
@@ -15,21 +15,25 @@ $$p(s) \sim s^{-\alpha}$$
 where $\alpha$ is the avalanche exponent. $\alpha$ tends to hover around 1.5-2.
 
 Systems that display some sort of cascading failure are generally characterized by 3 key features:
+
 1. The system is characterized by some flow over a network, like the flow of electric current in the power grid or the flow of information in communication systems.
 2. Each component has a local breakdown rule that determines when it contributes to a cascade, either by failing (power grid, earthquakes) or by choosing to pass on a piece of information (Twitter).
 3. Each system has a mechanism to redistribute the traffic to other nodes upon the failure or the activation of a component.
 
 ## Halting Cascading Failures
+
 Two approaches come to mind
+
 1. Adding new links to increase connectivity and thus $f_c$. However, in most real systems the time needed to establish a new link is much larger than the timescale of a cascading failure.
 2. Removing redundant links and nodes. The size of a cascade can be reduced if we intentionally remove additional nodes right after the initial failure (i), but before the failure could propagate.
 
 The mechanism of 2. is similar to the method used by firefighters, who set a controlled fire in the fireline to consume the fuel in the path of a wildfire. In a counterintuitive fashion, controlled damage can be beneficial to a network: the Lazarus Effect
 
-The growth rate of a bacteria is determined by its ability to generate biomass, the molecules it needs to build its cell wall, DNA and other cellular components. If some key genes are missing, the bacteria is unable to generate the necessary biomass. Scientists can *revive* these dead bacteria by removing five additional genes.
+The growth rate of a bacteria is determined by its ability to generate biomass, the molecules it needs to build its cell wall, DNA and other cellular components. If some key genes are missing, the bacteria is unable to generate the necessary biomass. Scientists can _revive_ these dead bacteria by removing five additional genes.
 
 ## Examples
-Examples from the [*Network Science Book*'s Chapter on Network Robustness](http://networksciencebook.com/chapter/8#cascading): 
+
+Examples from the [_Network Science Book_'s Chapter on Network Robustness](http://networksciencebook.com/chapter/8#cascading):
 
 ### Blackouts (Power Grid)
 
@@ -47,7 +51,7 @@ Cascading failures are common in economic systems. For example, the drop in the 
 
 ### Scheduling
 
-Airline schedules include a buffer period between consecutive flights to accommodate short delays. When a delay exceeds this buffer, subsequent flights that use the same aircraft, crew or gate, are also delayed. The consequences of bad weather or mechanical failures can cascade through airline schedules, delaying multiple flights and stranding thousands of passengers. 
+Airline schedules include a buffer period between consecutive flights to accommodate short delays. When a delay exceeds this buffer, subsequent flights that use the same aircraft, crew or gate, are also delayed. The consequences of bad weather or mechanical failures can cascade through airline schedules, delaying multiple flights and stranding thousands of passengers.
 
 ### Supply and Food Chains
 

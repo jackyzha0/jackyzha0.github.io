@@ -2,8 +2,8 @@
 title: "Metaphysics"
 date: 2022-04-05
 tags:
-- seed
-- PHIL451A
+  - seed
+  - PHIL451A
 ---
 
 > _meta ta physika_ ("after the things of nature")

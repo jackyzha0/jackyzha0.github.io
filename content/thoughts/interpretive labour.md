@@ -2,11 +2,12 @@
 title: "Interpretive Labour"
 date: 2021-12-25
 tags:
-- seed
+  - seed
 ---
 
 ## Interpretive Labour
-Source: [Research Debt in *Distill Pub*](https://distill.pub/2017/research-debt)
+
+Source: [Research Debt in _Distill Pub_](https://distill.pub/2017/research-debt)
 
 There is a tradeoff between energy put into explaining an idea, and the energy needed to understand it. This energy differential is called 'interpretive labour'
 

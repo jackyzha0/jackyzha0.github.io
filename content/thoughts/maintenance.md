@@ -2,8 +2,8 @@
 title: "Maintenance"
 date: 2021-12-24
 tags:
-- sapling
-- pattern
+  - sapling
+  - pattern
 ---
 
 > We (re)build our computer systems the way we (re)build our cities: over time, without a plan, on top of ruins (Ellen Ullman)
@@ -13,7 +13,8 @@ Maintenance: the gritty upkeep work that keeps the [infrastructure](thoughts/inf
 One of my favourite examples is the [constant rebuilding of the Ise Grand Shrine](https://en.wikipedia.org/wiki/Ise_Grand_Shrine). Retaining knowledge through constant revision
 
 ## [Incentivizing](thoughts/incentives.md) Maintenance
-*The Maintainers*: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-open-source.md), how do we incentivize maintenance?
+
+_The Maintainers_: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-open-source.md), how do we incentivize maintenance?
 
 Is maintenance just the battle against the [tragedy of the commons](thoughts/tragedy%20of%20the%20commons.md)? "Fundamentally, digital infrastructure has a free rider problem. Resources are offered for free, and everybody (whether individual developer or large software company) uses them, so nobody is incentivized to contribute back, figuring that somebody else will step in." [Source](https://techcrunch.com/2018/06/23/open-source-sustainability)
 
@@ -22,13 +23,14 @@ Who are all the maintainers behind the thousands of libraries we depend on each 
 Can we use [web3](thoughts/web3.md) to 'codify' maintenance as a value? Is maintenance inherently centralized (i.e. we need a centralized body to uphold a [public good](thoughts/public%20goods.md))
 
 ## [Innovation](thoughts/innovation.md) is overvalued
-[Source: Hail the maintainers by *Andrew Russell and *](https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more)
+
+[Source: Hail the maintainers by _Andrew Russell and _](https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more)
 
 [The Maintainers Organization](https://themaintainers.org/) and their [fellowship](https://themaintainers.org/summer-fellow)
 
 "What happens _after_ innovation, they argue, is more important. Maintenance and repair, the building of infrastructures, the mundane labour that goes into sustaining functioning and efficient infrastructures, simply has more impact on people’s daily lives than the vast majority of technological innovations."
 
-"These shuttles brought high-tech employees from hip, pricey urban homes to their lush suburban campuses, without exposing them to the inconvenience of public transportation or to the vast populations of the poor and homeless who also call Silicon Valley their home." -> similar to some concepts in [From Counterculture to Cyberculture](thoughts/From%20Counterculture%20to%20Cyberculture.md) talking about displacement of people during the 'back to the land'  movement by the New Communalists
+"These shuttles brought high-tech employees from hip, pricey urban homes to their lush suburban campuses, without exposing them to the inconvenience of public transportation or to the vast populations of the poor and homeless who also call Silicon Valley their home." -> similar to some concepts in [From Counterculture to Cyberculture](thoughts/From%20Counterculture%20to%20Cyberculture.md) talking about displacement of people during the 'back to the land' movement by the New Communalists
 
 **It is crucial to understand that technology is not innovation.** This preoccupation with novelty is unfortunate because it fails to account for technologies in widespread use, and it obscures how many of the things around us are quite old.
 
@@ -41,6 +43,7 @@ Third, focusing on [infrastructure](thoughts/infrastructure.md) or on old, exist
 "Feminist theorists have long argued that obsessions with technological novelty obscures all of the labour, including housework, that women, disproportionately, do to keep life on track."
 
 ## Maintenance and Care
+
 [Shannon Mattern in Places Journal](https://placesjournal.org/article/maintenance-and-care)
 
 > “All of the incentives for all the actors are against maintenance. Nobody ever named a maintenance project, nobody ever got recognized for a maintenance project, nobody ever much got blamed for deferring maintenance during the time while they were in office.”
@@ -51,7 +54,7 @@ Outsiders sometimes make the mistake of focusing on the rusty bridges and broken
 
 As Nikhil Anand writes in _Hydraulic City_, "The maintenance of water infrastructures binds residents, plumbers, engineers, and politicians in an (uneven) system of “hydraulic citizenship.”"
 
-We should always ask: what, exactly, is being maintained? “Is it the thing itself,” Graham and Thrift ask, “or the negotiated order that surrounds it, or some ‘larger’ entity?” Often the answer is all of the above. 
+We should always ask: what, exactly, is being maintained? “Is it the thing itself,” Graham and Thrift ask, “or the negotiated order that surrounds it, or some ‘larger’ entity?” Often the answer is all of the above.
 
 We should also remember that the preservation of our world — the human one — is sometimes at odds with caring for the ecological context. Perhaps not every road _should_ be repaired. Geographer Caitlin DeSilvey encourages us to embrace entropy within the built world, to ask ourselves _for whom_ we engage in preservation, and to consider cultivating an acceptance of “curated decay” where appropriate.
 
@@ -72,4 +75,3 @@ Aryn Martin, Natasha Myers, and Ana Viseu propose that a critical practice of ca
 Historian Nathan Ensmenger reports that “from the early 1960s to the present, software maintenance costs have represented between 50 and 70 percent of all total expenditures on software development.”
 
 The internal maintenance work isn’t supposed to be visible to end users, who tend to like the idea that they’re working with “raw” data. Yet “data never come as raw,” Plantin observes. “Multiple interventions are always needed before data can be reused.”
-

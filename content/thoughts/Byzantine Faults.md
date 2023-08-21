@@ -2,15 +2,15 @@
 title: "Byzantine Faults"
 date: 2022-08-08
 tags:
-- seed
+  - seed
 aliases:
-- BFT
-- byzantine fault tolerance
-- byzantine fault-tolerant
-- byzantine actors
+  - BFT
+  - byzantine fault tolerance
+  - byzantine fault-tolerant
+  - byzantine actors
 ---
 
-Sources: [Byzantine Faults on *Wikipedia*](https://en.wikipedia.org/wiki/Byzantine_fault) and [Paper on the Byzantine Generals Problem](https://lamport.azurewebsites.net/pubs/byz.pdf)
+Sources: [Byzantine Faults on _Wikipedia_](https://en.wikipedia.org/wiki/Byzantine_fault) and [Paper on the Byzantine Generals Problem](https://lamport.azurewebsites.net/pubs/byz.pdf)
 
 A **Byzantine fault** is any fault presenting different symptoms to different observers.
 

@@ -2,7 +2,7 @@
 title: "Autopoiesis"
 date: 2022-03-11
 tags:
-- seed
+  - seed
 ---
 
 > A system capable of producing and maintaining itself by creating its own parts

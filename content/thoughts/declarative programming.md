@@ -2,9 +2,9 @@
 title: "Declarative programming"
 date: 2023-04-17
 tags:
-- seed
+  - seed
 aliases:
-- declarative
+  - declarative
 ---
 
 > To declare what is, not instruct what to do

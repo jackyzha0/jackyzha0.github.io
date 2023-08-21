@@ -2,12 +2,13 @@
 title: "Calendar as task manager"
 date: 2023-07-30
 tags:
-- seed
+  - seed
 ---
 
 [Source](https://julian.digital/2023/07/06/multi-layered-calendars/)
 
 Most task management falls into three categories
+
 1. Task managers: To organize the things we need to get done
 2. Email: To communicate with others
 3. Calendars: To manage our time

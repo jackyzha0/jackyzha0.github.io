@@ -2,11 +2,12 @@
 title: "Friction"
 date: 2021-12-21
 tags:
-- seed
+  - seed
 ---
 
 ## Bring back Friction on the [Internet](thoughts/Internet.md)
-[Source: The case for slowing everything down a bit by *Ezra Klein*](https://www.vox.com/technology/2018/11/19/18101274/google-alphabet-facebook-twitter-addiction-speed)
+
+[Source: The case for slowing everything down a bit by _Ezra Klein_](https://www.vox.com/technology/2018/11/19/18101274/google-alphabet-facebook-twitter-addiction-speed)
 
 The reduction of friction on the web is a business strategy. "Less friction means more time spent, more ads seen, more sales made. Tech companies lose customers during login screens and security verification, and as a result of slow load times. The country’s top computer science talent is paid billions of dollars to further reduce the milliseconds of delay separating our desires and their fulfillment."
 

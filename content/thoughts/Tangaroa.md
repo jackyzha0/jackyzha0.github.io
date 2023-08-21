@@ -2,7 +2,7 @@
 title: "Tangaroa"
 date: 2022-08-08
 tags:
-- seed
+  - seed
 ---
 
 > A [[thoughts/Byzantine Faults|Byzantine fault-tolerant]] [[thoughts/Raft Consensus Algorithm|Raft]] algorithm inspired by [[thoughts/PBFT|PBFT]]
@@ -10,10 +10,12 @@ tags:
 [Source Paper](https://www.scs.stanford.edu/14au-cs244b/labs/projects/copeland_zhong.pdf)
 
 Byzantine nodes are problematic for Raft:
+
 - Node can keep calling for elections to terminate the current term. As Raft cannot progress until a leader is elected, this makes Raft unavailable (breaking [[thoughts/liveness|liveness]])
 - Byzantine leader could modify a client's request and violate correctness
 
 Differences from Raft
+
 - Message Signatures: Uses [[thoughts/digital signatures|digital signatures]] to authenticate messages and verify integrity. This prevents a Byzantine leader from modifying the message contents or forging messages
 - Client Intervention: Clients can force interrupt leadership if the cluster fails to make progress. This prevents a Byzantine leader from continuously calling elections
 - Incremental Hashing: each entry has a [[thoughts/hash function|hash]] that is computed over the previous hash and the newly appended log entry, preventing Byzantine nodes from reorganizing the event log

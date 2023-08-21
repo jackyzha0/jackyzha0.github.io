@@ -2,7 +2,7 @@
 title: "Iconic Space"
 date: 2023-03-02
 tags:
-- seed
+  - seed
 ---
 
 Writer George Saunders coined the term "iconic space" to refer to a space one uniquely occupies because of their set of skills; to do work only they can do.

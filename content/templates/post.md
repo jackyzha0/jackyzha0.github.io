@@ -1,8 +1,6 @@
 ---
 title: "{{title}}"
-date: {{date}}
+date: { { date } }
 tags:
-- seed
+  - seed
 ---
-
-

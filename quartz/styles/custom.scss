@@ -4,11 +4,11 @@
 body[data-slug="index"] img {
   margin-bottom: 3em;
   filter: invert(0%);
-  opacity: .85
+  opacity: 0.85;
 }
 
-[saved-theme=dark] body[data-slug="index"] img {
-  filter: invert(100%)
+[saved-theme="dark"] body[data-slug="index"] img {
+  filter: invert(100%);
 }
 
 .left {
@@ -21,7 +21,7 @@ body[data-slug="index"] img {
   .page-title {
     grid-area: 1 / 1 / 2 / 3;
   }
-  
+
   .search {
     grid-area: 2 / 1 / 3 / 2;
   }
@@ -76,6 +76,7 @@ pre.poetry {
   padding: 0;
 }
 
-.meta, .content-meta {
+.meta,
+.content-meta {
   font-family: biro_script_standardRgus, var(--bodyFont);
 }

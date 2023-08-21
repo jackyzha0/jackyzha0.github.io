@@ -2,14 +2,15 @@
 title: "Noise"
 date: 2023-04-18
 tags:
-- seed
+  - seed
 aliases:
-- RNG
+  - RNG
 ---
 
 [Source](https://www.youtube.com/watch?v=LWFzPP8ZbdU)
 
 ## What makes RNG "good"?
+
 - Fair statistical distribution
 - Low degree of repetition (more correct: a statistically correct degree of repetition)
 - High theoretical maximum (best-case) repeat period
@@ -22,13 +23,16 @@ aliases:
 - Parallelism: is it thread safe?
 
 Why not use `rand()`?
+
 - Only gives us 15-bits of random numbers (range is $[0, 32767]$)
 - Not very fast!
 - Not very good, statistically speaking
 - Global state which is bad for multi-threading!
 
 ## What RNG should we use?
+
 ### Lehmer/Park-Miller
+
 1. Scale by prime `S`
 2. Modulus by prime `M`
 
@@ -45,6 +49,7 @@ uint32_t LcgParkMiller::Rand() {
 Problem: can get stuck at 0 if the seed is bad
 
 ### MCGs (Mixed Congruential Generator)
+
 1. Scale by prime `S`
 2. Add bias `B`
 3. Modulus by prime `M`
@@ -61,6 +66,7 @@ uint32_t LcgParkMiller::Rand() {
 ```
 
 ### Xor shifting
+
 1. Bit-shift around and xor with yourself a few times
 
 ```c
@@ -74,17 +80,19 @@ uint32_t xorshift1::Rand() {
 ```
 
 ### Noise functions
+
 - Order independent RNG!
 - Infinite table: put an index in, get a random float or number back out
-	- 1-D function: index is a single number
-	- 2-D function: index is a pair of numbers
-	- N-D function: index is an n-tuple
+  - 1-D function: index is a single number
+  - 2-D function: index is a pair of numbers
+  - N-D function: index is an n-tuple
 - Totally pure: `noise = mungeAndMangleBits(position)`
 - Can actually use [[thoughts/hash function|hash functions]] for this
-	- `crc32`, `Murmur` , `Squirrel3`, and `std::hash` are all very good and fast
-	- `md5` and `sha1` are good but slow (cryptographically sound)
+  - `crc32`, `Murmur` , `Squirrel3`, and `std::hash` are all very good and fast
+  - `md5` and `sha1` are good but slow (cryptographically sound)
 
 ### n-D noise from 1D noise function
+
 Basically munge the coordinates together my multiplying by a large prime number with non-boring bits. Be careful to make sure that the primes are magnitudes apart!
 
 ```c

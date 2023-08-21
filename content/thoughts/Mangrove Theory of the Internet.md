@@ -2,11 +2,12 @@
 title: "Mangrove Theory of the Internet"
 date: 2022-01-07
 tags:
-- sapling
-- pattern
+  - sapling
+  - pattern
 ---
 
 ## Tools for Communication
+
 [Source: vgr on Twitter](https://twitter.com/vgr/status/1460338562231013376)
 
 Related: tools for [digital commons](thoughts/digital%20commons.md)

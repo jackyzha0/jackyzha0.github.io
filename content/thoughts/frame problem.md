@@ -2,7 +2,7 @@
 title: "Frame Problem"
 date: 2021-07-02T13:36:14-04:00
 tags:
-- sapling
+  - sapling
 ---
 
 Intelligence is (at least partly) a matter of using well what you know. An intelligent being learns from experience, and then uses what is has learned to guide expectations in the future. How does one select the appropriate frame or [context](thoughts/context.md) for any given situation?
@@ -10,11 +10,13 @@ Intelligence is (at least partly) a matter of using well what you know. An intel
 There are an infinite number of contextual frames for any given situation. How do we encode this in discrete systems like in AI?
 
 ## Installation problem
+
 Problem of installing in one way or another all the information needed by an agent to plan in a changing world.
 
 Can be broken down into
--   [semantic](thoughts/semantics.md) problem: what information do we need to install?
--   syntactic problem: what system, format, structure, or mechanism do we use to install it
+
+- [semantic](thoughts/semantics.md) problem: what information do we need to install?
+- syntactic problem: what system, format, structure, or mechanism do we use to install it
 
 However, one cannot realistically create a Spinozistic solution (a small set of axioms and definitions from which we can deduce the rest of our knowledge on demand)
 

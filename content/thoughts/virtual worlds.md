@@ -2,7 +2,7 @@
 title: "Virtual Worlds"
 date: 2021-07-02T16:23:05-04:00
 tags:
-- sapling
+  - sapling
 ---
 
 ## Bridging the real and the virtual
@@ -14,6 +14,7 @@ No matter how hard we try, our virtual selves will inevitably be tethered to our
 Related to: [digital commons](thoughts/digital%20commons.md) and [VR](thoughts/vr.md)
 
 ## Scarcity
+
 In a world where scarcity is constructed, do we even need to use it? Can we rely on manipulating abundance ([agalmics](thoughts/positive%20sum.md)) through [incentives](thoughts/incentives.md)?
 
 > I realized I had become used to better digital goods being gated and inaccessible to the public when I felt weird taking all the digital goods without pay. (**[Nancy](https://nancyzuo.substack.com/p/capitalism-in-virtual-worlds)**)

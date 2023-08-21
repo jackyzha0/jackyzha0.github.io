@@ -2,8 +2,8 @@
 title: "Fishbowl effect"
 date: 2023-04-04
 tags:
-- seed
-- pattern
+  - seed
+  - pattern
 ---
 
 Jonathan Zdziarski (aka @NerveGas) on user demands: "There is definitely a place for users and their demands, however that's not inside the community (unless they're also contributing devs); the community, as in practicing any art form, is vulnerable; you wouldn't sit and criticize a painter while they're still painting their piece. The user base needs to be moved outside of the artistic realm and into the museum, where you software is on display."

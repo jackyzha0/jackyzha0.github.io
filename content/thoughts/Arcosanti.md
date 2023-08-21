@@ -2,7 +2,7 @@
 title: "Arcosanti"
 date: 2022-07-05
 tags:
-- seed
+  - seed
 ---
 
 A provocative [[thoughts/urban planning]] experiment of a compact city designed not around roads and cars but around people. It was intended to be a Western caravansary, a traditional inn with central courtyard for travelers in the desert regions of Asian or North Africa that often served as a stopover for ideas.

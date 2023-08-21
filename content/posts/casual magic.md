@@ -2,11 +2,11 @@
 title: "Casual Magic"
 date: 2022-06-08
 tags:
-- fruit
-- writing
+  - fruit
+  - writing
 ---
 
-*A small collection of poetry about magic in the everyday*
+_A small collection of poetry about magic in the everyday_
 
 ---
 
@@ -18,7 +18,7 @@ splitting the uniform beam of light into a hidden spectrum of fractals,
 bathing the room in a shower of brilliant colours.
 
 The dripping of the water from the faucet was always erratic,
-never settling on any sort of discernible pattern. 
+never settling on any sort of discernible pattern.
 Drip drip       drip     drip drip         drip    drip            drip     ,
 It was always 8 drips of the faucet before each perennial was well watered.
 
@@ -60,10 +60,10 @@ and bounce off the waves.
 
 Eratosthenes used light to figure out
 the size of this little ball of earth we stand on.
-I think often about how each ray of light 
-travelled 8 minutes and 20 seconds, 
+I think often about how each ray of light
+travelled 8 minutes and 20 seconds,
 burned its way through the atmosphere,
-bounced off countless people, houses, trees, 
+bounced off countless people, houses, trees,
 just to be stopped by our eyes,
 unbashed and perfectly content at its destination.
 
@@ -77,7 +77,7 @@ the confidence of a single photon traveling 100 million miles to its destination
 'Striving' is the keyword.
 On some days, my eyes get moist,
 acquiring the same glistening as water droplets falling from the sky.
-It is on these days that the light is especially beautiful, 
+It is on these days that the light is especially beautiful,
 taking on an almost ephemeral and magical feeling.
 
 I borrow strength from the light:
@@ -148,7 +148,7 @@ to   traverse.
 	millennia   ago
 	about   how   stars   are   just
 	holes   in   the   blankets   of   the   sky,
-	there   so   the   light   of   day    
+	there   so   the   light   of   day
 	can   peek   through   at   night.
 
 

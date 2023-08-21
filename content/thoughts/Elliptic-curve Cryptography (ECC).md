@@ -2,15 +2,16 @@
 title: "Elliptic-curve Cryptography (ECC)"
 date: 2022-06-23
 tags:
-- seed
+  - seed
 aliases:
-- elliptic curve
-- ECC
+  - elliptic curve
+  - ECC
 ---
 
 A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] which uses much smaller key-sizes than [[thoughts/RSA|RSA]]
 
 ## Properties
+
 Specifically looking at Ed25519
 
 The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric about the x-axis)
@@ -23,7 +24,6 @@ In this game of billiards, you take a ball at point A, shoot it towards point B.
 
 If the value C is over some maximum value (usually a prime), we modulus it with the maximum to end with a valid number.
 
-
 Illustrated example of A dot B = C:
 
 ![Billiard animation](https://blog.cloudflare.com/content/images/image02.gif)
@@ -33,6 +33,7 @@ It turns out that if you "dot" an initial point with itself $n$ times to arrive 
 $n$ is then the private key, point A dotted with itself $n$ times is the public key
 
 ## Key Exchange
+
 ECDHE stands for Elliptic Curve Diffie Hellman Ephemeral and is a key exchange mechanism based on elliptic curves
 
 Curve25519 is a popular set of elliptic curve parameters and reference implementation by Daniel J. Bernstein in C Bindings and alternative implementations are also available.

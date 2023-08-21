@@ -2,11 +2,11 @@
 title: "Stream of Consciousness"
 date: 2022-03-04
 tags:
-- seed
-- PHIL451A
+  - seed
+  - PHIL451A
 ---
 
-Quotes from *The Principles of Psychology* by William James
+Quotes from _The Principles of Psychology_ by William James
 
 > “Consciousness, then, does not appear to itself chopped up in bits. Such words as ‘chain’ or ‘train’ do not describe it fitly as it presents itself in the first instance. It is nothing jointed; it flows. A ‘river’ or a ‘stream’ are the metaphors by which it is most naturally described. In talking of it hereafter, let us call it the stream of thought, of consciousness, or of subjective life.” – William James, Principles of Psychology
 

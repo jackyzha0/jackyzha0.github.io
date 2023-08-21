@@ -2,7 +2,7 @@
 title: "Memex"
 date: 2022-11-29
 tags:
-- seed
+  - seed
 ---
 
 [Source](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881) by Vannevar Bush
@@ -14,6 +14,7 @@ Bush envisioned the memex behaving like an “intricate web of trails” similar
 > Tapping a few keys projects the head of the trail. A lever runs through it at will, stopping at interesting items, going off on side excursions. It is an interesting trail, pertinent to the discussion.
 
 ## The web is not the memex
+
 See also: [[thoughts/the garden and the stream]]
 
 1. A memex contains both original materials and the materials. Unlike the web, there is no read-only version of the memex. Anything you read you can link and annotate. Not just reply, but change

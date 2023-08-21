@@ -2,7 +2,7 @@
 title: "Niche at scale"
 date: 2021-12-24
 tags:
-- seed
+  - seed
 ---
 
 "Tokyo, a city where a number of unusual stores exist: Stores that only sell vinyl records from the 1970s, or that only sell whisky from the 1980s.

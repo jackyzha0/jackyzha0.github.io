@@ -2,9 +2,9 @@
 title: "Microworld"
 date: 2023-04-05
 tags:
-- seed
+  - seed
 aliases:
-- lie-to-children
+  - lie-to-children
 ---
 
 > Creating a simplified world model to explain a system because the real one is too complex to grasp

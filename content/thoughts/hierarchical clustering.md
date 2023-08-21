@@ -2,11 +2,12 @@
 title: "Hierarchical Clustering"
 date: 2022-09-28
 tags:
-- seed
-- CPSC340
+  - seed
+  - CPSC340
 ---
 
 Hierarchical clustering produces a tree of clusterings
+
 - Each node in the tree splits the data into 2 or more clusters.
 - Much more information than using a fixed clustering.
 - Often have individual data points as leaves.
@@ -14,24 +15,29 @@ Hierarchical clustering produces a tree of clusterings
 Often applied in phylogenetics
 
 ## Agglomerative Clustering (Bottom up)
+
 Requires a "distance" measure between two clusters.
 
 Cluster distance measures
+
 1. Distance between closest members of $C_1$ and $C_2$. Also called single-link clustering: $\min d(a,b), a \in C_1, b \in C_2$
 2. Distance between farthest members of $C_1$ and $C_2$. Also called complete-link clustering: $\max d(a,b), a \in C_1, b \in C_2$
 3. Average distance between members of $C_1$ and $C_2$. Also called group average clustering: $\frac{1}{|C_1||C_2|} \sum_{a \in C_1} \sum_{b \in C_2} d(a,b)$
 
-1. Starts with each point in its own cluster.
-2. Each step merges the two “closest” clusters.
-3. Stop with one big cluster that has all points.
+4. Starts with each point in its own cluster.
+5. Each step merges the two “closest” clusters.
+6. Stop with one big cluster that has all points.
 
 Naive implementation cost is $O(n^3d)$
 
 ## Divisive Clustering (Top-down)
+
 Start with all examples in one cluster, then start dividing. (e.g., run [[thoughts/K-means]] on a cluster, then run again on resulting clusters)
 
 ## Biclustering
+
 Cluster the training examples and features. Helps to figure out the 'why' on why things are clustered together
+
 - Run clustering method on $X$
 - Run clustering method on $X^T$
 

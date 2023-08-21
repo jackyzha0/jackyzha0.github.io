@@ -2,11 +2,11 @@
 title: "Lossiness as Mutation"
 date: 2023-06-27
 tags:
-- seed
-- pattern
+  - seed
+  - pattern
 ---
 
-[Source: Self-Organizing Ideas by *Gordon Brander*](https://subconscious.substack.com/p/self-organizing-ideas)
+[Source: Self-Organizing Ideas by _Gordon Brander_](https://subconscious.substack.com/p/self-organizing-ideas)
 
 Maybe chaos is necessary for [emergent behaviour](thoughts/emergent%20behaviour.md). Thus, lossy communication in low [bandwidth](thoughts/bandwidth.md) communication helps seed for selection/mutation of new ideas. Examples of this include [[thoughts/writing|writing]].
 

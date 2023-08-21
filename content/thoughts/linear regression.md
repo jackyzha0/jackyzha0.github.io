@@ -2,11 +2,12 @@
 title: "Linear Regression"
 date: 2022-10-05
 tags:
-- seed
-- CPSC340
+  - seed
+  - CPSC340
 ---
 
 Vector dimensions:
+
 - $w$ is $(d, 1)$ (weights)
 - $y$ is $(n,1)$ (targets)
 - $x_i$ is $(d, 1)$ (features)
@@ -21,14 +22,16 @@ We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (w^Tx_i -
 
 In d-dimensions, we minimize
 
-$$\begin{equation}
+$$
+\begin{equation}
 \begin{split}
 f(w) &= \frac 1 2 \sum_{i=1}^n (w^Tx_i - y_i)^2 \\
  & = \frac 1 2 \lVert Xw - y \rVert^2 \\
  & = \frac 1 2 w^TX^TXw - w^TX^Ty + \frac 1 2 y^T y \\
  & = \frac 1 2 w^TAw - w^Tb + c
 \end{split}
-\end{equation}$$
+\end{equation}
+$$
 
 where $A$ is a matrix, $b$ is a vector, and $c$ is a scalar
 
@@ -44,7 +47,7 @@ $$
 \frac{\partial f}{\partial w_d}
 \end{bmatrix}  \\ \\
 
-&= 
+&=
 
 \begin{bmatrix}
 \sum_{i=1}^n (w^Tx_i - yi)x_{i,1}  \\
@@ -65,7 +68,9 @@ $$
 We can fit to polynomial equations using a [[thoughts/change of basis]]
 
 ## Cost
+
 Of solving equations in the form $Aw = b$
+
 1. $O(nd)$ to form vector $b$
 2. $O(nd^2)$ to form matrix A
 3. Solving a $(d,d)$ system of equations is $O(d^3)$
@@ -73,6 +78,7 @@ Of solving equations in the form $Aw = b$
 Overall cost is $O(nd^2+d^3)$
 
 ## Robust Regression
+
 We minimize the L1-norm of residuals instead of L2-norm
 
 $$f(w) = \lVert Xw - y \rVert_1$$
@@ -80,18 +86,20 @@ $$f(w) = \lVert Xw - y \rVert_1$$
 However, as the L1-norm uses the absolute function, it is non-differentiable at 0. We can use a smooth approximation of the L1-norm instead, like Huber loss:
 
 $$
-h(r_i) = 
-\begin{cases} 
+h(r_i) =
+\begin{cases}
       \frac 1 2 r_i^2 & |r_i| \leq \epsilon \\
       \epsilon (|r_i| - \frac 1 2 \epsilon) & \textrm{otherwise}
    \end{cases}
 $$
 
 Absolute error is more robust and non-convex errors are the most robust.
+
 - Generally not influenced by outlier groups
 - But it is non-convex so finding global minimum is hard
 
 ## Brittle Regression
+
 You want to minimize size of worst error across examples. For example, if in worst case the plane can crash or you perform badly on a group.
 
 We can instead minimize the $L_\infty$ norm which is convex but non-smooth. This effectively minimizes the highest error (effectively Minimax regret in [[thoughts/Decisions under ignorance|DUI]]).
@@ -101,6 +109,7 @@ The smooth approximation to the max function is the log-sum-exp function:
 $$\max_i \{ z_i \} \approx \log( \sum_i \exp(z_i))$$
 
 ## Penalizing Model Complexity
+
 Optimize $score(p) = \frac 1 2 \lVert Z_p v - y \rVert^2 + p$ where $p$ is the degree of the polynomial.
 
 Other ones also exist which replace the $p$ term with $\lambda k$ where $k$ is the estimated degrees of freedom (for polynomials, $k = p + 1$). $\lambda$ controls how strongly we penalize complexity.

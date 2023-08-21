@@ -2,8 +2,8 @@
 title: "50 pounds of pots"
 date: 2022-11-29
 tags:
-- seed
-- pattern
+  - seed
+  - pattern
 ---
 
 **Quantity is the journey to quality**
@@ -12,4 +12,4 @@ The ceramics teacher announced on opening day that he was dividing the class int
 
 Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the “quantity” group was busily churning out piles of work — and learning from their mistakes — the “quality” group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.
 
-*From Art & Fear by David Bayles, Ted Orland*
+_From Art & Fear by David Bayles, Ted Orland_

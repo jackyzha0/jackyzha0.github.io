@@ -2,12 +2,13 @@
 title: "Intersectionality"
 date: 2023-04-04
 tags:
-- seed
+  - seed
 ---
 
 Intersectionality identifies multiple [[thoughts/interdependence|interdependent]] factors of advantage and disadvantage. It refers to the interconnected nature of social categorizations such as race, class, and gender as they apply to a given individual or group
 
 ### On Intersectionality
+
 In [[thoughts/Design Justice]]
 
 Black women workers at GM were told they had no legal grounds for a discrimination case against their employer because antidiscrimination law only protected single-identity categories.

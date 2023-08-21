@@ -2,7 +2,7 @@
 title: "Algorithmic decision making"
 date: 2022-03-29
 tags:
-- seed
+  - seed
 ---
 
 [[thoughts/GDPR]] in the EU states that any significant decision making cannot be based solely on automatic information processing (though, what is to say that the human [consciousness](thoughts/consciousness.md) isn't just automatic information processing?)

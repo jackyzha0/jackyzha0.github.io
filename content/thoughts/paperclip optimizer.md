@@ -2,7 +2,7 @@
 title: "Paperclip optimizers"
 date: 2022-04-12
 tags:
-- seed
+  - seed
 ---
 
 On [LessWrong](https://www.lesswrong.com/tag/paperclip-maximizer)

@@ -2,10 +2,10 @@
 title: "State Machine Replication (SMR)"
 date: 2022-08-05
 tags:
-- seed
+  - seed
 aliases:
-- SMR
-- state machine replication
+  - SMR
+  - state machine replication
 ---
 
 A subset of the algorithmic [[thoughts/consensus|consensus]] problem about agreeing on the same state

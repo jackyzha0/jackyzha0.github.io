@@ -2,19 +2,22 @@
 title: "Jestermaxxing"
 date: 2022-08-02
 tags:
-- seed
+  - seed
 ---
 
 ## Playfulness vs Epistemic Traps
+
 C. Thi Nguyen on [Playfulness vs Epistemic Traps](https://philpapers.org/archive/NGUPVE.pdf)
 
 Intellectual playfulness, loosely, is the disposition to try out new ideas, perspectives and systems of thought (involves perspective shifting) for the sheer joy of it ([[thoughts/The Grasshopper, Games, Life and Utopia#Terminology|autotelic behaviour]]). It is a disposition to explore ideas for the value of exploration itself.
 
 Intellectual playfulness also has some clear epistemic functionality for us
+
 - intellectually playful exploration sometimes can better serve the goal of finding the truth, than will exploration that is strictly aimed at finding the truth
 - it functions against epistemic traps: belief systems that undermine our epistemic efforts, leaving us stuck inside them
 
 Examples of epistemic traps:
+
 1. anti-reflective traps: belief systems that operate by preventing their adopters from reflecting on their belief system at all (e.g. unswerving and unthinking obedience to a leader)
 2. inquiry trap: belief systems which encourage, but re-direct, various intellectual processes. A kind of intellectual judo, flipping earnest intellectual efforts and sending down the wrong paths (e.g. echo chambers: a community which creates a significant [[thoughts/trust|trust]] disparity between members and non-members -- [[thoughts/in-group bias|in-group bias]]. Members of echo chambers come equipped with the intellectual machinery needed to dismiss contrary evidence coming in from the outside. Outside sources are, after all, untrustworthy, malicious, and corrupt)
 3. insensitivity trap: hybrid anti-reflective and inquiry trap. Belief system that selectively cuts off attention to certain areas of life by attributing valuelessness to those areas by narrowly specifying what counts as valuable. (for example, the businessperson who believes the only thing of importance is money. They spend their time thinking about strategies to make more money and unlikely to attend to pursuits which might put them into contact with other expressions of value)
@@ -27,9 +30,10 @@ Imagine that a belief system is a boat. Open-mindedness is the willingness to pu
 
 Next, we argue that the pursuit of truth may be a self-effacing end -- that it cannot be acquired through direct pursuit. Even if you are trying out alternative systems of belief, the choice of those systems will still be influenced by your standing system of beliefs. The trouble is that a well-designed epistemic trap can undermine the plausibility of alternative perspectives.
 
-In the [[thoughts/exploit explore|exploit-explore tradeoff]], random walks are *actually good*. Surely, one may argue, that if going on occasional random walks is the best path for rationality, then wouldn't the rational person go on random walks? Yet, one cannot take a truly random walk without being guided by prior beliefs.
+In the [[thoughts/exploit explore|exploit-explore tradeoff]], random walks are _actually good_. Surely, one may argue, that if going on occasional random walks is the best path for rationality, then wouldn't the rational person go on random walks? Yet, one cannot take a truly random walk without being guided by prior beliefs.
 
 ## Idealogical Turing Test
+
 https://twitter.com/liron/status/1551205692152975360
 
 > The Ideological Turing Test is an exercise where you try to pretend to hold an opposing ideology convincingly enough that outside observers can't reliably distinguish you from a true believer.

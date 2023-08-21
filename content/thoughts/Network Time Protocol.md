@@ -2,9 +2,9 @@
 title: "Network Time Protocol"
 date: 2023-04-03
 tags:
-- seed
+  - seed
 aliases:
-- NTP
+  - NTP
 ---
 
 The known problem with this mechanism is that it can drift away from the actual time of the day, based on how fast or slow the crystals oscillate. To fix this, computers typically have a service like NTP which synchronizes computer clocks with well known time sources on the internet.

@@ -2,10 +2,10 @@
 title: "Automation"
 date: 2021-12-09
 tags:
-- sapling
+  - sapling
 ---
 
-[Source: What Tech Futurists Get Wrong About Human Autonomy by *Divya Siddarth and Kelsi Nabben*](https://www.noemamag.com/ai-blockchain-human-autonomy-future/)
+[Source: What Tech Futurists Get Wrong About Human Autonomy by _Divya Siddarth and Kelsi Nabben_](https://www.noemamag.com/ai-blockchain-human-autonomy-future/)
 
 [AI systems](posts/agi.md) and [blockchain](thoughts/blockchain.md) are both means to achieve the same "underlying desire: to implicitly or explicitly abstract away human fallibility in service of a fully automated vision of perfection."
 

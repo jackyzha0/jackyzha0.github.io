@@ -2,7 +2,7 @@
 title: "Rationality"
 date: 2021-10-20
 tags:
-- seed
+  - seed
 ---
 
 An act is rational (roughly) if it is most likely to maximize satisfaction of the agent’s preferences or [[thoughts/utility|utility]].

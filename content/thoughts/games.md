@@ -2,7 +2,7 @@
 title: "Games"
 date: 2022-03-03
 tags:
-- sapling
+  - sapling
 ---
 
 Related: [game theory](thoughts/game%20theory.md), [game design](thoughts/game%20design.md), [The Grasshopper, Games, Life and Utopia](thoughts/The%20Grasshopper,%20Games,%20Life%20and%20Utopia.md), [[thoughts/Moving Castles|Moving Castles]]

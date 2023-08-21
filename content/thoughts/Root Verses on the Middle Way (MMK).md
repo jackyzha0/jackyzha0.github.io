@@ -2,17 +2,18 @@
 title: "Root Verses on the Middle Way or the MMK"
 date: 2022-03-07
 tags:
-- seed
-- PHIL240A
+  - seed
+  - PHIL240A
 ---
 
-*by Nāgārjuna*
+_by Nāgārjuna_
 
 A key text in [Buddhist](thoughts/Buddhism.md) religious texts. Use of reductio ad absurdum (proof by contradiction) to show how all phenomena exhibit [emptiness](thoughts/emptiness.md).
 
 Nāgārjuna is a [phenomenologist](thoughts/phenomenology.md).
 
 Within it, heavy use of the tetralemma form of argument that is composed of 4 forks
+
 1. Affirmation: $X$
 2. Negation: $\lnot X$
 3. Both: $X \land \lnot X$

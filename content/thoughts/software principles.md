@@ -2,7 +2,7 @@
 title: "Software Principles"
 date: 2022-02-20
 tags:
-- sapling
+  - sapling
 ---
 
 > [[thoughts/A Pattern Language|A Pattern Language]] for developing software
@@ -11,15 +11,16 @@ Inspired by [Urbit Precepts](https://urbit.org/docs/development/precepts) and th
 
 1. [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second. Make self-hosting easy
 2. There is a latent cost to new features: [maintenance](thoughts/maintenance.md)
-4. Heuristics should only be used where determinism is infeasible
-5. Apps should embrace gradual enrichment, [[thoughts/composable|composing]] smaller features to form more complex ones when necessary
-6. Dump the parts bucket onto the floor. Make it obvious what tools the user has at their disposal to make the most out of the software ([[thoughts/constructionist]] learning)
-7. If a system is to serve the creative spirit, it must be entirely comprehensible to a single individual
-8. Any system should provide a uniform means for referring to the things in its universe. In fact, an even stronger statement is that systems should be designed around a powerful metaphor that can be uniformly applied in all areas. Only from this can complex systems [[thoughts/emergent behaviour|emerge]]
+3. Heuristics should only be used where determinism is infeasible
+4. Apps should embrace gradual enrichment, [[thoughts/composable|composing]] smaller features to form more complex ones when necessary
+5. Dump the parts bucket onto the floor. Make it obvious what tools the user has at their disposal to make the most out of the software ([[thoughts/constructionist]] learning)
+6. If a system is to serve the creative spirit, it must be entirely comprehensible to a single individual
+7. Any system should provide a uniform means for referring to the things in its universe. In fact, an even stronger statement is that systems should be designed around a powerful metaphor that can be uniformly applied in all areas. Only from this can complex systems [[thoughts/emergent behaviour|emerge]]
 
 See also: [[thoughts/programming models]]
 
 ## On programming advice
+
 Jamie Brandon's [Reflections on a Decade of Coding](https://www.scattered-thoughts.net/writing/reflections-on-a-decade-of-coding)
 
 Programming practices are mostly tacit knowledge. Tacit knowledge isn't easy to share. An expert will relate some simple-sounding rule of thumb, but then grilling them on specific cases will quickly uncover a huge collection of exceptions and caveats that vary depending on the specific details of the situation.

@@ -2,15 +2,16 @@
 title: "A New Glossary of Words"
 date: 2021-12-07
 tags:
-- fruit
+  - fruit
 ---
 
-*This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original [consensus](thoughts/consensus.md) problem: agreeing on what we mean. You can view the full artifact [here](https://play.jzhao.xyz/new-words).*
+_This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original [consensus](thoughts/consensus.md) problem: agreeing on what we mean. You can view the full artifact [here](https://play.jzhao.xyz/new-words)._
 
 ---
 
 **Characters**
-- **W:** a wordsmith, a poet, a pluralist 
+
+- **W:** a wordsmith, a poet, a pluralist
 - **P:** a pedantic
 
 **P:** W, have you ever wondered we need so many words?
@@ -25,7 +26,7 @@ tags:
 
 **W:** Language is logically [decentralized](thoughts/decentralization.md), is it not? There is no governing body that determines what a word means. The meaning of a word lies in its use[^1], and that is decided by those who speak the language.
 
-**P:** That is not necessarily true though. The language of the law sets out centralized definitions for words *so* that definitions cannot be swayed or morphed to fit the needs of its wielders. Similarly, at the start of a mathematical proof, one should *always* define the axioms or givens to be agreed upon before attempting to use them in any capacity.
+**P:** That is not necessarily true though. The language of the law sets out centralized definitions for words _so_ that definitions cannot be swayed or morphed to fit the needs of its wielders. Similarly, at the start of a mathematical proof, one should _always_ define the axioms or givens to be agreed upon before attempting to use them in any capacity.
 
 **W:** There seems to be a flaw in your argument. Yes, I agree that a consistent set of definitions is required for any sort of productive knowledge sharing. But you fail to account for **[[thoughts/plurality]]**. [Context](thoughts/context.md) modifies meaning.
 
@@ -35,7 +36,7 @@ tags:
 
 **P:** Well that is almost certainly problematic as well, is it not? Too many competing definitions cannot be a good thing. We have dictionaries for a reason. How would anyone new to learning English be able to grasp the nuances of all of the meaning and history behind each term? It would get overwhelming incredibly quickly.
 
-**W:** I concede that you have a good point. However, we can take a leaf out of Karl Popper's [^3] book: the *[[thoughts/Microworld|lie-to-children]]*. We can create simple glossaries and terminological definitions as some abstraction for the larger, more nuanced concepts of the real world.
+**W:** I concede that you have a good point. However, we can take a leaf out of Karl Popper's [^3] book: the _[[thoughts/Microworld|lie-to-children]]_. We can create simple glossaries and terminological definitions as some abstraction for the larger, more nuanced concepts of the real world.
 
 **P:** Wait... lying is categorically bad is it not?
 
@@ -47,7 +48,7 @@ tags:
 
 Of course, this is not to say that definitions are not important. In fact, quite the opposite. Definitions hold immense power in shaping how we talk and think about the world writ large. What I am saying is that language needs the ability to evolve on its own. Individuals and groups should have the agency to 'reclaim' harmful and outdated definitions.
 
-**P:** Isn't this exactly *why* we need centralization? This is like [[thoughts/Plato's Ship of State|Plato's Ship of State]][^4]. Any large vessel by their very nature needs to be steered firmly. Those aboard must yield to their captain's commands; no reasonable person believes that a ship can be run democratically.
+**P:** Isn't this exactly _why_ we need centralization? This is like [[thoughts/Plato's Ship of State|Plato's Ship of State]][^4]. Any large vessel by their very nature needs to be steered firmly. Those aboard must yield to their captain's commands; no reasonable person believes that a ship can be run democratically.
 
 **W:** Would sailors want to obey a captain who takes them somewhere they don't want to be? No. I imagine language like multiple small ships, each one with its own crew (crew of course, meaning an agreed meaning for a set of definitions). Let me reiterate without the ship metaphor: language requires **localized** [consensus](thoughts/consensus.md) for it to function.
 
@@ -98,10 +99,10 @@ Likewise, many groups across the world have tried to redefine and hard-fork the 
 
 **W:** A collectively curated glossary of sorts. One which involves a rich history and [context](thoughts/context.md) of terms, [[thoughts/plurality|pluralist]] in nature, and always ongoing. If meaning is a negotiation, then the history of that negotiation needs to be a crucial part of achieving consensus on the meaning.
 
-Let us create a new glossary of terminology. May it be *a* source of [truth](thoughts/truth.md) rather than *the* source of truth.
+Let us create a new glossary of terminology. May it be _a_ source of [truth](thoughts/truth.md) rather than _the_ source of truth.
 
-[^1]: *Philosophical Investigations*, Ludwig Wittgenstein
-[^2]: *The Science of Discworld*, Terry Pratchett
-[^3]: *The Logic of Scientific Discovery*, Karl Popper
-[^4]: *Republic*, Plato
+[^1]: _Philosophical Investigations_, Ludwig Wittgenstein
+[^2]: _The Science of Discworld_, Terry Pratchett
+[^3]: _The Logic of Scientific Discovery_, Karl Popper
+[^4]: _Republic_, Plato
 [^5]: Martín Becerra on Natalia Denegri

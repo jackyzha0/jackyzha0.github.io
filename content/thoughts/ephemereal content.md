@@ -2,7 +2,7 @@
 title: "Ephemereal and Real-time Content"
 date: 2021-06-16T13:15:09-07:00
 tags:
-- sapling
+  - sapling
 ---
 
 One of the things that keeps face-to-face friendships strong is the [nature of shared experience](http://psycnet.apa.org/psycinfo/2001-00651-001): you laugh together; you dance together; you gape at the hot-dog eaters on Coney Island together.
@@ -12,7 +12,8 @@ One of the things that keeps face-to-face friendships strong is the [nature of s
 Opposite of [digital permanence](thoughts/digital%20permanence.md)
 
 ## Raider's of the Lost Web
-[Source: RAIDERS OF THE LOST WEB on *the Atlantic*](https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/)
+
+[Source: RAIDERS OF THE LOST WEB on _the Atlantic_](https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/)
 
 “In Supreme Court opinions, every word matters … When they’re changing the wording of opinions, they’re basically rewriting the law.”
 
@@ -27,6 +28,7 @@ Modern content is sometimes actually assembled on the fly through the likes of R
 Related: [Mangrove Theory of the Internet](thoughts/Mangrove%20Theory%20of%20the%20Internet.md), [Dark Forest Theory of the Internet](thoughts/Dark%20Forest%20Theory%20of%20the%20Internet.md)
 
 ## Ephemeral vs Accretive Content
+
 [Source](https://interconnected.org/home/2023/01/20/map_room)
 
 See also: [[thoughts/digital permanence]]

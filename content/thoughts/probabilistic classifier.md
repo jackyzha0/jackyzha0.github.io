@@ -2,8 +2,8 @@
 title: "Probabilistic Classifier"
 date: 2022-10-28
 tags:
-- seed
-- CPSC340
+  - seed
+  - CPSC340
 ---
 
 We want a model of $P(y_i = \textrm{important} | x_i )$ for use in [[thoughts/Decision theory|decision theory]].
@@ -16,6 +16,7 @@ The most common choice is to use the sigmoid function:
 $$h(z_i) = \frac{1}{1+\exp(-z_i)}$$
 
 ## Multi-class Probabilities
+
 See also: [[thoughts/multi-class classification]]
 
 The softmax function allows us to map $k$ real numbers $z_i = w_c^Tx_i$ to probabilities

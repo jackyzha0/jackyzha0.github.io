@@ -2,7 +2,7 @@
 title: "Solid"
 date: 2022-06-07
 tags:
-- seed
+  - seed
 ---
 
 > **Solid** is a [specification](https://solidproject.org/TR/protocol) that lets people store their data securely in decentralized data stores called **Pods**. Pods are like secure personal web servers for data. When data is stored in someone's Pod, they control which people and applications can access it.
@@ -14,26 +14,30 @@ Pushing for universalization at the data level: just as any website can be viewe
 Solid is essentially a glue between [[thoughts/HTTP]], [[thoughts/LDP|LDP]], and LDN
 
 ## Pods
+
 - Pods are like secure personal web servers for your data. You can think of it like a website with data.
 - You can get a Pod from a Pod Provider, or you may choose to self-host your Pod.
 - Users can own multiple pods
 - Linked Data means that different applications can work with the same data
 
 ![[thoughts/images/Solid pod Linked Data.png]]
+
 ## Details
-*Summarized from specs*
+
+_Summarized from specs_
 
 - Exchanges data between clients using [[thoughts/HTTP|HTTP]] + TLS
 - A storage (`pim:Storage`) is a space of URIs in which data can be accessed; it is the root container for all of its contained resources
 - Seems to just be a fancy HTTP file server (operated on [[thoughts/RDF|RDF]] Documents)
-	- Applications can 'patch' pods with new data, given that they have the correct access to it
+  - Applications can 'patch' pods with new data, given that they have the correct access to it
 - Real-time collaborative communication between pod and application uses WebSockets
 - CORS by default prevents apps that run on one origin from accessing data on other origins
-	- Get around this by having servers waive the cross-origin protection as Solid handles this [[thoughts/access control|access control]] themselves
+  - Get around this by having servers waive the cross-origin protection as Solid handles this [[thoughts/access control|access control]] themselves
 - Identity is done through [[thoughts/WebID|WebID]]
 - Servers are strongly discouraged from exposing information beyond the minimum amount necessary to enable a feature.
 
 ## Opinions
+
 - Feels completely unopinionated, see this as a negative. Should shepherd and guide the average user down the happy path but still make it easy to customize for those who wish to.
 - Still seems to try to emulate client-server interactions heavily
 - Providers are not distributed

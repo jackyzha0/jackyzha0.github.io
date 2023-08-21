@@ -2,7 +2,7 @@
 title: "Moderation"
 date: 2022-03-15
 tags:
-- seed
+  - seed
 ---
 
 What is the role of moderation in [communities](thoughts/communities.md)? What does good/bad moderation look like? (posts/comments/membership)
@@ -13,12 +13,13 @@ Thinking about this at the [infrastructure](/thoughts/infrastructure) level too,
 
 Broadly defined, I see moderation as having two main categories: moderation of users and moderation of content. Moderation then, is to ensure that the set of values that is being conveyed by the users/content roughly aligns with that of the group/community.
 
-Moderation of users involves regulating the *membership* of individuals within the community whereas moderation of content regulates what can/can't be said in the community.
+Moderation of users involves regulating the _membership_ of individuals within the community whereas moderation of content regulates what can/can't be said in the community.
 
 Moderation gets problematic when it is used to target and discriminate against individuals because of personal relations or vendettas. I was thinking about also saying it becomes problematic when it discriminates against characteristics but I'm hesitant on this bit. Is it categorically different to exclude people who are misogynistic vs those of a certain race? Probably yes but I don't have a solid argument for it yet.
 
 ## Protocols for Moderation
-From *[Protocols Not Platforms](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech)*
+
+From _[Protocols Not Platforms](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech)_
 
 See also: [[thoughts/Protocol|protocols]]
 
@@ -32,11 +33,12 @@ The problem is leaving it up to platforms to decide what 'abusive' behaviour loo
 
 Under such a system, both Type I (“false positive”) and Type II (“false negative”) errors are not only common; they are inevitable. Content that a large body of people believe should be taken down is left up, while content that many people believe should remain up is taken down.
 
-**Rather than relying on a single centralized platform, with all of the internal biases and incentives that that entails, anyone would be able to create their own set of rules—including which content do they not want to see and which content would they like to see promoted.** 
+**Rather than relying on a single centralized platform, with all of the internal biases and incentives that that entails, anyone would be able to create their own set of rules—including which content do they not want to see and which content would they like to see promoted.**
 
 In such a world, we can let a million content moderation systems approach the same general corpus of content—each taking an entirely different approach—and see which ones work best. [[thoughts/r-K Selection theory|r-selected]] moderation.
 
 ## Trust-based Moderation Systems
+
 [Source](https://cblgh.org/trustnet/)
 
 See also: [[thoughts/trust|trust]]

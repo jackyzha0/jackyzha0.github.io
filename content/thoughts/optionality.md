@@ -2,7 +2,7 @@
 title: "Optionality"
 date: 2021-08-24T22:15:01-04:00
 tags:
-- seed
+  - seed
 ---
 
 > "I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And why do I want? I want to live and feel all the shades, tones and variations of mental and physical experience possible in my life." -- Sylvia Plath
@@ -24,9 +24,11 @@ In a life like the one we live in where cause and consequence is extremely hard 
 Maybe why humans constantly chase [prestige](thoughts/prestige.md): to keep doors open as a means of cross-disciplinary recognition.
 
 ## Paradox of Choice
-Individuals are *more* likely to be stressed from a larger number of options as considering more choices requires more mental effort.
+
+Individuals are _more_ likely to be stressed from a larger number of options as considering more choices requires more mental effort.
 
 ## Requiem for a Dream
+
 [New Yorker on Aaron Swartz](https://www.newyorker.com/magazine/2013/03/11/requiem-for-a-dream)
 
 “I’ve hired a lot of very talented programmers, and one of the things I discovered was that the people who didn’t graduate from college couldn’t finish projects,” his father says. “Because when you go to college, there’s all sorts of stupid stuff you have to do in order to get through.”
@@ -34,10 +36,11 @@ Individuals are *more* likely to be stressed from a larger number of options as 
 > It is a vertiginous thing to have so much freedom—to be always self-skeptical, always testing the reasons for your beliefs, always prepared to abandon them for something better. If you can do anything you want, then every day becomes an existential problem—an empty space of possibility that has no ceiling but also no walls and no floor.
 
 ## Making the Decision Right
+
 [Sarah on Substack](https://limminal.substack.com/p/making-the-decision-right)
 
 What I’ve come to learn over the past year is that there are two types of people: people who make the right decision and people who make the decision right.
 
-*Optimizing for optionality seems like the rational thing to do, until I really looked at my life. I had all these “options,” but I hadn’t done any of them.*
+_Optimizing for optionality seems like the rational thing to do, until I really looked at my life. I had all these “options,” but I hadn’t done any of them._
 
 I choose the next thing and make it the best.

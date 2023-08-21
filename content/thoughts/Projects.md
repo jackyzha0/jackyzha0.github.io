@@ -2,8 +2,8 @@
 title: "Projects"
 date: 2021-12-27
 tags:
-- evergreen
-- technical
+  - evergreen
+  - technical
 ---
 
 This is a list of notable projects that I've finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found [here](thoughts/idea%20list.md).
@@ -15,11 +15,13 @@ The first public implementation of a JSON-like Byzantine Fault Tolerant CRDT. Th
 GitHub, [[posts/bft-json-crdt|blog post]]
 
 ## Tabspace - a scratchspace for your new tab page
+
 A beautiful new tab replacement that gives you your very own scratch space to help you stay organized and focused. Wanted to experiment with [[thoughts/formality considered harmful|low-friction]] note taking and integrating [[thoughts/game design|game design]] principles of 'juiciness' into UI/UX.
 
 [GitHub](https://github.com/jackyzha0/tabspace), [Chrome Webstore](https://chrome.google.com/webstore/detail/tabspace/kcinhoikngobhiikicnpahoanenlnlha)
 
 ## miniraft - <1kloc Raft consensus algorithm implementation
+
 A minimal implementation of the [[thoughts/Raft Consensus Algorithm|raft Consensus Algorithm]] with a focus on readability/understandability. This project was created as an exercise in implementing and learning about distributed systems.
 
 [GitHub](https://github.com/jackyzha0/miniraft), [Documentation](https://jzhao.xyz/miniraft/miniraft/)

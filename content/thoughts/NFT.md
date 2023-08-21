@@ -2,7 +2,7 @@
 title: "NFTs"
 date: 2021-12-10
 tags:
-- sapling
+  - sapling
 ---
 
 [Source: vgr on Magic Beans](https://studio.ribbonfarm.com/p/magic-beans)
@@ -18,6 +18,7 @@ An NFT need not to contain something. All it guarantees is that it has an "ident
 I specifically like the last version of these: the right to expect things. "An NFT represents an access pass to an unspecified, generative possible future associated with an object. It is a key to a possible world."
 
 ## Ownership
+
 Right-clicking is not a problem for the NFT world because securing exclusive possession rights is not the problem NFTs aim to solve.
 
 > Do you _really_ think 9/10ths of the value associated with the Mona Lisa accrues to the Louvre? I can put a photograph of it in an article, write a book discussing it, even make a movie about it, without paying the Louvre anything. The Louvre has the right to hold the original physically, but every other meaningful right is in the public domain. Not only are these other rights collectively far more valuable, _physical possession only has value by way of derivation from these other rights_.
