@@ -26,6 +26,6 @@ Here are some places you may want to visit:
 - [The bookshelf on the far wall](/books): books that are in some state of read, being read, or to be read.
 
 ```poetry
-enjoy your time here and let me know if you need anything!
-jacky
+Enjoy your time here and let me know if you need anything!
+jacky :)
 ```
