@@ -1,19 +1,19 @@
 name: Deploy Quartz site to GitHub Pages
- 
+
 on:
   push:
     branches:
       - v4
- 
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: public
- 
+
   deploy:
     needs: build
     environment:
