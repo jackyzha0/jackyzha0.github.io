@@ -44,12 +44,14 @@ See also: *[On the Power of (even a little) Centralization in Distributed Proces
 ## Distances in Networks
 The dependence of the average distance $\langle d \rangle$ on the system size $N$ and the degree exponent $\gamma$ are captured by the formula
 
-$$\langle d \rangle = \begin{cases}
+$$
+\langle d \rangle = \begin{cases}
 	const & \gamma = 2 \\
 	\ln \ln N & 2 < \gamma < 3 \\
 	\frac{\ln N}{\ln \ln N} & \gamma = 3 \\
 	\ln N & \gamma > 3
-\end{cases}$$
+\end{cases}
+$$
 
 1. $\gamma = 2$: Hub and spoke model. $k_{max} \sim N$ so all nodes connect to a single central hub. The average path length is constant.
 2. $2 < \gamma < 3$: Ultra-small world model. Hubs radically reduce the path length.

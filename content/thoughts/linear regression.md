@@ -21,14 +21,16 @@ We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (w^Tx_i -
 
 In d-dimensions, we minimize
 
-$$\begin{equation}
+$$
+\begin{equation}
 \begin{split}
 f(w) &= \frac 1 2 \sum_{i=1}^n (w^Tx_i - y_i)^2 \\
  & = \frac 1 2 \lVert Xw - y \rVert^2 \\
  & = \frac 1 2 w^TX^TXw - w^TX^Ty + \frac 1 2 y^T y \\
  & = \frac 1 2 w^TAw - w^Tb + c
 \end{split}
-\end{equation}$$
+\end{equation}
+$$
 
 where $A$ is a matrix, $b$ is a vector, and $c$ is a scalar
 

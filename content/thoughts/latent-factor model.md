@@ -34,11 +34,13 @@ Use cases:
 
 We minimize
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 f(W,Z)&= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 & \textrm{Approximating } x_{ij} \textrm{ by } \langle w^j, z_i \rangle \\
 &= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 & \textrm{Approximating } x_i \textrm{ by } W^Tz_i\\
 &= \lVert ZW - X \rVert_F^2 & \textrm{Approximating } X \textrm{ by } ZW
-\end{aligned}$$
+\end{aligned}
+$$
 
 If we do alternating minimization,
 1. Fix Z and optimize W: $\nabla_wf(W,Z)=Z^TZW-Z^TX$
@@ -92,6 +94,8 @@ Trained using a masking technique.
 - Takes sentence fragments and hides/masks a middle word
 - Train so that $z_i$ of hidden word is similar to $z_i$ of surrounding words
 
-$$p(z_i) = \prod_{j \in \textrm{surrounding}} \frac{\exp(z_i^Tz_j)}{\sum_{c=1}^\textrm{\# words} \exp(z_c^Tz_j)}$$
+$$
+p(z_i) = \prod_{j \in \textrm{surrounding}} \frac{\exp(z_i^Tz_j)}{\sum_{c=1}^\textrm{\# words} \exp(z_c^Tz_j)}
+$$
 
 Gradient descent on for $-\log(p(z_i))$

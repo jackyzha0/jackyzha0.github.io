@@ -15,7 +15,8 @@ Least squares error may overpenalize. Only thing we care about is the sign, not 
 
 Could we instead minimize number of classification errors? This is called the 0-1 loss function: you either get the classification wrong (1) or right (0).
 
-$$\mathcal L(i,j) = \begin{cases} 
+$$
+\mathcal L(i,j) = \begin{cases} 
   0 & i = j \\
   1 & i \neq j
 \end{cases}

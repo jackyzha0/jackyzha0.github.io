@@ -48,10 +48,12 @@ We get results that look like the following:
 ## Deep Learning
 Instead of a single layer of hidden units, we can stack them.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \hat y_i &= v^Th(W^{(m)}h(W^{(m-1)}h(\dots W^{(1)}x_i))) \\
 &= v^T(I_{l=1}^mh(W^{(l)}x_i)) & \textrm{Where } I \textrm{ is repeated function composition}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Vanishing Gradient Problem
 The gradient of the sigmoid function away from the origin is nearly zero. This is worse when you take the sigmoid of a sigmoid of a sigmoid...
