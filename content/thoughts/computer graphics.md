@@ -11,7 +11,9 @@ See also: [[thoughts/rendering]], [[thoughts/imaging]], [[thoughts/illumination]
 
 Let $A$ be the original basis and $B$ be the new basis
 
-$$\begin{bmatrix}x \\ y \\ 1 \end{bmatrix}_B = \begin{bmatrix}a & b & c \\ d & e & f \\ 0 & 0 & 1\end{bmatrix}\begin{bmatrix}x \\ y \\ 1\end{bmatrix}_A$$
+$$
+\begin{bmatrix}x \\ y \\ 1 \end{bmatrix}_B = \begin{bmatrix}a & b & c \\ d & e & f \\ 0 & 0 & 1\end{bmatrix}\begin{bmatrix}x \\ y \\ 1\end{bmatrix}_A
+$$
 
 Then:
 
@@ -56,19 +58,28 @@ Transformations in scene graphs are written right to left, starting with source 
   - target point
   - up vector
 
-$$\vec k = \frac{P_{eye}-P_{ref}}{\lVert P_{eye}-P_{ref} \rVert}$$
+$$
+\vec k = \frac{P_{eye}-P_{ref}}{\lVert P_{eye}-P_{ref} \rVert}
+$$
 
-$$\vec i = \frac{V_{up} \times \vec k}{\lVert V_{up} \times \vec k \rVert}$$
+$$
+\vec i = \frac{V_{up} \times \vec k}{\lVert V_{up} \times \vec k \rVert}
+$$
 
-$$\vec j = \vec k \times \vec i$$
+$$
+\vec j = \vec k \times \vec i
+$$
 
 $$
 M_{cam} = \begin{bmatrix}
-i_1 & j_1 & k_1 & P_{eye1} \\
+i_1 & j_1 & k_1 & P_{eye1} \\ 
 i_2 & j_2 & k_2 & P_{eye2} \\
 i_3 & j_3 & k_3 & P_{eye3} \\
 0 & 0 & 0 & 1
 \end{bmatrix}
 $$
 
-$$M_{view} = M_{cam}^{-1}$$
+$$
+M_{view} = M_{cam}^{-1}
+$$
+

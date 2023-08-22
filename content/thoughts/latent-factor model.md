@@ -108,6 +108,8 @@ Trained using a masking technique.
 - Takes sentence fragments and hides/masks a middle word
 - Train so that $z_i$ of hidden word is similar to $z_i$ of surrounding words
 
-$$p(z_i) = \prod_{j \in \textrm{surrounding}} \frac{\exp(z_i^Tz_j)}{\sum_{c=1}^\textrm{\# words} \exp(z_c^Tz_j)}$$
+$$
+p(z_i) = \prod_{j \in \textrm{surrounding}} \frac{\exp(z_i^Tz_j)}{\sum_{c=1}^\textrm{\# words} \exp(z_c^Tz_j)}
+$$
 
 Gradient descent on for $-\log(p(z_i))$

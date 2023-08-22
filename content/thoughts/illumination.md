@@ -17,8 +17,9 @@ This is difficult as at any point in 3D space, light of all wavelengths may be g
   - Bidirectional Reflectance Distribution Function (BRDF): Measure how much light is reflected in every outgoing direction for each possible incoming direction of light.
 
 ### Phong Model
-
-$$\underbracket{I_a k_a}_{\textrm{ambient term}} + \sum_L \left( \underbracket{ I_L k_d(N\cdot L)}_{\textrm{diffuse term}} + \underbracket{I_L k_s(R \cdot V)^n}_{\textrm{specular term}} \right)$$
+$$
+\underbrace{I_a k_a}_{\textrm{ambient term}} + \sum_L \left( \underbrace{ I_L k_d(N\cdot L)}_{\textrm{diffuse term}} + \underbrace{I_L k_s(R \cdot V)^n}_{\textrm{specular term}} \right)
+$$
 
 - Ambient term provides default minimal illumination
 - Diffuse term provides basic lighting depending on the angle of the surface w.r.t. the incoming light direction

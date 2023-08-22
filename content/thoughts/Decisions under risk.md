@@ -49,7 +49,7 @@ For example, in a lottery where you
 - A) win $1M for sure or
 - B) 50% chance to win $3M and 50% chance to get nothing
 
-Most people would choose A. The change in [[thoughts/utility|utility]] from $1M to $3M is not enough to offset the drop in probability from certainty to 50%.
+Most people would choose A. The change in [[thoughts/utility|utility]] from \$1M to \$3M is not enough to offset the drop in probability from certainty to 50%.
 
 ## Paradoxes and Puzzles
 
@@ -83,26 +83,26 @@ Urn with 90 balls
 - Let $p * 60$ be the number of black and $(1-p)*60$ is the number of yellow balls
 - A ball will be draw and you make a bet on its colour
 
-1. Situation A: Bet R or B. Receive $100 if right, $0 if wrong
-2. Situation B: Bet (R or Y) or (B or Y). Receive $100 if right, $0 if wrong
+1. Situation A: Bet R or B. Receive \$100 if right, \$0 if wrong
+2. Situation B: Bet (R or Y) or (B or Y). Receive \$100 if right, \$0 if wrong
 
-Many people bet R in Situation A but bet (B or Y) kin situation B. People like to avoid uncertainty! However, this is inconsistent with EU Max
+Many people bet R in Situation A but bet (B or Y) in situation B. People like to avoid uncertainty! However, this is inconsistent with EU Max
 
 ### St. Petersburg Paradox
-
-A fair coin is tossed until it comes up Heads. If Heads appears for the first time on toss $n$, you are paid $\$n$
+A fair coin is tossed until it comes up Heads. If Heads appears for the first time on toss $n$, you are paid $n$ dollars
 
 What is the EMV of this game? Technically, the St. Petersburg game involves infinitely many states
 
 $$EMV = (1/2) \$2 + (1/2)^2 \$2 + \dots = 1 + 1 + \dots = \infty$$
+
 You should be willing to pay any price to play!
 
 Solutions
 
 1. Bernoulli: diminishing marginal [[thoughts/utility|utility]] of money
-   1. Refutation: change payout to $\$2^n$
-2. Buffon: _de minimis condition_
-   1. Ignore tiny probabilities
+	1. Refutation: change payout to $2^n$
+2. Buffon: *de minimis condition*
+	1. Ignore tiny probabilities
 
 ### Two-Envelope Paradox
 

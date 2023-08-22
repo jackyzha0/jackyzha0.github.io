@@ -14,6 +14,7 @@ function PageTitle({ fileData, cfg }: QuartzComponentProps) {
 PageTitle.css = `
 .page-title {
   margin: 0;
+  white-space: nowrap;
 }
 `
 
