@@ -51,7 +51,7 @@ export default ((userOpts?: Partial<Options>) => {
                   </div>
                   {page.dates && (
                     <p class="meta">
-                      <Date date={page.dates.modified} />
+                      <Date date={page.dates.created} />
                     </p>
                   )}
                 </div>

@@ -6,7 +6,7 @@ import { QuartzComponentProps } from "./types"
 export function byDateAndAlphabetical(f1: QuartzPluginData, f2: QuartzPluginData): number {
   if (f1.dates && f2.dates) {
     // sort descending by last modified
-    return f2.dates.modified.getTime() - f1.dates.modified.getTime()
+    return f2.dates.created.getTime() - f1.dates.created.getTime()
   } else if (f1.dates && !f2.dates) {
     // prioritize files with dates
     return -1
@@ -41,7 +41,7 @@ export function PageList({ fileData, allFiles, limit }: Props) {
             <div class="section">
               {page.dates && (
                 <p class="meta">
-                  <Date date={page.dates.modified} />
+                  <Date date={page.dates.created} />
                 </p>
               )}
               <div class="desc">

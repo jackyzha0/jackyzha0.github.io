@@ -16,7 +16,7 @@ export const Latex: QuartzTransformerPlugin<Options> = (opts?: Options) => {
     },
     htmlPlugins() {
       if (engine === "katex") {
-        return [[rehypeKatex, { output: "html", strict: "warn" }]]
+        return [[rehypeKatex, { output: "html", strict: "error" }]]
       } else {
         return [rehypeMathjax]
       }
