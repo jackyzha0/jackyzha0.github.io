@@ -21,8 +21,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Dealers of Lighting** by Michael A. Hiltzik
 - **Creation: Life and How to Make it** by Steve Grand
 - **The Utopia of Rules** by David Graeber
-- **Where Is My Flying Car?** by J. Storrs Hall
-- **The Dream Machine** by M. Mitchell Waldrop
 - **The Limits to Capital** by David Harvey
 - **Inventing the Medium** by Janet J. Murray
 - **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
@@ -34,7 +32,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Current
 
-- none :)
+- **Where Is My Flying Car?** by J. Storrs Hall
+- **The Dream Machine** by M. Mitchell Waldrop
 
 ## Past
 

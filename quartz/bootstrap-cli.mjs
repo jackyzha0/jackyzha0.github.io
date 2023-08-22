@@ -255,7 +255,7 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
     outro(`You're all set! Not sure what to do next? Try:
    • Customizing Quartz a bit more by editing \`quartz.config.ts\`
    • Running \`npx quartz build --serve\` to preview your Quartz locally
-   • Hosting your Quartz online (see: https://quartz.jzhao.xyz/setup/hosting)
+   • Hosting your Quartz online (see: https://quartz.jzhao.xyz/hosting)
 `)
   })
   .command("update", "Get the latest Quartz updates", CommonArgv, async (argv) => {
@@ -394,8 +394,15 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
     const buildMutex = new Mutex()
     const timeoutIds = new Set()
+    let firstBuild = true
     const build = async (clientRefresh) => {
-      await buildMutex.acquire()
+      const release = await buildMutex.acquire()
+      if (firstBuild) {
+        firstBuild = false
+      } else {
+        console.log(chalk.yellow("Detected a source code change, doing a hard rebuild..."))
+      }
+
       const result = await ctx.rebuild().catch((err) => {
         console.error(`${chalk.red("Couldn't parse Quartz configuration:")} ${fp}`)
         console.log(`Reason: ${chalk.grey(err)}`)
@@ -418,7 +425,7 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
       const { default: buildQuartz } = await import(cacheFile + `?update=${randomUUID()}`)
       await buildQuartz(argv, clientRefresh)
       clientRefresh()
-      buildMutex.release()
+      release()
     }
 
     const rebuild = (clientRefresh) => {
@@ -455,6 +462,12 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
           await serveHandler(req, res, {
             public: argv.output,
             directoryListing: false,
+            headers: [
+              {
+                source: "**/*.html",
+                headers: [{ key: "Content-Disposition", value: "inline" }],
+              },
+            ],
           })
           const status = res.statusCode
           const statusString =
@@ -526,7 +539,6 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
           ignoreInitial: true,
         })
         .on("all", async () => {
-          console.log(chalk.yellow("Detected a source code change, doing a hard rebuild..."))
           rebuild(clientRefresh)
         })
     } else {
