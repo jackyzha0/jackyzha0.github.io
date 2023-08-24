@@ -11,6 +11,7 @@ const config: QuartzConfig = {
     },
     baseUrl: "jzhao.xyz",
     ignorePatterns: ["private", "templates"],
+    defaultDateType: "created",
     theme: {
       typography: {
         header: "DM Serif Text",
