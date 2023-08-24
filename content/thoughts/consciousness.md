@@ -12,7 +12,7 @@ What does it mean to be conscious? Is consciousness emergent from matter? Or is 
 
 "Consciousness is always consciousness of something, and when the object is subtracted, nothing remains to be characterized" (cannot be of independent origin, [emptiness](thoughts/emptiness.md))
 
-See also: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md), [The Upanisads](thoughts/The%20Upanisads.md), [qualia](thoughts/qualia.md), [self-knowledge](thoughts/self-knowledge.md), [[thoughts/Primary of Consciousness|Primary of Consciousness]], [[thoughts/Nagel's Bat Argument|Nagel's Bat Argument]]
+See also: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md), [The Upanisads](thoughts/The%20Upanisads.md), [qualia](thoughts/qualia.md), [self-knowledge](thoughts/self-knowledge.md), [[thoughts/Primacy of Consciousness|Primacy of Consciousness]], [[thoughts/Nagel's Bat Argument|Nagel's Bat Argument]]
 
 Types of consciousness:
 

@@ -17,7 +17,7 @@ Civic design + [[thoughts/urban planning|urban planning]] are also importantly o
 
 The train changed the way we exist -- it expands the vista of existence. We are betting on new means of technology for new ways of being, ones attuned to interdependence, mutuality, etc. Emphasizing the ontology of interdependence over the ontology of separation.
 
-My understanding of Heidegger on technology is that it is about a *reorganization* of the world, both spatially and temporally. It is this same reorganization or framing that “orders” all things we know (e.g. point 2) — see modern theories of God and consciousness referring to [[thoughts/Primary of Consciousness#The Blind Spot|quantum microtubules]] to try to explain them. Technology then, is a way of ‘challenging’ existing means of knowledge in a way that reframes it.
+My understanding of Heidegger on technology is that it is about a *reorganization* of the world, both spatially and temporally. It is this same reorganization or framing that “orders” all things we know (e.g. point 2) — see modern theories of God and consciousness referring to [[thoughts/Primacy of Consciousness#The Blind Spot|quantum microtubules]] to try to explain them. Technology then, is a way of ‘challenging’ existing means of knowledge in a way that reframes it.
 
 Heidegger sees technology as potentially dangerous in that it instrumentalizes the human and the subjective and “displaces” things from their unmediated existence.
 
