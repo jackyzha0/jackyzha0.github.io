@@ -52,7 +52,7 @@ export default ((userOpts?: Partial<Options>) => {
                   </div>
                   {page.dates && (
                     <p class="meta">
-                      <Date date={getDate(cfg, fileData)!} />
+                      <Date date={getDate(cfg, page)!} />
                     </p>
                   )}
                 </div>
