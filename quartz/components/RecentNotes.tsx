@@ -1,5 +1,5 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { FullSlug, SimpleSlug, resolveRelative } from "../util/path"
+import { SimpleSlug, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/recentNotes.scss"
@@ -26,6 +26,11 @@ export default ((userOpts?: Partial<Options>) => {
   function RecentNotes(props: QuartzComponentProps) {
     const { allFiles, fileData, displayClass, cfg } = props
     const opts = { ...defaultOptions(cfg), ...userOpts }
+
+    if (fileData.slug !== "index") {
+      return <></>
+    }
+
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     return (
