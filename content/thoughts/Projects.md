@@ -54,11 +54,9 @@ Built with: [[thoughts/Hypercore|Hypercore]], React, Ink, and Typescript
 
 [Site](https://quartz.jzhao.xyz/), [GitHub](https://github.com/jackyzha0/quartz)
 
-Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. Think Obsidian Publish but free. Links are scraped and processed using a GitHub action written in Go and dumped into a JSON file to be rendered by Hugo.
+Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. It involved creating a static site generator from scratch. See the [architecture](https://quartz.jzhao.xyz/advanced/architecture) page for more information.
 
-Over 50k monthly users and 1600+ forks on GitHub.
-
-Build with: Hugo, Obsidian, Github Pages, Go, SCSS, and JavaScript.
+Build with: Typescript, esbuild, and Node
 
 ## Legist -- a platform to summarize policy for [democracy](thoughts/democracy.md)
 
