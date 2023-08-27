@@ -10,38 +10,7 @@ _A small collection of poetry about magic in the everyday_
 
 ---
 
-**casual magic**
-
-```poetry
-At 1:00, the sun streamed at just the right angle through the patterned glass,
-splitting the uniform beam of light into a hidden spectrum of fractals,
-bathing the room in a shower of brilliant colours.
-
-The dripping of the water from the faucet was always erratic,
-never settling on any sort of discernible pattern.
-Drip drip       drip     drip drip         drip    drip            drip     ,
-It was always 8 drips of the faucet before each perennial was well watered.
-
-The clouds seemed to agree that today would be a great day to read at sunset.
-A friend once commented how they found books so weird,
-you just stared at marked slices of a tree for hours, vividly hallucinating.
-I joked how the beach matched the cover of my book; they laughed,
-our bodies bathed in the mellow yellow that seemed to melt the world around us
-until it was just us, the ocean, and the setting sun.
-
-There was a cozy spot to put my head,
-just below the PULL FOR STOP cord,
-between the metal frames of the bus windows,
-enough space for me to have an earbud in.
-I would spend the 40 minutes bus ride shuffling for new songs,
-singing under my breath,
-feeling and voicing the shape of each word,
-watching the clouds slowly losing their tinges of colour as night fell.
-```
-
----
-
-**child of the light**
+### child of the light
 
 ```poetry
 Photography literally means 'writing with light'.
@@ -91,7 +60,7 @@ maybe the light will see me as beautiful too.
 
 ---
 
-**sun(set/rise)**
+### sun(set/rise)
 
 ```poetry
 The shape of the sun is a contour, carved by its intensity, angle and number of
@@ -118,16 +87,17 @@ the sun.
 
 It is not by chance
 that the first piece of art
-made by a human in space is
-the orbital sunrise. A promise that the day
-will start anew, a sign that tomorrow exists, that
-things dormant can wake once again. As the rays peek over
-the crests of mountains and waves, there is a warmth that wakes the world again.
+made by a human in space is of 
+the orbital sunrise. A promise that 
+the day will start anew, a sign that tomorrow exists, 
+that things dormant can wake once again, showing us that
+something as immovable as the heavens and the cosmos can still change.
+As the rays peek over the crests of mountains and waves, there is a warmth that wakes the world again.
 ```
 
 ---
 
-**stargazing**
+### stargazing
 
 ```poetry
     From   far   away,
@@ -156,4 +126,35 @@ I   wish   we   could   pull   the   blankets   closer,   to   keep   us   warm.
 All    we    can    do    is    longingly    gaze,
 watching     us     each     shift     red,
 hoping      that      one      day      our      dust      will      meet.
+```
+
+---
+
+### casual magic
+
+```poetry
+At 1:00, the sun streamed at just the right angle through the patterned glass,
+splitting the uniform beam of light into a hidden spectrum of fractals,
+bathing the room in a shower of brilliant colours.
+
+The dripping of the water from the faucet was always erratic,
+never settling on any sort of discernible pattern.
+Drip drip       drip     drip drip         drip    drip            drip     ,
+It was always 8 drips of the faucet before each perennial was well watered.
+
+The clouds seemed to agree that today would be a great day to read at sunset.
+A friend once commented how they found books so weird,
+you just stared at marked slices of a tree for hours, vividly hallucinating.
+I joked how the beach matched the cover of my book; they laughed,
+our bodies bathed in the mellow yellow that seemed to melt the world around us
+until it was just us, the ocean, and the setting sun.
+
+There was a cozy spot to put my head,
+just below the PULL FOR STOP cord,
+between the metal frames of the bus windows,
+enough space for me to have an earbud in.
+I would spend the 40 minutes bus ride shuffling for new songs,
+singing under my breath,
+feeling and voicing the shape of each word,
+watching the clouds slowly losing their tinges of colour as night fell.
 ```

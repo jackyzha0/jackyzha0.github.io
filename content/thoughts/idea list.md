@@ -20,7 +20,6 @@ tags:
 - [[thoughts/WebAssembly|WASM]]-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
   - [[thoughts/IPFS]] as a versioned package manager for all software
   - good example: https://github.com/dylibso/wasmstore
-- https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - rotmg but actually good lol
   - dodge mechanic
   - no instakill, should be iframes and way less health (similar to EtG)
@@ -32,10 +31,6 @@ tags:
   - actual good graveyard mechanics to look at past runs/chars
 - latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active
   - see also: [[thoughts/Sloppy Hashing DHT]]
-- [duplex](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html) and [whisper](https://openai.com/research/whisper) to interact with notes
-  - automatically identify and converse about outdated notes
-  - update notes in place
-  - https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
   - "A [reader-generated essay](https://escapingflatland.substack.com/p/reader-generated-essays) is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
   - turning a graph traversal into a beautiful essay
@@ -82,7 +77,6 @@ tags:
     - a little annotated web
 - Conversational GPS: why do we even look at a screen when we can just ask for directions as if it was a normal person lol
 - google photos + olo radio (see [attention economy](thoughts/attention%20economy.md))
-
 * DreamCoder boolsat
   - Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
   - kinda iffy on the sat problem solver using dreamcoder, not a lot of exploitable structure in the proofs (otherwise we'd have a more reliable human method)
@@ -94,7 +88,6 @@ tags:
   * DreamCoder Paper:
     - https://arxiv.org/pdf/2006.08381.pdf
     - https://www.youtube.com/watch?v=qtu0aSTDE2I
-
 - tabfs but for emails
   - [https://bazil.org/fuse/](https://bazil.org/fuse/)
   * [https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
@@ -108,10 +101,7 @@ tags:
   - Interplanetary communication / state machine
   - Packet switched electricity
   - saving sun for later (make something we take for granted extremely scarce)
-- Poetry
-  - We like sunset because it's the only time we see the cosmos move (or! when we get to share space with other people watching sunset, inspired by a poem by Danusha Lameris titled Small Kindness)
 - Essays
-  - Aesthetics as a heuristic for non obvious optimality
   - Arguments against complete dominance of cloud based compute rental akin to anti home rental arguments
   - Why Minecraft
     - https://minecraft.fandom.com/wiki/End_Poem#End_quote
@@ -132,8 +122,8 @@ tags:
     - redistributes the interestingness into the hands of a few
       - [[thoughts/Seeing like a State]]: similarly concentrates the autonomy and agency of decision making around city planning
   - [[thoughts/independent research|independent research]] is applied [[thoughts/taste]]
+	  - Aesthetics as a heuristic for non obvious optimality
   - Good [[thoughts/search|search]] (aggregators) turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])
-    - Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.
   - The sequel to SQL (Against table databases)
     - Data interoperability is really hard with SQL
       - I think interoperability in the context of the web means being able to transparently understand and share data, agnostic of platform.
