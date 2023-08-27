@@ -51,6 +51,7 @@ Selfishness depends on what the definition of the self is. Expansions on the con
 
 - [noosphere](https://en.wikipedia.org/wiki/Noosphere) as the extended self
 - [The Egg](https://www.youtube.com/watch?v=h6fcK_fRYaI) by Andy Weir + Kurzgesagt
+- [[thoughts/Minecraft End Poem|Minecraft End Poem]]
 - [self-knowledge](thoughts/self-knowledge.md)
 
 ## Nice vs Kind

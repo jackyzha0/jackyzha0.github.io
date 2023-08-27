@@ -32,3 +32,4 @@ Some quotes to live by.
 23. "History is made by those who show up" (Unknown)
 24. "Imagine you could play a computer" (Doug Engelbart, when inventing the keyboard)
 25. "Map the regions of your own affinity and interest, across all relevant dimensions: intellectual, aesthetic, moral. The rest, you can ignore freely. Ignore strenuously!" ([Robin Sloan](https://www.robinsloan.com/newsletters/summer-wind/))
+26. "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover." (Horace Jackson Brown Jr.)

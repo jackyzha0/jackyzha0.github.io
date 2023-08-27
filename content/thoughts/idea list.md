@@ -103,8 +103,6 @@ tags:
   - saving sun for later (make something we take for granted extremely scarce)
 - Essays
   - Arguments against complete dominance of cloud based compute rental akin to anti home rental arguments
-  - Why Minecraft
-    - https://minecraft.fandom.com/wiki/End_Poem#End_quote
   - Analog software: software by analogy and by atomic building blocks that interface with each other
     - We should be able to directly manipulate them, like files, rather than only indirectly work with them, like layer activations in a neural network.
     - Software representations for similar ideas should be obviously similar in some way – they should click together, or look similar, or feel similar to the touch.
