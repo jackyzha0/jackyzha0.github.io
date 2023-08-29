@@ -21,3 +21,8 @@ _[Engelbart on HyperScope](https://dougengelbart.org/content/view/154/86/)_
 _Hyperscope is a browsing tool that enables most of the viewing and navigating features called for in Doug Engelbart's open hyperdocument system framework ([OHS](https://www.dougengelbart.org/about/ohs.html)) to support dynamic knowledge repositories_
 
 ![[thoughts/images/hyperscope.png|300]]
+
+## Semantic Zoom
+[Source](https://alexanderobenauer.com/labnotes/038/)
+
+Our field of view (or [[thoughts/context|context]]) on all of that data is defined by the interfaces we use. Rigid, pre-packaged interfaces don’t let us move our field of view around, should we wish to get a different vantage point on some data we care about.
