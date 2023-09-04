@@ -9,7 +9,7 @@ tags:
 
 This, in a weird way, could also potentially explain the greatly increased numbers of extremist opinions that are seemingly so widespread.
 
-The following excerpt is from [[thoughts/Where is My Flying Car?|Where is My Flying Car?]]:
+The following excerpt is from [[thoughts/Where is My Flying Car|Where is My Flying Car]]:
 
 The Xhosa are a southeast African tribe whose economy and culture were traditionally based on cattle-herding. In the spring of 1856, Nongqawuse, a 15-year-old girl, heard the voices of her ancestors telling her that the Xhosa had to kill all their cattle and destroy their hoes, pots, and stores of grain. Channeling the ancestors, Nongqawuse explained that once this had been done the very ground would burst forth with plenty, the dead would be resurrected, and the interloping Dutch-German Boers would be driven from their lands. Surprisingly enough, the beliefs found fertile ground among the Xhosa and spread like wildfire, within months receiving the imprimatur of their king.
 

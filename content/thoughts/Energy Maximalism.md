@@ -16,7 +16,7 @@ Additionally, energy consumption [[thoughts/causal decision theory#Granger Causa
 See: [[thoughts/Jevons Paradox|Jevons Paradox]]
 
 ## Ergopobia
-Excerpt from [[thoughts/Where is My Flying Car?|Where is My Flying Car?]]:
+Excerpt from [[thoughts/Where is My Flying Car|Where is My Flying Car]]:
 
 > Ergophobia technically means a neurotic fear of doing work. But the term comes from the same Greek root as 'energy' and you will find that physicists use 'work' and 'energy' to mean the same thing. So I feel justified in using the word to refer to the almost inexplicable belief that there is something wrong with using energy
 ## Regulation

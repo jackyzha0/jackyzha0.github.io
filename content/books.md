@@ -38,7 +38,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2023
 
-- **[[thoughts/Where is My Flying Car?|Where Is My Flying Car?]]** by J. Storrs Hall
+- **[[thoughts/Where is My Flying Car|Where Is My Flying Car?]]** by J. Storrs Hall
 - **[[thoughts/visualization|The Visual Display of Quantitative Information]]** by Edward R. Tufte
 - **[[thoughts/A Pattern Language]]** by Christopher Alexander
 - **Upstream: Selected Essays** by Mary Oliver
