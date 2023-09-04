@@ -18,6 +18,10 @@ In part why I really like reading things like The Book of Predictions where peop
 
 Where are our futures with no famine and disease? With a clean and healthy planet? Of universal free access to information? Where did the ambition go?
 
+J. Storrs Hall in [[thoughts/Where is My Flying Car?|Where is My Flying Car?]]:
+
+> We need hopers and dreamers; we need visionaries who can see a better future worth striving for. We need great, important things to do with the staggeringly huge capabilities that lie within our grasp. Science fiction must get back down into the gutter and start looking back up at the stars.
+
 ## Social Theory as Science
 
 [Source: Possibilities -- Social Theory As Science and Utopia by _David Graeber_](https://www.revoltlib.com/anarchism/possibilities-essays-on-hierarchy-graeber-david/part-3-chapter-10-social-theory-as-science/)

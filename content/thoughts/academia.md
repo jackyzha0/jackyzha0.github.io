@@ -16,6 +16,12 @@ See also: [[thoughts/independent research]]
 
 Academics and scientists start good and get original. [[thoughts/Hackers]], from the start, are doing original work; it's just very bad. They start original, and get good.
 
+## On Tenure
+
+Daniel Dennet:
+
+> "The juvenile sea squirt wanders through the sea searching for a suitable rock or hunk of coral to cling to and make its home for life. For this task, it has a rudimentary nervous system. When it finds its spot and takes root, it doesn't need its brain anymore, so it eats it! It's rather like getting tenure."
+
 ## The 'rat race' of theoretical academia
 
 > There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers' work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. [Shrey Jain](https://twitter.com/shreydjain13)

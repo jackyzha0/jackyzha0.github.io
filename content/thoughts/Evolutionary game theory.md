@@ -8,11 +8,13 @@ tags:
 
 Focuses on the dynamics of strategy change by agents over time.
 
-Evolutionary game theory has helped to explain the basis of altruistic behaviours in Darwinian evolution.
+Evolutionary game theory has helped to explain the basis of altruistic behaviours in Darwinian evolution. It is salient to note that the evolutionary pressures on what we consider moral behaviour arise _only in [[thoughts/positive sum|positive sum]] interactions._ In a dynamic, growing society, people can interact cooperatively and both come out ahead. 
 
-Compute the fitness of each group. Watch how each group fares in indefinitely repeated interactions. Fitness of a strategy is $Fitness(S) = \frac{EU(S)}{\textrm{Avg } EU }$
+In a static, [[thoughts/zero sum|zero sum]] society, people can pressures toward morality and cooperation vanish: You can only improve your situation by taking from someone else.
 
 ## Evolutionarily Stable Strategy (ESS)
+
+Compute the fitness of each group. Watch how each group fares in indefinitely repeated interactions. Fitness of a strategy is $Fitness(S) = \frac{EU(S)}{\textrm{Avg } EU }$
 
 An evolutionarily stable strategy is one that, once fixed in a population, has higher fitness than any other available strategy
 
