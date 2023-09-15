@@ -28,7 +28,37 @@ def equality_saturation(expr, rewrites):
       # ematch searches for the pattern in the egraph
       # returns a list of pairs of substitutions and the eclass it was found in
       for (subst, eclass) in egraph.ematch(rw.lhs):
+        # write step, ensure we restore invariants here
         eclass2 = egraph.add(rw.rhs.substitute(subst))
+        # restore congruence!
         egraph.merge(eclass, eclass2)
+return egraph.extract_best()
+```
+
+Things to note:
+1. rewrites are ordered
+2. reads and writes are interleaved which means we need to do more invariant maintenance
+
+What `egg` does (deferred invariant maintenance):
+
+```python
+def equality_saturation(expr, rewrites):
+  egraph = initial_egraph(expr)
+  while not egraph.is_saturated_or_timeout():
+    # difference here is we partition the reads/writes separately
+    matches = []
+
+    # all reads, we can parallelize
+    for rw in rewrites:
+      for (subst, eclass) in egraph.ematch(rw.lhs):
+        matches.append((rw, subst, eclass))
+
+    # all writes
+    for (rw, subst, eclass) in matches:
+      eclass2 = egraph.add(rw.rhs.substitute(subst))
+      egraph.merge(eclass, eclass2)
+    
+    # restore invariants
+    egraph.rebuild()
 return egraph.extract_best()
 ```
