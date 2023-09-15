@@ -167,7 +167,7 @@ Conceptually, register allocation is a simple idea.
    - We assume that any variable that gets used, or might get used, might be not dead
    - We consider a variable dead only when we have conclusive proof (e.g. storing a new value in that variable)
    - To calculate this, we loop over the instruction sequence backwards
-     - This algorithm requires a default undead-out set for the last instruction in the scope of our analysis (for most, we assume this is the empty set though this is not always the case. e.g., functions assume that the return value location is live at the end of the function)
+     - This algorithm requires a default undead-out set for the last instruction in the scope of our analysis (for most, we assume this is the empty set though this is not always the case. e.g., functions assume that the return value location is live at the end of the function).
      - In each iteration, we start by assuming the undead-in set is the same as the undead-out set, then update it depending on what happens in the instruction
        - If a variable is defined, i.e., its value is overwritten in the instruction, it is definitely dead upon entry to this intruction, so we remove it from the undead-in set.
        - If a variable is referenced in the instruction, it ought to be live and is added to the undead-in set.
@@ -175,7 +175,7 @@ Conceptually, register allocation is a simple idea.
    - Any variable defined during a non-move instruction is in conflict with every variable (except itself) in the undead-out set associated with the instruction.
    - Any variable defined during a move instruction is in conflict with every variable in the undead-out set associated with the instruction, except itself and the variable referenced in the move.
 3. Register allocation: assign each abstract locations to a register that is different from any conflicting abstract locations.
-   - Recursive graph-colouring register allocation
+   - Recursive graph-colouring register allocation. This normally uses a [[thoughts/disjoint-set|disjoint-set]]
    1. If the set of abstract locations is empty, return the empty assignment.
    2. Otherwise, choose a low-degree abstract location from the input set of abstract locations, if one exists. Otherwise, pick an arbitrary abstract location from the set. A low-degree abstract location is one with fewer than k conflicts, for some for pre-defined k. We pick k to be the number of registers in the set of assignable registers.
    3. Recurse with the chosen abstract location removed from the input set and the conflict graph. The recursive call should return an assignment for all the remaining abstract locations.
@@ -198,7 +198,7 @@ When analyzing the program to determine how variables are used, we can either:
 - Monadic form (MF): a syntactic form that allows composing operations that operate on values and have no side-effect (such as changing the value of an abstract location), but requires explicit sequencing any effectful operations
   - Canonical monadic form (CMF): a syntactic form in which equal programs (for some notion of equality) have the same representation. The form is canonical in the sense that there is one right way to represent every program
   - Writing transformations and optimizations over CMF is often easier since we do not have to manually consider two equal programs as they have the same representation.
-- A-normal form (ANF): a syntactic form that restricts all operations to trivial values, and forbids nesting in our value position. It is roughly equivalence to other compiler intermediate forms, such as static-single assignment. All ANF programs are in MF but the inverse does not hold
+- A-normal form (ANF): a syntactic form that restricts all operations to trivial values, and forbids nesting in our value position. It is roughly equivalent to other compiler intermediate forms, such as static-single assignment. All ANF programs are in MF but the inverse does not hold
 
 ## Racket
 
