@@ -4,9 +4,10 @@ import HeaderConstructor from "../../components/Header"
 import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
-import { FilePath } from "../../util/path"
+import { FilePath, pathToRoot } from "../../util/path"
 import { defaultContentPageLayout, sharedPageComponents } from "../../../quartz.layout"
 import { Content } from "../../components"
+import chalk from "chalk"
 
 export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
   const opts: FullPageLayout = {
@@ -29,9 +30,15 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
       const cfg = ctx.cfg.configuration
       const fps: FilePath[] = []
       const allFiles = content.map((c) => c[1].data)
+
+      let containsIndex = false
       for (const [tree, file] of content) {
         const slug = file.data.slug!
-        const externalResources = pageResources(slug, resources)
+        if (slug === "index") {
+          containsIndex = true
+        }
+
+        const externalResources = pageResources(pathToRoot(slug), resources)
         const componentData: QuartzComponentProps = {
           fileData: file.data,
           externalResources,
@@ -50,6 +57,15 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
 
         fps.push(fp)
       }
+
+      if (!containsIndex) {
+        console.log(
+          chalk.yellow(
+            `\nWarning: you seem to be missing an \`index.md\` home page file at the root of your \`${ctx.argv.directory}\` folder. This may cause errors when deploying.`,
+          ),
+        )
+      }
+
       return fps
     },
   }
