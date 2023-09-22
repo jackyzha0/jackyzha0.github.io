@@ -2,7 +2,6 @@
 @use "./variables.scss" as *;
 
 body[data-slug="index"] img {
-  margin-bottom: 3em;
   filter: invert(0%);
   opacity: 0.85;
 }

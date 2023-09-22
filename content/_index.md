@@ -4,7 +4,7 @@ tags:
   - evergreen
 ---
 
-![Welcome to my little hypertext garden](./banner.svg)
+<img src="./banner.svg" width="701" height="183">
 
 ```poetry
 Welcome!
