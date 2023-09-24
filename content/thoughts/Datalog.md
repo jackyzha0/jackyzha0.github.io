@@ -9,7 +9,7 @@ Source: _What You Always Wanted to Know About Datalog (And Never Dared to Ask)_
 
 Datalog is basically a simplified version of general Logic Programming.
 
-In the formalism of Datalog, both facts and rules are represented as Horn clauses of the general shape `L0 :- L1, ..., Ln`. Each `L` is a predicate symbol `p(t1, ..., ti)` where `t` are the terms. A term can either be a constant or a variable.
+In the formalism of Datalog, both facts and rules are represented as Horn clauses of the general shape `L0 :- L1, ..., Ln` which is equivalent to $L_1 \land \dots \land L_n \implies L_0$. Each `L` is a predicate symbol `p(t1, ..., ti)` where `t` are the terms. A term can either be a constant or a variable.
 
 A logic program consists of a finite set of:
 
@@ -64,8 +64,8 @@ Datalog goals seem more naturally executed through breadth-first techniques, as 
 
 - Evaluation methods: effective evaluation strategies (improvements at runtime)
   - Bottom-up
-    - Naive
-    - Semi-naive
+    - Naive: On each iteration, the program takes its current database of facts and computes all new facts that can be produced by one step of deductive inference, by iterating over all of the rules and exhaustively unifying them. If any new facts were produced, it then merges those with the previous set and repeats the process with another iteration; otherwise, it terminates.
+    - Semi-naive: Semi-naive evaluation solves this inefficiency by only attempting to evaluate rules where at least one term on the right-hand side of the rule was generated (i.e., is new) since the previous iteration.
     - Henschen-Naqvi
   - Top-down
     - Query-subquery (QSQ)
