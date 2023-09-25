@@ -19,33 +19,36 @@ Keeping a failure resume has let me be so much more ambitious in trying new thin
 ## 2023
 
 - Wasn't selected to speak at the Causal Islands conference this year :(( Was really looking forward to this one as a lot of people whose work I really admire were also going to be there and this would be my first time 'formally' speaking at a conference.
+- Moved from Vancouver to SF and had a hard time adjusting to all the change. Had a lot of family stuff going on that made it difficult to fully have 100% of my brain committed to anything really. This applies to pretty much all major areas of my life including work, friendships, relationship, and health.
+	- Doing slightly better now but the process is hard and the road is long :)
+	- Given this, I had to drop and rearrange a bunch of commitments, including an indefinite hiatus on my [[thoughts/Rhizome Research Log|independent research]] along with work at Hypha. This really sucks as both are things that I would have _loved_ to spend more time if I had the capacity to.
 
 ## 2022
 
 - Rejected from Agency Fund's Social Impact Fellowship
 - Finding it extremely difficult to apply for grants for my [[thoughts/independent research|independent research]]. Got rejected from Emergent Ventures which I thought I was most likely to get funding from which is extremely dejecting. More thoughts in my [[thoughts/Rhizome Research Log|research log]].
 - Rejected from [Thinking Microgrants](https://twitter.com/sariazout/status/1571871089713680386)
-  - _Candidly, given the volume of applications I was not able to spend more than 30 seconds on each. I am certain there were many wonderful candidates that were overlooked._
-  - There are just so many other similar people looking for grants !! Feels more luck of the draw than anything with this volume of applicants
+	- _Candidly, given the volume of applications I was not able to spend more than 30 seconds on each. I am certain there were many wonderful candidates that were overlooked._
+	- There are just so many other similar people looking for grants !! Feels more luck of the draw than anything with this volume of applicants
 - Questioning my own self-worth as a writer and engineer
-  - The more time I spend in school, the more I feel that I am actually very average in terms of writing/engineering, especially amongst my peers. I think I'm able to still achieve a lot that others find impressive is because things that come easy to me -- like working on projects or writing in my spare time -- are things that others find difficult/hard to commit to.
-  - Especially with grading, I feel like I'm consistently being told my thoughts/words are not good by different people and it gets in my head sometimes. I wonder if I am just bad at writing/thinking about these things!
-  - But on the other hand, there are clearly a handful of people who _do_ like my writing and how I think about these things, conduct my work, etc.
-  - I know the rational brain take is to accept that there is and always will be people better and that it's _completely okay_ to not excel in everything but my emotional overthinking brain can't help but to feed the negative self-talk
-    - For now, what is keeping it at bay is reassuring myself that the work I am doing is significantly better than it was in the past. I am improving and the work I am doing is fulfilling.
+	- The more time I spend in school, the more I feel that I am actually very average in terms of writing/engineering, especially amongst my peers. I think I'm able to still achieve a lot that others find impressive is because things that come easy to me -- like working on projects or writing in my spare time -- are things that others find difficult/hard to commit to.
+	- Especially with grading, I feel like I'm consistently being told my thoughts/words are not good by different people and it gets in my head sometimes. I wonder if I am just bad at writing/thinking about these things!
+	- But on the other hand, there are clearly a handful of people who _do_ like my writing and how I think about these things, conduct my work, etc.
+	- I know the rational brain take is to accept that there is and always will be people better and that it's _completely okay_ to not excel in everything but my emotional overthinking brain can't help but to feed the negative self-talk
+		- For now, what is keeping it at bay is reassuring myself that the work I am doing is significantly better than it was in the past. I am improving and the work I am doing is fulfilling.
 
 ## 2021
 
 - Stopped sending out newsletter issues :(( Ended up focusing more on longer form [[thoughts/writing|writing]] instead
 - Ghosted by both Contrary Build and Contrary Fellowship
 - Couldn't work up the courage to apply to the [Maintainers Summer Fellowship](https://themaintainers.org/summer-fellow)
-  - I really love the work that the Maintainers org is doing and this internship would have combined so many things that I'm interested in and passionate about: maintenance, writing, software, infrastructure, etc. I just couldn't convince myself that I wouldn't have made a fool of myself by applying :(
+	- I really love the work that the Maintainers org is doing and this internship would have combined so many things that I'm interested in and passionate about: maintenance, writing, software, infrastructure, etc. I just couldn't convince myself that I wouldn't have made a fool of myself by applying :(
 - Had to cut out a bunch of commitments in order to maintain mental sanity
-  - While this isn't a 'failure' in the traditional sense, it was a failure for me in terms of setting good boundaries for myself. I had been spending way too much of my 'free' time working for projects and commitments I wasn't 100% interested in. I missed being able to just dedicate an afternoon to tinkering and exploring an idea so I decided to make the leap and cut down on commitments. **If it's not a hell yes, it's a no.**
+	- While this isn't a 'failure' in the traditional sense, it was a failure for me in terms of setting good boundaries for myself. I had been spending way too much of my 'free' time working for projects and commitments I wasn't 100% interested in. I missed being able to just dedicate an afternoon to tinkering and exploring an idea so I decided to make the leap and cut down on commitments. **If it's not a hell yes, it's a no.**
 - Rejected from the Delta Fellowship
 - Rejected from ZFellows after they reached out to 'learn more' about my idea
 - Rejected from the Y. P. Heung Foundation Award
-  - This scholarship is awarded to someone who demonstrates outstanding academic performance and is involved with community activities. I thought that, despite my slightly-above-average grades, I had a decent shot at this award given my involvement with the CS community at UBC but things didn't turn out the way I wanted. This award would've helped alleviate the financial stress that comes with having to pay tuition out-of-pocket, so I'll need to work a bit more for that money.
+	- This scholarship is awarded to someone who demonstrates outstanding academic performance and is involved with community activities. I thought that, despite my slightly-above-average grades, I had a decent shot at this award given my involvement with the CS community at UBC but things didn't turn out the way I wanted. This award would've helped alleviate the financial stress that comes with having to pay tuition out-of-pocket, so I'll need to work a bit more for that money.
 
 ## 2020
 

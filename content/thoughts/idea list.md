@@ -13,11 +13,13 @@ tags:
   - smart [[thoughts/git|git]] merges
   - https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
 - markup any site with a webcrawler + yjs + tldraw
+  - maybe use webrecorder
   - markupthis.site is not taken!!
+  - backed by content-addressed cdn store?
 - daily link share
   - inventory packing simulator but its with tabs... what would affect tab size? length of article == perceived weight in bag?
   - what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
-- [[thoughts/WebAssembly|WASM]]-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
+- [[thoughts/WebAssembly|WASM]]-based val.town with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
   - [[thoughts/IPFS]] as a versioned package manager for all software
   - good example: https://github.com/dylibso/wasmstore
 - rotmg but actually good lol
@@ -61,10 +63,19 @@ tags:
     - (no clue if this would work) integral images but applied to vector similarity search in text documents
     - viola-jones for text [[thoughts/latent-factor model|embeddings]]
     - https://github.com/facebookresearch/faiss
+	    - https://arxiv.org/pdf/1702.08734.pdf
+	    - https://crates.io/crates/kd-tree
+	    - https://dl.acm.org/doi/10.1145/3154273.3154307
   - how do we encode sentences/paragraphs/documents as vectors?
     - https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings
     - https://github.com/ryankiros/skip-thoughts
     - https://github.com/pytorch/fairseq/tree/main/examples/data2vec
+  - wasm-based in-browser
+    - open question: how do we get the query -> vector??
+    - compute vectors for documents ahead of time and compile it into a single static binary file
+    - frontend will just load this
+    - in the browser, use webgl for fast dot-products
+	    - write a fragment shader to compute similarity between search vector and indexed vectors ($1 \times n$ image where $n$ is number of documents and output is value in $[0,1]$ for similarity)
 - data provenance
   - https://www.cs.cmu.edu/~NatProg/whyline.html
 - LayoutLM + screenshots → auto-categorization of knowledge
@@ -112,6 +123,15 @@ tags:
       - _semantic_ byzantine fault tolerance vs protocol byzantine fault tolerance
     - Making distributed systems reliable is inherently impossible; we cling to Byzantine fault tolerance like Charlton Heston clings to his guns, hoping that a series of complex software protocols will somehow protect us from the oncoming storm of furious apes who have somehow learned how to wear pants and maliciously tamper with our network packets. (_[The Saddest Moment](https://scholar.harvard.edu/files/mickens/files/thesaddestmoment.pdf)_ by James Mickens)
     - "I have never had a real-life experience that resembled a Byzantine fault tolerant protocol."
+  - two axes of collaborative vs local-first software
+	  - ultimately about state reconciliation 
+	  - one is temporally (offline-first) the other is spatially (collaboration across multiple computers)
+	  - two axes, not mutually exclusive
+	  - maybe worth plotting where everything sits lol
+	  - data is either
+		  - collaborative: co-editing
+		  - persistent: saved somewhere (as opposed to ephemeral)
+		  - versioned: can time travel
   - against recipes
     - recipes are for reproducibility, determinism → and thus fungibility
     - bad for creatives? or anything that is high flux
