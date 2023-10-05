@@ -344,7 +344,7 @@ Instead of making a copy of the original operation and just changing the content
 We can look to our list CRDT for an example. This `delete` function produces an entirely valid operation. This also makes sense from a causality perspective, we need to have delivered the original before trying to delete it!
 
 ```rust
-  fn delete<T>(&mut self, id: OpID, keypair: &Ed25519Keypair) -> Op<T> {
+fn delete<T>(&mut self, id: OpID, keypair: &Ed25519Keypair) -> Op<T> {
 	let mut op = Op {
 		id: PLACEHOLDER_ID,
 		origin: id, // the actual operation we are deleting
