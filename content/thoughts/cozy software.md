@@ -57,6 +57,8 @@ Universalization erases difference and produces self-reinforcing spirals of excl
 
 We should destabilize the underlying assumption that what is best for the majority of users is best for _all_ users.
 
+> “People are different sizes; they sit in different ways. And yet there is a tendency in modern times to make all chairs alike” (p.1158, Different Chairs, [[thoughts/A Pattern Language|A Pattern Language]])
+
 ## Bicycles for the mind
 
 - We were promised bicycles but instead we got aircraft carriers

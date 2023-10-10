@@ -1,72 +1,55 @@
 ---
-title: "Agentic Computing"
+title: Agentic Computing
 date: 2022-11-29
 tags:
   - fruit
   - Rhizome
 aliases:
   - communal-computing
+  - digital placemaking
 ---
 
 > This post is part of an ongoing letter series with [Spencer](https://www.spencerchang.me/) and some other internet friends about what we think the future of the Internet could look like. Find more letters over on our [(we)bsite](https://we-b.site/)
 
 ![[thoughts/images/minecraft.png]]
 
-In 7th grade, our home room teacher showed us [Scratch](https://scratch.mit.edu/) for the first time. The majority of fun with Scratch was sharing. Posting graphics on the walls, modifying and experimenting with each other's work, and bringing the "new" products back to their original inventors.
+One of the most important factors as to what gives objects a felt sense of 'home' or 'coziness' is the degree to which the object **involves you in its own completion**. The home is a personal statement. The exact layout they choose to layout posters on the wall; the positioning of the plants; how they choose to let light illuminate the hallways; and colours of the walls: these are all expressions of its residents.
 
-But the real spark of Scratch came from just how easy it was to make shared state. In Scratch, you can create a [globally consistent variable](https://en.scratch-wiki.info/wiki/Cloud_Data) that is synced across every one who ran my game just as easily as any other variable. Adding a leaderboard to my game was just as easy as replacing my variable with a Cloud Variable.
+Does the built environment enable agency for its residents? To have [[thoughts/agency|agency]] is the ability and freedom to act in their immediate context or environment. Thus, to have agency in an environment -- regardless of whether the space is digital or physical -- first supposes them to have ownership and ability to assert themselves in the space.
 
-![[thoughts/images/cloud-variable.png|300]]
-_Making a shared variable is as easy as clicking a checkbox_
+In the realm of game philosophy, we call the amount of agency the **agential distance**: the gap that the game designer explicitly leaves for the player to occupy. This gap is shaped by the rules/constraints of the game.
 
-This was the last era of the internet, to me, felt personal, multiplayer, distributed, and evolvable. It was easy to build stuff on your own and remix other work. It felt like a clearing in the woods, a safe gathering space for those who knew about it.
+This, to me, explains why places like Minecraft hold such timeless feelings of home-ness. It was the first time the world felt malleable and that I could do something about it. In Minecraft, it was the literal act of 'modding' the game and its rules to fit how you and your friends want to enjoy it -- the game is your own to define how you want to play it.
 
----
+Like Calvinball in Calvin and Hobbes, the only rule of the game is that it can't be played the same way twice! The whole point of the game is that the players come together to actively reconfigure and rearrange the game.
 
-![[thoughts/images/house-from-up.jpg]]
-_The house from Up (2009)_
-
-Over time, this started to fade. Geocities came and went. Big platforms like Facebook, Google, and Amazon swooped in to buy all the real estate around our little clearing. It lost most of the personal aspects as it grew into an app platform.
-
-Some stubbornly kept their little hypertext gardens but doing so was a radical act rather than the norm. We, as citizens of the internet, have lost our ability to shape it and make it a home.
-
-In 2019, Yancey Strickler illustrated this in what he called the _[Dark Forest Theory of the Internet](https://onezero.medium.com/the-dark-forest-theory-of-the-internet-7dc3e68a7cb1)_.
-
-> Imagine a dark forest at night. It’s deathly quiet. Nothing moves. Nothing stirs. This could lead one to assume that the forest is devoid of life. But of course, it’s not. The dark forest is full of life. It’s quiet because night is when the predators come out. To survive, the animals stay silent.
->
-> This is also what the internet is becoming: a dark forest. In response to the ads, the tracking, the trolling, the hype, and other predatory behaviors, we’re retreating to our dark forests of the internet, and away from the mainstream.
-
-Our web has turned into a relentless competition for our attention. As corporations and influencers grasp for power, an increasing number of the web's citizens have retreated to the underground burrows of the [[thoughts/Dark Forest Theory of the Internet|cozy web]] to avoid the fallout. Hidden away from a hostile public web filled with spam, AI marketing, and malware, we find respite in our group chats, Discord servers, and forums.
-
-![[thoughts/images/dark-forest.png|500]]
-_Maggie Appleton in [The Dark Forest and the Cozy Web](https://maggieappleton.com/cozy-web)_
-
-But we've fallen into a very narrow set of design patterns. In the name of profit, platforms optimize for views, hours spent, and clicks. They 'accidentally' boost provocative and incendiary behaviour because they know that it draws people to their platform, healthy or not. Each additional app on the web increasingly competes for increasingly scarce [[thoughts/attention economy|attention]]. Who has space for authentic connection anymore? That doesn't make profit numbers go up.
-
-It seems that we've reached the inevitable conclusion of optimizing "connecting with each other" to the extreme. With no feedback system for users to have a say or improve the conditions, the web is quickly spiralling into something that doesn't do all that good of a job. The thing that the web originally was meant to do -- enable people to meaningfully meet and collaborate with each other -- is harder than ever. Perhaps we might carve out a bit of space for those again?
-
-In design, there is a technique [diverge-converge](https://www.nngroup.com/articles/diverge-converge/), which as the name suggests, has two stages:
-
-1. Diverge: come up with many independent solutions to the problem
-2. Converge: narrow down and refine a small number of solutions to the problem
-
-The early days of the internet exemplified the diverge cycle of design. We tried a lot of ways to connect people and things on the web. Over time, some things stuck and others didn't. Evolutionarily, we've guided ourselves to this unfortunate set of web design practices and it's not clear that these will continue to serve us well. We’ve converged on a state of the internet that worked great for the first 15 or so years, but now parts are creaking and dilapidated.
-
-How might we broaden the design space again?
+![[thoughts/images/calvinball.png]]
 
 ---
 
-The first step to this seems to be to dispel the myth that the internet and the web as a whole is something so vast and monolithic that it is unchangeable. We look at these entrenched protocols and take them as a given.
+Today, it’s no longer a controversial statement to say that, as citizens of the internet, we have lost our ability to shape the web and make it a home -- we live on rented ground.
 
-But here's the wonderful bit about software (and specifically the web) that feels uniquely special: you don't need permission to make things.
+![[thoughts/images/apartments.png]]
 
-The internet is the first place people got to build real things without needing to ask someone if they could. This is powerful. We should give people the ability to own technology, to bring it into their own complex life stories. The _real_ use cases may be the ones waiting to be discovered. One of my favourite examples is the French bistro.
+In the platform giant's desperate act to serve everyone, [[thoughts/cozy software#Against universal design|they end up serving no one well]].
+
+> “People cannot be genuinely comfortable and healthy in a house which is not theirs. All forms of rental — whether from private landlords or public housing agencies — work against the natural processes which allow people to form stable, self-healing communities.” (p.393, Your own home, [[thoughts/A Pattern Language|A Pattern Language]])
+
+And we also know that these rental areas in the physical world are the first to fall ruin.
+
+> “Rental areas are always the first to turn to slums. The mechanism is clear and well known. See, for example, George Sternlieb, _The Tenement Landlord_ (Rutgers University Press, 1966). The landlord tries to keep his maintenance and repair costs as low as possible; the residents have no incentive to maintain and repair the homes — in fact, the opposite — since improvements add to the wealth of the landlord, and even justify higher rent. And so the typical piece of rental property degenerates over the years. The landlords try to build new rental properties which are immune to neglect — gardens are replaced with concrete, carpets are replaced with lineoleum, and wooden surfaces by formica: it is an attempt to make the new units maintenance-free, and to stop the slums by force; but they turn out cold and sterile and again turn into slums because nobody loves them.” (p.394, Your own home, [[thoughts/A Pattern Language|A Pattern Language]])
+
+How might we make it possible for the average layperson to be able to change and adapt software for their own needs?
+
+---
+
+The wonderful bit about software (and specifically the web) that feels uniquely special is that you don't need permission to make things. The internet is the first place people got to build real things without needing to ask someone if they could.
+
+We should give people the ability to own technology, to bring it into their own complex life stories. We should involve people in its own completion. The _real_ use cases may be the ones waiting to be discovered. One of my favourite examples is the French bistro.
 
 > The small Parisian restaurants serving home-cooked meals in very modest settings—like the cafe before it, was an invention. Many tales exist of its origin. Some say it was working-class landlords opening their kitchens for extra income. Others say it was the Auvergnats, immigrating to Paris from what is today central-south France, who first worked as rag-pickers, then wood and coal sellers, then metalworkers, who created small working-class restaurants to supplement their income. **Either way, it was not planned or engineered, but simply not-disallowed.** There were no rules in place to stop this invention.
 >
 > (Simon Sarris, _[Welcome, ghosts](https://simonsarris.substack.com/p/welcome-ghosts)_, emphasis added)
-
-The best pieces of software I've had the pleasure of using are ones that are agentic. Examples like Minecraft and Scratch let me fully construct a world for myself in which I operate. They set the rules, but _I_ am the one who decides how I want to play.
 
 Agentic software designs for and explicitly allows user-made [[thoughts/desire paths|desire paths]] and [[thoughts/cozy software#Folk Software|folk-usages of software]]. People will use software in whatever informal, distributed ways that emerge from real world contexts. Folksonomies are a great example of these informal taxonomies developed by users on social sharing platforms. Tumblr tags, for example, have adapted to become not just a form of tagging or organizing, but also metacommentary, memes, and other comedic content.
 
@@ -91,7 +74,7 @@ We must make it possible for the average layperson to be able to change and adap
 
 First, we need to address the double-edged sword that is scale. Scale, of course, can be a good thing. Economies of scale enable us to have cheap hosting, comprehensive web search, and many more luxuries we enjoy on the web today. However, the Silicon Valley mindset of always asking what the billion-dollar version of your idea is and how you can get *everyone* using it is slowly poisoning how we think about software.
 
-Because realistically, when most of us want to create software, the intention isn't to release something that the whole world will end up using. Yet, with all the knowledge you end up needing to be able to do it, it seems like everything we release into the world needs to be production ready!
+Realistically, when most of us want to create software, the intention isn't to release something that the whole world will end up using. Yet, with all the knowledge you end up needing to be able to do it, it seems like everything we release into the world needs to be production ready!
 
 For someone to make a web service today, they need to know
 
@@ -154,7 +137,7 @@ With this infrastructure in place, we can also think about what _community owned
 
 Perhaps this looks like people having [[posts/towards-data-neutrality|ownership of their own data]]. They could use servers to help make it available to their peers when they are offline but they are never essential to people accessing their own data.
 
-Your peers, friends, and colleagues could help replicate, host, and process indexes for data they are also interested in. A big community corkboard of all the things the group may be interested in. In this magic world, anyone could write applications that pull in data from these indexes, making it easy to experiment and just _make_ things that work on the web.
+Your peers, friends, and colleagues could help replicate, host, and process indexes for data they are also interested in. A big community corkboard of all the things the group may be interested in. In this world, anyone could write applications that pull in data from these indexes, making it easy to experiment and just _make_ things that work on the web.
 
 ---
 
@@ -163,8 +146,6 @@ As we spend more time on the web, it’s clear what may have worked for a smalle
 It used to be the case that you needed to train to become a scribe to write words for any reason. But just as pens were taken out of the hands of the scribe during the Reformation of Europe, we must take the code out of the hands of software engineers and share it with the masses.
 
 Writing software shouldn’t take a degree and many years of training, it should be as simple as making a meal at home or writing a letter to a friend. Doing so will lead to a more diverse and resilient internet, with a greater variety of voices and perspectives represented so we may build an internet that works for us.
-
-I dream of a future where we have this LAN-like experience back again with all the best parts of the 21st century internet. A safe small space of people we trust, where we can go, rest, and look out for each other. A harbour from the multi-billion-person internet for when we want to feel cozy and safe.
 
 Let's make the web feel agentic again.
 
