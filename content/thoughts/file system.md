@@ -4,7 +4,6 @@ date: 2022-06-23
 tags:
   - seed
 ---
-
 ## Overlay File System
 
 [Source](https://docs.kernel.org/filesystems/overlayfs.html)

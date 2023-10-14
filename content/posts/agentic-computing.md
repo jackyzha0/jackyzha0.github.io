@@ -8,7 +8,6 @@ aliases:
   - communal-computing
   - digital placemaking
 ---
-
 > This post is part of an ongoing letter series with [Spencer](https://www.spencerchang.me/) and some other internet friends about what we think the future of the Internet could look like. Find more letters over on our [(we)bsite](https://we-b.site/)
 
 ![[thoughts/images/minecraft.png]]
