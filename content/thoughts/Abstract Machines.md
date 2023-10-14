@@ -1,3 +1,11 @@
+---
+title: Abstract Machines
+date: 2023-10-14
+tags:
+  - seed
+---
+
+
 An **abstract machine** is a theoretical model that allows for a detailed and precise analysis of how a computer system functions.
 
 Abstract machines are 

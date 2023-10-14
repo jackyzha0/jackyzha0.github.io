@@ -1,3 +1,11 @@
+---
+title: Category Theory
+date: 2023-10-14
+tags:
+  - seed
+---
+
+
 In essence, a simple collection which can be thought of as a graph. Three components
 
 1. A collection of objects (nodes)

@@ -1,3 +1,11 @@
+---
+title: Lambda Calculus
+date: 2023-10-14
+tags:
+  - seed
+---
+
+
 $\lambda$-calculus is a functions and applications.
 
 For example, to represent $f(x)=x^2-2x+5$ in $\lambda$-calculus, we can write a $\lambda$-term
