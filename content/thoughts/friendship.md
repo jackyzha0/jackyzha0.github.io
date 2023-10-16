@@ -53,6 +53,8 @@ Assume that people like you. Tempted to ask a gym friend if they want to become 
 
 Commit to some great loves; falling in love with something and building a structure of behaviour for when love falters. Who would they care about if nobody knew?
 
+“For one human being to love another: that is perhaps the most difficult of all our tasks… the work for which all other work is but preparation,” Rilke [wrote](https://themarginalian.us2.list-manage.com/track/click?u=13eb080d8a315477042e0d5b1&id=03701c13af&e=c202dd4d40) to the young poet seeking his advice a century ago.
+
 ## Epistemic Norms, The False Belief Requirement, and Love
 
 By J. Spencer Atkins
@@ -84,3 +86,21 @@ Doxastic voluntarism: we can make ourselves belief a proposition
 [Source](https://web.archive.org/web/20220413143253/https://www.theatlantic.com/family/archive/2022/04/marriage-problems-fight-dishes/629526/)
 
 If I had to distill the problems in failed relationships down to one idea, it would be our colossal failure to make the invisible visible, our failure to invest time and effort into developing awareness of what we otherwise might not notice in the busyness of daily life.
+
+## Third Things
+
+_Little Prince_ author Antoine de Saint-Exupéry’s [beautiful insistence](https://www.themarginalian.org/2013/01/01/what-is-love/) that “love does not consist of gazing at each other, but in looking outward together in the same direction”
+
+This concept of a ‘third thing’ comes from a poem written by Donald Hall after the passing of his wife Jane Kenyon who as also a poet: “We did not spend our days gazing into each other’s eyes. We did that gazing when we made love or when one of us was in trouble, but most of the time our gazes met and entwined as they looked at a third thing. Third things are essential to marriages, objects or practices or habits or arts or institutions or games or human beings that provide a site of joint rapture or contentment. Each member of a couple is separate; the two come together in double attention.”
+
+John mentions how he thinks that third things are essential not only to marriages but also to lots of other relationships too and I agree. Third things are points of “joint rapture”
+
+It doesn’t so much matter what the thing is, only that it is.
+
+[https://youtu.be/X86QGoGkf74?t=43](https://youtu.be/X86QGoGkf74?t=43)
+
+## Against 'assessing' love
+
+Nussbaum on how over-reliance on intellect for clarity about love produces instead a kind of myopia:
+
+> Intellect’s account of psychology lacks all sense of proportion and depth and importance… [Such a] cost-benefit analysis of the heart — the only comparative assessment of which intellect, by itself, is capable — is bound, Proust suggests, to miss differences of depth. Not only to miss them, but to impede their recognition. Cost-benefit analysis is a way of comforting oneself, of putting oneself in control by pretending that all losses can be made up by sufficient quantities of something else. This stratagem opposes the recognition of love — and, indeed, love itself.
