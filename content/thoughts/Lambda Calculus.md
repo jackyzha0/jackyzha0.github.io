@@ -6,7 +6,7 @@ tags:
 ---
 
 
-$\lambda$-calculus is a functions and applications.
+$\lambda$-calculus is a [[thoughts/notation|notation]] for functions and applications. The main ideas are _applying_ a function to an argument and forming functions by _abstraction_.
 
 For example, to represent $f(x)=x^2-2x+5$ in $\lambda$-calculus, we can write a $\lambda$-term
 
