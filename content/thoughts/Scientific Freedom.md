@@ -5,6 +5,7 @@ tags:
   - seed
   - book
 ---
+
 Book by Donald W. Braben on scientific progress.
 
 >  In the 1970s, the nature and pace of scientific discovery began to stagnate due to a combination of peer review, mandated justification of spending, and the push for short-term miracles. In _Scientific Freedom_, first published in 2008, Donald W. Braben presents a framework to find and support transformative scientific innovation.
@@ -17,7 +18,7 @@ See also: [[thoughts/research institutions|research institutions]], [[thoughts/i
 
 - Research *proposals* are not treated as if they were completed works, and the so-called best, as selected by peer review, determine the search that gets done. This inhibits the scope of scientific progress
 	- The limit is what you imagine it to do -- this presumes the person doing the selecting has the best overall grasp as to what is worthwhile to presume. Often this is wrong -- these researchers are the top of their field. Trust them to pick for themselves what is worthwhile to work on.
-- Nature does not respect consensus. We cannot expect to actually make progress simply because we have agreed among ourselves that progress lies in a particular direction. unless, of course, that direction is a simple extrapolation from what has gone before, but such objectives usually serve only to consolidate -- unless researchers are free to follow interesting observations wherever they might lead.
+- Nature does not respect consensus. We cannot expect to actually make progress simply because we have agreed among ourselves that progress lies in a particular direction. Unless, of course, that direction is a simple extrapolation from what has gone before, but such objectives usually serve only to consolidate -- unless researchers are free to follow interesting observations wherever they might lead.
 	- Committees can rarely, if ever, be creative. The fact that the best scientists might be involved is irrelevant. It can, of course, provide a defense against criticism as a committee's membership can cloak its conclusions with respectability, but the collective responses of any group, however distinguished they may be as individuals, are usually uninspiring and based on compromise
 - On March 3, 2007 *The Economist* published a well-documented briefing on the shift from research to development, particularly in the big companies. Industrialists presiding over R&D's loss of the ampersand, as *The Economist* succinctly puts it, might therefore have a rude awakening when, as they have long been accustomed to doing, they turn to academia for new scientific insights. It may simply not be available in the quality or breadth they look for.
 - Scientists back then could afford the investments of time and energy to make their work more accessible because they had much more security in those days. Those taking on these duties today would be penalized as they would have less time to spend on their endless searches for new funding. See also: [[thoughts/research debt|research debt]]
