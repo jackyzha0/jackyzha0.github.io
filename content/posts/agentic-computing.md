@@ -12,7 +12,7 @@ aliases:
 
 ![[thoughts/images/minecraft.png]]
 
-One of the most important factors as to what gives objects a felt sense of 'home' or 'coziness' is the degree to which the object **involves you in its own completion**. The home is a personal statement. The exact layout they choose to layout posters on the wall; the positioning of the plants; how they choose to let light illuminate the hallways; and colours of the walls: these are all expressions of its residents.
+One of the most important factors as to what gives objects a felt sense of 'home' or 'coziness' is the degree to which the object **involves you in its own completion**. The home is a personal statement. The exact layout they choose to layout posters on the wall; the positioning of the plants; how they choose to let light illuminate the hallways; the colours of the walls: these are all expressions of its residents.
 
 Does the built environment enable agency for its residents? To have [[thoughts/agency|agency]] is the ability and freedom to act in their immediate context or environment. Thus, to have agency in an environment -- regardless of whether the space is digital or physical -- first supposes them to have ownership and ability to assert themselves in the space.
 
