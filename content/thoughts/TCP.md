@@ -8,8 +8,7 @@ tags:
 
 [[thoughts/Transport Layer|Transport layer protocol]]
 
-When a host requires assurance that the remote end has actually received the data it sends. But instead of requesting a signature at the remote end, TCP requires an acknowledgement be returned
-
+TCP provides a **reliable**, in-order, port to port, byte-stream service to applications. The application byte-stream is conveyed over the network via TCP segments, with each TCP segment sent as an Internet Protocol (IP) datagram.
 ## Overview
 
 1. Point-to-point: one sender, one receiver
@@ -23,6 +22,34 @@ When a host requires assurance that the remote end has actually received the dat
 
 ## Flags
 
+Header format:
+
+```
+0                   1                   2                   3
+0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          Source Port          |       Destination Port        |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                        Sequence Number                        |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Acknowledgment Number                      |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|  Data |       |C|E|U|A|P|R|S|F|                               |
+| Offset| Rsrvd |W|C|R|C|S|S|Y|I|            Window             |
+|       |       |R|E|G|K|H|T|N|N|                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|           Checksum            |         Urgent Pointer        |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                           [Options]                           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                                                               :
+:                             Data                              :
+:                                                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
+
+The control bits are also known as "flags"
+
 - SYN (sychronize): packets used to initiate a connection
 - ACK (acknowledgement): packets that are used to confirm that the data packets have been received, also used to confirm the initiation request and tear down requests
 - RST (reset): signify the connection is down or maybe the service is not accepting the requests
@@ -30,8 +57,16 @@ When a host requires assurance that the remote end has actually received the dat
 
 ## Connection Establishment
 
-- Three-way handshake
-- To solve single initial sequence number problem, we randomly choose the initial sequence number
+Three-way handshake. We must prevent segments from one incarnation of a connection from being used while the same sequence numbers may still be present in the network from an earlier incarnation. To solve single initial sequence number problem, we randomly choose the initial sequence number
+
+```
+1) A --> B  SYN my sequence number is X
+2) A <-- B  ACK your sequence number is X
+3) A <-- B  SYN my sequence number is Y
+4) A --> B  ACK your sequence number is Y
+```
+
+(we can combine 2 and 3 into a single message)
 
 1. Client sends initial SYN message
    1. Sequence number for client to server is specified

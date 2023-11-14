@@ -22,9 +22,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Dealers of Lighting** by Michael A. Hiltzik
 - **Creation: Life and How to Make it** by Steve Grand
 - **The Utopia of Rules** by David Graeber
-- **The Limits to Capital** by David Harvey
 - **Inventing the Medium** by Janet J. Murray
-- **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
 - **Designing an Internet** by David D. Clark
 - **Playing Software** by Miguel Sicart
 - **Designs for the Pluriverse** by Arturo Escobar
@@ -35,11 +33,10 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### Poetry
 
 - **Without** by David Hall
-
 ## Current
 
 - **The Dream Machine** by M. Mitchell Waldrop
-
+- **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
 ## Past
 
 ### 2023
