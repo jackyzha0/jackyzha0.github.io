@@ -7,6 +7,7 @@ tags:
 
 ## Technical
 
+- fuzzy rip grep
 - hoogle for rdf shapes
 - optimizing network topology for crdts
 - [[thoughts/CodeMirror|codemirror]] but CRDT + TreeSitter
@@ -19,6 +20,7 @@ tags:
 - daily link share
   - inventory packing simulator but its with tabs... what would affect tab size? length of article == perceived weight in bag?
   - what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
+  - list building primitive
 - [[thoughts/WebAssembly|WASM]]-based val.town with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
   - [[thoughts/IPFS]] as a versioned package manager for all software
   - good example: https://github.com/dylibso/wasmstore

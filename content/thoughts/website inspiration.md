@@ -24,6 +24,7 @@ tags:
 - https://tatianabilbao.com/: drawing/illustration as map/navbar
 - http://luckysoap.com/andbyislands/: just a big map
 - http://universalthirst.com/: fun spinny reveal animation
+- https://river.maxbittker.com/: sfx
 
 ## Aesthetics
 
