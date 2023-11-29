@@ -67,7 +67,7 @@ Doxastic voluntarism: we can make ourselves belief a proposition
 
 1. False Belief Requirement
    - Argues that romantic love sometimes poses the demand to believe falsely
-   - Knowledge as JTB (see [Knowledge Argument](thoughts/Knowledge%20Argument.md)): $S$ believes that $p$, $S$ is justified in believing that $p$, and $p$ is true
+   - Knowledge as justified true belief or JTB (see [Knowledge Argument](thoughts/Knowledge%20Argument.md)): $S$ believes that $p$, $S$ is justified in believing that $p$, and $p$ is true
    - Belief then, is not knowledge as one can hold false beliefs
    - W.K. Clifford: "It is wrong always, everywhere, and for anyone to believe anything upon insufficient evidence"
    - When love poses the false belief argument, love will be opposed to epistemic norms
@@ -104,3 +104,7 @@ It doesn’t so much matter what the thing is, only that it is.
 Nussbaum on how over-reliance on intellect for clarity about love produces instead a kind of myopia:
 
 > Intellect’s account of psychology lacks all sense of proportion and depth and importance… [Such a] cost-benefit analysis of the heart — the only comparative assessment of which intellect, by itself, is capable — is bound, Proust suggests, to miss differences of depth. Not only to miss them, but to impede their recognition. Cost-benefit analysis is a way of comforting oneself, of putting oneself in control by pretending that all losses can be made up by sufficient quantities of something else. This stratagem opposes the recognition of love — and, indeed, love itself.
+
+See also: 
+
+![[thoughts/Games Agency as Art#^04e939|self-effacing ends]]

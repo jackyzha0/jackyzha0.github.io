@@ -52,6 +52,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2022
 
+- **Design as Art** by Bruno Munari
 - **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
 - **[[thoughts/Games Agency as Art]]** by C. Thi Nguyen
 - **Permutation City** by Greg Egan

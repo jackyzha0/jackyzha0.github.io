@@ -42,7 +42,7 @@ Book, written by C. Thi Nguyen
   - We need to have final ends to avoid being bored. However, having final ends is no insurance against being bored. Instead, to remain interested in the world, we must be able to fluidly be able to change our interests
   - I acquire my ends from my experience of value in an activity
   - Game playing is a way to practical agential fluidity. Game playing builds familiarity with different agential modes -- to help us build our inventory and know which one to pic -- and the fluidity to shift easily in and out of our chosen mode
-- Self-effacing Ends
+- Self-effacing Ends ^04e939
   - An end that cannot be achieved through direct pursuit, but only through pursuit of some other end. For example, meditation and achieving an empty mind, loving another, etc.
   - Paradox of hedonism: one cannot achieve pleasure by pursuing it directly, but only by devoting oneself to some other end (Sidgwick, 1907)
 - The value contradiction that makes games valuable

@@ -25,6 +25,7 @@ tags:
 - http://luckysoap.com/andbyislands/: just a big map
 - http://universalthirst.com/: fun spinny reveal animation
 - https://river.maxbittker.com/: sfx
+- https://opalcamera.com/opal-tadpole: spicy onscroll product description
 
 ## Aesthetics
 
@@ -51,6 +52,7 @@ tags:
 - http://www.scrnprnt.ca/: silly diagrams
 - https://garden.bradwoods.io/: grunge
 - https://surrealdb.com/: 3d illustrations and use of transparency/blur are clean
+- https://www.socratica.info/: fun use of mixed fonts and print screen graphics
 
 ## Poetic/Conceptual
 

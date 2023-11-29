@@ -14,7 +14,7 @@ Why are we more ourselves in small group chats than our posts? Why are we more c
 
 Is it because of bureaucratic friction at scale? [Group limits](thoughts/group%20limits.md)?
 
-How do we move away from the 'other' and towards the 'us'? Towards collectivism and interdependence rather than individualism?
+How do we move away from the 'other' and towards the 'us'? Towards collectivism and [[thoughts/interdependence|interdependence]] rather than individualism?
 
 ## On Building with a Squad
 
@@ -46,3 +46,11 @@ _The squad economy primarily yields non-monetary forms of value_
 Benjamin Franklin had the Junto Club, Tolkien and C.S. Lewis had The Inklings, Jobs and Wozniak had Homebrew. The Bloomsbury Group was integral to the success of Virginia Woolf, Clive Bell, and John Maynard Keynes, while MIT’s Model Railroad Club spawned much of modern hacker culture.
 
 Around a dozen members is the sweet spot of social motivation: small enough to know everyone, yet large enough that the group won’t collapse if one or two members’ enthusiasm wanes; small enough that you are not daunted by competing with the whole world, yet large enough that you still need to be on your toes to keep up.
+
+An ongoing relationship provides more effective advice, allowing the use of shorthand for concepts and a two-way conversation that autodidactic education lacks.
+
+The goal here is not to invest more in the skills you use at work. Instead, it is to be truly exploratory for no immediate purpose. It is to waste time (yet to savour it), to wander off in the wrong direction (and to find an exciting new path). Indirection and exploration should not come at the cost of doing and building. Doing and building should not come at the cost of having fun.
+
+### Against fully online communities
+
+First, they shift the emphasis towards consumption, not creation. How many tweets do you write versus how many do you read, for example? Communicating in real-life shifts the ratio of creation to consumption far closer to 1:1, thus forcing you to fully develop your ideas.

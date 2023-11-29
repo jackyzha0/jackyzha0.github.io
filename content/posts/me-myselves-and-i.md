@@ -77,6 +77,6 @@ The sound of the waves are nice, huh?
 
 _Yeah._
 
-[^1]: Annie Dillard, _The Writing Life_
+[^1]: Annie Dillard, _[[thoughts/The Writing Life|The Writing Life]]_
 [^2]: Thich Nhat Hanh's _Tea Meditation_
 [^3]: Patricia Mou, _[Rabbit Holes](https://wellnesswisdom.substack.com/p/-wellness-wisdom-vol45-30-pieces)_
