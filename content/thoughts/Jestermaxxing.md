@@ -9,7 +9,7 @@ tags:
 
 C. Thi Nguyen on [Playfulness vs Epistemic Traps](https://philpapers.org/archive/NGUPVE.pdf)
 
-Intellectual playfulness, loosely, is the disposition to try out new ideas, perspectives and systems of thought (involves perspective shifting) for the sheer joy of it ([[thoughts/The Grasshopper, Games, Life and Utopia#Terminology|autotelic behaviour]]). It is a disposition to explore ideas for the value of exploration itself.
+Intellectual playfulness, loosely, is the disposition to try out new ideas, perspectives and systems of thought (involves perspective shifting) for the sheer joy of it ([[thoughts/The Grasshopper, Games, Life and Utopia#Terminology|autotelic behaviour]]). It is a disposition to explore ideas for the value of exploration itself. ^81b0a0
 
 Intellectual playfulness also has some clear epistemic functionality for us
 
