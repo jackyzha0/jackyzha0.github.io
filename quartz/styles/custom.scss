@@ -19,13 +19,13 @@ body {
   height: 100%;
   background-image: url('/static/texture.png');
   mix-blend-mode: hard-light;
-  opacity: 0.2;
+  opacity: 0.8;
   pointer-events: none;
   z-index: 999;
 }
 
 [saved-theme="dark"] #texture {
-  mix-blend-mode: soft-light;
+  mix-blend-mode: overlay;
 }
 
 [saved-theme="dark"] body[data-slug="index"] img[src*="banner.svg"] {
