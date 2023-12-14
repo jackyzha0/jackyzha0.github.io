@@ -7,23 +7,30 @@ tags:
 
 ![[thoughts/images/transformer supremacy.png]]
 
-## Attention
+# Inference
+## Embedding
 
-Each decoding can use hidden state from each encoding step. Used to re-weight during decoding to emphasize important parts. Can be seen as a variant of skip-connections.
+The smallest unit of understanding for a transformer is a *token*. This is usually a character (e.g. 'a', 'b', etc.) but can sometimes be longer.
 
-At each time step:
+The collection of all the tokens the model understands is its vocabulary. The vocabulary maps the token to its index:
 
-1. Prepare inputs (encoder hidden states from previous input)
-2. Score each hidden state
-3. Softmax the scores and multiply each input by its score
-4. Sum up all the vectors
+- Token A: index 0
+- Token B: index 1
+- Token C: index 2
 
-Context vector is usually appended to decoder’s state when going to next layer
+The first step of a transformer is turning the input text into the appropriate index in the vocabulary table.
 
-This is a single-head attention mechanism. Most transformers use multiple heads to attend to different aspects of the input (e.g. for text, one focuses on grammar, another may focus on counts of things)
+Then, we use the token index to select the associated column in the **token embedding matrix** (e.g. the 3rd token index corresponds to the 3rd column of the token embedding matrix). The values of the token embedding matrix are vectors which we call the **token embeddings**. Let's call the dimensionality of this embedding $C_\text{embed}$.
 
-## Transformers
+Then, based on the index of the token in the input, we use it to select an appropriate column of the **position embedding matrix**. The dimensionality of this is the same as $C_\text{embed}$.
 
+Both token embeddings and position embeddings are learned during training. As both embeddings have the same dimensionality, we simply perform an element-wise addition to get the **input embedding**.
+
+Running this for all $n$ the input tokens gives us a matrix of size $[n,C_\text{embed}]$
+
+## Layer Norm
+
+# Comparison to other models
 [[thoughts/convolutional neural networks|CNNs]] are less sequential, but take multiple steps to combine distant information. “Attention is all you need”: keep the attention, ditch the RNN/CNN. Uses “self-attention” layers to model relationship between all words in input
 
 ![[thoughts/images/transformers.png]]

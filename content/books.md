@@ -30,6 +30,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **New Media Art** by Mark Tribe/Reena Jana
 - **are we human? notes on an archaeology of design** by Beatriz Colomina & Mark Wigley
 - **The Unbearable Lightness of Being** by Milan Kundera
+- **Dancing on the Ceiling: Art & Zero Gravity** by Kathleen *Forde*
 
 ### Poetry
 
@@ -42,6 +43,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2023
 
+- **Design as Art** by Bruno Munari
 - **[[thoughts/Scientific Freedom|Scientific Freedom: The Elixir of Civilization]]** by Donald W. Braben
 - **[[thoughts/Where is My Flying Car|Where Is My Flying Car?]]** by J. Storrs Hall
 - **[[thoughts/visualization|The Visual Display of Quantitative Information]]** by Edward R. Tufte
@@ -53,7 +55,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2022
 
-- **Design as Art** by Bruno Munari
 - **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
 - **[[thoughts/Games Agency as Art]]** by C. Thi Nguyen
 - **Permutation City** by Greg Egan

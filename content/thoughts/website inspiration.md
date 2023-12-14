@@ -4,7 +4,6 @@ date: 2023-03-18
 tags:
   - evergreen
 ---
-
 ## Fun interactions
 
 - http://lynnecarty.info/: blobs! Fun way to visualize overlapping tags in a personal portfolio
@@ -26,6 +25,7 @@ tags:
 - http://universalthirst.com/: fun spinny reveal animation
 - https://river.maxbittker.com/: sfx
 - https://opalcamera.com/opal-tadpole: spicy onscroll product description
+- https://taliacotton.com/: hover over letters
 
 ## Aesthetics
 
@@ -53,6 +53,7 @@ tags:
 - https://garden.bradwoods.io/: grunge
 - https://surrealdb.com/: 3d illustrations and use of transparency/blur are clean
 - https://www.socratica.info/: fun use of mixed fonts and print screen graphics
+- https://nicochilla.com/
 
 ## Poetic/Conceptual
 
@@ -75,6 +76,8 @@ tags:
 - https://henryheffernan.com/: full 3D desk setup???
 - https://pouria.dev/unknown-pleasures: song visualizer but its a whole cinematic experience
 - https://hyper.leuys.com/point-of-entry/1#10758717: 3D web browsing
+- https://bbycroft.net/llm: informative explainer
+- https://www.stripe.press/poor-charlies-almanack: just fun + great info presentation
 
 ## Resources
 
