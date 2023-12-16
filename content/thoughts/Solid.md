@@ -31,7 +31,7 @@ _Summarized from specs_
 - Seems to just be a fancy HTTP file server (operated on [[thoughts/RDF|RDF]] Documents)
   - Applications can 'patch' pods with new data, given that they have the correct access to it
 - Real-time collaborative communication between pod and application uses WebSockets
-- CORS by default prevents apps that run on one origin from accessing data on other origins
+- [[thoughts/CORS|CORS]] by default prevents apps that run on one origin from accessing data on other origins
   - Get around this by having servers waive the cross-origin protection as Solid handles this [[thoughts/access control|access control]] themselves
 - Identity is done through [[thoughts/WebID|WebID]]
 - Servers are strongly discouraged from exposing information beyond the minimum amount necessary to enable a feature.

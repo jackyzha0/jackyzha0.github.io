@@ -1,3 +1,10 @@
+---
+title: Franz Kafka
+date: 2023-12-16
+tags:
+  - seed
+---
+
 ## Letter to his father
 [Excerpts from Maria Popova in The Marginalian](https://www.themarginalian.org/2015/03/05/franz-kafka-letter-father/)
 

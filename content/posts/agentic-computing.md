@@ -94,7 +94,7 @@ It has become so difficult to learn that it has almost killed software's viabili
 >
 > (David Crawshaw, _[Remembering the LAN](https://tailscale.com/blog/remembering-the-lan/)_)
 
-It wasn't always like this. In fact, the internet used to be pretty flexible. In the days when [we still had plenty of IPv4 addresses to hand out to computers](https://en.wikipedia.org/wiki/IPv4_address_exhaustion), when [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [[thoughts/NAT|NAT]] hadn't made the web [[thoughts/computer networking#Peer-to-peer today|peer-to-peer hostile]], LANs meant it was easy to learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.
+It wasn't always like this. In fact, the internet used to be pretty flexible. In the days when [we still had plenty of IPv4 addresses to hand out to computers](https://en.wikipedia.org/wiki/IPv4_address_exhaustion), when [[thoughts/CORS|CORS]] and [[thoughts/NAT|NAT]] hadn't made the web [[thoughts/computer networking#Peer-to-peer today|peer-to-peer hostile]], LANs meant it was easy to learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.
 
 Unfortunately, we can't just naively revert back to this. It is no secret that our modern internet is peer-to-peer hostile. Almost all of the communication we do on the web is fully client-server because that was the easiest way to make things secure and work.
 
