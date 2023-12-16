@@ -107,4 +107,4 @@ Nussbaum on how over-reliance on intellect for clarity about love produces inste
 
 See also: 
 
-![[thoughts/Games Agency as Art#^04e939|self-effacing ends]]
+![[thoughts/self-effacing ends|self-effacing ends]]

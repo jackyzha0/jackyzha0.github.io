@@ -36,7 +36,7 @@ The hardest job of teaching, Simone Weil thought, was to shake people out of thi
 
 The will is mostly good at performing physical stuff. It’s a great tool to use if your goal in life is that want to increase your max deadlift weight. It’s a great tool if you want to sit in an ice bath or any uncomfortable situation and endure things for as long as you can. If you’re a writer... the will is great at getting you to sit down and put pen to paper and to start doing the work.
 
-But there are certain things that strength of the will can't get you closer to. For example, if you’re a writer…you can’t will yourself to something like creativity. You can force yourself to move the pencil up and down on the piece of paper but if every word you write is completely uninspired, writing another 2000 words isn't going to change it. See also: [[thoughts/Games Agency as Art#^04e939|self-effacing ends]]
+But there are certain things that strength of the will can't get you closer to. For example, if you’re a writer…you can’t will yourself to something like creativity. You can force yourself to move the pencil up and down on the piece of paper but if every word you write is completely uninspired, writing another 2000 words isn't going to change it. See also: [[thoughts/self-effacing ends|self-effacing ends]]
 
 Simone Weil thought by the end of her life that instead of cultivating pure willpower, cultivating attention was usually a much better way of transforming yourself.
 
