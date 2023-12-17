@@ -19,6 +19,10 @@ $$h(z_i) = \frac{1}{1+\exp(-z_i)}$$
 
 See also: [[thoughts/multi-class classification]]
 
-The softmax function allows us to map $k$ real numbers $z_i = w_c^Tx_i$ to probabilities
+The softmax function allows us to map $k$ real numbers $z_i = w_c^Tx_i$ to probabilities.
 
 $$P(y | z_1, z_2, \dots, z_k) = \frac{\exp(z_y)}{\sum_{c=1}^k \exp(z_c))}$$
+
+The alternative 'harder' version to softmax is the argmax function which simply finds the maximum value, sets it to 1.0, and assigns 0.0 to all other values.
+
+In contrast, the softmax operation serves as a "softer" version of that. Due to the exponentiation involved in softmax, the largest value is emphasized and pushed towards 1.0, while still maintaining a probability distribution over all input values. This allows for a more nuanced representation that captures not only the most likely option but also the relative likelihood of other options.
