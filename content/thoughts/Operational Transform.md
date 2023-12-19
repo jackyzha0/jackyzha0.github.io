@@ -26,6 +26,18 @@ Bᴬ ↘   ↙ Aᴮ
     Docᴬᴮ
 ```
 
+## For text
+[Source](https://web.archive.org/web/20200406135608/http://www.codecommit.com/blog/java/understanding-and-applying-operational-transformation)
+
+Generally, OT for text involves 3 main types of operations:
+1. `retain(n: number)`, equivalent to right arrow
+2. `insert(chars: string)`, equivalent to typing text
+3. `delete(chars: string)`, equivalent to deleting forward
+
+In practice, `retain()` tends to be the most commonly used component by a wide margin. The trick is that every operation _must_ span the full width of the document.
+
+When evaluating the operations, the cursor will start at index 0 and walk forward through the existing document and the incoming operation one item at a time. Note that the cursor here is a strictly OT concept and isn't the same as the editor caret!
+
 ## Position Mapping
 
 Something that comes up quite a lot in an editor is the need to transform a document position in an original document into a corresponding position in the changed document. If text is inserted somewhere before the selection, the selection should move forward with the surrounding text. Some OT systems call this “cursor transformation”, but it also applies to things like ranges of collapsed code, lint warnings, breakpoint markers, and so on.

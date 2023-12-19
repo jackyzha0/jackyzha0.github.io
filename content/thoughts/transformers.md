@@ -11,7 +11,7 @@ tags:
 Mainly derived from [Brendan Bycroft's amazing LLM visualization](https://bbycroft.net/llm)
 ## Embedding
 
-The smallest unit of understanding for a transformer is a *token*. This is usually a character (e.g. 'a', 'b', etc.) but can sometimes be longer.
+The smallest unit of understanding for a transformer is a *token*. This is usually a common sequence of characters like 'at' or 'qu'.
 
 The collection of all the tokens the model understands is its vocabulary. The vocabulary maps the token to its index:
 
