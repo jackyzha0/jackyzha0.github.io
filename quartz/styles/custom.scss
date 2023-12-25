@@ -98,3 +98,7 @@ pre.poetry {
 .content-meta {
   font-family: biro_script_standardRgus, var(--bodyFont);
 }
+
+audio::-webkit-media-controls-panel {
+  background-color: var(--lightgray);
+}

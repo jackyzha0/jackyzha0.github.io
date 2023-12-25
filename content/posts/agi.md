@@ -1,5 +1,5 @@
 ---
-title: "Generally Artificial Intelligence"
+title: Humanistic AGI
 date: 2020-11-02T16:17:37-08:00
 enableToc: true
 tags:
