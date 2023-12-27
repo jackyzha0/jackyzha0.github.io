@@ -43,6 +43,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2023
 
+- [[thoughts/The Mythical Man-Month|The Mythical Man-Month]] by Frederick P. Brooks, Jr.
 - **Design as Art** by Bruno Munari
 - **[[thoughts/Scientific Freedom|Scientific Freedom: The Elixir of Civilization]]** by Donald W. Braben
 - **[[thoughts/Where is My Flying Car|Where Is My Flying Car?]]** by J. Storrs Hall
