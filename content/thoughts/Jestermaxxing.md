@@ -1,8 +1,10 @@
 ---
-title: "Jestermaxxing"
+title: Jestermaxxing
 date: 2022-08-02
 tags:
   - seed
+aliases:
+  - epistemic play
 ---
 
 ## Playfulness vs Epistemic Traps
@@ -28,7 +30,7 @@ This is notably different from open-mindedness. Open-mindedness makes a weaker d
 
 Imagine that a belief system is a boat. Open-mindedness is the willingness to pull out any particular plank and to inspect it to see if it makes sense on the boat. But that assessment occurs while standing on all the other planks of that boat. Perspective shifting involves jumping ship and trying out a whole new boat.
 
-Next, we argue that the pursuit of truth may be a self-effacing end -- that it cannot be acquired through direct pursuit. Even if you are trying out alternative systems of belief, the choice of those systems will still be influenced by your standing system of beliefs. The trouble is that a well-designed epistemic trap can undermine the plausibility of alternative perspectives.
+Next, we argue that the pursuit of truth may be a [[thoughts/self-effacing ends|self-effacing end]] -- that it cannot be acquired through direct pursuit. Even if you are trying out alternative systems of belief, the choice of those systems will still be influenced by your standing system of beliefs. The trouble is that a well-designed epistemic trap can undermine the plausibility of alternative perspectives.
 
 In the [[thoughts/exploit explore|exploit-explore tradeoff]], random walks are _actually good_. Surely, one may argue, that if going on occasional random walks is the best path for rationality, then wouldn't the rational person go on random walks? Yet, one cannot take a truly random walk without being guided by prior beliefs.
 

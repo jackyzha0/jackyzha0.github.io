@@ -27,6 +27,6 @@ draft: true
 		- TK
 	- i’ve had the unfortunate pleasure of having a fletcher-like personality in my own life
 		- how has this shaped me as a person?
-		- TK
+		- 
 - can obsession ever be healthy?
 	- seasonality re: robin sloan
