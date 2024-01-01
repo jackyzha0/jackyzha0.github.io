@@ -9,4 +9,4 @@ aliases:
 
 > To declare what is, not instruct what to do
 
-See: [[thoughts/Datalog]], [[posts/react]]
+See: [[thoughts/Datalog]], [[thoughts/react]]

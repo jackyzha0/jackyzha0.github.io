@@ -15,4 +15,4 @@ Examples of DAGs include:
 
 - [[thoughts/git|git]]
 - [[thoughts/IPFS|IPFS]]
-- [[posts/docker|Docker]] images
+- [[thoughts/docker|Docker]] images

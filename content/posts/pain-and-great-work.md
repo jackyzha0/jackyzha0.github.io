@@ -30,3 +30,9 @@ draft: true
 		- 
 - can obsession ever be healthy?
 	- seasonality re: robin sloan
+
+## simon sarris efforts and goals and joy
+- I find it ideal to always have more ambitions, plans, and projects than one could possibly accomplish. Aspirations — even unlikely ones, maybe _especially_ unlikely ones — are an essential part of living well. When we are at our most ailing, we are reduced to thinking and talking only of our ailments. When we are at our most vigorous, our most alive, we think and talk of our goals and aspirations. Over long time frames, the pessimist becomes an unobservant man, and the optimist creates the world.
+- Dreaming alone is seductive, even a little sweet, since it lacks the pain of trying.
+- You should have ideals, but you cannot only love an idealized future, you must cultivate a love of effort, too. If you _really_ want something, then the soul must make demands of the body.
+- What can I attempt that will be worthwhile, serious enough that it might end in failure?

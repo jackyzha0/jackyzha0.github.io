@@ -34,7 +34,7 @@ Thus, university autonomy became severely compromised, and the climate of fear t
 
 ## Research Taste
 
-See also: [[thoughts/agency|Agency]] and finding ones own [[thoughts/iconic space|iconic space]]
+See also: [[thoughts/agency|Agency]] and finding ones own [[thoughts/iconic space|iconic space]], [[aesthetics-and-taste]]
 
 - "The state of mind which furnishes the driving power here resembles that of the devotee or the lover. The long-sustained effort is not inspired by any set plan or purpose. Its inspiration arises from a hunger of the soul." (Albert Einstein, in his Preface to Max Planck's book, *Where is Science Going?*)
 - Scientific progress on a broad front results from the free play of free intellects, working on subjects of their own choice, in the manner dictated by their curiosity for exploration of the unknown (Vannevar Bush, 1990)

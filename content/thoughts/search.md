@@ -125,7 +125,7 @@ Is this a form of [hermeneutical injustice](thoughts/hermeneutical%20injustice.m
 
 ### Text Processing
 
-Similar to practices in [reflect](posts/reflect.md) NLP processing actually!
+Similar to practices in [reflect](thoughts/reflect.md) NLP processing actually!
 
 - Lexical Analysis: break text into tokens
   - Bag of Words

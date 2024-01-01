@@ -1,9 +1,11 @@
 ---
-title: "Docker Explained"
+title: Docker Explained
 date: 2020-07-22T00:14:11-07:00
 tags:
   - fruit
   - technical
+aliases:
+  - ../posts/docker
 ---
 
 Content from my own ['Docker Explained' repo](https://github.com/jackyzha0/docker-explained). Check out the repository for example code!

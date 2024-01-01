@@ -33,4 +33,6 @@ Some quotes to live by.
 24. "Imagine you could play a computer" (Doug Engelbart, when inventing the keyboard)
 25. "Map the regions of your own affinity and interest, across all relevant dimensions: intellectual, aesthetic, moral. The rest, you can ignore freely. Ignore strenuously!" ([Robin Sloan](https://www.robinsloan.com/newsletters/summer-wind/))
 26. "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover." (Horace Jackson Brown Jr.)
-27. **"Magic happens because you choose for it to - don't forget it!"** -- [Anson Yu](https://ansonyu.me/waterloo)
+27. **"Magic happens because you choose for it to - don't forget it!"** ([Anson Yu](https://ansonyu.me/waterloo))
+28. “If you want to build a ship, don’t drum up people to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea." (Antoine de Saint Exupéry)
+29. “It is necessary to any originality to have the courage to be an amateur.” (Wallace Stevens)

@@ -5,6 +5,7 @@ tags:
   - sapling
   - pattern
 ---
+See the blog post version of this note: [[aesthetics-and-taste]]
 
 > That’s all life is really—a giant sequence of decisions. Life is the expression of taste
 

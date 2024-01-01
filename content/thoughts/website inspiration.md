@@ -80,6 +80,14 @@ tags:
 - https://bbycroft.net/llm: informative explainer
 - https://www.stripe.press/poor-charlies-almanack: just fun + great info presentation
 
+## Portfolios
+
+- https://work.nicochilla.com/
+- https://liuleslie.github.io/
+- https://www.trudy.computer/
+- https://www.theyanktank.com/
+- https://shashwathsantosh.com/
+
 ## Resources
 
 - https://www.logo-archive.org/

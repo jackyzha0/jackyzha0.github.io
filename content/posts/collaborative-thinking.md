@@ -5,10 +5,6 @@ tags:
   - fruit
 ---
 
-Recently, I've been reading **21 Lessons for the 21st Century** written by none other than Yuval Noah Harari, and have been enjoying the book. Its approach to weaving together insights from a vast number of disciplines to create something novel is extremely refreshing. I just read a section on learning, the knowledge illusion, and collaborative thinking and wanted to share some of my thoughts that have been bouncing around and marinating for a few days as well as some learnings that I've applied to my own life.
-
-## Collaborative Thinking
-
 > Humans rarely think for themselves. Rather, we think in groups. Just as it takes a tribe to raise a child, it also takes a tribe to invent a tool, solve a conflict, or cure a disease. No individual knows everything it takes to build a cathedral, an atom bomb, or an aircraft.
 
 It is no secret that the key to the rise of _Homo Sapiens_ and the anthropocene wasn't due to the rationality of any individual human, but rather our collective unparalleled ability to think and share knowledge in large groups. This concept has arisen in the form of _specialization of labour_.

@@ -4,6 +4,8 @@ date: 2020-05-10T08:51:56-07:00
 tags:
   - technical
   - fruit
+aliases:
+  - ../posts/reflect
 ---
 
 ![An image of the reflect block page](https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png)_How do we tell that this is a “valid” intent?_

@@ -3,6 +3,8 @@ title: "DWeb Camp: Gather by the Campfire"
 date: 2023-07-27
 tags:
   - fruit
+aliases:
+  - ../posts/DWeb-Camp-2023
 ---
 
 ![[thoughts/images/dweb-collage.png]]

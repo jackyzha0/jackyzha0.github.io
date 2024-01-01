@@ -7,7 +7,7 @@ tags:
 
 ## 2023
 
-1. **Let us imagine a communal-owned internet! at DWeb Camp 2023.** We live on rented land, play according to immutable rules, and created in limited spaces. How do we create an internet of communal agency & what does it look like now? See the [Internet Archive blog post](https://blog.archive.org/2023/08/22/dweb-camp-exploring-governance-ai/)  and accompanying [[posts/DWeb Camp 2023|blogpost reflection]].
+1. **Let us imagine a communal-owned internet! at DWeb Camp 2023.** We live on rented land, play according to immutable rules, and created in limited spaces. How do we create an internet of communal agency & what does it look like now? See the [Internet Archive blog post](https://blog.archive.org/2023/08/22/dweb-camp-exploring-governance-ai/)  and accompanying [[thoughts/DWeb Camp 2023|blogpost reflection]].
 2. **Communal Computing Networks at DWeb YVR.** What might networks that enable experimentation and agency look like?
 
 ## 2022
