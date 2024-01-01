@@ -8,7 +8,7 @@ aliases:
   - ../posts/ctrlv-next
 ---
 
-![Rewriting ctrl-v using Next.js](/posts/images/ctrlv-next/title.png)
+![Rewriting ctrl-v using Next.js](thoughts/images/ctrlv-next/title.png)
 
 Ever since I released [ctrl-v](https://github.com/jackyzha0/ctrl-v/), friends from HackClub have kept bugging me about switching my current React code over to use Next.js. I wanted to see what all the fuss was about, so I finally set aside some time this weekend to rewrite the frontend using Next.js and deployed it on Vercel instead of Firebase Hosting. I thought it would take the whole weekend, but I managed to go from zero knowledge about Next.js to a fully finished refactor in just under 6 hours!
 
@@ -40,7 +40,7 @@ However, Next.js doesn't force you to choose between the two. It actually prides
 
 In the old frontend, everything was completely client-side rendered. My 'productionized' application was quite literally an `index.html` with a bunch of JS bundles. It sucked as whenever I sent a ctrl-v link to a friend, there wouldn't be a preview about what the content was and most people were scared to just open a random link like that (rightfully so). There was also a not-very-pleasant 'loading paste...' period before any content actually appeared on the screen.
 
-![Old vs new approaches to rendering content](/posts/images/ctrlv-next/rendering.png)
+![Old vs new approaches to rendering content](thoughts/images/ctrlv-next/rendering.png)
 
 I realized that there were only really two main types of pages
 

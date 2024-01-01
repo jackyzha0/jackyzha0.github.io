@@ -33,7 +33,7 @@ Yet, to turn that bunch of HTML into something displayable in your web browser, 
 
 The nested structure of the HTML lends itself very well to a tree-like structure which the browser can then efficiently traverse and make updates to.
 
-![Turning HTML into the DOM and then into the actual site](/posts/images/react/html-dom-site.png)_Turning HTML into the DOM and then into the actual site_
+![Turning HTML into the DOM and then into the actual site](thoughts/images/react/html-dom-site.png)_Turning HTML into the DOM and then into the actual site_
 
 ## How React works
 
@@ -45,17 +45,17 @@ This is where the mystical **virtual DOM** comes in. Modifying the DOM in a decl
 
 > Please note that Virtual DOM is not faster than raw, imperative operations on the real DOM (best performance). React uses the Virtual DOM because it is a relatively efficient way of declaratively representing your UI from state, and much faster compared to straight `innerHTML` calls.
 
-![React's Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM](/posts/images/react/virtual-DOM.png)_React's Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM_
+![React's Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM](thoughts/images/react/virtual-DOM.png)_React's Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM_
 
 ### Components
 
 Another things that React tackles really well is that regular HTML and JS makes it a lot more difficult than it should be to re-use the same UI and logic across different pages on your website.
 
-![What if you wanted to reuse this 'product card' component?](/posts/images/react/component-reuse.png)_What if you wanted to reuse this 'product card' component?_
+![What if you wanted to reuse this 'product card' component?](thoughts/images/react/component-reuse.png)_What if you wanted to reuse this 'product card' component?_
 
 The main philosophy of functional React is that you shouldn't override and inherit behaviour. Instead, get the behaviour you want by creating and [[thoughts/composable|composing]] reusable _components_. Each of these components can hold some sort of data of its own, called its **state**. Each component can also take in a few arguments or parameters called **properties** or **props** for short. Each component is composed up of either primative HTML elements (e.g. `<div>` or `<h1>`) or other React components. The elements that a component is made up of are called its **children**.
 
-![React Component Diagram](/posts/images/react/component-diagram.png)_React Component Diagram_
+![React Component Diagram](thoughts/images/react/component-diagram.png)_React Component Diagram_
 
 Because React uses composition to build components, there is a natural _downward flow of information_, where components pass data to their children. Thus, to change a parent's state, the parent needs to explicitly pass a callback function that allows that behaviour to the child (e.g. an arrow function that wraps the `setState` function for the parent). This is detailed more in the 'Building an App section'.
 
@@ -136,7 +136,7 @@ So far we've covered static components using just plain old JSX and data passing
 
 There are three main parts to the life cycle to a React component. They are mounted, updated, and eventually unmounted.
 
-![React Component Lifecycle](/posts/images/react/lifecycle.png)_React Component Lifecycle_
+![React Component Lifecycle](thoughts/images/react/lifecycle.png)_React Component Lifecycle_
 
 ### Mount
 
@@ -402,7 +402,7 @@ function TodoItem(props) {
 
 Great! Now let's see what that looks like.
 
-![Our todo app with a strikethrough effect!](/posts/images/react/todo-0.png)_Our todo app with a strikethrough effect!_
+![Our todo app with a strikethrough effect!](thoughts/images/react/todo-0.png)_Our todo app with a strikethrough effect!_
 
 ### Deleting a Todo (Passing callbacks)
 
@@ -568,7 +568,7 @@ function App() {
 
 Looking snazzy!
 
-![A nice new 'Add Todo' field!](/posts/images/react/todo-1.png)_A nice new 'Add Todo' field!_
+![A nice new 'Add Todo' field!](thoughts/images/react/todo-1.png)_A nice new 'Add Todo' field!_
 
 Finally, let's link this up back to the main `<App>` state so that adding a new todo actually modifies the state of the app. We create a `addTodo` callback and pass this to the `<TodoForm>` component through using a `addCallback` prop.
 
@@ -641,7 +641,7 @@ Hopefully this leaves you in a really good position to becoming more comfortable
 - [10 React Hooks Explained by Fireship.io](https://www.youtube.com/watch?v=TNhaISOUy6Q)
 - [React Visualized](https://react.gg/visualized)
 
-![Our working todo tracker!](/posts/images/react/todo-fin.gif)_Our working todo tracker!_
+![Our working todo tracker!](thoughts/images/react/todo-fin.gif)_Our working todo tracker!_
 
 ```jsx
 // Full Code
