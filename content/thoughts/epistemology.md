@@ -5,6 +5,7 @@ tags:
   - seed
   - PHIL240A
 ---
+As it relates to knowledge, its validity, and its acquisition.
 
 ## Validity
 

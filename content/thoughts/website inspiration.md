@@ -55,6 +55,7 @@ tags:
 - https://surrealdb.com/: 3d illustrations and use of transparency/blur are clean
 - https://www.socratica.info/: fun use of mixed fonts and print screen graphics
 - https://nicochilla.com/
+- https://jacobleech.com/
 
 ## Poetic/Conceptual
 

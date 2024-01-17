@@ -41,9 +41,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
 ## Past
 
+### 2024
+
+- **[[thoughts/Alexandre Grothendieck#Reflection and testimony on a past as a mathematician|Récoltes et Semailles]]** by Alexandre Grothendieck
+
 ### 2023
 
-- [[thoughts/The Mythical Man-Month|The Mythical Man-Month]] by Frederick P. Brooks, Jr.
+- **[[thoughts/The Mythical Man-Month|The Mythical Man-Month]]** by Frederick P. Brooks, Jr.
 - **Design as Art** by Bruno Munari
 - **[[thoughts/Scientific Freedom|Scientific Freedom: The Elixir of Civilization]]** by Donald W. Braben
 - **[[thoughts/Where is My Flying Car|Where Is My Flying Car?]]** by J. Storrs Hall

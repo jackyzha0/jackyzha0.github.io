@@ -16,7 +16,7 @@ Intellectual playfulness, loosely, is the disposition to try out new ideas, pers
 Intellectual playfulness also has some clear epistemic functionality for us
 
 - intellectually playful exploration sometimes can better serve the goal of finding the truth, than will exploration that is strictly aimed at finding the truth
-- it functions against epistemic traps: belief systems that undermine our epistemic efforts, leaving us stuck inside them
+- it functions against epistemic traps: a belief system that re-directs good-faith inquiry to bad results. An epistemic trap manipulates background beliefs to fend off contrary evidence.
 
 Examples of epistemic traps:
 

@@ -8,7 +8,7 @@ aliases:
   - large language models
 ---
 
-Large Language Models (LLMs) are foundational machine learning models that use [[thoughts/machine learning]] to process and [[thoughts/NLP|understand natural language]]. They seem to have [[thoughts/emergent behaviour|emergent properties]] of [[thoughts/intelligence]], though this could just be the [[thoughts/observer-expectancy effect]]
+Large Language Models (LLMs) are [[thoughts/autoregressive model|autoregressive]] foundational machine learning models that use [[thoughts/machine learning]] to process and [[thoughts/NLP|understand natural language]]. They seem to have [[thoughts/emergent behaviour|emergent properties]] of [[thoughts/intelligence]], though this could just be the [[thoughts/observer-expectancy effect]]
 
 See also: [[thoughts/transformers]]
 

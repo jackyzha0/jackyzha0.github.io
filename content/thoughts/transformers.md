@@ -4,8 +4,11 @@ date: 2022-12-07
 tags:
   - seed
 ---
+See also: [[thoughts/LLMs|LLMs]]
 
-![[thoughts/images/transformer supremacy.png]]
+At a high-level, we can think of a transformer model as taking an input sequence of tokens of length $n$ and predicting the next token at index $n + 1$.
+
+Most implementations of transformers are autoregressive, meaning that it predicts future values (index $n + 1$ to $\infty$) from past values (index $0$ to $n$).
 
 # Inference
 Mainly derived from [Brendan Bycroft's amazing LLM visualization](https://bbycroft.net/llm)
@@ -134,7 +137,6 @@ Finally, we perform the projection to get the output of the layer. This is a sim
 $$Residual =Proj^WAttnOutput + Proj^B$$
 
 Instead of passing this output directly to the next phase, we add it element-wise to the input embedding. This process is called the _residual connection_ or _residual pathway_.
-
 ### MLP
 Like with self-attention, we perform a layer normalization before the vectors enter the MLP.
 
