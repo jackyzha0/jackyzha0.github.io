@@ -22,7 +22,7 @@ In research, brilliance often isn't only about the ability to execute and solve 
 
 Though Grothendieck refers to math here, I think the observation generalizes. There is this thread through many different disciplines where a pursuit of the craft because you find it inherently _beautiful_ -- to like it in and of itself -- reveals a deeper, more fundamental understanding.
 
-For any creative pursuit, this ability to notice more deeply is what distinguishes good from great. It is a form of attention that starts to reveal the infinite depth of the world. It surfaces nuances you hadn’t seen before even though nothing about your actual senses has changed. You can tell the difference between a good sound . You begin to see wider and deeper.
+For any creative pursuit, this ability to notice more deeply is what distinguishes good from great. It is a form of attention that starts to reveal the infinite depth of the world. It surfaces nuances you hadn’t seen before even though nothing about your actual senses has changed. You begin to see wider and deeper.
 
 Annie Dillard relates a tale from a fellow writer who was asked a question by a student:
 

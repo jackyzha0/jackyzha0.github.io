@@ -3,10 +3,9 @@ title: Alexandre Grothendieck
 date: 2024-01-02
 tags:
   - seed
+  - book
 ---
 ## Reflection and testimony on a past as a mathematician
-
-#book 
 
 Récoltes et Semailles -- Harvests and Sowing (1986). Notes from [source](https://tongchow.github.io/ReSI.pdf). An internal race of two horses -- of mathematics and of meditation. The former which is "not personal to me, they are meant to be communicated" whereas the latter "knowledge that arises from the work of meditation is “solitary” knowledge, knowledge that cannot be shared[partagée], let alone “communicated”".
 
