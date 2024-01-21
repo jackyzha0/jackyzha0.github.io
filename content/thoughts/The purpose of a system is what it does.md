@@ -3,6 +3,7 @@ title: The purpose of a system is what it does
 date: 2024-01-12
 tags:
   - seed
+  - pattern
 aliases:
   - POSIWID
 ---

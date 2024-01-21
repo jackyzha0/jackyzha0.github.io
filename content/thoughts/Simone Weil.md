@@ -2,13 +2,13 @@
 title: Simone Weil
 date: 2023-12-01
 tags:
-  - seed
+  - sapling
 ---
 French philosopher and activist who took a very pragmatic and grounded yet radical approach to her philosophy.
 
 ## Attention and epistemology
 
-The way which you direct your [[thoughts/attention|attention]] (i.e. you way of attending to the world) drastically influences _how_ you experience the world. Weil went a step further and believed that your attention dictates which experiences are *even possible* to experience.
+The way which you direct your [[thoughts/attention|attention]] (i.e. your way of attending to the world) drastically influences _how_ you experience the world. Weil went a step further and believed that your attention dictates which experiences are *even possible* to experience.
 
 Specifically, Weil called for a sort of 'negative effort' toward attention: one which removes the **I** from the experience and is **receptive** to all the possible experiences of the world.
 

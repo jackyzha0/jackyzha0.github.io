@@ -80,6 +80,7 @@ tags:
 - https://hyper.leuys.com/point-of-entry/1#10758717: 3D web browsing
 - https://bbycroft.net/llm: informative explainer
 - https://www.stripe.press/poor-charlies-almanack: just fun + great info presentation
+- https://buttermax.net/
 
 ## Portfolios
 
