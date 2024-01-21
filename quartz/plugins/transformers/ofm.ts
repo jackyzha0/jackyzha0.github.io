@@ -23,6 +23,7 @@ export interface Options {
   callouts: boolean
   mermaid: boolean
   parseTags: boolean
+  parseArrows: boolean
   parseBlockReferences: boolean
   enableInHtmlEmbed: boolean
   enableYouTubeEmbed: boolean
@@ -36,6 +37,7 @@ const defaultOptions: Options = {
   callouts: true,
   mermaid: true,
   parseTags: true,
+  parseArrows: true,
   parseBlockReferences: true,
   enableInHtmlEmbed: false,
   enableYouTubeEmbed: true,
@@ -111,6 +113,8 @@ function canonicalizeCallout(calloutName: string): keyof typeof callouts {
 
 export const externalLinkRegex = /^https?:\/\//i
 
+export const arrowRegex = new RegExp(/-{1,2}>/, "g")
+
 // !?               -> optional embedding
 // \[\[             -> open brace
 // ([^\[\]\|\#]+)   -> one or more non-special characters ([,],|, or #) (name)
@@ -130,7 +134,7 @@ const calloutLineRegex = new RegExp(/^> *\[\!\w+\][+-]?.*$/, "gm")
 // (?:[-_\p{L}\d\p{Z}])+       -> non-capturing group, non-empty string of (Unicode-aware) alpha-numeric characters and symbols, hyphens and/or underscores
 // (?:\/[-_\p{L}\d\p{Z}]+)*)   -> non-capturing group, matches an arbitrary number of tag strings separated by "/"
 const tagRegex = new RegExp(/(?:^| )#((?:[-_\p{L}\p{Emoji}\d])+(?:\/[-_\p{L}\p{Emoji}\d]+)*)/, "gu")
-const blockReferenceRegex = new RegExp(/\^([A-Za-z0-9]+)$/, "g")
+const blockReferenceRegex = new RegExp(/\^([-_A-Za-z0-9]+)$/, "g")
 const ytLinkRegex = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
 const videoExtensionRegex = new RegExp(/\.(mp4|webm|ogg|avi|mov|flv|wmv|mkv|mpg|mpeg|3gp|m4v)$/)
 
@@ -289,6 +293,18 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                 return {
                   type: "text",
                   value: "",
+                }
+              },
+            ])
+          }
+
+          if (opts.parseArrows) {
+            replacements.push([
+              arrowRegex,
+              (_value: string, ..._capture: string[]) => {
+                return {
+                  type: "html",
+                  value: `<span>&rarr;</span>`,
                 }
               },
             ])
