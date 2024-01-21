@@ -5,6 +5,7 @@ tags:
   - seed
 ---
 
+We have a name for the tendency to go on a reasonable number of random walks: we call it "creativity."
 ### Common misconceptions
 
 - Creative [[thoughts/writing|writing]] is about creating 'literature' and not genre stories: it is more so a question of quality than content
