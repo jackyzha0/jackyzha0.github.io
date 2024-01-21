@@ -4,7 +4,7 @@ date: 2024-01-14
 tags:
   - fruit
 draft: false
-noindex: true
+noindex: false
 ---
 
 ![[thoughts/images/john-reeve-pots.png]]
