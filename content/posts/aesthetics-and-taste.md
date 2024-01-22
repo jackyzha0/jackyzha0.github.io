@@ -64,7 +64,7 @@ Creativity is the essence of the human spirit and flowers best when it's unconst
 
 Braben, in that last part, emphasizes the importance of freedom to allow scientists to follow their own research taste. Ultimately, having strong taste -- a deep seated conviction -- helps to create their own possibilities for what is possible, outside what other people believe, relying on their intrinsic, subjective judgement of what feels correct. This is what produces novel and ground breaking work, [[thoughts/Scientific Freedom#Case study of the rise and fall of the UGC in the UK|not research mandates or broad directives]].
 
----
+![[thoughts/images/bedroom-poster.png]]*The poster in my room above my bed which I got from a booth at the [SF Art Book Fair](https://sfartbookfair.com/).*
 
 Similarly, [[thoughts/Simone Weil|Simone Weil]] believed that the way which you direct your [[thoughts/attention|attention]] drastically influences _how_ you experience the world. We do not gain insights, Weil claims, by going in search of them, but instead by being receptive to the true nature of the thing itself.
 
@@ -139,6 +139,8 @@ When I think about cultivating taste, it appears to me much like how George Saun
 Over time, just like how we anneal metal, our taste becomes more refined and we are more sure in what feels optimal to us. Crafted well, taste gives us the tools to have more [[thoughts/agency|agency]] over our own lives and how we define meaning.
 
 What greater thing could there be to cultivate?
+
+![[thoughts/images/makers-mark.png|500]]
 
 [^1]: Though this *has* some historical precedence for happening through physical isolation (e.g. Newton, Grothendieck, Pascal, Baldwin), I largely believe the lone genius myth is false. The lone genius is a proxy for being a hard worker but it isn't the only way of doing [[posts/pain-and-great-work|great work]].
 
