@@ -101,15 +101,13 @@ A common thread to observe here is that a lot of early revolutionary thinkers di
 
 At times, this led them to repeat work that had already been done (like Einstein reinventing parts of statistical physics or Grothendieck working out his own formal definitions for length). But by the time they *did* hit the bounds of human knowledge, it no longer mattered to them because they just kept doing what they were already doing: following their own taste for what was beautiful.
 
-They did not seek the safety of legibility, but were okay with lingering in the depths of illegibility until something deeper, more unifying, arose. They were familiar with the ability to explore idea space without being constrained by the need to optimize for truth or legibility every step along the way.
-
-Great ideas are easy to kill. Thomas Kuhn pointed out that the biggest ideas transcend existing paradigms: they create entirely new ways of thinking that are often incompatible or require one to reconsider axiomatic truths about what they already believe. By definition, they are out of distribution. The societal pressure is to conform to what other people think and do; it is always a psychologically risky endeavor to do something new. Thus, any act of creation necessarily involves strong opinions about how the world should work -- strong enough to survive the sharp edges of doubt and the false allure of safety in what is known and what has been done.
+The societal pressure is to conform to what other people think and do; it is always a psychologically risky endeavor to do something new. Thus, any act of creation necessarily involves strong opinions about how the world should work -- strong enough to survive the sharp edges of doubt and the false allure of safety in what is known and what has been done.
 
 > "Creation is the act of bringing something nonexistent into reality. You have to have strong opinions about how the world should work. You have to think that things should be a certain way, that you prefer this color over that, this form of walking over another, this sense of beauty over theirs, this way of approaching the world over some other. Taste gives you the capability and the urgency to imagine." 
 > 
 > -- Spencer Chang, *[creative seeing](https://spencerchang.substack.com/p/creative-seeing)*
 
-Unfortunately, the stereotypical advice here plays into the lone genius myth. Pablo Picasso: "Without great solitude, no serious work is possible." James Baldwin: "Perhaps the primary distinction of the artist is that he must actively cultivate that state which most men, necessarily, must avoid: the state of being alone."
+Unfortunately, the stereotypical advice of developing the capacity to do novel work plays into the lone genius myth. Pablo Picasso: "Without great solitude, no serious work is possible." James Baldwin: "Perhaps the primary distinction of the artist is that he must actively cultivate that state which most men, necessarily, must avoid: the state of being alone."
 
 In practice, however, what they are referring to as solitude is not being physically isolated but rather more of a [state of mind](https://www.henrikkarlsson.xyz/p/good-ideas). They are putting themselves in a state where the opinions of others do not bother them and where they reach a heightened sensitivity for the types of questions worth asking -- they've developed their taste as a form of conviction[^1].
 
