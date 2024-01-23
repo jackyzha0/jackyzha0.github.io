@@ -12,25 +12,28 @@ noindex: false
 
 Taste goes by many names: intuition, conviction, self-trust, aesthetics. Roughly, it is the ability to make judgements about aesthetic value; to be able to tell the difference between what is and is not beautiful to you.
 
-It turns out that beyond the usually positive connotations of having 'good taste' when it comes to food, art, or media, it is also instrumentally useful in finding what is meaningful and worthwhile to spend our lives on.
+It turns out that the same 'good taste' that applies to food, art, or media can also help find what is meaningful and worthwhile to spend our lives on.
 
----
+This is largely because taste operates in two distinct and almost opposite modes:
 
-In research, brilliance isn't only about the ability to execute and solve problems (though that's important too). The best researchers are the best at *knowing what types of questions to ask too* -- they have good research taste.
+1. Type I taste: Exploratory taste that surfaces new forms of beauty you otherwise may not have considered;
+2. Type II taste: Conviction that drives you to sufficiently go deep on what you already find to be beautiful. 
+
+The two both need to coexist to find the right balance between exploring more options and sufficiently going deep on promising ones.
+
+If we look to deeply creative pursuits like writing and mathematics, we find many case studies where that exploratory form of taste -- specifically the pursuit of beauty -- helped to create a deeper sort of attention that revealed a deeper, more fundamental understanding of the underlying medium that gave them an edge.
 
 >  "It is not so much, it seems to me, a so-called “brain power” that makes the difference between this mathematician and another, or between one piece of work and another of a same mathematician; but rather the quality of finesse, of the greater or lesser delicacy of this openness or sensitivity, from one researcher to another or from one moment to another in the same researcher. The most profound and fruitful work is also that which attests to the most delicate sensitivity in apprehending the hidden beauty of things."
 >  
 >  -- Alexandre Grothendieck, *[[thoughts/Alexandre Grothendieck#Reflection and testimony on a past as a mathematician|Récoltes et Semailles]] (translation by Childe)*
 
-Though Grothendieck refers to math here, I think the observation generalizes. There is this common thread through many different disciplines where a pursuit of the craft because you find it inherently _beautiful_ -- to like it in and of itself -- reveals a deeper, more fundamental understanding.
-
-Annie Dillard relates a tale from a fellow writer who was asked a question by a student:
+Though Grothendieck refers to math here, the observation about the important of "apprehending the hidden of beauty of things" generalizes. Annie Dillard relates a tale from a fellow writer who was asked a question by a student:
 
 > "Do you think I could be a writer?"
 >
 > "Well," the writer said, "I don't know... Do you like sentences?"
 >
-> The writer could see the student's amazement. Sentences? Do I liked sentences? I am twenty years old and do I like sentences? If he had liked sentences, of course, he could begin, like a joyful painter I knew. I asked him how he came to be a painter. He said, "I liked the smell of paint"
+> The writer could see the student's amazement. Sentences? Do I like sentences? I am twenty years old and do I like sentences? If he had liked sentences, of course, he could begin, like a joyful painter I knew. I asked him how he came to be a painter. He said, "I liked the smell of paint"
 > 
 > If you’re going to be a gardener, it helps to like the smell of roses. If you’re going to be a writer, it helps to appreciate sentences. That, however, only happens once you’ve spent many afternoons reading.
 > 
@@ -40,35 +43,37 @@ For any creative pursuit, this ability to notice more deeply is what distinguish
 
 ---
 
-Taste is a particularly _good_ guide for answering the question of "what is worthwhile" because we've normalized taste as this sort of ineffable, subjective thing.
+This exploratory form of taste also affords a certain lightness and freedom to how we play with and consider nascent ideas.
 
-When I find the craftsman ship of one mug I make more aesthetic than another, I'm not expected to justify it to myself that the walls are slightly more even or that the glaze fired slightly more blue on the other. I'd like to think that I've started to develop a palette for what personally feels and looks good in pottery. I really like sharp walls that are slightly tapered outwards. They shouldn't be too thin or the piece will feel flimsy and fragile but it also shouldn't be too heavy enough or it will feel like a heavy rock in your hand. I like more speckled clay bodies that are more earthy and warm in tone paired with slightly cooler glazes (some I've been really enjoying as of late are double layered ones with a creamy white base layer and a beautiful layer of celadon overtop). Sometimes, you can hear a faint tinkling when they are fresh out of the furnace as the glaze contracts and forms beautiful internal cracking patterns.
+When I find the craftsmanship of one mug more aesthetic than another, I'm not expected to make it legible in terms of what has already been done before. I really like sharp walls that are slightly tapered outwards. They shouldn't be too thin or the piece will feel flimsy and fragile but it also shouldn't be too heavy or it will feel like a heavy rock in your hand. I like more speckled clay bodies that are more earthy and warm in tone paired with slightly cooler glazes. Lately, I've been pairing a creamy white base glaze and a beautiful layer of celadon overtop. That particular celadon glazes gives off a faint tinkling when they are fresh out of the furnace as the glaze contracts and forms beautiful internal cracking patterns.
 
-I have very explicitly avoided trying to define my taste of pottery in terms of specific styles or potters. I know that if I did feel that pressure, I would have spent a lot more time learning and reading about various pottery techniques, the names of different forms, and what glazes have been popular on social media rather than actually going and working with clay. My actual experience of pottery would be with the intention of being able to emulate what has been done before. I would think about the shape of the walls and type of glaze insofar as it produces the right _thing_ that I see other people make.
+I'd like to think that I've started to develop a palate for what personally feels and looks good in pottery. I have very explicitly avoided trying to define my taste of pottery in terms of specific styles or potters.
 
-We have built up an instinctive habit of looking things up and seeing how other people have done it before trying it for ourselves. But the downside is that this habit it that it primes our brains to value our work in the context of the taste of others rather than of our own. We have outsourced our value systems for what is good and bad (how we may judge aesthetic value) to other people.
+I know that if I did feel that pressure, I would have spent a lot more time learning and reading about various pottery techniques, the names of different forms, and what glazes have been popular on social media rather than actually going and working with clay. My actual experience of pottery would be with the intention of being able to emulate what has been done before. I would think about the shape of the walls and type of glaze insofar as it produces the right _thing_ that I see other people make.
 
-If we outsource our opinions all the time, we no longer exercise our own taste and lose the capacity to derive our own value systems. Like a muscle, it decays without frequent use and we default to liking and valuing what everyone around us already likes or does.
+We have built up an instinctive habit of looking things up and seeing how other people have done it before trying it for ourselves. But the downside is that this habit primes our brains to value our work in the context of the taste of others rather than of our own. We have outsourced our value systems for what is good and bad (how we may judge aesthetic value) to other people.
 
-As with anything mediating, the act of relying on the taste of society as a proxy for our own effectively serves as a band-pass filter, killing off the worst ideas but also the best ones. All that remains are the ideas that live in the [[thoughts/Overton Window|Overton Window]] of what has come before.
+If we outsource our opinions all the time, we no longer exercise our own taste and lose the capacity to derive our own value systems. Like a muscle, it decays without frequent use and we default to liking and valuing what everyone around us already likes or does. As with anything mediating, the act of relying on the taste of society as a proxy for our own effectively serves as a band-pass filter, dampening the range of what our exploratory taste might consider.
 
 ---
 
-If we look to history of [[thoughts/Scientific Freedom|scientific progress]], we see plenty of evidence that relying exclusively on the opinions of others for what is worthwhile to pursue only inhibits progress. Managed creativity can, at best, produce only what its managers specify. Vannevar Bush: "scientific progress on a broad front results from the free play of free intellects, working on subjects of their own choice, in the manner dictated by their curiosity for exploration of the unknown." 
+Looking at the history of [[thoughts/Scientific Freedom|scientific progress]], we see plenty of evidence on how this reliance on the taste of committees and society broadly only serves to inhibit progress. Managed creativity can, at best, produce only what its managers specify. All that remains are the ideas that live in the [[thoughts/Overton Window|Overton Window]].
 
-Creativity is the essence of the human spirit and flowers best when it's unconstrained. When we try to limit what scientists work on via broad-stroke directives and awards for very specific kinds of work that consensus deems best for progress, we can get only what we ask for and nothing more. The limit is then what the research director can imagine and nothing more -- this presumes the person doing the selecting has the best overall grasp as to what is worthwhile. In the consultancy field, the old adage was that successful consultants merely delivered the advice their customers wanted to hear. Do we really want that of our researchers?
+When we try to limit what scientists work on via broad-stroke directives and awards for very specific kinds of work that consensus deems best for progress, we can get only what we ask for and nothing more. The limit is then what the research director can imagine and nothing more -- this presumes the person doing the selecting has the best overall taste as to what is worthwhile. In the consultancy field, the old adage was that successful consultants merely delivered the advice their customers wanted to hear. Do we really want that of our researchers?
 
 > "Nature does not respect consensus. We cannot expect to actually make progress simply because we have agreed among ourselves that progress lies in a particular direction. Unless, of course, that direction is a simple extrapolation from what has gone before, but such objectives usually serve only to consolidate -- unless researchers are free to follow interesting observations wherever they might lead."
 > 
 > -- Donald W. Braben, *[[thoughts/Scientific Freedom|Scientific Freedom: The Elixir of Civilization]]*
 
-Braben, in that last part, emphasizes the importance of freedom to allow scientists to follow their own research taste. Ultimately, having strong taste -- a deep seated conviction -- helps to create their own possibilities for what is possible, outside what other people believe, relying on their intrinsic, subjective judgement of what feels correct. This is what produces novel and ground breaking work, [[thoughts/Scientific Freedom#Case study of the rise and fall of the UGC in the UK|not research mandates or broad directives]].
+Braben, in that last part, emphasizes the importance of freedom to allow scientists to follow their own research taste. Vannevar Bush: "scientific progress on a broad front results from the free play of free intellects, working on subjects of their own choice, in the manner dictated by their curiosity for exploration of the unknown." Creativity is the essence of the human spirit, and flowers best when it's unconstrained. 
+
+Cultivating that Type II taste -- the deep-seated conviction -- helps to avoid unnecessary constraints on our exploratory taste. It helps to create their own possibilities for what is possible, outside what other people believe, relying on their intrinsic, subjective judgement of what feels correct. This is what produces novel and ground breaking work, [[thoughts/Scientific Freedom#Case study of the rise and fall of the UGC in the UK|not research mandates or broad directives]].
 
 ![[thoughts/images/bedroom-poster.png]]*The poster in my room above my bed which I got from a booth at the [SF Art Book Fair](https://sfartbookfair.com/).*
 
-Similarly, [[thoughts/Simone Weil|Simone Weil]] believed that the way which you direct your [[thoughts/attention|attention]] drastically influences _how_ you experience the world. We do not gain insights, Weil claims, by going in search of them, but instead by being receptive to the true nature of the thing itself.
+---
 
-In her teaching, she didn't limit the way students oriented themselves towards problems, noting that most education systems fixate students to an agenda where they are always searching for a singular right answer to the problem.
+Similarly, [[thoughts/Simone Weil|Simone Weil]] believed that we gain insights not by going in search of them, but instead by being receptive to the true nature of the thing itself. In her teaching, she didn't limit the way students oriented themselves towards problems, noting that most education systems fixate students to an agenda where they are always searching for a singular right answer to the problem.
 
 The hardest job of teaching, Simone Weil thought, was to shake people out of this collectivist way of thinking where, they’ve already decided what their positions are, and now it’s not about thinking so much anymore as it is about defending their answer, their viewpoint, again all the _obviously_ wrong answers and perspectives.
 
@@ -78,9 +83,9 @@ The hardest job of teaching, Simone Weil thought, was to shake people out of thi
 
 This light and playful attitude towards holding their own positions and evaluating the perspectives of others that Weil teaches is similar to what C Thi. Nguyen calls *[[thoughts/Jestermaxxing|intellectual playfulness]]*. When an intellectually playful person evaluates new ideas, they don't care about plausibility or legibility. They care about cool ideas and the thrilling joy-rides of discovery. They care about exploring *in and of itself*.
 
-Nguyen argues that this intellectual playfulness actually has some clear [[thoughts/epistemology|epistemic]] functionality for us. A pure 'truth-seeker' has an interest in always getting it right. This attitude constrains the search space, focusing searches on plausible paths to explore and discarding what is implausible or beyond the pale. However, because their assessment of plausibility will always proceed from their standing system of beliefs, even their most rational epistemic attempts can be caught in what Nguyen calls an epistemic trap: belief systems that make us shut down a line of questioning before exploring its validity.
+Nguyen argues that this intellectual playfulness actually has some clear [[thoughts/epistemology|epistemic]] functionality for us. A pure 'truth-seeker' has an interest in always getting it right. This attitude constrains the search space, focusing searches on plausible paths to explore and discarding what is implausible or beyond the pale. However, because their assessment of plausibility will always proceed from their standing system of beliefs, even their most rational epistemic attempts can be caught in what Nguyen calls an epistemic trap: belief systems that make us shut down a line of questioning before exploring its validity -- they constrain our exploratory taste.
 
-These traps manipulate background beliefs to fend off contrary evidence. Echo chambers, for example, creates a significant [[thoughts/trust|trust]] disparity between members and non-members, leading members to dismiss any and all contrary evidence coming in from the outside. One specific epistemic trap that has been particularly fatal to our ability to try new things is the fear of being wrong.
+Echo chambers, for example, create a significant [[thoughts/trust|trust]] disparity between members and non-members, leading members to dismiss any and all contrary evidence coming in from the outside. One specific epistemic trap that has been particularly fatal to exploratory taste is the fear of being wrong.
 
 > "One who fears to be wrong is powerless to discover. It is when we are afraid of making mistakes that the mistake inside us becomes immovable like a rock. Because in our fear, we cling to what we have decreed to be “true”, or what has always been presented to us as “true”. If we are moved, not by the fear of seeing an illusory security vanish, but by a thirst for knowing, then error, like suffering or sorrow, will cross us without ever becoming frozen, and the trace of its passage will be a renewed understanding."
 > 
@@ -88,29 +93,25 @@ These traps manipulate background beliefs to fend off contrary evidence. Echo ch
 
 It is in this fear that we default to settle on what is popular or what has been done before. Nguyen believes that holding an intellectually playful attitude helps us avoid these traps. 
 
-This, to me, is the clearest example of why the ineffability of taste is actually instrumentally useful. What appears to the 'optimal' or 'right' thing to work on according to the taste of others may end up in these epistemic traps. By allowing ourselves to refine our own taste and to pursue what we find intrinsically beautiful, it affords a certain lightness to how one might hold ideas and knowledge. It lets us try ideas on for size without needing to immediately jump to explain it to others. Ultimately (and perhaps paradoxically), this lightness allows us to be better seekers of truth.
+This, to me, is the clearest example of why the ineffability of taste is actually instrumentally useful. What appears to be the 'optimal' or 'right' thing to work on according to the taste of others may end up in these epistemic traps. By allowing ourselves to refine our own taste and to pursue what we find intrinsically beautiful, it affords a certain lightness to how one might hold ideas and knowledge. It lets us try ideas on for size without needing to immediately jump to explain it to others. Ultimately (and perhaps paradoxically), this lightness allows us to be better seekers of truth.
 
 ---
 
-A common thread to observe here is that a lot of early revolutionary thinkers didn't worry themselves with what was 'optimal', but rather what was beautiful and interesting.
+A common thread to observe here is that a lot of early revolutionary thinkers didn't worry themselves with what was 'optimal' or deemed right by consensus, but rather what was beautiful and interesting. This incidentally helped them to really lean into their taste as conviction.
 
 At times, this led them to repeat work that had already been done (like Einstein reinventing parts of statistical physics or Grothendieck working out his own formal definitions for length). But by the time they *did* hit the bounds of human knowledge, it no longer mattered to them because they just kept doing what they were already doing: following their own taste for what was beautiful.
 
 They did not seek the safety of legibility, but were okay with lingering in the depths of illegibility until something deeper, more unifying, arose. They were familiar with the ability to explore idea space without being constrained by the need to optimize for truth or legibility every step along the way.
 
-In these nascent moments of exploring something that is new, trying to coerce it in terms of what we already know or what is palatable to others is actively harmful to that budding idea.
-
-Great ideas are easy to kill. Thomas Kuhn pointed out that the biggest ideas transcend existing paradigms: they create entirely new ways of thinking that are often incompatible or require one to reconsider axiomatic truths of what they already believe. By definition, they are out of distribution. The societal pressure is to conform to what other people think and do; it is always a psychologically risky endeavor to do something new. Thus, any act of creation necessarily involves strong opinions about how the world should work -- strong enough to survive the sharp edges of doubt and the false allure of safety in what is known and what has been done.
+Great ideas are easy to kill. Thomas Kuhn pointed out that the biggest ideas transcend existing paradigms: they create entirely new ways of thinking that are often incompatible or require one to reconsider axiomatic truths about what they already believe. By definition, they are out of distribution. The societal pressure is to conform to what other people think and do; it is always a psychologically risky endeavor to do something new. Thus, any act of creation necessarily involves strong opinions about how the world should work -- strong enough to survive the sharp edges of doubt and the false allure of safety in what is known and what has been done.
 
 > "Creation is the act of bringing something nonexistent into reality. You have to have strong opinions about how the world should work. You have to think that things should be a certain way, that you prefer this color over that, this form of walking over another, this sense of beauty over theirs, this way of approaching the world over some other. Taste gives you the capability and the urgency to imagine." 
 > 
 > -- Spencer Chang, *[creative seeing](https://spencerchang.substack.com/p/creative-seeing)*
 
-In other words, well-developed taste functions similarly to conviction.
-
 Unfortunately, the stereotypical advice here plays into the lone genius myth. Pablo Picasso: "Without great solitude, no serious work is possible." James Baldwin: "Perhaps the primary distinction of the artist is that he must actively cultivate that state which most men, necessarily, must avoid: the state of being alone."
 
-In practice, however, what they are referring to as solitude is not being physically isolated but rather more of a [state of mind](https://www.henrikkarlsson.xyz/p/good-ideas). They are putting themselves in a state where the opinions of others do not bother them and where they reach a heightened sensitivity for the types of questions worth asking -- they've developed their taste[^1].
+In practice, however, what they are referring to as solitude is not being physically isolated but rather more of a [state of mind](https://www.henrikkarlsson.xyz/p/good-ideas). They are putting themselves in a state where the opinions of others do not bother them and where they reach a heightened sensitivity for the types of questions worth asking -- they've developed their taste as a form of conviction[^1].
 
 Having strong taste doesn't mean that you never look to others for inspiration and ignore what others find beautiful. But rather, strong taste gives you the psychological safety to enable you to look to others for inspiration and help you attend to things you otherwise would not have noticed. Strongly developed taste to bring more things into your periphery, it lets us interface with others as potential sparks of inspiration rather than the prime directive for what to believe in.
 
@@ -122,7 +123,7 @@ The world reveals itself to those who attend to it.
 
 Each day is an exercise in developing taste. That’s all life is really -- a giant sequence of decisions. It is built over time through repeated applications. It requires intention, focus, and care. It’s a process of peeling back layer after layer, turning over rock after rock. It is the manifestation of [[thoughts/self-confidence]] in what we find beautiful and aesthetic. 
 
-Do things without recipes more often. Trod the unbeaten path more often and take note of how things feel. Do you find yourself noticing something that wasn't there before? That perhaps after a certain number of hours of obsessing over how to get a good tone on the guitar, you can tell how the temperature of the room affects the sound of the strings? Maybe for the first time, you realize that the songs the birds sing are all a little different, [[thoughts/How to do Nothing|the robin sounds different from the chickadee and so on]]. 
+Do things without recipes more often. Trod the unbeaten path more often and take note of how things feel. Do you find yourself noticing something that wasn't there before? That perhaps after a certain number of hours of obsessing over how to get a good tone on the guitar, you can tell how the temperature of the room affects the sound of the strings? Maybe for the first time, you realize that the songs the birds sing are all a little different, [[thoughts/How to do Nothing|the robin sounds different from the chickadee and so on]].
 
 Take a curious and inherently observatory nature toward the world and let it serve as constant opportunities to test your taste.
 
@@ -146,4 +147,4 @@ What greater thing could there be to cultivate?
 
 ---
 
-Thank you to [Marley](https://marleyx.com/) and [Anson](https://ansonyu.me/) for reading and giving feedback on early drafts.
+Thank you to [Marley](https://marleyx.com/), [Anson](https://ansonyu.me/), [Jasmine](https://jasmine.substack.com/about), and [Kelly](https://www.kellychong.ca/) for reading and giving feedback on early drafts.
