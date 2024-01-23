@@ -45,11 +45,9 @@ For any creative pursuit, this ability to notice more deeply is what distinguish
 
 This exploratory form of taste also affords a certain lightness and freedom to how we play with and consider nascent ideas.
 
-When I find the craftsmanship of one mug more aesthetic than another, I'm not expected to make it legible in terms of what has already been done before. I really like sharp walls that are slightly tapered outwards. They shouldn't be too thin or the piece will feel flimsy and fragile but it also shouldn't be too heavy or it will feel like a heavy rock in your hand. I like more speckled clay bodies that are more earthy and warm in tone paired with slightly cooler glazes. Lately, I've been pairing a creamy white base glaze and a beautiful layer of celadon overtop. That particular celadon glazes gives off a faint tinkling when they are fresh out of the furnace as the glaze contracts and forms beautiful internal cracking patterns.
+When I find the craftsmanship of one mug more aesthetic than another, I'm not expected to make it legible in terms of what has already been done before. I know that I really like sharp walls that are slightly tapered outwards. They shouldn't be too thin or the piece will feel flimsy and fragile but it also shouldn't be too heavy or it will feel like a heavy rock in your hand. I like more speckled clay bodies that are more earthy and warm in tone paired with slightly cooler glazes.
 
-I'd like to think that I've started to develop a palate for what personally feels and looks good in pottery. I have very explicitly avoided trying to define my taste of pottery in terms of specific styles or potters.
-
-I know that if I did feel that pressure, I would have spent a lot more time learning and reading about various pottery techniques, the names of different forms, and what glazes have been popular on social media rather than actually going and working with clay. My actual experience of pottery would be with the intention of being able to emulate what has been done before. I would think about the shape of the walls and type of glaze insofar as it produces the right _thing_ that I see other people make.
+This was developed over many hours of actually throwing and making pottery, not from feeling pressured to compare it to what other people have done. I know that if I did feel it, I would have spent a lot more time learning and reading about various pottery techniques, the names of different forms, and what glazes have been popular on social media rather than actually going and working with clay.
 
 We have built up an instinctive habit of looking things up and seeing how other people have done it before trying it for ourselves. But the downside is that this habit primes our brains to value our work in the context of the taste of others rather than of our own. We have outsourced our value systems for what is good and bad (how we may judge aesthetic value) to other people.
 
@@ -73,27 +71,25 @@ Cultivating that Type II taste -- the deep-seated conviction -- helps to avoid u
 
 ---
 
-Similarly, [[thoughts/Simone Weil|Simone Weil]] believed that we gain insights not by going in search of them, but instead by being receptive to the true nature of the thing itself. In her teaching, she didn't limit the way students oriented themselves towards problems, noting that most education systems fixate students to an agenda where they are always searching for a singular right answer to the problem.
-
-The hardest job of teaching, Simone Weil thought, was to shake people out of this collectivist way of thinking where, they’ve already decided what their positions are, and now it’s not about thinking so much anymore as it is about defending their answer, their viewpoint, again all the _obviously_ wrong answers and perspectives.
+Similarly, [[thoughts/Simone Weil|Simone Weil]] believed that we gain insights not by going in search of them, but instead by being receptive to the true nature of the thing itself. In her teaching, she didn't limit the way students oriented themselves towards problems, noting that most education systems fixate students to an agenda where they are always searching for a singular right answer to the problem rather than taking the time to really feel and explore.
 
  > "The great human error is to reason in place of finding out"
  > 
  > -- Simone Weil, *Gravity and Grace*
 
-This light and playful attitude towards holding their own positions and evaluating the perspectives of others that Weil teaches is similar to what C Thi. Nguyen calls *[[thoughts/Jestermaxxing|intellectual playfulness]]*. When an intellectually playful person evaluates new ideas, they don't care about plausibility or legibility. They care about cool ideas and the thrilling joy-rides of discovery. They care about exploring *in and of itself*.
+This lightness in the pursuit of insights that Weil teaches is similar to what C Thi. Nguyen calls *[[thoughts/Jestermaxxing|intellectual playfulness]]*. When an intellectually playful person evaluates new ideas, they don't care about plausibility or legibility. They care about the idea itself and the thrilling joy-rides of discovery.
 
-Nguyen argues that this intellectual playfulness actually has some clear [[thoughts/epistemology|epistemic]] functionality for us. A pure 'truth-seeker' has an interest in always getting it right. This attitude constrains the search space, focusing searches on plausible paths to explore and discarding what is implausible or beyond the pale. However, because their assessment of plausibility will always proceed from their standing system of beliefs, even their most rational epistemic attempts can be caught in what Nguyen calls an epistemic trap: belief systems that make us shut down a line of questioning before exploring its validity -- they constrain our exploratory taste.
+Nguyen argues that this intellectual playfulness actually has some clear [[thoughts/epistemology|epistemic]] functionality for us. A pure 'truth-seeker' has an interest in always getting it right. This attitude constrains the search space, focusing searches on plausible paths to explore and discarding what is implausible or beyond the pale. However, because their assessment of plausibility will always proceed from their standing system of beliefs, even their most rational epistemic attempts can be caught in what Nguyen calls an epistemic trap: belief systems that make us shut down a line of questioning before exploring its validity. These traps constrain our exploratory taste.
 
-Echo chambers, for example, create a significant [[thoughts/trust|trust]] disparity between members and non-members, leading members to dismiss any and all contrary evidence coming in from the outside. One specific epistemic trap that has been particularly fatal to exploratory taste is the fear of being wrong.
+One specific epistemic trap that has been particularly fatal to exploratory taste is the fear of being wrong.
 
 > "One who fears to be wrong is powerless to discover. It is when we are afraid of making mistakes that the mistake inside us becomes immovable like a rock. Because in our fear, we cling to what we have decreed to be “true”, or what has always been presented to us as “true”. If we are moved, not by the fear of seeing an illusory security vanish, but by a thirst for knowing, then error, like suffering or sorrow, will cross us without ever becoming frozen, and the trace of its passage will be a renewed understanding."
 > 
 > -- Alexandre Grothendieck, *[[thoughts/Alexandre Grothendieck#Reflection and testimony on a past as a mathematician|Récoltes et Semailles]] (translation by Childe)*
 
-It is in this fear that we default to settle on what is popular or what has been done before. Nguyen believes that holding an intellectually playful attitude helps us avoid these traps. 
+It because of this fear that we default to settle on what is popular or what has been done before. This, to me, is the clearest example of why the ineffability of taste is actually instrumentally useful. What appears to be the 'optimal' or 'right' thing to work on according to the taste of others may end up in these epistemic traps.
 
-This, to me, is the clearest example of why the ineffability of taste is actually instrumentally useful. What appears to be the 'optimal' or 'right' thing to work on according to the taste of others may end up in these epistemic traps. By allowing ourselves to refine our own taste and to pursue what we find intrinsically beautiful, it affords a certain lightness to how one might hold ideas and knowledge. It lets us try ideas on for size without needing to immediately jump to explain it to others. Ultimately (and perhaps paradoxically), this lightness allows us to be better seekers of truth.
+By allowing ourselves to refine our own taste and to pursue what we find intrinsically beautiful, it affords a certain lightness to how one might hold ideas and knowledge. It lets us try ideas on for size without needing to immediately jump to explain it to others. Ultimately (and perhaps paradoxically), this lightness allows us to be better seekers of truth.
 
 ---
 
@@ -145,4 +141,4 @@ What greater thing could there be to cultivate?
 
 ---
 
-Thank you to [Marley](https://marleyx.com/), [Anson](https://ansonyu.me/), [Jasmine](https://jasmine.substack.com/about), and [Kelly](https://www.kellychong.ca/) for reading and giving feedback on early drafts.
+Thank you to [Marley](https://marleyx.com/), [Anson](https://ansonyu.me/), [Jasmine](https://jasmine.substack.com/about), [Spencer](https://spencerchang.me/), and [Kelly](https://www.kellychong.ca/) for reading and giving feedback on early drafts.
