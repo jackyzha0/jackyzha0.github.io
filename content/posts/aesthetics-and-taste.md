@@ -25,7 +25,7 @@ If we look to deeply creative pursuits like writing and mathematics, we find man
 >  
 >  -- Alexandre Grothendieck, *[[thoughts/Alexandre Grothendieck#Reflection and testimony on a past as a mathematician|Récoltes et Semailles]] (translation by Childe)*
 
-Though Grothendieck refers to math here, the observation about the important of "apprehending the hidden of beauty of things" generalizes. Annie Dillard relates a tale from a fellow writer who was asked a question by a student:
+Though Grothendieck refers to math here, the observation about the importance of "apprehending the hidden beauty of things" generalizes. Annie Dillard relates a tale from a fellow writer who was asked a question by a student:
 
 > "Do you think I could be a writer?"
 >

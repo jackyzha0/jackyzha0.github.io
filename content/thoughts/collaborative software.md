@@ -6,6 +6,8 @@ tags:
   - pattern
 ---
 
+> Collaborative computing focuses on group rather than individual problem solving and decision making tasks necessary to accomplish business and scientific objectives. It provides an environment in which people can share information without the constraints of space and time.
+
 Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available
 
 Challenge: how do we reconcile concurrent updates?
@@ -57,6 +59,26 @@ Just like how a knob affords finer control over one’s preferences, similarly, 
 5. Collaborative experiences
    - In addition to supporting *collaborative* *projects* where creators can contribute different parts to a single project, CoCo spaces also afford building new types of *collaborative* *experiences* as a group.
    - For instance, creators can collectively imagine and program a new kind of multiplayer pacman game where the pacman passes through each of their projects turn by turn and they can use shared variables to have a common score!
+
+## Eras of Computing
+  
+Before the era of mainframe time sharing, computing relied heavily on batch processing, particularly punch card systems. In the early to mid-20th century, machines like the IBM 650 Magnetic Drum Data Processing Machine were pivotal in handling large volumes of data. Users would prepare decks of punched cards representing their tasks, and these cards would be processed sequentially in batches by the computer. The reliance on batch processing meant that users had to wait for the entire batch of cards to be processed before receiving results which meant that people make queues and schedules around when to run their jobs.
+
+The transition to mainframe time sharing marked a departure from this sequential processing model. The IBM System/360, introduced in 1964, played a crucial role in this shift. It allowed multiple users to interact with the computer simultaneously, increasing efficiency compared to the earlier batch processing systems. Now, multiple people could connect their own terminal to the machine while maintaining their own individual workspaces. Because the underlying machine was the same, resources could be shared across sessions relatively easily.
+
+The 1980s and 1990s witnessed the advent of personal computing, with machines like the IBM Personal Computer (IBM PC) and the Apple Macintosh. These personal computers became household fixtures, shared among family members. Because of the initial high price of these machines combined with the lack of sophisticated account management, these were mostly communal fixtures where there was only often one 'family computer' that was shared.
+
+As the price of personal computers dropped and they became smaller, we finally saw a departure from shared home PCs as individuals sought the convenience of truly personal computing.
+
+Now, we are seeing a return to communal computing as people are realizing the importance of collaboration and shared digital spaces.
+
+### Questions for communal computing
+
+1. Identity: do we know all of the people who are using the device?
+2. Privacy: are we exposing (or hiding) the right content for all of the people with access? (see also: [[thoughts/privacy#Contextual Privacy]])
+3. Security: are we allowing all of the people using the device to do or see what they should and are we protecting the content from people that shouldn’t?
+4. Experience: what is the contextually appropriate display or next action?
+5. Ownership: who owns all of the data and services attached to the device that multiple people are using?
 
 ## CRDT Unlocks
 

@@ -1,6 +1,7 @@
 {
-  "alwaysUpdateLinks": true,
   "newLinkFormat": "absolute",
   "newFileLocation": "folder",
-  "newFileFolderPath": "thoughts"
+  "newFileFolderPath": "thoughts",
+  "attachmentFolderPath": "thoughts/images",
+  "alwaysUpdateLinks": true
 }
