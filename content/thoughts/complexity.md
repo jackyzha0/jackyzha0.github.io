@@ -19,3 +19,12 @@ tags:
 - Why is example code normally so simple? Well, it lives in an ideal world. It only cares about the happy path. **Defensive code is complex**
 - Vigilance works for small systems... but not large complex ones!
   - Type systems off-load mental state and assumptions about the code and make it explicit
+
+## Essential vs Accidental Complexity
+
+- Essential complexity is inherent in the problem domain of the application.
+- Accidental complexity arises only because of limitations of our tooling.
+
+Unfortunately, this distinction is also flawed, because boundaries between the essential and the accidental shift as our tooling evolves
+
+One of the best tools we have for managing complexity is abstraction. A good abstraction can hide a great deal of implementation detail behind a clean, simple-tounderstand façade

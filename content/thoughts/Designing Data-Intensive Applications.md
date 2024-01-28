@@ -4,7 +4,7 @@ date: 2024-01-12
 tags:
   - seed
   - book
-draft: true
+draft: false
 noindex: true
 ---
 Reviewing the second edition by *Martin Kleppmann*. This is the first book I'm helping revise in a formal capacity!
@@ -71,7 +71,7 @@ Reviewing the second edition by *Martin Kleppmann*. This is the first book I'm h
 	- Scalability and elasticity aren't clearly distinguished (they seem roughly the same by description)
 - Microservices and serverless
 	- Mention driving principles of microservices: Single Responsibility Principle (SRP) and having well-defined interfaces as contracts
-	- Coordination overhead section, mention [[thoughts/Universal Scaling Law|Universal Scaling Law]]
+	- Coordination overhead section, mention [[thoughts/Universal Scaling Law|Universal Scaling Law]]: http://www.perfdynamics.com/Manifesto/USLscalability.html
 	- Clarify that serverless/FaaS does in fact have servers but rather it abstracts more of the service lifecycle.
 		- In addition to start up/shutdown, it also manages scaling and connection management
 - Problems with Distributed Systems
@@ -107,3 +107,35 @@ Reviewing the second edition by *Martin Kleppmann*. This is the first book I'm h
 			- $\textrm{Delay}_{\textrm{Propagation}} = \frac{\textrm{Total distance}}{\textrm{Link speed}}$
 		- ^ the above is probably _too_ much detail but worth considering!
 - Should also do histogram with vertical bars for percentiles in addition to the time domain diagram (figure 2-5, top of p.58)
+- Reliability and Fault Tolerance
+	- Software faults: sometimes good to have multiple implementations of the same software to prevent single point of failure (e.g. Ethereum client diversity)
+	- Define sociotechnical system (not all readers will know what this is or why it matters)
+		- Maybe link out to or briefly summarize [[thoughts/Do Artifacts Have Politics|Do Artifacts Have Politics]]
+		- ""Seemingly innocuous design features in mass transit systems, water projects, industrial machinery, and other technologies actually mask social choices of profound significance." (societal impact is treated as an externality, those which do not matter when 'just considering efficiency')"
+- Scalability
+	- Also to add to things in discussion (p.67):
+		- How might scale affect the cost of running the service? Do the unit economics still make sense?
+- Describing Load
+	- Graph of linear scalability
+	- What are typical types of workloads that have linear scalability? Sublinear? Superlinear?
+- Shared-memory, Shared-disk, and shared-nothing architecture
+	- Talk about resource contention somewhere! As far as I can tell, there hasn't been a section on what type of workloads this may crop up in (i.e. mutual exclusion, etc.)
+	- Good segue into share-nothing architecture!
+	- It would be really awesome to insert a case study comparing what these two look like in the wild
+- Maintainability
+	- Maybe give a brief definition of technical debt: choices that are easier today at the expense of time and money in the future. Prefer taking on technical debt that is particularly high leverage (it is easy to pay down relative to the amount of immediate benefit)
+- Operability: Making Life Easy for Operations
+	- Define self-healing system in terms of a data system. Does this mean recovering from faults via redundant copies?
+- Simplicity: Managing Complexity
+	- Really love the clarity in distinguishing essential vs accidental complexity, probably the clearest definition of it I've read
+	- Maybe include a warning about how pursuing the 'right' abstraction before you need it is also dangerous! There are lots of case studies about how the wrong abstraction is even worse than no abstraction at all
+- Evolvability: Making Change Easy
+	- Good place to talk about forward and backward compatability and schema evolution (famously difficult and especially relevant data systems)!
+		- Link to schema flexibility section in chapter 3?
+
+## Chapter 3
+- Good history of SQL and NoSQL, contextualizes a lot of the next chapter!
+- Explain the fundamentals behind an index. What is it precomputing, how do I know if I need one?
+- Upper size of a table? How big is too big?
+	- I see a lot of HN discussion about "what is too big" and how tailscale at one point was using [a big JSON file to store everything](https://tailscale.com/blog/an-unlikely-database-migration)
+- No major comments here, content is excellent and clear

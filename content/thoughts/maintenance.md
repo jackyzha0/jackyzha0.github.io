@@ -24,9 +24,7 @@ Can we use [web3](thoughts/web3.md) to 'codify' maintenance as a value? Is maint
 
 ## [Innovation](thoughts/innovation.md) is overvalued
 
-[Source: Hail the maintainers by _Andrew Russell and _](https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more)
-
-[The Maintainers Organization](https://themaintainers.org/) and their [fellowship](https://themaintainers.org/summer-fellow)
+[Source: Hail the maintainers by Andrew Russell](https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more), [The Maintainers Organization](https://themaintainers.org/) and their [fellowship](https://themaintainers.org/summer-fellow)
 
 "What happens _after_ innovation, they argue, is more important. Maintenance and repair, the building of infrastructures, the mundane labour that goes into sustaining functioning and efficient infrastructures, simply has more impact on people’s daily lives than the vast majority of technological innovations."
 

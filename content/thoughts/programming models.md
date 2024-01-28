@@ -53,7 +53,7 @@ tags:
    - There are a number of interesting questions related to staging of customization. First, what is the notation used for customization? This may be the notation in which a program was initially created, but a system may also use a secondary notation for customization (consider Emacs using Emacs Lisp).
    - *Additive authoring* requires that system behaviours can be *changed* by simply *adding* a new expression containing addresses—in other words, anything can be *overriden* without being *erased*.
      - One example of this is CSS on the web. Given a web page, it is possible to modify almost any aspect of its appearance by simply *adding* additional rules to a CSS file.
-5. Complexity: how does the system structure complexity and what level of detail is required?
+5. [[thoughts/complexity|Complexity]]: how does the system structure complexity and what level of detail is required?
    - There is a massive gap between the level of detail required by a computer, which executes a sequence of low-level instructions, and the human description of a program in higher-level terms.
    - Declarative vs imperative programming systems
      - [[thoughts/declarative programming|Declarative programming]] systems like SQL, Prolog or Datalog, the meaning of a program is still unambiguous, but it is not defined operationally—there is a (more or less deterministic) inference engine that solves the problem based on the provided description.

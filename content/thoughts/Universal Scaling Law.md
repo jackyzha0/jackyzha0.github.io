@@ -17,6 +17,9 @@ $$C(N) = \frac {N} {1 + \alpha(N- 1) + \beta N(N-1)}$$
 - Contention ($\propto \alpha$): effect of waiting or queueing for shared resources. When $\alpha=0$, we get linear scalability behaviour (e.g. lock-free computing)
 - Coherency ($\propto \beta$): cost of getting agreement on what the right thing to do is (see also: [[thoughts/authenticator complexity]])
 
+### Share Nothing
+Also called horizontal scaling or scaling out. Coordinate by communicating rather than sharing resources.
+
 ## In effective leadership
 
 [Source](https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/)
