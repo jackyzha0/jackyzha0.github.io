@@ -108,20 +108,21 @@ const calloutMapping: Record<string, keyof typeof callouts> = {
 
 function canonicalizeCallout(calloutName: string): keyof typeof callouts {
   let callout = calloutName.toLowerCase() as keyof typeof calloutMapping
-  return calloutMapping[callout] ?? "note"
+  // if callout is not recognized, make it a custom one
+  return calloutMapping[callout] ?? calloutName
 }
 
 export const externalLinkRegex = /^https?:\/\//i
 
 export const arrowRegex = new RegExp(/-{1,2}>/, "g")
 
-// !?               -> optional embedding
-// \[\[             -> open brace
-// ([^\[\]\|\#]+)   -> one or more non-special characters ([,],|, or #) (name)
-// (#[^\[\]\|\#]+)? -> # then one or more non-special characters (heading link)
-// (|[^\[\]\|\#]+)? -> | then one or more non-special characters (alias)
+// !?                -> optional embedding
+// \[\[              -> open brace
+// ([^\[\]\|\#]+)    -> one or more non-special characters ([,],|, or #) (name)
+// (#[^\[\]\|\#]+)?  -> # then one or more non-special characters (heading link)
+// (\|[^\[\]\#]+)? -> | then one or more non-special characters (alias)
 export const wikilinkRegex = new RegExp(
-  /!?\[\[([^\[\]\|\#]+)?(#+[^\[\]\|\#]+)?(\|[^\[\]\|\#]+)?\]\]/,
+  /!?\[\[([^\[\]\|\#]+)?(#+[^\[\]\|\#]+)?(\|[^\[\]\#]+)?\]\]/,
   "g",
 )
 const highlightRegex = new RegExp(/==([^=]+)==/, "g")
@@ -221,7 +222,15 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                   const ext: string = path.extname(fp).toLowerCase()
                   const url = slugifyFilePath(fp as FilePath)
                   if ([".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", ".webp"].includes(ext)) {
-                    const dims = alias ?? ""
+                    // either |alt|dims or |dims
+                    let [alt, dims] = (alias ?? "").split("|")
+
+                    // |dims case, treat first alt slot as dims
+                    if (dims === undefined) {
+                      dims = alt
+                      alt = ""
+                    }
+
                     let [width, height] = dims.split("x", 2)
                     width ||= "auto"
                     height ||= "auto"
@@ -232,6 +241,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                         hProperties: {
                           width,
                           height,
+                          alt,
                         },
                       },
                     }
@@ -317,7 +327,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                 }
 
                 tag = slugTag(tag)
-                if (file.data.frontmatter && !file.data.frontmatter.tags.includes(tag)) {
+                if (file.data.frontmatter?.tags?.includes(tag)) {
                   file.data.frontmatter.tags.push(tag)
                 }
 
@@ -431,7 +441,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                   value: `<div
                   class="callout-title"
                 >
-                  <div class="callout-icon">${callouts[calloutType]}</div>
+                  <div class="callout-icon">${callouts[calloutType] ?? callouts.note}</div>
                   <div class="callout-title-inner">${title}</div>
                   ${collapse ? toggleIcon : ""}
                 </div>`,
@@ -457,7 +467,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                 node.data = {
                   hProperties: {
                     ...(node.data?.hProperties ?? {}),
-                    className: `callout ${collapse ? "is-collapsible" : ""} ${
+                    className: `callout ${calloutType} ${collapse ? "is-collapsible" : ""} ${
                       defaultState === "collapsed" ? "is-collapsed" : ""
                     }`,
                     "data-callout": calloutType,
