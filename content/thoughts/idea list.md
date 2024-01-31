@@ -7,6 +7,11 @@ tags:
 
 ## Technical
 
+- block based text editor
+	- allow you to rip paragraph apart and rearrange sentences spatially
+		- paragraph should be able to have hierarchy like bullet points
+		- the 'bullet points' should be purely visual (easy toggle to turn it into paragraph/prose mode)
+	- column based drafts throughout history (save as draft button but also rewindable history)
 - fuzzy rip grep
 - hoogle for rdf shapes
 - optimizing network topology for crdts
