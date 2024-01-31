@@ -1,7 +1,7 @@
 import FlexSearch from "flexsearch"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 import { registerEscapeHandler, removeAllChildren } from "./util"
-import { FullSlug, resolveRelative } from "../../util/path"
+import { FullSlug, normalizeRelativeURLs, resolveRelative } from "../../util/path"
 
 interface Item {
   id: number
@@ -20,8 +20,8 @@ type SearchType = "basic" | "tags"
 let searchType: SearchType = "basic"
 
 const contextWindowWords = 30
-const numSearchResults = 5
-const numTagResults = 3
+const numSearchResults = 8
+const numTagResults = 5
 function highlight(searchTerm: string, text: string, trim?: boolean) {
   // try to highlight longest tokens first
   const tokenizedTerms = searchTerm
@@ -71,19 +71,42 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
   }`
 }
 
+const p = new DOMParser()
 const encoder = (str: string) => str.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/)
 let prevShortcutHandler: ((e: HTMLElementEventMap["keydown"]) => void) | undefined = undefined
-document.addEventListener("nav", async (e: unknown) => {
-  const currentSlug = (e as CustomEventMap["nav"]).detail.url
+
+const fetchContentCache: Map<FullSlug, Element[]> = new Map()
+
+document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
+  const currentSlug = e.detail.url
 
   const data = await fetchData
   const container = document.getElementById("search-container")
   const sidebar = container?.closest(".sidebar") as HTMLElement
   const searchIcon = document.getElementById("search-icon")
   const searchBar = document.getElementById("search-bar") as HTMLInputElement | null
-  const results = document.getElementById("results-container")
-  const resultCards = document.getElementsByClassName("result-card")
+  const searchLayout = document.getElementById("search-layout")
   const idDataMap = Object.keys(data) as FullSlug[]
+
+  const appendLayout = (el: HTMLElement) => {
+    if (searchLayout?.querySelector(`#${el.id}`) === null) {
+      searchLayout?.appendChild(el)
+    }
+  }
+
+  const enablePreview = searchLayout?.dataset?.preview === "true"
+  let preview: HTMLDivElement | undefined = undefined
+  const results = document.createElement("div")
+  results.id = "results-container"
+  results.style.flexBasis = enablePreview ? "30%" : "100%"
+  appendLayout(results)
+
+  if (enablePreview) {
+    preview = document.createElement("div")
+    preview.id = "preview-container"
+    preview.style.flexBasis = "70%"
+    appendLayout(preview)
+  }
 
   function hideSearch() {
     container?.classList.remove("active")
@@ -95,6 +118,9 @@ document.addEventListener("nav", async (e: unknown) => {
     }
     if (results) {
       removeAllChildren(results)
+    }
+    if (preview) {
+      removeAllChildren(preview)
     }
 
     searchType = "basic" // reset search type after closing
@@ -109,7 +135,7 @@ document.addEventListener("nav", async (e: unknown) => {
     searchBar?.focus()
   }
 
-  function shortcutHandler(e: HTMLElementEventMap["keydown"]) {
+  async function shortcutHandler(e: HTMLElementEventMap["keydown"]) {
     if (e.key === "k" && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
       e.preventDefault()
       const searchBarOpen = container?.classList.contains("active")
@@ -124,32 +150,50 @@ document.addEventListener("nav", async (e: unknown) => {
       if (searchBar) searchBar.value = "#"
     }
 
+    const resultCards = document.getElementsByClassName("result-card")
+
+    // If search is active, then we will render the first result and display accordingly
     if (!container?.classList.contains("active")) return
-    else if (e.key === "Enter") {
-      // If result has focus, navigate to that one, otherwise pick first result
-      if (results?.contains(document.activeElement)) {
-        const active = document.activeElement as HTMLInputElement
+    else if (results?.contains(document.activeElement)) {
+      const active = document.activeElement as HTMLInputElement
+      await displayPreview(active)
+      if (e.key === "Enter") {
         active.click()
-      } else {
-        const anchor = document.getElementsByClassName("result-card")[0] as HTMLInputElement | null
+      }
+    } else {
+      const anchor = resultCards[0] as HTMLInputElement | null
+      await displayPreview(anchor)
+      if (e.key === "Enter") {
         anchor?.click()
       }
-    } else if (e.key === "ArrowUp" || (e.shiftKey && e.key === "Tab")) {
+    }
+
+    if (e.key === "ArrowUp" || (e.shiftKey && e.key === "Tab")) {
       e.preventDefault()
       if (results?.contains(document.activeElement)) {
         // If an element in results-container already has focus, focus previous one
-        const prevResult = document.activeElement?.previousElementSibling as HTMLInputElement | null
+        const currentResult = document.activeElement as HTMLInputElement | null
+        const prevResult = currentResult?.previousElementSibling as HTMLInputElement | null
+        currentResult?.classList.remove("focus")
+        await displayPreview(prevResult)
         prevResult?.focus()
       }
     } else if (e.key === "ArrowDown" || e.key === "Tab") {
       e.preventDefault()
-      // When first pressing ArrowDown, results wont contain the active element, so focus first element
+      // The results should already been focused, so we need to find the next one.
+      // The activeElement is the search bar, so we need to find the first result and focus it.
       if (!results?.contains(document.activeElement)) {
         const firstResult = resultCards[0] as HTMLInputElement | null
-        firstResult?.focus()
+        const secondResult = firstResult?.nextElementSibling as HTMLInputElement | null
+        firstResult?.classList.remove("focus")
+        await displayPreview(secondResult)
+        secondResult?.focus()
       } else {
         // If an element in results-container already has focus, focus next one
-        const nextResult = document.activeElement?.nextElementSibling as HTMLInputElement | null
+        const active = document.activeElement as HTMLInputElement | null
+        active?.classList.remove("focus")
+        const nextResult = active?.nextElementSibling as HTMLInputElement | null
+        await displayPreview(nextResult)
         nextResult?.focus()
       }
     }
@@ -220,21 +264,56 @@ document.addEventListener("nav", async (e: unknown) => {
     }
   }
 
+  function resolveUrl(slug: FullSlug): URL {
+    return new URL(resolveRelative(currentSlug, slug), location.toString())
+  }
+
   const resultToHTML = ({ slug, title, content, tags }: Item) => {
     const htmlTags = tags.length > 0 ? `<ul>${tags.join("")}</ul>` : ``
+    const resultContent = enablePreview && window.innerWidth > 600 ? "" : `<p>${content}</p>`
+
     const itemTile = document.createElement("a")
     itemTile.classList.add("result-card")
-    itemTile.id = slug
-    itemTile.href = new URL(resolveRelative(currentSlug, slug), location.toString()).toString()
-    itemTile.innerHTML = `<h3>${title}</h3>${htmlTags}<p>${content}</p>`
-    itemTile.addEventListener("click", (event) => {
-      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return
-      hideSearch()
+    Object.assign(itemTile, {
+      id: slug,
+      href: resolveUrl(slug).toString(),
+      innerHTML: `<h3>${title}</h3>${htmlTags}${resultContent}`,
     })
+
+    async function onMouseEnter(ev: MouseEvent) {
+      // When search is active, the first element is in focus, so we need to remove focus if given target is not the first element
+      const firstEl = document.getElementsByClassName("result-card")[0] as HTMLAnchorElement | null
+      const target = ev.target as HTMLAnchorElement
+      if (firstEl !== target) {
+        firstEl?.classList.remove("focus")
+      }
+      target.classList.add("focus")
+      await displayPreview(target)
+    }
+
+    async function onMouseLeave(ev: MouseEvent) {
+      const target = ev.target as HTMLAnchorElement
+      target.classList.remove("focus")
+    }
+
+    const events = [
+      ["mouseenter", onMouseEnter],
+      ["mouseleave", onMouseLeave],
+      [
+        "click",
+        (event: MouseEvent) => {
+          if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return
+          hideSearch()
+        },
+      ],
+    ] as [keyof HTMLElementEventMap, (this: HTMLElement) => void][]
+
+    events.forEach(([event, handler]) => itemTile.addEventListener(event, handler))
+
     return itemTile
   }
 
-  function displayResults(finalResults: Item[]) {
+  async function displayResults(finalResults: Item[]) {
     if (!results) return
 
     removeAllChildren(results)
@@ -246,11 +325,56 @@ document.addEventListener("nav", async (e: unknown) => {
     } else {
       results.append(...finalResults.map(resultToHTML))
     }
+    // focus on first result, then also dispatch preview immediately
+    if (results?.firstElementChild) {
+      results?.firstElementChild?.classList.add("focus")
+      await displayPreview(results?.firstElementChild as HTMLElement)
+    }
+  }
+
+  async function fetchContent(slug: FullSlug): Promise<Element[]> {
+    if (fetchContentCache.has(slug)) {
+      return fetchContentCache.get(slug) as Element[]
+    }
+
+    const targetUrl = resolveUrl(slug).toString()
+    const contents = await fetch(targetUrl)
+      .then((res) => res.text())
+      .then((contents) => {
+        if (contents === undefined) {
+          throw new Error(`Could not fetch ${targetUrl}`)
+        }
+        const html = p.parseFromString(contents ?? "", "text/html")
+        normalizeRelativeURLs(html, targetUrl)
+        return [...html.getElementsByClassName("popover-hint")]
+      })
+
+    fetchContentCache.set(slug, contents)
+    return contents
+  }
+
+  async function displayPreview(el: HTMLElement | null) {
+    if (!searchLayout || !enablePreview || !el) return
+
+    const slug = el.id as FullSlug
+    el.classList.add("focus")
+
+    removeAllChildren(preview as HTMLElement)
+    const contentDetails = await fetchContent(slug)
+
+    const previewInner = document.createElement("div")
+    previewInner.classList.add("preview-inner")
+    preview?.appendChild(previewInner)
+    contentDetails?.forEach((elt) => previewInner.appendChild(elt))
   }
 
   async function onType(e: HTMLElementEventMap["input"]) {
     let term = (e.target as HTMLInputElement).value
     let searchResults: FlexSearch.SimpleDocumentSearchResultSetUnit[]
+
+    if (searchLayout) {
+      searchLayout.style.opacity = "1"
+    }
 
     if (term.toLowerCase().startsWith("#")) {
       searchType = "tags"
@@ -289,7 +413,7 @@ document.addEventListener("nav", async (e: unknown) => {
       ...getByField("tags"),
     ])
     const finalResults = [...allIds].map((id) => formatForDisplay(term, id))
-    displayResults(finalResults)
+    await displayResults(finalResults)
   }
 
   if (prevShortcutHandler) {
