@@ -83,10 +83,13 @@
       }
 
       & > #search-layout {
-        display: flex;
+        display: none;
         flex-direction: row;
-        visibility: hidden;
         border: 1px solid var(--lightgray);
+
+        &.display-results {
+          display: flex;
+        }
 
         @media all and (min-width: $tabletBreakpoint) {
           &[data-preview] {
@@ -128,6 +131,7 @@
         & .highlight {
           background: color-mix(in srgb, var(--tertiary) 60%, transparent);
           border-radius: 5px;
+          scroll-margin-top: 2rem;
         }
 
         & > #preview-container {
