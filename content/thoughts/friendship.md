@@ -108,3 +108,10 @@ Nussbaum on how over-reliance on intellect for clarity about love produces inste
 See also: 
 
 ![[thoughts/self-effacing ends|self-effacing ends]]
+## Social Energy
+[Source](https://maxlangenkamp.substack.com/p/on-social-energy)
+
+- We are constantly interpreting ourselves for others.
+- The more foreign the person, the more interpretation they require, and the more narrow the affordances we can take with them.
+- I think this also can explain how larger groups often are more draining. We have to do a lot more cognitive work to hold several models of the world in our head. Large groups of foreign people tend to be the most exhausting.
+- I like to think about energy expended interpreting other people as “shapes I have to hold my being in”. The further the shape from my normal patterns of movement, the more energy I have to expend
