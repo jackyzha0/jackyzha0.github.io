@@ -90,3 +90,14 @@ struct 3dRange
   times: TimeRange
 ```
 
+## Sync Protocol
+[Source](https://willowprotocol.org/specs/sync/index.html#sync)
+
+Requirements:
+- Incremental sync: peers can detect regions of shared data with relatively sparse communication to avoid redundant data transfer
+- Partial sync: peers synchronise only those regions of data they both care about
+- Private area intersection: peers can discover common interests without disclosing any non-shared information to each other
+- Resource control: peers communicate (and enforce) their computational resource limits so as not to overload each other
+- Transport independence
+- General efficiency: peers can make use of efficient implementation techniques, and the overall bandwidth consumption stays low
+
