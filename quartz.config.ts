@@ -14,6 +14,7 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates"],
     defaultDateType: "created",
     theme: {
+      cdnCaching: true,
       typography: {
         header: "DM Serif Text",
         body: "Bricolage Grotesque",
