@@ -24,7 +24,12 @@ const defaultOptions = (cfg: GlobalConfiguration): Options => ({
 })
 
 export default ((userOpts?: Partial<Options>) => {
-  function RecentNotes({ allFiles, fileData, displayClass, cfg }: QuartzComponentProps) {
+  const RecentNotes: QuartzComponent = ({
+    allFiles,
+    fileData,
+    displayClass,
+    cfg,
+  }: QuartzComponentProps) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
 
     if (fileData.slug !== "index") {
