@@ -47,7 +47,8 @@ Currently, Linux implements six different types of namespaces. The purpose of ea
 6. `mnt`: filesystem hierarchy
 7. `net`: network devices, IP addresses, routing tables, port numbers, etc.
 
+The default namespace is the "host" namespace.
+### Containers
 One of the overall goals of namespaces is to support the implementation of containers, a tool for lightweight virtualization (as well as other purposes) that provides a group of processes with the illusion that they are the only processes on the system.
 
-The default namespace is the "host" namespace.
-
+Linux containers are based on top of Linux namespaces (“which resources to isolate per container”) and cgroups (“how much of each resource to allocate to each container”).  As such they can be thought of as running native processes directly on top of the kernel but each container only having a local view of the OS inside it. For e.g. a process in a container with a process namespace, may think of “init” as its process with PID1 but outside the container this “init” is like any other user-space process on the system. Similarly, a process in a container with a mount namespace may access “root” (“/”) but in reality it may be any arbitrary path on the system.

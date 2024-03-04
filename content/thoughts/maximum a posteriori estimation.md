@@ -10,7 +10,7 @@ aliases:
 
 Maximizes $\hat w \in \arg\max_w \{ P(w|D) \}$
 
-Given our data, what is the model $w$ is the best model?
+Given our data, which model $w$ is the best model?
 
 This is connected to [[thoughts/maximum likelihood estimation|MLE]] through [[thoughts/probability#Bayes' Theorem|Bayes' Rule]]:
 
