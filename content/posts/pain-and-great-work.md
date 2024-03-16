@@ -12,6 +12,7 @@ draft: true
 			- [[posts/aesthetics-and-taste|aesthetics-and-taste]]
 	- "You're incredibly gifted, Sam. But it is worth noting that to be good at something is not quite the same as loving it."
 		- [[thoughts/Tomorrow, and Tomorrow, and Tomorrow|Tomorrow, and Tomorrow, and Tomorrow]]
+	- see also: good will hunting
 - how much great work has gone undeveloped because we didnt push someone hard enough?
 	- fletcher in the movie implies that we lose a lot because of this
 	- but what actually happens to neuman? he’ll likely fucking lose it in 30 years and turn into fletcher or kill himself like sean casey
@@ -30,6 +31,7 @@ draft: true
 		- 
 - can obsession ever be healthy?
 	- seasonality re: robin sloan
+- 
 
 ## simon sarris efforts and goals and joy
 - I find it ideal to always have more ambitions, plans, and projects than one could possibly accomplish. Aspirations — even unlikely ones, maybe _especially_ unlikely ones — are an essential part of living well. When we are at our most ailing, we are reduced to thinking and talking only of our ailments. When we are at our most vigorous, our most alive, we think and talk of our goals and aspirations. Over long time frames, the pessimist becomes an unobservant man, and the optimist creates the world.
