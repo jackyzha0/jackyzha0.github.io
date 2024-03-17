@@ -4,8 +4,10 @@ date: 2024-03-15
 tags:
   - fruit
 ---
-- Image format
-- It's compresses!
+JPEG uses a lot of clever tricks that take advantage of the human visual system to pack as much information that is important to human visual reconstruction of the image into as little raw digital information as possible.
+
+
+- It's compression!
 	- Compression techniques look for repeated patterns in the data and then replace those patterns with shorter ones.
 	- The problem with images and sound is that this data is usually too noisy to find good abbreviations.
 - It's lossy!
@@ -15,7 +17,7 @@ tags:
 		1. Changes in brightness are more important than changes in colour: the human retina contains about 120 million brightness-sensitive rod cells, but only about 6 million colour-sensitive cone cells.
 		2. Low-frequency changes are more important than high-frequency changes: we notice the boundaries of objects much more easily than the fine detail and patterning on it.
 
-JPEG uses a lot of clever tricks that take advantage of the human visual system to pack as much information that is important to human visual reconstruction of the image into as little raw digital information as possible.
+
 
 # Encoding
 ## Colour Transformation
