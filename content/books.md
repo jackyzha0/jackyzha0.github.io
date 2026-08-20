@@ -41,7 +41,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2026
 - **Just Kids** by Patti Smith
-- **Pilgrim at Tinker Creek** by Annie Dillard
+- **[[thoughts/Pilgrim at Tinker Creek|Pilgrim at Tinker Creek]]** by Annie Dillard
+- (current) **seeing is forgetting the name of the thing one sees** by Lawrence Weschler
 
 ### 2025
 
