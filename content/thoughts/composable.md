@@ -22,3 +22,13 @@ Linus Lee on [Browsers as Tools of Thought](https://thesephist.com/posts/browser
 > A tool is something that takes an existing workflow, and makes it more efficient. A nail is an efficient way of holding pieces of wood together; a to-do app is an efficient way of remembering your responsibilities. A medium, on the other hand, gives us new agency or power by which we can do something we couldn’t do before.
 
 **The best mediums are instead collections of generic, multi-purpose *components* that mesh together well**
+
+## On compositionality
+
+[Source](https://julesh.com/posts/2017-04-22-on-compositionality.html)
+
+> Compositionality is the principle that a system should be designed by composing together smaller subsystems, and reasoning about the system should be done recursively on its structure.
+
+As in software, each component has an ‘interface’, which is a high level understanding of its behaviour, with unnecessary details being intentionally forgotten.
+
+Compositionality is not just the ability to compose objects, but the ability to work with an object after intentionally forgetting how it was built
