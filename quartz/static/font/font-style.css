@@ -8,3 +8,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/*! Departure Mono by Helena Zhang (https://departuremono.com), SIL Open Font License 1.1 */
+
+@font-face {
+  font-family: "Departure Mono";
+  src:
+    url("DepartureMono-Regular.woff2") format("woff2"),
+    url("DepartureMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

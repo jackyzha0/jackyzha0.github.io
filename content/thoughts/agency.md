@@ -24,6 +24,19 @@ Self-determination theory suggests that all humans have three basic psychologica
 
 See also: [[thoughts/In Over Our Heads]], [[thoughts/burnout]], [[thoughts/taste]]
 
+## On 'skill issues'
+
+You’re not allowed to say “skill issue” to society-level problems, because some people won’t have the skill; that’s why they invented the word “systemic”. But your personal relationship to the meaning in your life is not a society-level problem
+
+[Source](https://www.astralcodexten.com/p/the-colors-of-her-coat)
+
+It implies that your current inability to do something isn’t an inherent character flaw, but just something you haven’t learned yet.
+
+ There’s something corrosive about internalising the message that your paralysis is wholly externally imposed and that constrained choices aren’t real choices.
+ 
+> **This is your life. You do not have time to wait for the revolution to begin living it. You will always be able to find someone to give you permission not to live it. But no one is coming along to live it for you.**
+
+[Source](https://velvetnoise.substack.com/p/skill-issue-is-a-useful-meme)
 ### Cultural
 
 In a 2017 study, compared to Democrats, US Republicans predictably attributed a person's wealth to their having "worked harder" versus their having "had advantages in life," and they attributed their poverty to "lack of effort" over "circumstances beyond [their] control"

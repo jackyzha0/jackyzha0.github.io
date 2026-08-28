@@ -93,6 +93,9 @@ const config: QuartzConfig = {
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
+      Plugin.LazyScripts({
+        scripts: [{ name: "departureBoard", entry: "components/scripts/departureBoard.lazy.ts" }],
+      }),
     ],
   },
 }

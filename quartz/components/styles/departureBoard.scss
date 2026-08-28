@@ -1,0 +1,363 @@
+@use "../../styles/variables.scss" as *;
+
+// Each visitor keeps their own hue but wears this site's saturation. Only the
+// saturation and lightness are inherited -- a var() inside a custom property
+// resolves where it's declared, so composing the whole colour up here would
+// bake in the fallback hue instead of each element's own.
+:root {
+  --db-tint-s: 45%;
+  --db-tint-l: 42%;
+}
+
+[saved-theme="dark"] {
+  --db-tint-s: 55%;
+  --db-tint-l: 68%;
+}
+
+.departure-board {
+  // 11px is Departure Mono's native pixel size; everything here is sized in
+  // whole pixels off that grid so the bitmap outlines stay crisp
+  --db-cell: 11px;
+  --db-row: 15px;
+  --db-ink: var(--dark);
+  --db-dim: var(--gray);
+  --db-rule: var(--darkgray);
+
+  font-family: "Departure Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: var(--db-cell);
+  line-height: var(--db-row);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--db-ink);
+  background: var(--light);
+  border: 1px solid var(--db-rule);
+  box-shadow: 3px 3px 0 0 var(--lightgray);
+  user-select: none;
+  overflow: hidden;
+  transition:
+    opacity 320ms ease-out,
+    transform 320ms ease-out;
+
+  // base.scss styles bare p/li/a, which would otherwise pull these rows off
+  // the pixel grid
+  & p,
+  & ol,
+  & li,
+  & a,
+  & span {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  & .db-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 2px 5px;
+    background: var(--db-rule);
+    color: var(--light);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+
+    & > .db-head-stop {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & > .db-head-clock {
+      flex: none;
+      font-variant-numeric: tabular-nums;
+    }
+  }
+
+  & .db-screen {
+    padding: 4px 5px 5px 5px;
+  }
+
+  // the two boards read as separate panels, so divide them edge to edge the
+  // same way the header and footer rules do
+  & .db-section + .db-section {
+    margin: 4px -5px 0 -5px;
+    padding: 4px 5px 0 5px;
+    border-top: 1px solid var(--db-rule);
+  }
+
+  & .db-section-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--db-dim);
+    letter-spacing: 0.14em;
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-image: linear-gradient(to right, currentColor 1px, transparent 1px);
+      background-size: 2px 1px;
+    }
+  }
+
+  & .db-rows {
+    list-style: none;
+  }
+
+  & .db-row {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    & > .db-chip {
+      flex: none;
+      width: 5px;
+      height: 5px;
+      margin-right: 5px;
+      background: currentColor;
+    }
+
+    & > .db-chip[style*="--db-hue"] {
+      background: hsl(var(--db-hue), var(--db-tint-s), var(--db-tint-l));
+    }
+
+    & > .db-name {
+      overflow: hidden;
+      text-overflow: clip;
+    }
+
+    & > .db-leader {
+      flex: 1;
+      min-width: 8px;
+      height: 1px;
+      margin: 0 4px;
+      align-self: center;
+      color: var(--db-dim);
+      background-image: linear-gradient(to right, currentColor 1px, transparent 1px);
+      background-size: 3px 1px;
+    }
+
+    & > .db-time {
+      flex: none;
+      font-variant-numeric: tabular-nums;
+    }
+
+    &.is-me {
+      color: var(--tertiary);
+    }
+
+    &.is-note,
+    &.is-overflow {
+      padding-left: 10px;
+      color: var(--db-dim);
+    }
+
+    // you, after a minute without moving: still on your own board, but no
+    // longer broadcasting to anyone else's
+    &.is-away > .db-time {
+      color: var(--db-dim);
+    }
+
+    &.has-departed {
+      color: var(--db-dim);
+
+      & > .db-chip {
+        background: transparent;
+        box-shadow: inset 0 0 0 1px currentColor;
+      }
+    }
+
+    // rows clatter in one after another, like flaps turning over
+    &.is-new {
+      animation: db-slide-in 260ms steps(5, end) both;
+      animation-delay: calc(var(--db-i, 0) * 50ms);
+    }
+  }
+
+  & .db-empty {
+    padding-left: 10px;
+    color: var(--db-dim);
+  }
+
+  & .db-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 2px 5px;
+    border-top: 1px solid var(--db-rule);
+    color: var(--db-dim);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+
+    & > .db-foot-status {
+      display: flex;
+      align-items: center;
+    }
+
+    & .db-lamp {
+      width: 5px;
+      height: 5px;
+      margin-right: 5px;
+      background: currentColor;
+    }
+  }
+
+  &[data-state="live"] .db-lamp {
+    background: var(--tertiary);
+    animation: db-blink 2s steps(1, end) infinite;
+  }
+
+  // no loading state -- the board simply isn't there until presence is up
+  &[data-state="connecting"] {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: none;
+  }
+
+  &[data-state="lost"] {
+    & .db-screen,
+    & .db-foot-status {
+      opacity: 0.55;
+    }
+  }
+
+  @media all and not ($desktop) {
+    max-width: 24rem;
+  }
+}
+
+@keyframes db-blink {
+  0%,
+  60% {
+    opacity: 1;
+  }
+  61%,
+  100% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes db-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .departure-board {
+    transition: none;
+  }
+
+  .departure-board[data-state="live"] .db-lamp,
+  .departure-board .db-row.is-new {
+    animation: none;
+  }
+}
+
+// Cursors. These live in #db-cursor-root, a sibling of <body> that survives
+// SPA navigation, so the rules sit outside .departure-board.
+#db-cursor-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999998;
+  // hidden rather than display:none: playhtml measures this element's rect to
+  // place cursors, and a display:none box measures 0x0
+  visibility: hidden;
+}
+
+html.db-cursors-live #db-cursor-root {
+  visibility: visible;
+}
+
+.playhtml-cursor-other.db-cursor {
+  --db-cursor-color: hsl(var(--db-hue, 220), var(--db-tint-s), var(--db-tint-l));
+}
+
+// your own pointer, in the same style -- only where there's a real pointer to
+// replace, and only once our own blob is actually on screen
+@media (hover: hover) and (pointer: fine) {
+  html.db-cursors-live,
+  html.db-cursors-live * {
+    cursor: none;
+  }
+}
+
+.db-cursor--self {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 999999;
+
+  & > .db-cursor-blob {
+    background: var(--tertiary);
+    transition:
+      width 90ms ease-out,
+      height 90ms ease-out;
+  }
+
+  // keep some affordance now that the system cursor is gone
+  &.is-over-link > .db-cursor-blob {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+.db-cursor-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--db-cursor-color);
+  // a paper-coloured ring so the blob reads against text or a dark background
+  box-shadow: 0 0 0 1px var(--light);
+}
+
+// --db-near is a 0..1 smoothstep of how close your pointer is, written every
+// frame, so no CSS transition here -- the curve is the easing
+.db-cursor-label {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  padding: 1px 3px;
+  font-family: "Departure Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--light);
+  background: var(--db-cursor-color);
+  opacity: var(--db-near, 0);
+  transform: translateY(calc((1 - var(--db-near, 0)) * -2px));
+}
+
+// the board only exists on the home page, so neither should the cursors --
+// this backstops the runtime toggle in case a disable doesn't take
+body:not([data-slug="index"]) .playhtml-cursor-other {
+  display: none;
+}
+
+// hovering a row highlights that visitor on both the board and the page
+.departure-board .db-row[data-conn]:hover {
+  color: var(--tertiary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .db-cursor-label {
+    transform: none;
+  }
+}
