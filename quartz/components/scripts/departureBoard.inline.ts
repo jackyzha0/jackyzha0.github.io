@@ -1,6 +1,5 @@
-// The board pulls in playhtml (and with it yjs + a websocket client), which is
-// far too much to ship on every page of the garden. Keep the loader tiny here
-// and pull the real module in on demand, only where a board is on the page.
+// playhtml pulls in yjs and a websocket client -- far too much for every page,
+// so this loader stays tiny and fetches the real module only where a board is.
 type BoardModule = { mount: (board: HTMLElement) => () => void }
 
 let pending: Promise<BoardModule> | null = null

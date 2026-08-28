@@ -5,8 +5,7 @@ import style from "./styles/departureBoard.scss"
 // @ts-ignore
 import script from "./scripts/departureBoard.inline"
 
-// The board ships empty and stays hidden until presence connects, then reveals
-// itself with the rows sliding in -- no loading state to read.
+// Ships empty and hidden; the script reveals it once presence connects.
 const DepartureBoard: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
   const scriptPath = joinSegments(pathToRoot(fileData.slug!), "static/departureBoard.js")
   return (

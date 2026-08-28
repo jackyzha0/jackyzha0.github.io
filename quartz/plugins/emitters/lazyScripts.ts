@@ -4,7 +4,7 @@ import { QuartzEmitterPlugin } from "../types"
 import { write } from "./helpers"
 
 export type LazyScript = {
-  /** emitted as `static/<name>.js`, loaded at runtime with a dynamic import */
+  /** emitted as `static/<name>.js` */
   name: string
   /** entry point, relative to the `quartz` folder */
   entry: string
@@ -15,9 +15,8 @@ export type Options = {
 }
 
 /**
- * Bundles a script into its own module under `static/` instead of folding it
- * into the global `postscript.js`. Use this for anything with a heavy
- * dependency that only one page needs -- the bytes stay off every other page.
+ * Bundles a script under `static/` instead of into the global `postscript.js`,
+ * so a heavy dependency only one page needs stays off every other page.
  */
 export const LazyScripts: QuartzEmitterPlugin<Options> = (opts) => {
   const scripts = opts?.scripts ?? []

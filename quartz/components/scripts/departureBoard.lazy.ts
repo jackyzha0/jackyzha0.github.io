@@ -1,34 +1,25 @@
 import { playhtml } from "playhtml"
 import { uniqueNamesGenerator, adjectives, animals } from "unique-names-generator"
 
-// everyone looking at the home page joins the same playhtml presence room and
-// broadcasts when they got here. the board is a bus stop: who is waiting now,
-// and who has recently left.
 const ROOM = "stop"
 const CHANNEL = "stop"
-// both panels grow to a cap, then collapse the tail into a count
 const MAX_ARRIVALS = 5
 const MAX_DEPARTURES = 3
 // more are retained than are shown, so the overflow count means something
 const MAX_DEPARTED = 50
-// only relevant to a tab left open a long time -- departures aren't stored
-// anywhere, so a bare HH:MM can't drift far enough to be ambiguous
+// short enough that a bare HH:MM can't be mistaken for the day before
 const DEPARTED_TTL = 12 * 60 * 60 * 1000
 const CONNECT_TIMEOUT = 12_000
-// a cursor's name fades in as your pointer closes on it: full at NEAR, gone
-// past FAR, smoothstepped in between
 const FADE_NEAR = 48
 const FADE_FAR = 240
-// go this long without moving the pointer and you step off the board: your
-// presence clears, so your cursor vanishes for everyone at once
-const IDLE_AFTER = 60_000
-// capping both dictionaries at 9 means any pairing lands under 20 characters,
-// which is what a row can hold. leaves ~324k combinations.
+// matches playhtml's own cursor freshness window, so a cursor going stale and
+// the board marking you gone happen together rather than 30s apart
+const IDLE_AFTER = 30_000
+// 9 keeps any pairing under the 20 characters a row can hold (~324k combos)
 const MAX_WORD = 9
 const SHORT_ADJECTIVES = adjectives.filter((word) => word.length <= MAX_WORD)
 const SHORT_ANIMALS = animals.filter((word) => word.length <= MAX_WORD)
-// how long a row counts as "entering" -- long enough to survive a repaint
-// caused by someone else's presence landing a beat later
+// long enough to outlast a repaint from someone else's presence landing late
 const ENTRY_WINDOW = 500
 
 type Rider = {
@@ -60,15 +51,12 @@ let lost = false
 let ticker: number | null = null
 
 let riders: Rider[] = []
-// presence is ephemeral and the server replays nothing, so a departure only
-// exists if this tab watched it happen. nothing is persisted.
+// the server replays nothing: a departure only exists if this tab saw it happen
 let departures: Departure[] = []
 let presentIds = new Set<string>()
 let knownRiders = new Map<string, Rider>()
-// a cursor's name fades up as your pointer nears it, or snaps in while you
-// hover that visitor's row on the board
 let hoveredConn: string | null = null
-// publicKeys of everyone the board currently lists as here
+// publicKeys the board currently lists as here
 let atStop = new Set<string>()
 let pointerX = -1e4
 let pointerY = -1e4
@@ -82,15 +70,14 @@ let myArrival = 0
 let lastSignature = ""
 let entering = 0
 
-// a peer's publicKey is arbitrary remote input, so never render it directly --
-// it only ever seeds a pick from our own word lists
+// publicKey is remote input, so it only ever seeds a pick from our own lists
 function nameFor(key: string): string {
   let hash = 0
   for (let i = 0; i < key.length; i++) {
     hash = (hash * 31 + key.charCodeAt(i)) >>> 0
   }
-  // seed the generator with a number, not the key itself: it hashes strings so
-  // coarsely that every visitor collapses into one of ~128 names
+  // seed with a number: the library hashes string seeds so coarsely that every
+  // visitor collapses into one of ~128 names
   return uniqueNamesGenerator({
     dictionaries: [SHORT_ADJECTIVES, SHORT_ANIMALS],
     separator: " ",
@@ -99,9 +86,8 @@ function nameFor(key: string): string {
   })
 }
 
-// playhtml hands out saturated pastels like "hsl(164, 70%, 60%)", which fight
-// the letterpress palette. Keep only the hue -- a bare number, so nothing a
-// peer sends can reach a style declaration -- and re-tint it per theme.
+// playhtml hands out saturated pastels that fight the palette. Keep only the
+// hue, as a bare number, so nothing a peer sends reaches a style declaration.
 function hueOf(value: unknown, fallbackKey: string): number {
   if (typeof value === "string") {
     const match = /^hsl\(\s*(\d{1,3}(?:\.\d+)?)/.exec(value)
@@ -199,7 +185,6 @@ function overflowRow(count: number): HTMLLIElement {
   return li
 }
 
-/** Caps a panel at what's shown, trading the remainder for a count. */
 function panel(rows: HTMLLIElement[], total: number, whenEmpty: string): HTMLLIElement[] {
   const hidden = total - rows.length
   if (hidden > 0) rows.push(overflowRow(hidden))
@@ -217,11 +202,8 @@ function noteRow(text: string): HTMLLIElement {
   return li
 }
 
-/**
- * Quartz navigates by morphing document.body, which wipes anything playhtml
- * appended there -- the cursors never came back on the way home. Mounting the
- * cursor layer as a sibling of <body> puts it outside the morph entirely.
- */
+// Quartz navigates by morphing document.body, which wipes anything playhtml
+// appended there. A sibling of <body> sits outside the morph.
 function cursorRoot(): HTMLElement {
   let root = document.getElementById("db-cursor-root")
   if (!root) {
@@ -232,7 +214,6 @@ function cursorRoot(): HTMLElement {
   return root
 }
 
-/** Your own pointer, drawn in the same pixel style as everyone else's. */
 function mountSelfCursor() {
   if (selfCursor) return
   selfCursor = document.createElement("div")
@@ -254,8 +235,6 @@ function cursorEl(conn: string): HTMLElement | null {
   return document.querySelector<HTMLElement>(`[data-db-cursor="${CSS.escape(conn)}"]`)
 }
 
-/** Push what we know about a visitor onto their cursor: colour, name, whether
- * the name is currently showing. */
 function syncCursor(conn: string, el: HTMLElement | null = cursorEl(conn)) {
   if (!el) return
   const rider = knownRiders.get(conn)
@@ -270,8 +249,7 @@ function syncAllCursors() {
   for (const conn of knownRiders.keys()) syncCursor(conn)
 }
 
-// playhtml hands us the positioned wrapper before it draws its own SVG arrow;
-// returning it swaps in a pixel blob instead
+// returning the wrapper here pre-empts playhtml's own SVG arrow
 function renderCursor(conn: string, el: HTMLElement): HTMLElement {
   el.dataset.dbCursor = conn
   el.classList.add("db-cursor")
@@ -301,8 +279,7 @@ function onPointerMove(event: MouseEvent) {
     refresh()
   }
   if (!selfCursor) return
-  // written straight from the event rather than the rAF loop, so your own
-  // cursor doesn't trail a frame behind the real pointer
+  // straight from the event, not the rAF loop, so it doesn't trail a frame
   selfCursor.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`
   const target = event.target as HTMLElement | null
   const interactive = Boolean(target?.closest?.("a, button, input, textarea, select, summary"))
@@ -314,12 +291,10 @@ function smoothstep(t: number): number {
   return clamped * clamped * (3 - 2 * clamped)
 }
 
-// Read every rect before writing anything back, so N cursors cost one layout
-// per frame rather than N.
+// read every rect before writing back: one layout per frame, not N
 function proximityTick() {
   proximityFrame = requestAnimationFrame(proximityTick)
 
-  // our own cursor is a pointer replacement, not presence -- skip it
   const cursors = document.querySelectorAll<HTMLElement>(".db-cursor:not(.db-cursor--self)")
   if (cursors.length === 0) return
 
@@ -388,7 +363,7 @@ function paint() {
   if (state === "lost") {
     blocks.push(note("no connection to the stop."))
   } else if (state === "connecting") {
-    // nothing to show yet -- the board is hidden until presence is up
+    // hidden until presence is up
   } else {
     const arrived = riders.slice(0, MAX_ARRIVALS).map((rider) => {
       onBoard.add(rider.id)
@@ -449,10 +424,8 @@ function refresh() {
     const broadcast = (view as any)?.[CHANNEL]?.arrivedAt
     const arrivedAt = mine ? myArrival : typeof broadcast === "number" ? broadcast : 0
 
-    // Someone who navigates off the home page clears this channel but stays
-    // connected, so they linger in the presence map. Being connected isn't
-    // being here -- without an arrival time they've left the stop, and both
-    // the board and their cursor should treat them as gone.
+    // Navigating away clears this channel but keeps the connection, so they
+    // linger in the presence map. Connected is not here.
     if (!arrivedAt) return
 
     const rider: Rider = {
@@ -468,7 +441,6 @@ function refresh() {
     next.push(rider)
   })
 
-  // anyone who was in the last snapshot but isn't in this one just left
   if (seenFirstSnapshot) {
     let changed = false
     for (const id of presentIds) {
@@ -494,8 +466,7 @@ function refresh() {
     departures = departures.filter((departure) => !stillHere.has(departure.key))
   }
 
-  // a cursor whose owner has gone quiet sends no further update to be filtered,
-  // so sweep the ones already on screen whenever the roster changes
+  // a quiet cursor sends no update to filter, so sweep what's already on screen
   if (changed) revalidateCursors()
   syncAllCursors()
 
@@ -512,8 +483,7 @@ function checkIdle() {
   if (!connected || idleAway || !boardEl) return
   if (Date.now() - lastActiveAt < IDLE_AFTER) return
   idleAway = true
-  // stop broadcasting presence; everyone else's board moves us to departures
-  // and drops our cursor. we stay on our own board, marked away.
+  // we stay on our own board, marked away; everyone else sees us depart
   leaveStop()
   refresh()
 }
@@ -609,24 +579,19 @@ function leaveStop() {
   }
 }
 
-/**
- * playhtml keeps broadcasting a pointer after its owner has navigated away --
- * `enabled` is only read when the cursor client is first built, so there's no
- * way to switch it back off. Filter on the receiving side instead: a cursor is
- * only drawn for someone the board still lists as being here, which keeps the
- * two halves of this feature telling the same story.
- */
+// playhtml keeps broadcasting a pointer after its owner navigates away --
+// `enabled` is only read when the cursor client is built, so it can't be
+// switched back off. Filter on the receiving side instead.
 function shouldRenderCursor(presence: { playerIdentity?: { publicKey?: string } }): boolean {
   const key = presence?.playerIdentity?.publicKey
   return typeof key === "string" && atStop.has(key)
 }
 
-// re-runs the filter over every cursor already on screen
 function revalidateCursors() {
   try {
     playhtml.cursorClient?.configure({ shouldRenderCursor })
   } catch {
-    // nothing to revalidate if cursors never came up
+    // cursors never came up
   }
 }
 
@@ -652,7 +617,6 @@ function teardown() {
   statusEl = null
 }
 
-/** Wire up a board element. Returns a teardown to run when we navigate away. */
 export function mount(board: HTMLElement): () => void {
   boardEl = board
   screenEl = board.querySelector<HTMLElement>("[data-db-screen]")
@@ -668,7 +632,6 @@ export function mount(board: HTMLElement): () => void {
   mountSelfCursor()
   if (proximityFrame === null) proximityTick()
 
-  // coming back to the home page counts as a fresh arrival at the stop
   announceArrival()
   startTicker()
   void connect()
