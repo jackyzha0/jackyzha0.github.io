@@ -272,15 +272,22 @@ html.db-cursors-live #db-cursor-root {
   --db-cursor-color: hsl(var(--db-hue, 220), var(--db-tint-s), var(--db-tint-l));
 }
 
-// only once our own blob is on screen, so a failed load leaves the real cursor
+// playhtml sets its own SVG cursor inline on <html> and rewrites it on every
+// pointer sample, so only !important beats it. Neutralising <html> alone leaves
+// descendants their own rules, so links keep a hand.
+html:not(.db-pointer-live) {
+  cursor: auto !important;
+}
+
 @media (hover: hover) and (pointer: fine) {
-  html.db-cursors-live,
-  html.db-cursors-live * {
-    cursor: none;
+  html.db-pointer-live,
+  html.db-pointer-live * {
+    cursor: none !important;
   }
 }
 
 .db-cursor--self {
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -312,6 +319,10 @@ html.db-cursors-live #db-cursor-root {
   background: var(--db-cursor-color);
   // a paper-coloured ring so the blob reads against text or a dark background
   box-shadow: 0 0 0 1px var(--light);
+}
+
+html.db-pointer-live .db-cursor--self {
+  visibility: visible;
 }
 
 // --db-near is written every frame, so no transition: the curve is the easing

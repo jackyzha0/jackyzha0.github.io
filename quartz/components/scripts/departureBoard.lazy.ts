@@ -63,6 +63,7 @@ let pointerY = -1e4
 let proximityFrame: number | null = null
 let selfCursor: HTMLElement | null = null
 let lastActiveAt = Date.now()
+let pointerSeen = false
 let idleAway = false
 let seenFirstSnapshot = false
 let firstSeen = new Map<string, number>()
@@ -226,7 +227,8 @@ function mountSelfCursor() {
 }
 
 function unmountSelfCursor() {
-  document.documentElement.classList.remove("db-cursors-live")
+  pointerSeen = false
+  document.documentElement.classList.remove("db-cursors-live", "db-pointer-live")
   selfCursor?.remove()
   selfCursor = null
 }
@@ -272,6 +274,11 @@ function setHovered(conn: string | null) {
 function onPointerMove(event: MouseEvent) {
   pointerX = event.clientX
   pointerY = event.clientY
+  if (!pointerSeen) {
+    pointerSeen = true
+    // no blob to show before this, so don't hide the real cursor yet
+    document.documentElement.classList.add("db-pointer-live")
+  }
   lastActiveAt = Date.now()
   if (idleAway) {
     idleAway = false
@@ -321,6 +328,11 @@ function onScreenOver(event: Event) {
 
 function onScreenLeave() {
   setHovered(null)
+}
+
+function onPointerLeave() {
+  pointerSeen = false
+  document.documentElement.classList.remove("db-pointer-live")
 }
 
 function note(text: string): HTMLElement {
@@ -603,6 +615,7 @@ function teardown() {
   revalidateCursors()
   unmountSelfCursor()
   document.removeEventListener("mousemove", onPointerMove)
+  document.removeEventListener("mouseleave", onPointerLeave)
   if (proximityFrame !== null) {
     cancelAnimationFrame(proximityFrame)
     proximityFrame = null
@@ -629,6 +642,7 @@ export function mount(board: HTMLElement): () => void {
   screenEl?.addEventListener("mouseover", onScreenOver)
   screenEl?.addEventListener("mouseleave", onScreenLeave)
   document.addEventListener("mousemove", onPointerMove, { passive: true })
+  document.addEventListener("mouseleave", onPointerLeave)
   mountSelfCursor()
   if (proximityFrame === null) proximityTick()
 
