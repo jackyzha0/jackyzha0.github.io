@@ -131,6 +131,29 @@ See also: [[thoughts/Antimatter]]
 
 Upgrading network assumption from asynchronous to partially synchronous enables us to potentially define _weak operations_ which only _eventually_ need to be linearized.
 
+### Merge complexity vs OT
+
+Compares the cost of a replica integrating everyone else's unseen ops under [[thoughts/Operational Transform|OT]] and a sequence CRDT (RGA, YATA).
+
+- $n$: current document length (visible elements)
+- $N$: total ops ever applied, so $N \ge n$ and $N - n$ is roughly the number of deleted elements
+- $R$: number of peers
+- $k$: ops each peer has made that the others haven't seen yet (assumed equal across peers)
+- $M = Rk$: total concurrent ops
+
+|                          | Merge $M$ concurrent ops | Memory | Load          |
+| ------------------------ | ------------------------ | ------ | ------------- |
+| OT, central server (TP1) | $O(M) = O(Rk)$           | $O(n)$ | $O(n)$        |
+| OT, P2P (TP1 + TP2)      | $O(M^2) = O(R^2k^2)$     | $O(n)$ | $O(n)$        |
+| CRDT                     | $O(M \log n)$            | $O(N)$ | $O(N \log n)$ |
+| Eg-walker                | $O(M \log M)$            | $O(n)$ | $O(n)$        |
+
+- OT transforms each op against the concurrent ops it hasn't seen. A server fixes a total order, so every client only needs TP1 (two concurrent ops converge). Without one, an op can reach a replica along different transformation paths, so the transform also needs TP2 (the result can't depend on the path). TP2 has been broken in a lot of published text transforms, which is why real systems use a server.
+- The P2P cost depends on the algorithm. Transforming against a buffer of concurrent history gives the $O(M^2)$ above. State-space algorithms like adOPTed instead build an $R$-dimensional lattice of document states, which in the worst case has $O(k^R)$ vertices.
+- The tradeoff is memory. OT only keeps the current text, while a CRDT keeps every element ever inserted plus tombstones until compaction (see above).
+- Load is reading a document from disk into memory. OT caches the final text, so loading is just reading it. The CRDTs the Eg-walker paper tested rebuild their state from all events, so loading costs the same as merging the whole history.
+- [[thoughts/Eg-walker|Eg-walker]] tries to get both by replaying only the concurrent region through a temporary CRDT. The paper gives $O((k+m)\log(k+m))$ for merging two branches of $k$ and $m$ events, and I've generalized that to $M$ concurrent events. The worst case over an arbitrary event graph is $O(N^2 \log N)$, which the authors say is unlikely in practice.
+
 ## Move Operations
 [Source](https://loro.dev/blog/movable-tree#background)
 

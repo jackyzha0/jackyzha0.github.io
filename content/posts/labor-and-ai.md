@@ -1,0 +1,71 @@
+---
+title: Thoughts on Human Labor and AI
+date: 2026-10-09
+tags:
+  - fruit
+draft: true
+---
+
+- not an economist but i am a human
+- thinking about human meaning, what i meants to have human-cenetered AI
+
+
+- on ai
+    - atrophy of thought / the necessity of work
+        - “**when technologies take the form of capital that replaces workers, they are more likely to be resisted”**
+        - divorcing self-worth and sustainability from work
+            - the real message is not that they are worried about jobs per se
+            - job is a proxy for being able to provide for their families and assure their futures
+                - human-centered work should be emphasized/better compensated
+                    - Pathways into human-centered work. Expand opportunities in the care and connection economy—childcare, eldercare, education, healthcare, and community services—as pathways for workers displaced by AI. Although AI can enhance these roles by reducing administrative burdens and enabling greater personalization, human connection will remain an essential part of the profession. As AI reshapes the labor market, these sectors can absorb transitioning workers if supported with investments in training, wages, and job quality. Governments can build training pipelines, support transitions into care roles, and incentivize employers to raise pay and improve conditions in fields facing chronic shortages. (openai policy doc)
+                    - These initiatives could be complemented with a family benefit that recognizes caregiving as economically valuable work and supports evolving work patterns. This benefit could help cover childcare, education, and healthcare while remaining compatible with part-time work, retraining, or entrepreneurship. Together, these efforts would expand access to care, strengthen communities, and create meaningful, human-centered work. (openai policy doc)
+        - There is dignity in work. We should help people find work wherever we can, and society should keep searching for ways to remain at full employment.
+            - [https://www.anthropic.com/policy-on-the-ai-exponential/epf](https://www.anthropic.com/policy-on-the-ai-exponential/epf)
+    - fears of AI not delivering
+        - eg foxconn, etc in [https://jasmi.news/p/no-data-centers-in-my-backyard](https://jasmi.news/p/no-data-centers-in-my-backyard?utm_source=profile&utm_medium=reader2)
+        - “Your politicians are being bought by billionaires and gigantic corporations to screw you over. _It’s not Skynet: it’s the oligarchy.”_
+        - If people are this angry at a building sitting and paying taxes on unused land, something fundamental has gone very wrong.
+        - how to fix
+            - If we take seriously the risk to the social contract, then public ownership has to be part of it.
+                - [https://jasmi.news/p/abdul-el-sayed-on-ai](https://jasmi.news/p/abdul-el-sayed-on-ai)
+    - ai populism
+        - “**I define AI populism as a worldview in which AI is viewed not only as a** [**normal technology**](https://www.normaltech.ai/p/ai-as-normal-technology) **but as an _elite political project_ to be resisted.** It regards AI as a thing manufactured by out-of-touch billionaires and pushed onto an unwilling public to achieve sinister aims like “capitalist efficiency” (layoffs) and “population management” (surveillance)”
+            - [https://jasmi.news/p/warning-shots](https://jasmi.news/p/warning-shots)
+    - how to think about the concentration of power and money
+        - If AI winds up controlled by, and benefiting only a few, while most people lack agency and access to AI-driven opportunity, we will have failed to deliver on its promise (openai policy doc)
+        - especially if we ‘restrict access’ to the most powerful models to the government and a few ‘trusted’ companies
+            - Have policymakers establish clear rules for how governments can and cannot use AI, with especially high standards for reliability, alignment, and safety. These standards should be codified in law and reinforced through technical safeguards. (openai policy doc)
+    - thoughts on radical action against actors in oppressive/exploitative systems
+        - e.g sam altman / uhc ceo
+    - how are regular people going to benefit from AGI
+        - short term
+            - Policymakers could rebalance the tax base by increasing reliance on capital-based revenues—such as higher taxes on capital gains at the top, corporate income, or targeted measures on sustained AI-driven returns—and by exploring new approaches such as taxes related to automated labor. (openai industrial policy doc)
+            - Transitory shocks:
+	            - The delivery infrastructure for Unemployment Insurance (UI), which provides workers time to navigate job loss and transition, is not sufficiently prepared for a large labor market shock
+        - long term
+            - voting on what labs should direct superintelligence at solving
+            - Portable benefits.
+                - Over time, build benefit systems that are not tied to a single employer by expanding access to healthcare, retirement savings, and skills training through portable accounts that follow individuals across jobs, industries, education programs, and entrepreneurial ventures. Public programs can decouple key benefits from employment status by expanding access to retirement and training support regardless of where or how someone works. (openai policy doc)
+			- new tax basis
+				- less tax for individuals
+				- just tax gains over UBI floor? implies creating a reasonable UBI floor
+			- transparency in government and taxes
+				- how do we make govt spending and company taxes more visible?
+				- we should be able to use AI to increase public trust in institutions and companies
+    - open questions
+        - how are other public utilities regulated / prevent oligopolies?
+        - should AI allowed to be considered a sovereign intelligence?
+            - alignment only matters if this is true
+                - otherwise derivative intentionality is sufficient
+            - what are these implications on how this serves human interests?
+                - _alignment to whom?_ You might assume something like “humanity as a whole,” but humanity is, alas, irreconcilably pluralistic
+                    - [https://jasmi.news/p/alignment](https://jasmi.news/p/alignment?utm_source=publication-search)
+                - pluriversal approach to alignment?
+        - how did the 40hr work week happen in the first place??
+            - Convert efficiency gains from AI into durable improvements in workers’ benefits when routine workload declines and operating costs fall, including incentivizing companies to increase retirement matches or contributions, cover a larger share of healthcare costs, and subsidize child and eldercare. Incentivize employers and unions to run time-bound 32-hour/four-day workweek pilots with no loss in pay that hold output and service levels constant, then convert reclaimed hours into a permanent shorter week, bankable paid time off, or both. Where helpful, firms could also offer predictable “benefits bonuses” tied to measured productivity improvements so the efficiency dividend shows up both as long-term financial security and as time back for workers
+                - openai industrial policy doc
+        - what does it mean to be a public benefit corporation
+        - how can we avoid a [[thoughts/Seeing like a State|Seeing like a State]] world of monitoring AI usage/adoption/etc
+- docs
+    - openai policy doc: [https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf](https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf)
+    - ant policy doc: [https://www-cdn.anthropic.com/files/4zrzovbb/website/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf](https://www-cdn.anthropic.com/files/4zrzovbb/website/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf)
