@@ -192,6 +192,16 @@ a[data-footnote-ref] {
   font-weight: 600;
 }
 
+// <sup> raises its line box by default, which spaces out the line holding a footnote
+// marker. Zero its line-height and lift it with relative positioning instead.
+sup:has(> a[data-footnote-ref]) {
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
+  font-size: 0.75em;
+}
+
 // The * * * scene break becomes a vermilion mark instead of muted gray
 hr:after {
   color: var(--tertiary);

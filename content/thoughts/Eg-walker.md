@@ -10,7 +10,7 @@ A collaborative text-editing algorithm that is a blend of [[thoughts/CRDT|CRDT]]
 
 ## Intuition
 
-Eg-walker keeps ops in the form the user made them, as a graph of events where each event points to the version it was made against. Merge in those mode “rebases” a DAG of operations into a linear operation history with the same effect. The input of the algorithm is the event graph, and the output is this topologically sorted sequence of transformed operations
+Eg-walker keeps ops in the form the user made them, as a graph of events where each event points to the version it was made against. Merge in this mode “rebases” a DAG of operations into a linear operation history with the same effect. The input of the algorithm is the event graph, and the output is this topologically sorted sequence of transformed operations
 
 Here's an example event-graph with a history of "ab" and then 3 concurrent sets of edits come in:
 - `e3`, `e4` (insert `X`, then delete the first character)
@@ -26,9 +26,18 @@ Here's an example event-graph with a history of "ab" and then 3 concurrent sets 
   │                                 │
   e4 del(0)                         e7 ins(2, "W")
 
-  all three clients insert right after "a", and branch A then deletes index 0 ("a")
-  replay e5 e3 e4 e6 e7: smallest branch first (e5 has 1 event, the others 2)
-  (e1 e2 are before a critical version, so "a b" is really one placeholder)
+  replay order: e5 e3 e4 e6 e7
+  smallest branch first (e5 has 1 event, the others 2)
+  transformed result is
+  e1 ins(0, "a")
+  e2 ins(1, "b")
+  e5 ins(1, "Y")
+  e3 ins(1, "X")
+  e4 del(0)
+  e6 ins(2, "Z")
+  e7 ins(3, "W")
+  final text: XYZWb
+  
 ```
 
 Here's the merge of `e5`, `e3`, `e4`, `e6`, `e7`, in that replay order:
@@ -37,13 +46,15 @@ Here's the merge of `e5`, `e3`, `e4`, `e6`, `e7`, in that replay order:
   ● record                  ■ deleted record
   ○ insert retreated        □ delete retreated
   ^ insert position
+  by agent, smaller name goes left
 
-e5 = ins(1, "Y")        sees e1 e2
+e5 = ins(1, "Y")        by B   sees e1 e2
 
   list        a   b
   view        ●   ●
 
   insert pos    ^
+  skip          ^
 
   list        a   Y   b
   view        ●   ●   ●
@@ -53,13 +64,15 @@ e5 = ins(1, "Y")        sees e1 e2
 ```
 
 ```plaintext /○/#dim /□/#dim /^/#path /X/#path
-e3 = ins(1, "X")        sees e1 e2
+e3 = ins(1, "X")        by A   sees e1 e2
 
   list        a   Y   b
+  by              B
   view        ●   ○   ●
   retreat         e5
 
   insert pos    ^
+  skip          ^
 
   list        a   X   Y   b
   view        ●   ●   ○   ●
@@ -69,9 +82,10 @@ e3 = ins(1, "X")        sees e1 e2
 ```
 
 ```plaintext /a/2#path /○/#dim /□/#dim /^/#path
-e4 = del(0)             sees e1 e2 e3
+e4 = del(0)             by A   sees e1 e2 e3
 
   list        a   X   Y   b
+  by              A   B
   view        ●   ●   ○   ●
 
   list        a   X   Y   b
@@ -82,9 +96,10 @@ e4 = del(0)             sees e1 e2 e3
 ```
 
 ```plaintext /○/#dim /□/#dim /^/#path /Z/#path
-e6 = ins(1, "Z")        sees e1 e2
+e6 = ins(1, "Z")        by C   sees e1 e2
 
   list        a   X   Y   b
+  by              A   B
   view        □   ○   ○   ●
   retreat     e4  e3  e5
 
@@ -99,13 +114,15 @@ e6 = ins(1, "Z")        sees e1 e2
 ```
 
 ```plaintext /○/#dim /□/#dim /^/#path /W/#path
-e7 = ins(2, "W")        sees e1 e2 e6
+e7 = ins(2, "W")        by C   sees e1 e2 e6
 
   list        a   X   Y   Z   b
+  by              A   B   C
   view        □   ○   ○   ●   ●
   retreat     e4  e3  e5
 
   insert pos                ^
+  skip                      ^
 
   list        a   X   Y   Z   W   b
   view        □   ○   ○   ●   ●   ●
@@ -120,7 +137,7 @@ Each record in the `view` row is one glyph with two properties. The shape shows 
 
 The insert position (`^`) is the spot between two neighbouring records where the new record lands. Its index counts only the records visible in prepare, `●` and `□`. A delete finds its target the same way, and the output index of either kind of op is the number of records in the document to its left, `●` and `○`, which is what the bracket spans. That is where `ins(1, "Z")` becomes `ins(2, "Z")`: `X` and `Y` are `○`, retreated but not deleted, so they count, while `a` is `□` and does not.
 
-The paper leaves the order of concurrent inserts to an underlying list CRDT (its implementation uses a Yjs variant). Breaking ties by agent name, with the smaller name to the left, is how the diamond-types implementation does it.
+The paper leaves the order of concurrent inserts to an underlying list CRDT (its implementation uses a Yjs variant). diamond-types breaks ties by agent name, with the smaller name to the left.
 
 ### Critical versions
 
