@@ -1,5 +1,7 @@
 ---
 title: Making Eg-walker even faster
+description: "A set of improvements on top of Eg-walker that make it faster to merge and reopen documents while using less memory and disk. Most of the gains come from faster text operations, taking the cheap path more often, and skipping work that is already done or not yet needed."
+socialImage: ../thoughts/images/eg-strider-og.png
 date: 2026-10-25
 tags:
   - technical
