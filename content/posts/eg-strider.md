@@ -901,7 +901,7 @@ Source is open and MIT licensed on [GitHub](https://github.com/jackyzha0/eg-stri
     pieces: { head: [], steps: PIECES, auto: PIECES_AUTO },
   }
   // 7. the benchmark charts, drawn as svg in the site\u2019s own inks from compare\u2019s results: for each trace, a
-  // bar per library on a log scale, eg-strider in vermilion and the rest in navy and grey
+  // bar per library on a log or linear scale, eg-strider in vermilion and the rest in navy and grey
   const CHART_RUNS = 100
   const CHART_TRACES = ['S1', 'S2', 'S3', 'C1', 'C2', 'A1', 'A2']
   const CHART_LIBRARIES = [
@@ -947,16 +947,24 @@ Source is open and MIT licensed on [GitHub](https://github.com/jackyzha0/eg-stri
     }
     return lines
   }
-  const drawChart = (root, spec, lines) => {
+  // a linear axis runs from 0 to a round number past the largest value, with a tick every 1, 2 or 5 of its unit
+  const linearAxis = (spec) => {
+    const most = Math.max(...spec.values.flat().filter((v) => v))
+    const units = spec.unit === 'time' ? [ ['s', 1000], ['ms', 1] ] : [ ['GiB', 1073741824], ['MiB', 1048576], ['KiB', 1024] ]
+    const [unit, size] = units.find(([, size]) => most >= size) || units[units.length - 1]
+    const rough = most / size / 4
+    const power = Math.pow(10, Math.floor(Math.log10(rough)))
+    const step = [1, 2, 5, 10].map((m) => m * power).find((s) => s >= rough)
+    const count = Math.ceil(most / size / step)
+    const ticks = []
+    for (let i = 0; count >= i; i++) ticks.push([i * step * size, i ? +(i * step).toPrecision(4) + ' ' + unit : '0'])
+    return { high: count * step * size, ticks }
+  }
+  const drawChart = (root, spec, lines, scale) => {
     const W = 400, LEFT = 30, RIGHT = 268, ROW = 10, GAP = 8
     const ink = (name) => 'var(--' + name + ')'
     const code = { fontFamily: 'var(--codeFont)', fill: ink('darkgray') }
     const format = spec.unit === 'time' ? milliseconds : bytes
-    const ticks = TICKS[spec.unit]
-    const origin = ticks[0][0]
-    const decades = spec.values.flat().filter((v) => v).map((v) => Math.log10(v / origin))
-    const low = Math.floor(Math.min(...decades)), high = Math.ceil(Math.max(...decades))
-    const x = (v) => LEFT + ((Math.log10(v / origin) - low) / (high - low)) * (RIGHT - LEFT)
     const top = 13 * lines + 12
     const bottom = top + CHART_TRACES.length * (CHART_LIBRARIES.length * ROW + GAP)
     const H = bottom + 18
@@ -964,17 +972,31 @@ Source is open and MIT licensed on [GitHub](https://github.com/jackyzha0/eg-stri
     wrapWords(spec.definition, 70).forEach((line, i) => {
       svgEl(svg, 'text', { x: 0, y: 10 + 13 * i, 'font-size': 9.5 }, { fontFamily: 'var(--bodyFont)', fill: ink('gray') }).textContent = line
     })
-    for (let decade = low; high > decade; decade++) {
-      for (let step = 1; 10 > step; step++) {
-        const gx = x(step * Math.pow(10, decade) * origin).toFixed(1)
-        svgEl(svg, 'line', { x1: gx, y1: top - 3, x2: gx, y2: bottom, 'stroke-width': step === 1 ? 1 : 0.5 }, { stroke: ink('lightgray') })
-      }
+    const gridline = (gx, width) => {
+      svgEl(svg, 'line', { x1: gx.toFixed(1), y1: top - 3, x2: gx.toFixed(1), y2: bottom, 'stroke-width': width }, { stroke: ink('lightgray') })
     }
-    ticks.forEach(([value, label]) => {
-      const d = Math.round(Math.log10(value / origin))
-      if (d >= low ? high >= d : false) {
-        svgEl(svg, 'text', { x: x(value).toFixed(1), y: bottom + 13, 'font-size': 8.5, 'text-anchor': 'middle' }, { ...code, fill: ink('gray') }).textContent = label
+    let x, labels
+    if (scale === 'log') {
+      const ticks = TICKS[spec.unit]
+      const origin = ticks[0][0]
+      const decades = spec.values.flat().filter((v) => v).map((v) => Math.log10(v / origin))
+      const low = Math.floor(Math.min(...decades)), high = Math.ceil(Math.max(...decades))
+      x = (v) => LEFT + ((Math.log10(v / origin) - low) / (high - low)) * (RIGHT - LEFT)
+      for (let decade = low; high > decade; decade++) {
+        for (let step = 1; 10 > step; step++) gridline(x(step * Math.pow(10, decade) * origin), step === 1 ? 1 : 0.5)
       }
+      labels = ticks.filter(([value]) => {
+        const d = Math.round(Math.log10(value / origin))
+        return d >= low ? high >= d : false
+      })
+    } else {
+      const axis = linearAxis(spec)
+      x = (v) => LEFT + (v / axis.high) * (RIGHT - LEFT)
+      axis.ticks.forEach(([value]) => gridline(x(value), 1))
+      labels = axis.ticks
+    }
+    labels.forEach(([value, label]) => {
+      svgEl(svg, 'text', { x: x(value).toFixed(1), y: bottom + 13, 'font-size': 8.5, 'text-anchor': 'middle' }, { ...code, fill: ink('gray') }).textContent = label
     })
     svgEl(svg, 'line', { x1: LEFT, y1: bottom, x2: RIGHT, y2: bottom }, { stroke: ink('gray') })
     let y = top
@@ -1024,39 +1046,60 @@ Source is open and MIT licensed on [GitHub](https://github.com/jackyzha0/eg-stri
     panel.style.width = 'min(560px, 100%)'
     const specs = Object.values(CHARTS)
     const lines = Math.max(...specs.map((spec) => wrapWords(spec.definition, 70).length))
-    const cards = specs.map((spec) => {
+    const cards = specs.map(() => {
       const card = mk('div')
       card.setAttribute('role', 'tabpanel')
       panel.append(card)
-      drawChart(card, spec, lines)
       return card
     })
-    let pick = () => {}
-    const buttons = specs.map((spec, i) => {
-      const b = textButton(spec.title)
-      b.setAttribute('role', 'tab')
-      b.style.fontFamily = 'var(--codeFont)'
-      b.style.fontSize = '0.85rem'
-      b.addEventListener('click', () => pick(i))
-      tabs.append(b)
-      return b
-    })
-    // the open tab filled as an enabled button is, the rest greyed as a disabled one, but still clickable
-    pick = (i) => {
-      cards.forEach((card, j) => {
-        card.style.display = j === i ? 'block' : 'none'
-      })
+    // the chosen button filled as an enabled one is, the rest greyed as a disabled one, but still clickable
+    const fill = (buttons, i, state) => {
       buttons.forEach((b, j) => {
         const open = j === i
         b.style.color = open ? 'var(--light)' : 'var(--darkgray)'
         b.style.backgroundColor = open ? 'var(--dark)' : 'var(--lightgray)'
         b.style.cursor = open ? 'default' : 'pointer'
-        b.setAttribute('aria-selected', open ? 'true' : 'false')
+        b.setAttribute(state, open ? 'true' : 'false')
       })
     }
+    const button = (text, size, onClick) => {
+      const b = textButton(text)
+      b.style.fontFamily = 'var(--codeFont)'
+      b.style.fontSize = size
+      b.addEventListener('click', onClick)
+      return b
+    }
+    const buttons = specs.map((spec, i) => {
+      const b = button(spec.title, '0.85rem', () => pick(i))
+      b.setAttribute('role', 'tab')
+      tabs.append(b)
+      return b
+    })
+    const pick = (i) => {
+      cards.forEach((card, j) => {
+        card.style.display = j === i ? 'block' : 'none'
+      })
+      fill(buttons, i, 'aria-selected')
+    }
+    // log or linear under the charts, every chart redrawn on the scale picked
+    const SCALES = ['log', 'linear']
+    const foot = small('', { display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '0.5rem', margin: '0.5rem 0 1.5rem' })
+    const scales = SCALES.map((name, i) => {
+      const b = button(name, '0.8rem', () => pickScale(i))
+      foot.append(b)
+      return b
+    })
+    foot.append(mk('span', 'Median of ' + CHART_RUNS + ' runs, less is better.'))
+    const pickScale = (i) => {
+      cards.forEach((card, j) => {
+        card.textContent = ''
+        drawChart(card, specs[j], lines, SCALES[i])
+      })
+      fill(scales, i, 'aria-pressed')
+    }
+    pickScale(0)
     pick(0)
-    const note = small('Median of ' + CHART_RUNS + ' runs, log scale, less is better.', { margin: '0.5rem 0 1.5rem' })
-    root.append(tabs, legend, panel, note)
+    root.append(tabs, legend, panel, foot)
   }
 
   const init = () => {
