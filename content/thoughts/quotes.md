@@ -70,3 +70,5 @@ Be humble at the mountaintops, be strong in the valleys, and be faithful in betw
  "There was joy in concentration, and the world afforded an inexhaustible wealth of projects to concentrate on. There was joy in effort, and the world resisted effort to just the right degree, and yielded to it at last. People cut Mount Rushmore into faces; they chipped here and there for years. People slowed the spread of yellow fever; they sprayed the Isthmus of Panama puddle by puddle. Effort alone I loved. Some days I would have been happy to push a pole around a threshing floor like an ox, for the pleasure of moving the heavy stone and watching my knees rise in turn." (Annie Dillard, An American Childhood) ^9b9eb3
 
 "You get good at what you do" (unknown)
+
+"Whoever you are, go out into the evening, leaving your room, of which you know every bit; your house is the last before the infinite, whoever you are." (Rainer Maria Rilke)

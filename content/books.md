@@ -44,6 +44,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **[[thoughts/Pilgrim at Tinker Creek|Pilgrim at Tinker Creek]]** by Annie Dillard
 - **seeing is forgetting the name of the thing one sees** by Lawrence Weschler
 - **The Expert of Subtle Revisions** by Kirsten Menger-Anderson
+- **The Typing Lady** by Ruth Ozeki
 
 ### 2025
 
