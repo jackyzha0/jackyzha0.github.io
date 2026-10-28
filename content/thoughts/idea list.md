@@ -7,6 +7,7 @@ tags:
 
 ## Technical
 
+- custom write-only event log on flash drives
 - fuzzy rip grep
 - hoogle for rdf shapes
 - optimizing network topology for crdts
